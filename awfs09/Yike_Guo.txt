@@ -1,0 +1,22 @@
+Functional Programming, Workflow and Cloud 
+Yike Guo (Imperial College London)
+
+Abstract: Functional programming has been a subject of main stream
+computer science for many years. In spite of its huge impact on the
+development of programming language theory and practice, software
+engineering and even computer architecture, it is fair to say that
+functional programming is still mainly a principle rather than a
+particle tool for daily software development. However, I would like to
+argue that this situation may be changed in the new era of service
+oriented computing. In last few years, workflow has been an active
+research subject in the community of Grid computing. Workflow, which
+can be understood as a graphical functional programming language,
+provides a practical means for building computational services by
+composing existing services. Some practical workflow systems have been
+build and widely adopted in industry. This development has proven that
+the functional programming is playing an increasingly important role
+in service oriented computing. In this talk, I wou ld like to present
+a new view of functional programming in the context of Cloud
+Computing.  By presenting the technical challenges and the methodology
+of building Cloud application, I will present a functional framework
+for programming the Cloud by mashing up Cloud services.

@@ -1,0 +1,144 @@
+<head>
+<title>Technique reports of Z. Hu</title>
+</head>
+
+<body>
+
+<h2><a name="report">Constructive Algorithmics and Functional Programming</a></h2>
+<hr>
+
+<ol>
+
+<li> <a href="http://www.ipl.t.u-tokyo.ac.jp/~hu">Z. Hu</a> and H. Iwasaki and 
+     <a href="http://www.ipl.t.u-tokyo.ac.jp/~takeichi">M. Takeichi</a>,
+     <a href="http://www.ipl.t.u-tokyo.ac.jp/~hu/pub/mfcs96.ps.gz"><b>Construction of List Homomorphisms by Tupling and Fusion</b></a>,
+	<em>21st International Symposium on Mathematical Foundations of Computer Science (<a href="http://WWW.IPIPAN.Waw.PL/conferences/mfcs96">MFCS '96</a>)</em>, Cracow, September 1996. Springer-Verlag Lecture Notes in Computer Science.  to appear.<p> 
+
+<li> <a href="http://www.ipl.t.u-tokyo.ac.jp/~hu">Z. Hu</a> and H. Iwasaki and 
+     <a href="http://www.ipl.t.u-tokyo.ac.jp/~takeichi">M. Takeichi</a>,
+     	<a href="http://www.ipl.t.u-tokyo.ac.jp/~hu/pub/icfp96.ps.gz">
+	<b>Deriving Structural Hylomorphisms from Recursive Definitions</b>
+	</a>,
+	<em>ACM SIGPLAN International Conference on Functional Programming 
+	(<a href="http://www.cs.indiana.edu/icfp96">ICFP '96</a>)</em>, 
+	Philadelphia, May 1996. ACM Press. to appear.<p>
+
+<li> <a href="http://www.ipl.t.u-tokyo.ac.jp/~hu">Z. Hu</a> and H. Iwasaki and 
+     <a href="http://www.ipl.t.u-tokyo.ac.jp/~takeichi">M. Takeichi</a>,
+     <b>Formal Derivation of Parallel Program for 2-Dimensional Maximum Segment Sum Problem</b>,
+	<em>IPSJ (Information Processing Society of Japan) SIG Notes, 96-PRO-6</em>. pp.73-78. March 1996. 
+	(<a href="http://www.ipl.t.u-tokyo.ac.jp/~hu/pub/PRG96.ps.gz">Extended Version</a>)<p> 
+	 
+<li> H. Iwasaki and <a href="http://www.ipl.t.u-tokyo.ac.jp/~hu">Z. Hu</a>,
+     <b>Relationship between two Approaches to Promotional Transformation of Functional Programs</b>,
+	<em>IPSJ SIG Notes, 96-PRO-6</em>. pp.79-84. March 1996. (in Japanese). <p> 
+
+<li> <a href="http://www.ipl.t.u-tokyo.ac.jp/~hu">Z. Hu</a> and H. Iwasaki and 
+     <a href="http://www.ipl.t.u-tokyo.ac.jp/~takeichi">M. Takeichi</a>,
+	<a href="http://www.ipl.t.u-tokyo.ac.jp/~hu/pub/METR96-03.ps.gz"><b>Calculating Accumulations</b></a>, 
+	<em>Technical Report METR 96-03</em>,
+	Faculty of Engineering, University of Tokyo,
+	March,	1996.<p>
+
+<li> <a href="http://www.ipl.t.u-tokyo.ac.jp/~hu">Z. Hu</a> and H. Iwasaki,
+	<a href="http://www.ipl.t.u-tokyo.ac.jp/~hu/pub/Fuji95.ps.gz"><b>Promotional Transformation of Monadic Programs</a></b>,
+	<em>Fuji International Workshop on Functional and Logic 
+        Programming</em>, Susono, pp.196-210, July 1995. 
+        World Scientific.<p>
+
+<li> <a href="http://www.ipl.t.u-tokyo.ac.jp/~hu">Z. Hu</a> and H. Iwasaki and 
+     <a href="http://www.ipl.t.u-tokyo.ac.jp/~takeichi">M. Takeichi</a>,
+     <a href="http://www.ipl.t.u-tokyo.ac.jp/~hu/pub/METR95-04.ps.gz"><b>Making Recursions Manipulable by Constructing Medio-types</b></a>,
+	<em>Technical Report METR 95-04</em>,
+	Faculty of Engineering, University of Tokyo,
+	June,	1995.<p>
+
+<li> <a href="http://www.ipl.t.u-tokyo.ac.jp/~hu">Z. Hu</a> and H. Iwasaki and 
+     <a href="http://www.ipl.t.u-tokyo.ac.jp/~takeichi">M. Takeichi</a>,
+      <a href="http://www.ipl.t.u-tokyo.ac.jp/~hu/pub/jssst94.ps.gz"><b>Promotion Strategies for Parallelizing Tree Algorithms</b></a>,
+      <em>11th Conf. Proc. Jpn. Sco. for Software Sci. and Technical </em>, 
+      pp.421-424, Osaka, November, 1994. <p>
+
+<li> <a href="http://www.ipl.t.u-tokyo.ac.jp/~hu">Z. Hu</a> and H. Iwasaki and 
+     <a href="http://www.ipl.t.u-tokyo.ac.jp/~takeichi">M. Takeichi</a>,
+	<b>Deriving Efficient Functional Programs by
+Constructing Medio-types</b>,
+	<em>Proceedings of Workshop on Functional Programming JSSST'94</em>, 
+	pp.17-32, 
+        Kyoto, November, 1994. Modern Science Publisher. <p>
+
+<li> <a href="http://www.ipl.t.u-tokyo.ac.jp/~hu">Z. Hu</a> and H. Iwasaki and 
+     <a href="http://www.ipl.t.u-tokyo.ac.jp/~takeichi">M. Takeichi</a>,
+     <b>Catamorphism-Based Transformation of Functional
+		Programs</b>,
+	<em>Technical Report METR 94-06</em>, Faculty of Engineering,
+		University of Tokyo,
+	June,	1994. (The old version appeared in <em>IPSJ SIG Notes</em>,
+        94-PRG-16, pp.49-56, March, 1994.)<p>	
+
+</ol>
+
+<hr>
+<h2><a name="report">Automatic VLSI Design (Systolic Arrays)</a></h2>
+<hr>
+
+<ol>
+<li> Y. Sun and Z. Hu,
+	<b>Algebraic Approach to the Synthesis of Systolic Arrays</b>,
+	<em>Proceedings of German-Chinese Electrocity Week '91</em>, 
+	Germany, 1991. VDE Verlag Dusseldorf.<p>
+<li> Z. Hu and Y. Sun,
+	<b>Functional Approach to the Synthesis of Systolic
+Arrays</b>,
+	<em>Proceedings of 2nd Int'l Conf. for Young Computer Scientists</em>,
+	Beijing, China, July, 1991. <p>
+<li> Z. Hu and Y. Sun,
+	<b>Functional Approach to the Synthesis of Logic</b>,
+	<em>Proceedings  of 4th Int'l Symp. on IC Design, Implementation and
+Application</em>, Singapore, 1991. <p>
+ 
+</ol>
+
+<hr>
+<h2>Papers Published in Chinese Journals</h2>
+<hr>
+
+<ol>
+<li> Y. Sun, Z. Hu, X. Yuan, <b>FP-VLSI -- An Automatic Synthesis System</b>, 
+<em>Journal of Software</em>,
+Vol.5, No.1, January 1994. (in Chinese)<p>
+
+<li> Z. Hu, Y. Sun, <b> FP Description of 
+Parallel Algorithms and its Decidability of Implementation of Systolic
+Arrays</b>, <em>Journal of Software</em>, Vol.3, No.3, pp.9-16, July, 1992. (in Chinese)
+<p>
+
+<li> X. Xia, Y. Sun, Z. Hu, <b>Automatic Synthesis of 
+Systolic Arrays -- FP Approach</b>, <em>Journal of Software</em>,
+Vol.3, No.3, pp.1-8, July,
+1992. (in Chinese)<p> 
+
+<li> Z. Hu, Y. Sun, <b> Optimizing Digital
+System Through Program Transformation</b>, <em>Journal of Software</em>,
+Vol.1, No.2, pp.1-8, April, 1990. (in Chinese) <p>
+
+<li> Z. Hu, X. Xia, Y. Sun, 
+<b> Description, Synthesis and Simulation of 
+Digital System by Functional Programming Language</b>,  
+<em>Journal of Computer</em>, Vol.13, No.6, pp.1-8, June, 1990. (in Chinese)<p>
+
+<li> Y. Bai, Z. Hu, J. Yang, 
+<b> Implement FP on  Transputers</b>, <em>Microcomputer Systems</em>, No.10, pp.1-16, 
+October, 1990. (in Chinese)<p>
+
+</ol>
+
+<hr>
+<a href="/~hu/">
+<img src="/icons/back.gif"></A>Back to Hu's Home Page<p>
+
+<address>
+Z. Hu(hu@ipl.t.u-tokyo.ac.jp)
+</address>
+</body>
+

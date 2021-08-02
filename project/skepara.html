@@ -1,0 +1,627 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+<HEAD>
+<TITLE>The SkeTo Project</TITLE>
+<META http-equiv="Content-Type" content="text/html; charset=japanese-iso-8bit-unix">
+</HEAD>
+
+<BODY bgcolor="white" text="black" link="blue" vlink="red"
+      background="http://www.ipl.t.u-tokyo.ac.jp/~hu/pub/bk500.jpg">
+
+<TABLE border=0 cellspacing=20>
+<TR>
+<TH> <img width=150 src="skeleton.png"></TH>
+<TD> <h1>High Level Parallel Programming and Parallelization</h1></TD>
+</TR>
+<TABLE>
+<!--<a href="#papers">Selected Papers</a> |
+<a href="#software">Software</a>
+-->
+<HR>
+
+The problems involved in developing efficient and correct parallel
+programs have proved much harder than those in developing efficient
+sequential ones, both for programmers and for compilers. We have made
+the first attempt to construct a <em>calculational framework</em> for
+parallelization of sequential programs, including a novel
+inductive synthesis lemma and a calculation algorithm for
+parallelization of general recursive functions. Being constructive,
+this work has proved to be useful both in parallelizing compiler and
+in parallel programming.
+<P>
+
+<!--
+We are now applying the technique to design and implementation of 
+skeletal parallel programming environment called <a href="http://www.ipl.t.u-tokyo.ac.jp/sketo/">SkeTo</a>, 
+which supports efficient parallel programming with a fixed set of
+parallel skeletons. It can deal with a 
+large class of problems on lists, 2-dimensional arrays, and irregular trees.
+Here is <a href="http://www.jst.go.jp/kisoken/presto/complete/kinou/kenkyu/hu/main.html">video (in Japanese)</a> about part of the project.  
+<p>
+
+We are also collaborating
+with <a href="http://research.sun.com/people/mybio.php?uid=25706">Dr. Guy
+Steele</a>
+and <a href="http://research.sun.com/projects/dashboard.php?id=97">his
+team</a> at Sun Microsystems Laboratories to develop a library for
+skeletal parallel programming in Fortress (a programming language
+designed by Sun for high-performance
+computing). <a href="http://www.ipl.t.u-tokyo.ac.jp/fortress/">Here</a>
+contains more information about the joint project.
+-->
+
+
+<HR>
+<a name="papers"/>
+<h2>Selected Papers</h2>
+
+<UL>
+
+<A name="HLPP15">
+<li>
+<a href="http://www.prg.nii.ac.jp/members/tungld/index.html">
+Le Dec Tung</a>,
+<a href="http://research.nii.ac.jp/~hu"> 
+Zhenjiang Hu</a>, 
+<b>
+<a href="hlpp15.pdf">
+Towards Systematic Parallelization of Graph Transformations over Pregel
+</a></b>,
+International Journal of Parallel Programming (IJPP), to appear. 
+(also appears
+in <em>8th International Symposium on 
+High-level Parallel Programming and Applications</em> 
+(<a href="http://www.di.unipi.it/HLPP2015/">HLPP 2015</a>), 
+Pisa, Italy, July 2-3, 2015)
+</li>
+<p>
+
+<A name="VLDB14"/>
+<li>
+<a href="https://sites.google.com/site/onizukaresearch/the-team">
+Makoto Onizuka</a>,
+<a href="http://researchmap.jp/katohiroyuki/?lang=english">
+Hiroyuki Kato</a>, 
+<a href="http://research.nii.ac.jp/~hidaka/">
+Soichiro Hidaka</a>, 
+<a href="http://millsmess.cs.uec.ac.jp/~ksk/en/">
+Keisuke Nakano</a>,
+<a href="http://research.nii.ac.jp/~hu"> 
+Zhenjiang Hu</a>, 
+<b>
+<a href="vldb14.pdf">Optimization for Iterative Queries on MapReduce</a></b>,
+40th International Conference on Very Large Data Base 
+(<a href="http://www.vldb.org/2014/">VLDB 2014</a>),
+Hanzhou, China, September 1-5, 2014. 
+<em>PVLDB</em> 7(4), pp.241 - 252, 2013.
+<p>
+
+<A name="SAC14"/>
+<li>
+<a href="http://frederic.loulergue.eu/index.html"> 
+Frederic Loulergue</a>, 
+Simon Robillard, 
+Julien Tesson, 
+Joeffrey Legaux,
+<a href="http://research.nii.ac.jp/~hu"> 
+Zhenjiang Hu</a>,
+<b>
+Formal Derivation and Extraction of a Parallel Program for the All Nearest Smaller Values Problem
+</b>,
+29th ACM Symposium On Applied Computing
+(<a href="http://www.acm.org/conferences/sac/sac2014/">SAC 2014</a>),
+Gyeongju, Korea, March 24 - 28, 2014.
+<p>
+
+<A name="ParCo13"/>
+<li>
+<a href="http://www.prg.nii.ac.jp/members/yuliu/index.html">
+Yu Liu</a>,
+<a href="http://www.ipl.t.u-tokyo.ac.jp/~emoto"> 
+Kento Emoto</a>, 
+<a href="http://research.nii.ac.jp/~hu"> 
+Zhenjiang Hu</a>, 
+<b>
+A Generate-Test-Aggregate Parallel Programming Library
+for Systematic Parallel Programming
+</b>,
+<a herf="http://www.journals.elsevier.com/parallel-computing/"><em>Parallel Computing</em></a>, Elservier, to appear. (an old and short version was presented at PMAM'13).
+</li>
+<p>
+
+
+<a name="SoICT13a"/a>
+<li>
+<a href="http://www.prg.nii.ac.jp/members/tungld/index.html">
+Le Dec Tung</a>,
+Nguyen-Van Quyet, 
+<a href="http://research.nii.ac.jp/~hu"> 
+Zhenjiang Hu</a>, 
+<b>
+<a href="soict2013a.pdf">
+Efficient Query Evaluation on Distributed Graphs with
+Hadoop Environment</a>
+</b>,
+4th International Symposium on Information and Communication Technology
+(<a herf="http://www.acm-soict.org/~socit2013/index.php">SoICT 2013),
+Da Nang, Vietnam, December 5-6, 2013.
+</li>
+<p>
+
+<a name="SoICT13b"/a>
+<li>
+Nguyen-Van Quyet, 
+<a href="http://www.prg.nii.ac.jp/members/tungld/index.html">
+Le Dec Tung</a>,
+<a href="http://research.nii.ac.jp/~hu"> 
+Zhenjiang Hu</a>, 
+<b>
+<a href="soict2013b.pdf">
+Minimizing Data Transfers for Regular Reachability Queries on Distributed Graphs</a>
+</b>,
+4th International Symposium on Information and Communication Technology
+(<a herf="http://www.acm-soict.org/~socit2013/index.php">SoICT 2013),
+Da Nang, Vietnam, December 5-6, 2013.
+</li>
+<p>
+
+<A name="FHPC13"/>
+<li>
+Qi Wang,
+Meixian Chen,
+<a href="http://www.prg.nii.ac.jp/members/yuliu/index.html">
+Yu Liu</a>,
+<a href="http://research.nii.ac.jp/~hu"> 
+Zhenjiang Hu</a>, 
+<b>
+<a href="fhpc13.pdf">
+Towards Systematic Parallel Programming of Graph Problems via 
+Tree Decomposition and Tree Parallelism</a></b>,
+<em>2nd ACM SIGPLAN Workshop on
+Functional High-Performance Computing</em>
+(<a href="http://hiperfit.dk/fhpc13.html">FHPC 2013</a>), 
+Boston, Massachusetts, September 23, 2013. 
+<p>
+
+<A name="EuroPar13"/>
+<li>
+Joeffrey Legaux,
+<a href="http://research.nii.ac.jp/~hu"> 
+Zhenjiang Hu</a>, 
+<a href="http://frederic.loulergue.eu/index.html"> 
+Frederic Loulergue</a>, 
+<a href="http://www.info.kochi-tech.ac.jp/kmatsu/"> 
+Kiminori Matsuzaki</a>,
+<a href="http://tesson.julien.free.fr/">
+Julien Tesson</a>,
+<b>
+<a href="europar13.pdf">
+Programming with BSP Homomorphism</a></b>,
+<em>19th International European Conference on Parallel and Distributed Computing</em>
+(<a href="http://www.europar2013.org">Euro-Par 2013</a>), 
+Aachen, Germany, August 26-30, 2013. pp.446-457.
+<p>
+
+<A name="FACJ12"/>
+<li>
+<a href="http://www.ipl.t.u-tokyo.ac.jp/~emoto"> 
+Kento Emoto</a>, 
+<a href="">Sebastian Fischer</a>,
+<a href="http://research.nii.ac.jp/~hu"> 
+Zhenjiang Hu</a>, 
+<b>
+Filter-embedding Semiring Fusion for Programming with MapReduce</b>,
+<a href="http://www.springerlink.com/content/102822/">Formal Aspects of Computing</a>, 
+Springer, accepted, 2012. 
+(This is an extended version of the ESOP 2012 paper)
+<p>
+
+<A name="ESOP12"/>
+<li>
+<a href="http://www.ipl.t.u-tokyo.ac.jp/~emoto"> 
+Kento Emoto</a>, 
+<a href="">Sebastian Fischer</a>,
+<a href="http://research.nii.ac.jp/~hu"> 
+Zhenjiang Hu</a>, 
+<b>Generate, Test, and Aggregate ---A Calculation-based Framework for Systematic Parallel Programming with MapReduce</b>,
+<em>22nd European Symposium on Programming</em>
+(<a href="http://www.etaps.org/2012/esop">ESOP 2012</a>), 
+ Tallinn, Estonia, March 24 - April 1, 2012.
+<p>
+
+<A name="EuroPar11"/>
+<li>
+Yu Liu,
+<a href="http://research.nii.ac.jp/~hu"> 
+Zhenjiang Hu</a>, 
+<a href="http://www.ipl.t.u-tokyo.ac.jp/~kmatsu">
+Kiminori Matsuzaki</a>, 
+<b>Towards Systematic Parallel Programming over MapReduce</b>,
+<em>17th International
+European Conference on Parallel and Distributed Computing</em>
+(<a href="http://europar2011.bordeaux.inria.fr/">EuroPar 2011</a>), Bordeaux, France,
+August 29 - September 2, 2011.
+<p>
+
+<A name="PDCAT10"/>
+<li>
+Louis Gesbert,
+<a href="http://research.nii.ac.jp/~hu"> 
+Zhenjiang Hu</a>, 
+<a href="http://frederic.loulergue.eu/index.html"> 
+Frederic Loulergue</a>, 
+<a href="http://www.info.kochi-tech.ac.jp/~kmatsu/">
+Kiminori Matsuzaki</a>,
+<a href="http://tesson.julien.free.fr/">
+Julien Tesson</a>,
+<b>
+Systematic Development of Correct Bulk Synchronous Parallel Programs</b>,
+<em>11th International Conference on Parallel and Distributed Computing, Applications and Technologies</em>
+(<a href="http://grid.hust.edu.cn/PDCAT2010/">PDCAT 2010</a>), 
+Wuhan, China, 8-11, December 2010. 
+<p>
+
+<A name="EuroPar10"/>
+<li>
+<a href="http://www.ipl.t.u-tokyo.ac.jp/~emoto"> 
+Kento Emoto</a>, 
+<a href="http://research.nii.ac.jp/~hu"> 
+Zhenjiang Hu</a>, 
+Kazuhiko Kakehi,
+<a href="http://www.ipl.t.u-tokyo.ac.jp/~kmatsu">
+Kiminori Matsuzaki</a>, 
+<a href="http://www.ipl.t.u-tokyo.ac.jp/~takeichi"> 
+Masato Takeichi</a>,
+<a href="../pub/europar10.pdf">
+<b>Generators-of-generators Library with Optimization Capabilities in Fortress</b></a>,
+<em>16th International
+European Conference on Parallel and Distributed Computing</em>
+(<a href="http://www.europar2010.org/">EuroPar 2010</a>), Ischia, Italy, 
+August 31- September 3, 2010.
+<p>
+
+<A name="POPL09"/>
+<li>
+<a href="http://www.ipl.t.u-tokyo.ac.jp/~fooofo"> 
+Akimasa Morihata</a>,
+<a href="http://www.ipl.t.u-tokyo.ac.jp/~kmatsu">
+Kiminori Matsuzaki</a>, 
+<a href="http://www.ipl.t.u-tokyo.ac.jp/~hu"> 
+Zhenjiang Hu</a>, 
+<a href="http://www.ipl.t.u-tokyo.ac.jp/~takeichi"> 
+Masato Takeichi</a>,
+<b>The Third Homomorphism Theorem on Trees: Downward & Upward
+        Lead to Divide-and-Conquer</b>,
+<em>
+The 36th Annual ACM SIGPLAN - SIGACT Symposium on
+Principles of Programming Languages 
+</em>
+(<a href="http://www.cs.ucsd.edu/popl/09/">POPL 2009</a>),  
+Savannah, Georgia, USA, January 21-23, 2009.
+<p> 
+
+<li>
+<a href="http://www.ipl.t.u-tokyo.ac.jp/~kmatsu">
+Kiminori Matsuzaki</a>, 
+<a href="http://www.ipl.t.u-tokyo.ac.jp/~hu"> 
+Zhenjiang Hu</a>, 
+<b>Efficient Implementation of Tree Skeletons on
+Distributed-Memory Parallel Computers</b>,
+<em>Scalable Computing: Practice & Experience</em>
+(<a href="http://www.scpe.org/">SCPE</a>), 2008. To appear.
+<p>
+
+<li>
+<a href="http://www.ipl.t.u-tokyo.ac.jp/~emoto"> 
+Kento Emoto</a>, 
+<a href="http://www.ipl.t.u-tokyo.ac.jp/~kmatsu">
+Kiminori Matsuzaki</a>, 
+<a href="http://www.ipl.t.u-tokyo.ac.jp/~hu"> 
+Zhenjiang Hu</a>, 
+<a href="http://www.ipl.t.u-tokyo.ac.jp/~takeichi"> 
+Masato Takeichi</a>,
+<a href="euroPar07.pdf">
+<b>Domain-Specific Optimization Strategy for Skeleton Programs</b></a>,
+<em>13th International 
+European Conference on Parallel and Distributed Computing</em>
+(<a href="http://europar2007.irisa.fr/">EuroPar 2007</a>), IRISA, Rennes, France, 
+August 28-31, 2007.
+<p>
+
+<li>
+<a href="http://www.ipl.t.u-tokyo.ac.jp/~emoto"> 
+Kento Emoto</a>, 
+<a href="http://www.ipl.t.u-tokyo.ac.jp/~hu"> 
+Zhenjiang Hu</a>, 
+<a href="http://www.ipl.t.u-tokyo.ac.jp/~kaz"> 
+Kazuhiko Kakehi</a>, 
+<a href="http://www.ipl.t.u-tokyo.ac.jp/~takeichi"> 
+Masato Takeichi</a>,
+<a href="../pub/ijpp07.pdf">
+<b>A Compositional Framework for Developing Parallel Programs on Two
+Dimensional Arrays</b></a>,
+<em>International Journal of Parallel Programming</em>
+(<a href="http://springerlink.metapress.com/content/1573-7640/">IJPP</a>), Springer, to appear.
+<p>
+
+<li>
+Kazutaka Morita</a>, 
+<a href="http://www.ipl.t.u-tokyo.ac.jp/~fooofo"> 
+Akimasa Morihata</a>,
+<a href="http://www.ipl.t.u-tokyo.ac.jp/~kmatsu">
+Kiminori Matsuzaki</a>, 
+<a href="http://www.ipl.t.u-tokyo.ac.jp/~hu"> 
+Zhenjiang Hu</a>, 
+<a href="http://www.ipl.t.u-tokyo.ac.jp/~takeichi"> 
+Masato Takeichi</a>,
+<a href="../pub/pldi07.pdf">
+<b>Automatic Inversion Generates Divide-and-Conquer Parallel Programs</b><a>,
+<em>ACM SIGPLAN 2007 Conference on Programming Language Design and Implementation
+</em>
+(<a href="http://ties.ucsd.edu/PLDI/">PLDI 2007</a>),  
+San Diego, CA, USA, June 10-13, 2007. pp.146-155.
+<p> 
+
+<li>
+<a href="http://www.ipl.t.u-tokyo.ac.jp/~kmatsu">
+Kiminori Matsuzaki</a>, 
+<a href="http://www.ipl.t.u-tokyo.ac.jp/~hu"> 
+Zhenjiang Hu</a>, 
+<a href="http://www.ipl.t.u-tokyo.ac.jp/~takeichi"> 
+Masato Takeichi</a>,
+<b><a href="../pub/spaa06.pdf">Towards Automatic Parallelization of Tree Reductions in Dynamic
+Programming</a></b>,  
+<em>18th ACM Symposium on Parallelism in Algorithms and Architectures</em>
+(<a href="http://www.cs.jhu.edu/~spaa/2006/">SPAA 2006</a>),
+Cambridge, MA, USA, July 30 - August 2, 2006. pp.39-48.
+<p>
+
+<li>
+<a href="http://www.ipl.t.u-tokyo.ac.jp/~kmatsu">
+Kiminori Matsuzaki</a>, 
+<a href="http://www.ipl.t.u-tokyo.ac.jp/~hu"> 
+Zhenjiang Hu</a>, 
+<a href="http://www.ipl.t.u-tokyo.ac.jp/~takeichi"> 
+Masato Takeichi</a>,
+<a href="../pub/paraComp06.pdf">
+<b>Parallel Skeletons for Manipulating General Trees</b></a>, 
+<em><a href="http://www.elsevier.com/wps/find/journaldescription.cws_home/505617/description#description">Parallel Computing</a></em>, Vol.32, No.7-8,
+Elsevier, 2006. pp.590-603.
+<p>
+
+<li>
+<a href="http://www.ipl.t.u-tokyo.ac.jp/~emoto"> 
+Kento Emoto</a>, 
+<a href="http://www.ipl.t.u-tokyo.ac.jp/~kmatsu">
+Kiminori Matsuzaki</a>, 
+<a href="http://www.ipl.t.u-tokyo.ac.jp/~hu"> 
+Zhenjiang Hu</a>, 
+<a href="http://www.ipl.t.u-tokyo.ac.jp/~takeichi"> 
+Masato Takeichi</a>,
+<b><a href="../pub/europar06.pdf">Surrounding Theorem: Developing Parallel Programs for Matrix-Convolutions</a></b>,  
+<em>European Conference on Parallel Computing</em>
+(<a href="http://www.europar2006.de/">EuroPar 2006</a>),
+Dresden, Germany, August 29 - September 2, 2006. LNCS 4128, Springer. pp.605-614.
+<p>
+
+<li>
+<a href="http://www.ipl.t.u-tokyo.ac.jp/~kmatsu">
+Kiminori Matsuzaki</a>, 
+<a href="http://www.ipl.t.u-tokyo.ac.jp/~emoto"> 
+Kento Emoto</a>, 
+<a href="http://ipl.cs.uec.ac.jp/~iwasaki/"> 
+Hideya Iwasaki</a>, 
+<a href="http://www.ipl.t.u-tokyo.ac.jp/~hu"> 
+Zhenjiang Hu</a>, 
+<a href="../pub/infoScale06.pdf">
+<b>A Library of Constructive Skeletons for Sequential Style of Parallel Programming (Invited Paper)</b></a>,  
+<em>First International Conference on Scalable Information Systems 
+</em>
+(<a href="http://www.infoscale.org/">InfoScale 2006</a>),
+Hong Kong, May 29 - June 1, 2006.
+<p>
+
+<li>
+<a href="http://www.ipl.t.u-tokyo.ac.jp/~kmatsu">
+Kiminori Matsuzaki</a>, 
+<a href="http://www.ipl.t.u-tokyo.ac.jp/~hu"> 
+Zhenjiang Hu</a>, 
+<a href="http://www.ipl.t.u-tokyo.ac.jp/~kaz"> 
+Kazuhiko Kakehi</a>, 
+<a href="http://www.ipl.t.u-tokyo.ac.jp/~takeichi"> 
+Masato Takeichi</a>,
+<a href="http://www.worldscinet.com/ppl/15/1503/S0129626405002246.html"><b>Systematic Derivation of Tree Contraction Algorithms</b></a>,  
+<em>Parallel Processing Letters</em>,
+Vol. 15, No. 3, 2005. pp.321-336. 
+<p>
+
+<li>
+<a href="http://www.comp.nus.edu.sg/~xun/"> 
+Dana Na Xu</a>, 
+<a href="http://www.comp.nus.edu.sg/~khoosc/"> 
+Siau-Cheng Khoo</a>, 
+<a href="http://www.ipl.t.u-tokyo.ac.jp/~hu"> 
+Zhenjiang Hu</a>,
+<a href="../pub/aplas04-xu.pdf">
+<b>PType System : A Featherweight Parallelizability Detector</b></a>,
+<em>Second ASIAN Symposium on Programming Languages and Systems</em>
+(<a href="http://www.comp.nus.edu.sg/~aplas/">APLAS 2004</a>), 
+Taipei, Taiwan, November 4-6, 2004. LNCS 3302, Springer Verlag. pp.197-212.
+<p>
+
+<Li>
+<a href="http://www.ipl.t.u-tokyo.ac.jp/~kmatsu">
+Kiminori Matsuzaki</a>, 
+<a href="http://www.ipl.t.u-tokyo.ac.jp/~kaz"> 
+Kazuhiko Kakehi</a>, 
+<a href="http://ipl.cs.uec.ac.jp/~iwasaki/"> 
+Hideya Iwasaki</a>, 
+<a href="http://www.ipl.t.u-tokyo.ac.jp/~hu"> 
+Zhenjiang Hu</a>, 
+Yoshiki Akashi,
+<a href="../pub/euroPar04.pdf">
+<b>A Fusion-Embedded Skeleton Library</b></a>, 
+<em>International Conference on Parallel and Distributed Computing</em>
+(<a href= "http://www.di.unipi.it/europar04/">EuroPar 2004</a>),
+Pisa, Italy, 31st August - 3rd September, 2004. LNCS 3149, Spinger Verlag.
+pp.644-653.
+<p>
+
+<li>
+<a href="http://ipl.cs.uec.ac.jp/~iwasaki/"> 
+Hideya Iwasaki</a>, 
+<a href="http://www.ipl.t.u-tokyo.ac.jp/~hu"> 
+Zhenjiang Hu</a>, 
+<a href="../pub/ijpp04.pdf">
+<b>A New Parallel Skeleton for General Accumulative Computations</b></a>, 
+<em>International Journal of Parallel Programming</em>, 
+32 (5): 389-414, October 2004. 
+<p>
+
+<li> 
+<a href="http://www.ipl.t.u-tokyo.ac.jp/~kmatsu">
+Kiminori Matsuzaki</a>, 
+<a href="http://www.ipl.t.u-tokyo.ac.jp/~hu">
+Zhenjiang Hu</a>, 
+<a href="http://www.ipl.t.u-tokyo.ac.jp/~takeichi">
+Masato Takeichi</a>, 
+<a href="../pub/europar03.pdf"> 
+<b>Parallelization with Tree Skeletons</b></a>,
+<em>International Conference on Parallel and Distributed
+Computing</em> (<a href="http://europar-itec.uni-klu.ac.at/">Euro-Par 2003</a>), 
+Klagenfurt, Austria, 26th - 29th August 2003. Lecture Notes in Computer
+Science 2790, Springer Verlag. pp.789-798.
+An <a href="metr03-21.pdf">extended version</a> 
+appears as Technical Report METR 2003-21, Department of Mathematical
+Informatics, University of Tokyo, 2003. 
+<p>
+
+<li> 
+<a href="http://www.ipl.t.u-tokyo.ac.jp/~hu">Zhenjiang Hu</a>, 
+<a href="http://ipl.cs.uec.ac.jp/~iwasaki">Hideya Iwasaki</a>, 
+<a href="http://www.ipl.t.u-tokyo.ac.jp/~takeichi">Masato Takeichi</a>, 
+<a href="http://www.ipl.t.u-tokyo.ac.jp/~hu/pub/esop02.ps">
+<b>An Accumulative Parallel Skeleton for All</b></a>
+</a>,
+<em>11th European Symposium on Programming</em>
+(<a href="http://www.trusted-logic.fr/esop2002/">
+ESOP 2002</a>), Grenoble, France, April 8 - 10, 2002.
+Lecture Notes in Computer Science 2305, Springer Verlag. pp.83-97.
+<!--Extended version appears as 
+Technical Report METR 01-05</a>, University of Tokyo. September
+2001.
+---> 
+<p> 
+
+<li> 
+<a href="http://www.comp.nus.edu.sg/~chinwn/">Wei-Ngan Chin</a>,  
+<a href="http://www.comp.nus.edu.sg/~khoosc/">Siau-Cheng Khoo</a>,
+<a href="http://www.ipl.t.u-tokyo.ac.jp/~hu">Zhenjiang Hu</a>, 
+<a href="http://www.takeichi.t.u-tokyo.ac.jp/">Masato Takeichi</a>,
+<a href="http://www.ipl.t.u-tokyo.ac.jp/~hu/pub/sas00.ps.gz">
+<b>Deriving Parallel Codes via Invariants</b></a>, 
+<em>International Static Analysis Symposium</em> 
+(<a href="http://www.cis.ksu.edu/santos/sas/call.html">SAS2000</a>),
+University of California, Santa Barbara, 29 June-1 July, 2000.
+LNCS 1824, Springer Verlag. pp. 75--94.<p> 
+
+<li> 
+<a href="http://www.ipl.t.u-tokyo.ac.jp/~hu">Zhenjiang Hu</a>, 
+<a href="http://www.takeichi.t.u-tokyo.ac.jp/">Masato Takeichi</a>,
+Hideya Iwasaki, 
+<a href="http://www.ipl.t.u-tokyo.ac.jp/~hu/pub/pepm99.ps.gz">
+<b>Diffusion: Calculating Efficient Parallel Programs</b></a>,
+<em>1999 ACM SIGPLAN Workshop on Partial Evaluation and
+Semantics-Based Program Manipulation</em> 
+(<a href="http://www.brics.dk/~pepm99/">PEPM'99</a>).
+San Antonio, Texas, January 22-23, 1999, pp. 85-94. 
+<p> 
+
+<li> 
+<a href="http://www.ipl.t.u-tokyo.ac.jp/~hu">Zhenjiang Hu</a>, 
+<a href="http://www.takeichi.t.u-tokyo.ac.jp/">Masato Takeichi</a>,
+<a href="http://www.ipl.t.u-tokyo.ac.jp/~hu/pub/ppl98.ps.gz">
+<b>Calculating an Optimal Homomorphic Algorithm
+for Bracket Matching</b></a>,
+<em>Parallel Processing Letters</em>. Vol. 9, No. 3, 1999. pp. 335-345.
+<p>
+
+<li> 
+<a href="http://www.comp.nus.edu.sg/~chinwn/">Wei-Ngan Chin</a>, 
+Akihiko Takano,
+<a href="http://www.ipl.t.u-tokyo.ac.jp/~hu">Zhenjiang Hu</a> , 
+<a href="http://www.comp.nus.edu.sg/~chinwn/iccl98.ps">
+<b>Parallelization via Context Preservation</b>
+</a>,
+in <em>IEEE Computer Society 
+            International Conference on Computer Languages</em>
+(<a href="http://www.math.luc.edu/iccl98/">ICCL'98</a>),
+Loyola University Chicago, Chicago, USA, May 1998. IEEE Press.<p> 
+
+<li> 
+<a href="http://www.ipl.t.u-tokyo.ac.jp/~hu">Zhenjiang Hu</a> , 
+<a href="http://www.takeichi.t.u-tokyo.ac.jp/">Masato Takeichi</a>, 
+<a href="http://www.comp.nus.edu.sg/~chinwn/">Wei-Ngan Chin</a>,  
+<a href="http://www.ipl.t.u-tokyo.ac.jp/~hu/pub/popl98.ps.gz">
+<b>Parallelization in Calculational Forms</b>
+</a>,
+<em>25th ACM SIGPLAN-SIGACT Symposium on
+Principles of Programming Languages</em>
+(<a
+href="http://cm.bell-labs.com/cm/cs/who/dbm/POPL98/index.html">POPL'98</a>), 
+San Diego, California, USA, January 1998, pp. 316-328. ACM Press.<p> 
+
+<li> 
+<a href="http://www.ipl.t.u-tokyo.ac.jp/~hu">Zhenjiang Hu</a>, 
+Hideya Iwasaki, 
+<a href="http://www.takeichi.t.u-tokyo.ac.jp/">Masato Takeichi</a>,
+<a href="http://www.ipl.t.u-tokyo.ac.jp/~hu/pub/toplas97.ps.gz">
+<b>Formal Derivation of Efficient Parallel Programs by Construction 
+of List Homomorphisms</b></a>, 
+<em>ACM Transactions on Programming Langauges and Systems</em>, 
+19(3), May 1997, pp.444-461.<p> 
+
+<li> 
+<a href="http://www.ipl.t.u-tokyo.ac.jp/~hu">Zhenjiang Hu</a>, 
+Hideya Iwasaki, 
+<a href="http://www.takeichi.t.u-tokyo.ac.jp/">Masato Takeichi</a>,
+<a href="http://www.ipl.t.u-tokyo.ac.jp/~hu/pub/mfcs96.ps.gz">
+<b>Construction of List Homomorphisms by Tupling and Fusion</b></a>,
+<em>21st International Symposium on Mathematical Foundations
+of Computer Science </em> 
+(<a href="http://WWW.IPIPAN.Waw.PL/conferences/mfcs96">MFCS '96</a>), 
+ Cracow, September 1996, LNCS 1113, pp.407-418. Springer-Verlag.<p> 
+
+<li> 
+<a href="http://www.ipl.t.u-tokyo.ac.jp/~hu">Zhenjiang Hu</a>, 
+Hideya Iwasaki, 
+<a href="http://www.takeichi.t.u-tokyo.ac.jp/">Masato Takeichi</a>,
+<a href="http://www.ipl.t.u-tokyo.ac.jp/~hu/pub/euroPar96.ps.gz">
+<b>Formal Derivation of Parallel Program for 2-Dimensional Maximum Segment Sum Problem</b></a>,
+<em>The Annual European conference on Parallel Processing </em> 
+(<a href="http://www.ens-lyon.fr/LIP/europar96">Euro-Par'96</a>), 
+<!--Workshop #5: Parallel Languages and Programming,-->
+ LIP, ENS Lyon, France, August 1996, LNCS 1123, pp.553-562. 
+Springer-Verlag.   <p> 
+
+</UL
+
+<P>
+More papers are available <a href="../pub/tech.html">here</a>.
+<P>
+<HR>
+
+<a name="software"/>
+<h2>Software</h2>
+
+<UL>
+
+<LI> <a href="http://www.ipl.t.u-tokyo.ac.jp/sketo/">SkeTo</a>: 
+A C++ Library for Efficient Parallel Programming with Parallel Skeletons. </LI>
+
+</UL>
+
+<HR>
+Maintained by Zhenjiang Hu. Last modified in 2006.
+</BODY>
+</HTML>

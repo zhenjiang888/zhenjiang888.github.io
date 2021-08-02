@@ -1,0 +1,33 @@
+Dear XXX,
+
+We are happy to inform you that your paper has been accepted for
+presentation at AWFS 2009.
+
+We are pleased to inform you that your submission, entitled
+
+   XXXXXXX
+
+has been accepted as a regular presentation at 6th Aisan Workshop on
+Foundations of Software (AWFS 2009). This year, we accept 17 papers,
+14 for regular persentation and 3 for short presentation.
+
+Please carefully revise your paper and submit its final version via
+the easychair system (by updating your previous submission) no later
+than March 1 (Sun). 
+
+All papers will be included in the workshop proceedings, which will be
+distributed at the workshop and published as a technical report of the
+GRACE Center of National Institute of Informatics. Selected papers
+presented at the workshop will be invited after the workshop to submit
+for publication of a full version in a special issue of the Electronic
+Notes in Theoretical Computer Science.
+
+Please remember that at least one of the authors of your paper must
+register and attend AWFS 2009. As soon as the workshop program is
+finalized, we will send you complete details on date, time, and
+facilities available for your presentation. Information about workshop
+registration, visa, and hotels can be found in the workshop web site:
+
+
+
+

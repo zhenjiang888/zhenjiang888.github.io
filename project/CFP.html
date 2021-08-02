@@ -1,0 +1,304 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+<HEAD>
+<TITLE>Project on Calculation Programming</TITLE>
+<META http-equiv="Content-Type" content="text/html; charset=japanese-iso-8bit-unix">
+</HEAD>
+
+<BODY bgcolor="white" text="black" link="blue" vlink="red"
+      background="http://www.ipl.t.u-tokyo.ac.jp/~hu/pub/bk500.jpg">
+
+<TABLE border=0 cellspacing=20>
+<TR>
+<TH> <img width=150 src="calculator.gif"></TH>
+<TD> <h1>Program Transformation and Optimization in Calculational Form</h1></TD>
+</TR>
+<TABLE>
+<a href="#papers">Selected Papers</a> |
+<a href="#software">Software</a>
+<HR>
+
+Correctness-preserving program transformation plays an important role
+in compiler optimization in functional programming, and it calls for
+a more systematic study. We have demonstrated that many 
+important program transformations
+such as <em>deforestation</em> (or <em>fusion</em>), <em>
+tupling</em>, <em>accumulation</em>, and
+<em>IO swapping calculation</em>,  can be effectively
+and elegantly formalized in <em>calculational</em> form. In general, 
+program transformation in calculational form enjoys the nice
+properties of modularity and cheap implementation, which can be
+embedded in compilers of functional languages.
+<p>
+In addition, program calculation is very helpful in developing <em>efficient</em> algorithms. We
+have developed some systematic derivation strategies with which we
+derived several new algorithms: a new divide-and-conquer
+algorithms for solving two-dimensional version of maximal segment sum
+problem, a novel efficient parallel program for bracket
+matching, a completely new algorithm for computing frequent
+sets in data mining. In particular, we proposed a
+generic algorithm for solving the maximum marking problems, 
+a class of useful optimization problems.
+
+<HR>
+
+<a name="papers"/>
+<h2>Selected Papers</h2>
+
+<UL>
+
+<a name="JFP12"/>
+<li>
+<a href="http://www.riec.tohoku.ac.jp/~morihata/"> 
+Akimasa Morihata</a>,
+Kazuhiko Kakehi, 
+<a href="http://research.nii.ac.jp/~hu"> 
+Zhenjiang Hu</a>, 
+Masato Takeichi</a>,
+<b>Manipulating Accumulative Functions by Swapping Call-time and Return-time Computations</b>,
+<a href="http://journals.cambridge.org/action/displayJournal?jid=JFP"><em>Journal of Functional Programming</em></a>, accepted, 2012.
+<p>
+
+<A name="AMAST10"/>
+<li>
+<a href="http://tesson.julien.free.fr/">
+Julien Tesson</a>,
+Hideki Hashimoto,
+<a href="http://research.nii.ac.jp/~hu"> 
+Zhenjiang Hu</a>, 
+<a href="http://frederic.loulergue.eu/index.html"> 
+Frederic Loulergue</a>, 
+<a href="http://www.ipl.t.u-tokyo.ac.jp/~takeichi"> 
+Masato Takeichi</a>,
+<a href="../pub/amast10.pdf">
+<b>
+Prorgam Calculation in Coq</b></a>,
+<em> Thirteenth International Conference on Algebraic Methodology And Software Technology</em>
+(<a href="http://mpc-amast2010.fsg.ulaval.ca/amast/index.html">AMAST 2010</a>), 
+Quebec City, Canada, 23-26 June 2010. 
+<p>
+
+<A name="POPL09"/>
+<li>
+<a href="http://www.ipl.t.u-tokyo.ac.jp/~fooofo"> 
+Akimasa Morihata</a>,
+<a href="http://www.ipl.t.u-tokyo.ac.jp/~kmatsu">
+Kiminori Matsuzaki</a>, 
+<a href="http://www.ipl.t.u-tokyo.ac.jp/~hu"> 
+Zhenjiang Hu</a>, 
+<a href="http://www.ipl.t.u-tokyo.ac.jp/~takeichi"> 
+Masato Takeichi</a>,
+<b>The Third Homomorphism Theorem on Trees: Downward & Upward
+        Lead to Divide-and-Conquer</b>,
+<em>
+The 36th Annual ACM SIGPLAN - SIGACT Symposium on
+Principles of Programming Languages 
+</em>
+(<a href="http://www.cs.ucsd.edu/popl/09/">POPL 2009</a>),  
+Savannah, Georgia, USA, January 21-23, 2009. pp.177-185.
+<p> 
+
+<li>
+<a href="http://www.ipl.t.u-tokyo.ac.jp/~hu"> 
+Zhenjiang Hu</a>, 
+<a href="http://www.ipl.t.u-tokyo.ac.jp/~yokoyama"> 
+Tetsuo Yokoyama</a>, 
+<a href="http://www.ipl.t.u-tokyo.ac.jp/~takeichi"> 
+Masato Takeichi</a>,
+<a href="../pub/GTTSE05.pdf">
+<b>Program Optimizations and Transformations in 
+Calculational Form</b></a>, 
+<em>Summer School on Generative and Transformational Techniques 
+in Software Engineering</em> 
+(<a href="http://wiki.di.uminho.pt/twiki/bin/view/GTTSE/WebHome">GTTSE 2005</a>),
+Braga, Portugal, 4-7 July, 2005. (<a href="GTTSE05-slides.pdf">Slides</a>),
+LNCS 4143, 2006. Springer. pp.139-164.
+<p>
+
+<li>
+<a href="http://www.ipl.t.u-tokyo.ac.jp/~fooofo"> 
+Akimasa Morihata</a>
+<a href="http://www.ipl.t.u-tokyo.ac.jp/~kaz"> 
+Kazuhiko Kakehi</a>, 
+<a href="http://www.ipl.t.u-tokyo.ac.jp/~hu"> 
+Zhenjiang Hu</a>, 
+<a href="http://www.ipl.t.u-tokyo.ac.jp/~takeichi"> 
+Masato Takeichi</a>,
+<b>Swapping Arguments and Results of Recursive Functions</b>, 
+8th International Conference on Mathematics of Program Construction
+(<a
+    href="http://cs.ioc.ee/mpc-amast06/mpc/">MPC 2006</a>),
+Kuressaare, Estonia, 3-5 July 2006. LNCS 4014, Springer. pp.379-396.
+<p>
+
+<li>
+<a href="http://www.ipl.t.u-tokyo.ac.jp/~yokoyama"> 
+Tetsuo Yokoyama</a>, 
+<a href="http://www.ipl.t.u-tokyo.ac.jp/~hu"> 
+Zhenjiang Hu</a>, 
+<a href="http://www.ipl.t.u-tokyo.ac.jp/~takeichi"> 
+Masato Takeichi</a>,
+<a href="../pub/ipl04-yokoyama.pdf">
+<b>Deterministic Second-order Patterns</b></a>, 
+<em>Information Processing Letters</em>, 
+Vol. 89, No.6,  
+<a href="http://www.elsevier.nl/locate/ipl/">Elsevier</a>,
+2004. pp. 309-314.
+<p>
+
+<li> 
+<a href="http://www.jaist.ac.jp/~mizuhito/">Mizuhito
+     Ogawa</a>,  
+<a href="http://www.ipl.t.u-tokyo.ac.jp/~hu">Zhenjiang Hu</a>, 
+<a href="http://www.ipl.t.u-tokyo.ac.jp/~sasano">Isao Sasano</a>, 
+<a href="../pub/icfp03.pdf">
+<b>Iterative-free Program Analysis</b></a>,
+<em>8th ACM SIGPLAN International Conference on Functional 
+Programming</em>, 
+(<a href="http://www-users.cs.york.ac.uk/~colin/icfp2003.html">ICFP 2003</a>),
+Uppsala, Sweden: 25-29 August 2003. ACM Press. pp.111-123.
+<p>  
+
+<li>
+<a href="http://www.ipl.t.u-tokyo.ac.jp/~yokoyama"> 
+Tetsuo Yokoyama</a>, 
+<a href="http://www.ipl.t.u-tokyo.ac.jp/~hu"> 
+Zhenjiang Hu</a>, 
+<a href="http://www.ipl.t.u-tokyo.ac.jp/~takeichi"> 
+Masato Takeichi</a>,
+<a href="../pub/lopstr03-yokoyama.pdf">
+<b>Deterministic Second-order Patterns and Its Application to Program Transformation</b></a>, 
+<em>International Symposium on Logic-based Program Synthesis and Transformation </em>  
+(<a href="http://www.cs.kuleuven.ac.be/~dtai/lopstr03/">LOPSTR 2003</a>)
+Uppsala, Sweden: 25-27 August 2003. pp.165-178. 
+Revised version appears in LNCS 3018, 2004. Springer Verlag. pp. 128-142. 
+<p>
+
+<li> 
+<a href="http://www.comp.nus.edu.sg/~chinwn/">Wei-Ngan Chin</a>,  
+<a href="http://www.ipl.t.u-tokyo.ac.jp/~hu">Zhenjiang Hu</a>, 
+<a href="http://www.ipl.t.u-tokyo.ac.jp/~hu/pub/saig02.ps">
+<b>Towards a Modular Program Derivation via Fusion and
+Tupling</b></a>, 
+<em>The First ACM SIGPLAN Conference on Generators and
+Components</em>
+(<a href="http://pli2002.cs.brown.edu/GCSESAIG/">GCSE/SAIG
+2002</a>), Pittsburgh, PA, USA, October 6-8, 2002. pp.140-155.
+Affiliated with 
+(<a href="http://pli2002.cs.brown.edu/GCSESAIG/">PLI
+2002</a>). Lecture Notes in Computer Science 2487, Springer
+Verlag. pp.140-155. 
+<p> 
+
+<li> 
+<a href="http://www.ipl.t.u-tokyo.ac.jp/~hu">Zhenjiang Hu</a>, 
+<a href="http://www.comp.nus.edu.sg/~chinwn/">Wei-Ngan Chin</a>,  
+<a href="http://www.takeichi.t.u-tokyo.ac.jp/">Masato Takeichi</a>,
+<a href="http://www.ipl.t.u-tokyo.ac.jp/~hu/pub/jflp01.ps.gz">
+<b>Calculating a New Data Mining Algorithm for Market Basket
+Analysis</b></a>, (Revised version of the paper presented at <a
+href="http://www.cs.nmsu.edu/~complog/conferences/padl00/">PADL'00</a>.)
+<em>Journal of Functional and Logic Programming</em>, October 2001.
+<p> 
+
+<li> 
+<a href="http://www.ipl.t.u-tokyo.ac.jp/~sasano">Isao Sasano</a>, 
+<a href="http://www.ipl.t.u-tokyo.ac.jp/~hu">Zhenjiang Hu</a>, 
+<a href="http://www.ipl.t.u-tokyo.ac.jp/~takeichi">Masato Takeichi</a>, 
+<a href="http://www.brl.ntt.co.jp/people/mizuhito/index.html">Mizuhito Ogawa</a>, 
+<a href="http://www.ipl.t.u-tokyo.ac.jp/~hu/pub/icfp00.ps.gz">
+<b>Make it Practical: A Generic Linear Time Algorithm for Solving
+Maximum Weightsum Problems </b></a>,
+<em>The 2000 ACM SIGPLAN International Conference on Functional
+Programming</em>, 
+(<a href="http://diwww.epfl.ch/~odersky/icfp2000/">ICFP 2000</a>),
+Montreal, Canada, 18-20 September 2000. ACM Press. pp. 137-149.
+<p>  
+
+
+<li> 
+<a href="http://www.ipl.t.u-tokyo.ac.jp/~hu">Zhenjiang Hu</a> , Hideya Iwasaki , 
+<a href="http://www.takeichi.t.u-tokyo.ac.jp/">Masato Takeichi</a>,
+<a href="http://www.ipl.t.u-tokyo.ac.jp/~hu/pub/ngc99.ps.gz">
+<b>Calculating Accumulations</b></a>, 
+<em>New Generation Computing</em>, Vol. 17, No. 2, 1999, pp.153--173.<p>
+
+<li> 
+<a href="http://www.ipl.t.u-tokyo.ac.jp/~hu">Zhenjiang Hu</a> , 
+<a href="http://www.takeichi.t.u-tokyo.ac.jp/">Masato Takeichi</a>, 
+<a href="http://www.comp.nus.edu.sg/~chinwn/">Wei-Ngan Chin</a>,  
+<a href="http://www.ipl.t.u-tokyo.ac.jp/~hu/pub/popl98.ps.gz">
+<b>Parallelization in Calculational Forms</b>
+</a>,
+<em>25th ACM SIGPLAN-SIGACT Symposium on
+Principles of Programming Languages</em>
+(<a
+href="http://cm.bell-labs.com/cm/cs/who/dbm/POPL98/index.html">POPL'98</a>), 
+San Diego, California, USA, January 1998, pp. 316-328. ACM Press.<p> 
+
+<li> 
+Akihiko Takano, 
+<a href="http://www.ipl.t.u-tokyo.ac.jp/~hu">Zhenjiang Hu</a>, 
+<a href="http://www.takeichi.t.u-tokyo.ac.jp/">Masato Takeichi</a>, 
+<a href="http://www.ipl.t.u-tokyo.ac.jp/~hu/pub/sope98.ps.gz">
+<b>Program Transformation in Calculational Form</b></a>,
+<em>ACM Computing Surveys</em>, Vol. 30, No.3, 1998. 
+A special issue for <em>1998 Symposium on Partial Evaluation</em>
+(<a href="http://www.brics.dk/~sope98/">SOPE'98</a>).<p> 
+
+<li> 
+<a href="http://www.ipl.t.u-tokyo.ac.jp/~hu">Zhenjiang Hu</a> , 
+Hideya Iwasaki, 
+<a href="http://www.takeichi.t.u-tokyo.ac.jp/">Masato Takeichi</a>, 
+Akihiko Takano, 
+<a href="http://www.ipl.t.u-tokyo.ac.jp/~hu/pub/icfp97.ps.gz">
+<b>Tupling Calculation Eliminates Multiple Data Traversals </b></a>,
+<em>2nd ACM SIGPLAN International Conference on
+Functional Programming </em>
+(<a href="http://www.fwi.uva.nl/research/func/icfp97.html">ICFP'97</a>), 
+Amsterdam, The Netherlands, June 1997, pp.164-175. ACM Press. <p>
+
+<li> 
+<a href="http://www.ipl.t.u-tokyo.ac.jp/~onoue">Yoshiyuki Onoue</a>, 
+<a href="http://www.ipl.t.u-tokyo.ac.jp/~hu">Zhenjiang Hu</a>, 
+Hideya Iwasaki,  
+<a href="http://www.takeichi.t.u-tokyo.ac.jp/">Masato Takeichi</a>,
+<a href="http://www.ipl.t.u-tokyo.ac.jp/~hu/pub/ifip97.ps.gz">
+<b>A Calculational Fusion System HYLO </b></a>,
+<em>IFIP TC 2 Working Conference on Algorithmic Languages and
+Calculi</em>. 
+Le Bischenberg, France, February 1997,  pp.76-106. Chapman&Hall.<p>
+
+<li> 
+<a href="http://www.ipl.t.u-tokyo.ac.jp/~hu">Zhenjiang Hu</a>, 
+Hideya Iwasaki, 
+<a href="http://www.takeichi.t.u-tokyo.ac.jp/">Masato Takeichi</a>,
+<a href="http://www.ipl.t.u-tokyo.ac.jp/~hu/pub/icfp96.ps.gz">
+<b>Deriving Structural Hylomorphisms from Recursive Definitions</b></a>,
+<em>ACM SIGPLAN International Conference on Functional Programming </em>
+(<a href="http://www.cs.indiana.edu/icfp96">ICFP'96</a>), 
+Philadelphia,  May 1996, pp.73-82. ACM Press. <p>
+
+</UL
+
+<P>
+More papers are available <a href="../pub/tech.html">here</a>.
+<P>
+<HR>
+
+<a name="software"/>
+<h2>Software</h2>
+
+<UL>
+
+<LI> <a href="http://www.ipl.t.u-tokyo.ac.jp/yicho/">Yicho</a>: A
+   Combinator Library for Supporting Calculational Programming. </LI>
+
+<LI><a href="http://www.ipl.t.u-tokyo.ac.jp/~onoue/hylo/">HYLO</a>: An automatic fusion calculation system (implemented in the old GHC). </LI>
+
+</UL>
+
+<HR>
+Maintained by Zhenjiang Hu. Last modified in 2006.
+</BODY>
+</HTML>

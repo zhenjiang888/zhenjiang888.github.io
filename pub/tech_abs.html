@@ -1,0 +1,140 @@
+<head>
+<title>Technique reports of Z. Hu</title>
+</head>
+
+<body>
+<h1><a name="report">Technique Reports</a></h1>
+<hr>
+
+<menu>
+<li> Z. Hu and H. Iwasaki and M. Takeichi,
+     <b>Deriving Structural Hylomorphisms from Recursive Definitions</b>,
+	<em>submitted for publication</em>,
+	October,	1995. (Extended version appears as <em>Tech.
+	<a href="http://www.ipl.t.u-tokyo.ac.jp/~hu/METR95-11.dvi">Report METR 95-11</em></a>) <p>
+
+In functional programming, small programs are often ``glued'' together
+to construct a complex program. Program fusion is an optimizing process
+whereby these small programs are fused into a single one and
+intermediate data structures are removed. Recent work has made it
+clear that the process is especially successful if the recursive
+definitions are expressed in terms of hylomorphisms. In this paper, we
+propose an algorithm which can automatically turn  
+all practical recursive definitions into structural hylomorphisms
+making program fusion be easily applied.<p>
+
+
+<li> Z. Hu and H. Iwasaki,
+	<a href="http://www.ipl.t.u-tokyo.ac.jp/~hu/Fuji95.dvi"><b>Promotional Transformation of Monadic Programs</a></b>,
+	<em>Proceedings of Fuji Int'l Workshop on Functional and Logic 
+        Programming</em>, Fuji Susono, July 1995, 
+        World Scientific Publishing Company. <p>
+
+Monads are becoming an increasingly important tool for structural
+functional programming, because they provide a uniform framework for
+describing a wide range of programming language features.
+To facilitate program transformation, Fokkinga
+derived a sufficient assumption under which there is a kind of
+so-called monadic catamorphisms which satisfy several general laws
+useful for the transformation of monadic programs. However, his
+theory is too restrictive to be applied in practise.
+In this paper, we propose a new theory on monadic catamorphism by
+moving Fokkinga's assumption on the monad to the condition on a map
+between monadic algebras so that our theory is valid for arbitrary
+monads including, for example, the state monad that is not allowed in
+Fokkinga's theory. Our theory covers Fokkinga's as a special case but
+can be applied to a wider class of monadic programs. Many examples
+will be used to illustrate our idea.  <p>
+  
+<li> Z. Hu and H. Iwasaki and M. Takeichi,
+     <a href="http://www.ipl.t.u-tokyo.ac.jp/~hu/METR95-04.dvi"><b>Making Recursions Manipulable by Constructing Medio-types</b></a>,
+	<em>Tech. Report METR 95-04</em>,
+	Faculty of Engineering, University of Tokyo,
+	June,	1995.<p>
+
+A catamorphism, generic version of our familiar foldr on lists, 
+is quite a simple recursive scheme
+associated with data type definitions.
+It plays a very important
+role in program calculation, since for it there exists a general
+transformation rule known as Promotion Theorem.  
+However, its structure is so tight that many recursions cannot be
+specified by catamorphisms because of their irregular reference to compound
+data structures. 
+In this paper, aiming at manipulating functions defined by  
+more general recursive schemes, we propose a method to factorize 
+these functions into a composition of a catamorphism
+and a type reformer based on the construction of a medio-type --
+suitable intermediate data type extracted from recursion. 
+Consequently, our method extends the applicability of transformational
+techniques specially geared to catamorphisms.
+Some examples are also given to illustrate our idea. <p>
+
+
+<li> Z. Hu and H. Iwasaki and M. Takeichi,
+	<b>Calculating Accumulations</b>, 
+	<em>submitted for publication</em>, June, 1995.<p>
+
+The accumulation strategy consists of generalizing a function by
+inclusion of an extra parameter, an accumulating parameter,
+for reusing and propagating intermediate results. It has gained a wide
+interest in the design of efficient 
+programs. In this paper, we shall formulate accumulations as 
+higher order catamorphisms, and propose several general
+transformation rules for calculating accumulations by 
+calculation-based program transformation methods. Several examples
+are given for illustration. <p>
+
+<li> Z. Hu and H. Iwasaki and M. Takeichi,
+      <a href="http://www.ipl.t.u-tokyo.ac.jp/~hu/jssst94.dvi"><b>Promotion Strategies for Parallelizing Tree Algorithms</b></a>,
+      <em>11th Conf. Proc. Jpn. Sco. for Software Sci. and Tech. </em>, 
+      Osaka, November, 1994. <p>
+
+This paper is concerned with deriving parallel programs for tree
+algorithms which are described in terms of two higher order operators:
+upwards accumulation and downwards accumulation. 
+These two operators are essentially 
+for propagating information around a tree, and form the basis
+of many tree algorithms.
+In this paper we formulate  both tree accumulations as 
+tree catamorphisms. As a result, the promotion strategies, which are general
+for catamorphisms, become also general for 
+accumulations and play an important role 
+in deriving parallel programs for these tree algorithms.<p>
+
+<li> Z. Hu and H. Iwasaki and M. Takeichi,
+	<b>Deriving Efficient Functional Programs by
+Constructing Medio-types</b>,
+	<em>Proceedings of Workshop on Functional Programming JSSST'94</em>, 
+        Kyoto, November, 1994, Modern Science Publisher. <p>
+<li> Z. Hu and H. Iwasaki and M. Takeichi,
+     <b>Catamorphism-Based Transformation of Functional
+		Programs</b>,
+	<em>Tech. Report METR 94-06</em>, Faculty of Engineering,
+		University of Tokyo,
+	June,	1994.<p>
+<li> Z. Hu and Y. Sun,
+	<b>Algebraic Approach to the Synthesis of Systolic
+Arrays</b>,
+	<em>Proceedings of German-Chinese Electrocity Week '91</em>, 
+	VDE Verlag Dusseldorf, Germany, 1991. <p>
+<li> Z. Hu and Y. Sun,
+	<b>Functional Approach to the Synthesis of Systolic
+Arrays</b>,
+	<em>Proceedings of 2nd Int'l Conf. for Young Computer Scientists</em>,
+	Beijing, China, July, 1991. <p>
+<li> Z. Hu and Y. Sun,
+	<b>Functional Approach to the Synthesis of Logic</b>,
+	<em>Proceedings  of 4th Int'l Symp. on IC Design, Implementation and
+Application</em>, Singapore, 1991. <p>
+ 
+</menu>
+
+<hr>
+<a href="/students.html">
+<img src="/icons/back.gif"></A>Back to IPL Students' Page<p>
+
+<address>
+Z. Hu(hu@ipl.t.u-tokyo.ac.jp)
+</address>
+</body>

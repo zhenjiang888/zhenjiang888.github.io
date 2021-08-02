@@ -1,0 +1,32 @@
+uZ–@Œ¾Œêv’†ŠÔƒeƒXƒg‚Q i•½¬‚P‚Q”N‚P‚QŒ‚P‚W“új
+
+Šw¶”Ô†F_________________________@@–¼F_____________________________
+
+–â‘è‚Pi‚Q‚Ofj‹³‰È‘‚Ì}6.2‚ÌŒ¾Œê‚É‚¨‚¢‚Ä
+   cmdexec (While e c) = cmdexec (If e (Block [] [c, While e c], Skip))
+‚Å‚ ‚é‚±‚Æ‚ğØ–¾‚¹‚æB
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+–â‘è‚Qiƒ{[ƒiƒX‚P‚Ofj‰ŠúŠÂ‹«‚ğr0A‰Šúó‘Ô‚ğ	s0‚Æ‚·‚éBŸ‚ÌƒvƒƒOƒ‰ƒ€‚ğÀs‚µ‚½Œã‚Ì‹L‰¯ˆæ‚Ìó‘Ô‚ğ¦‚¹B
+   begin var i,s; 
+         i:=10; s:=0; 
+         while i>0 do 
+            begin s:=s+i; i:=i-1 end; 
+         result:=s 
+   end

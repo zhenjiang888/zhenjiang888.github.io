@@ -1,0 +1,163 @@
+<HTML><HEAD><TITLE>AWFS 2009</TITLE></HEAD>
+<FONT face=arial>
+<BODY background=./bg.jpg>
+<CENTER><BR>
+<H2><FONT color=red>AWFS 2009</FONT></H2>
+<H1><FONT color=camel>Sixth Asian Workshop on Foundations of Software</FONT></H1>
+<FONT color=darkblue size=4><a href="http://grace-center.jp/en/index.html">GRACE Center</a> of <a href="http://www.nii.ac.jp/index.shtml.en">National Institute of Informatics</a>, Tokyo, Japan<BR>
+April 6-8, 2009</FONT><P>
+<H2><FONT color=red>List of Talks</FONT></H2>
+</CENTER>
+<HR>
+
+A detailed workshop program will appear soon.
+
+<h3> Invited Talks</h3>
+<ul>
+
+<li><em>Functional Documentation Using Tabular Expressions<br>
+- An Integrated Approach to the Use of Mathematics in Computer System Design -</em><br>
+David Lorge Parnas (Emeritus Professor, McMaster University)<p>
+
+<li><em>Introduction to GRACE Center</em><br>
+Shinichi Honiden (National Institute of Informatics)<p>
+
+<li><em>Functional Programming, Workflow and Cloud</em> <br>
+Yike Guo (Imperial College London)
+
+</ul>
+
+<h3>Presentations of Regular Papers</h3>
+
+<ul>
+<li><em>A Revised Pointer Logic for Verification of Pointer Programs</em><br>
+Zhaopeng Li (University of Science and Technology of China), 
+Yiyun Chen (University of Science and Technology of China), 
+Baojian Hua (University of Science and Technology of China),
+Zhifang Wang (University of Science and Technology of China)<p>
+
+<li><em>On the Computation of Quotients and Factors of Regular Languages</em><br>
+Mircea Marin (University of Tsukuba),
+Temur Kutsia (Johannes Kepler University)<p>
+
+<li><em>From Bidirectional Model Transformation to Model Synchronization</em><br>
+Yingfei Xiong (Universit of Tokyo),
+Zhenjiang Hu (National Institute of Informatics),
+Masato Takeichi (University of Tokyo)<p>
+
+<li><em>Formalization and Specification of Geometric Knowledge Objects</em><br>
+Dongming Wang (CNRS / Beihang University)<p>
+
+<li><em>The Specification Construction of a Service-Oriented System Using
+the SOFL Method</em><br>
+Weikai Miao (Hosei University), 
+Shaoying Liu (Hosei University)<p>
+
+<li><em>User-oriented Preparative Treatments for Requirements Engineering</em><br>
+Fei He (waseda University),
+Yoshiaki Fukazawa (Waseda University)<p>
+
+<li><em>Consistency of Networks of Components</em> (short)<br>
+Zhiying Liu (University of Limerick), 
+David Lorge Parnas (Emeritus Professor, McMaster University), 
+Baltasar Trancon y Widemann (Universitat Bayreuth)<p>
+
+<li><em>Porting GNU Compiler Collection and GNU Binary Utilities for C16X</em>
+(short) <br>
+Le Ton Chanh (Ho Chi Minh City University of Technology), 
+Le Minh Vu (Ho Chi Minh City University of Technology),
+Nguyen Hua Phung (Ho Chi Minh City University of Technology)<p>
+
+<li><em>A Dynamic Description Logic for the Three-level RBAC model</em> (short)<br>
+Li Ma (Beihang University), 
+Shilong Ma (Beihang University), 
+Yuefei Sui (Chinese Academy of Sciences), 
+Cungen Cao (Chinese Academy of Sciences), 
+Jianghua Lv (Beihang University) 
+
+</ul>
+
+<h3>Short Presentations of Published Papers</h3>
+
+<ul>
+
+<li><em>The Third Homomorphism Theorem on Trees Upward & Downward Leads to
+Divide-and-Conquer</em><br>
+Akimasa Morihata (University of Tokyo),
+Kiminori Matsuzaki (University of Tokyo),
+Zhenjiang Hu (National Institute of Informatics)
+Masato Takeichi (University of Tokyo)<p>
+
+<li><em>Concern Based Approach to Generating SCR Requirement Specification: a
+Case Study</em><br> 
+Ying Jin (Jilin University), 
+Weiping Hao (Jilin University), 
+Pengfei Ma (Jilin University)<p>
+
+<li><em>Copy-on-Write in the PHP Language</em><br>
+Akihiko Tozawa (IBM Research), 
+Michiaki Tatsubori (IBM Research),
+Tamiya Onodera (IBM Research),
+Yasuhiko Minamide (University of Tsukuba)<p>
+
+<li><em> Algebra of Programming using Dependent Types</em><br>
+Shin-Cheng Mu (Academia Sinica, Taiwan), 
+Hsiang-Shang Ko (National Taiwan University),
+Patrik Jansson (Chalmers University of Technology & University of Gothenburg)<p>
+
+<li><em>Translation and Optimization for a Core Calculus with Exceptions</em><br>
+Cristina David (National University of Singapore),
+Cristian Gherghina (National University of Singapore),
+Wei-Ngan Chin (National University of Singapore)<p>
+
+<li><em>A Global-to-Local Approach for Rigorous Development of
+Distributed Systems with Coordinated Exception Handling</em><br>
+Chao Cai (Peking University),
+Zongyan Qiu (Peking University)<p>
+
+<li><em>Finding Bugs in AspectJ is not Difficult</em><br>
+Haihao Shen (Shanghai Jiao Tong University), 
+Sai Zhang (Shanghai Jiao Tong University), 
+Jianjun Zhao (Shanghai Jiao Tong University)<p>
+
+<li><em>AOJS: Aspect-Oriented JavaScript Programming Framework</em><br>
+Hironori Washizaki (Waseda University), 
+Atsuto Kubo, Tomohiko Mizumachi, Kazuki Eguchi, Yoshiaki Fukazawa, Nobukazu Yoshioka, Hideyuki Kanuka, Toshihiro Kodaka, Nobuhide Sugimoto, Yoichi Nagai and Rieko Yamamoto
+
+</ul>
+
+<h3>Short Presentations of Ongoing Work</h3>
+
+<ul>
+
+<li><em>Linguistics as Physics</em><br>
+Masahiko Sato (Kyoto University)<p>
+
+<li>Interfacing with C Polymorphically</em><br>
+Atsushi Ohori (Tohoku University), 
+Katsuhiro Ueno (Tohoku University)<p>
+
+<li><em>Combining Formal Engineering Methods and Democracy for Software
+Quality Assurance</em><br>
+Shaoying Liu (Hosei University)<p>
+
+<li><em>Bidirectionalizing Structural Recursive Transformation on Graphs</em><br>
+Soichiro Hidaka (National Institue of Informatics),
+Zhenjiang Hu (National Institue of Informatics),
+Hiroyuki Kato (National Institue of Informatics),
+Keisuke Nakano (The University of Electro-Communications)<p>
+
+<li><em>Rewriting XQuery to Avoid Redundant Expressions based on Static
+Emulation of XML Store</em><br>
+Hiroyuki Kato (National Institue of Informatics),
+Soichiro Hidaka (National Institue of Informatics),
+Zhenjiang Hu (National Institue of Informatics),
+Yasunori Ishihara (Oaska University)
+Keisuke Nakano (The University of Electro-Communications)<p>
+
+<li><em>Sharp Program Analysis and Test Data Generation</em><br>
+Jian Zhang (Chinese Academy of Sciences)
+</ul>
+
+<HR>
+

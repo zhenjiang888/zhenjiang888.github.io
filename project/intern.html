@@ -1,0 +1,347 @@
+<!Doctype HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+<HEAD>
+<TITLE>Some Research Topics for Intern Students</TITLE>
+<META http-equiv="Content-Type" content="text/html; charset=japanese-iso-8bit-unix">
+</HEAD>
+
+<BODY bgcolor="white" text="black" link="blue" vlink="red"
+      background="http://research.nii.ac.jp/~hu/pub/bk500.jpg">
+
+<h1>Some Research Topics for Intern Students</h1>
+
+<!--<a href="#papers">Selected Papers</a> |
+<a href="#software">Software</a>
+<HR>
+-->
+
+<a href="http://research.nii.ac.jp/~hu">Zhenjiang Hu</a> welcomes
+excellent students to do short-term <a href="http://www.nii.ac.jp/Internship/Guidelines/1st_call_of_2013_internship_webpage.html">intern research at NII</a> on the following specific 
+topics:
+<ul>
+<li> <a href="#t1">Systematic Parallel Programming using Hadoop</a></li>
+<li> <a href="#t3">Bidirectional Model Transformation in Software Engineering</a></li>
+<li> <a href="#t5">Adaptive (Incremental) Bidirectional Graph Transformation</a></li>
+<!--<li> <a href="#t4">A Generic GUI for Supporting Bidirectional Model-driven Software Development</a></li>
+-->
+</ul>
+
+<HR>
+
+<A name="t1"/>
+<h2>Systematic Parallel Programming using Hadoop</h2>
+
+<a href="http://en.wikipedia.org/wiki/Apache_Hadoop">Hadoop</a> is a
+software framework that supports data-intensive distributed
+applications, which enables applications to work with thousands of
+nodes and petabytes of data. <p>
+
+One key idea of Hadoop
+is <a href="http://en.wikipedia.org/wiki/MapReduce">MapReduce</a>, the
+de facto standard for large scale data-intensive applications.
+It can be seen as
+a <a href="http://en.wikipedia.org/wiki/Algorithmic_skeleton">skeletal
+parallel programming model with two skeletons</a>: map and reduce. By
+making use of the skeletal parallelism, users can program their
+applications with ready-made skeletons without considering low level
+details of parallelization, data distribution, load balancing and
+fault tolerance.<p>
+
+Despite the simplicity of MapReduce, it is still a challenge
+for a programmer to systematically solve his or her (nontrivial) problems.
+Consider the <em> maximum prefix sum</em> problem of a sequence.
+For instance, if the input sequence is 
+<BR>
+<center>
+3, -1, 4, 1, -5, 9, 2, -6, 5
+</center>
+<BR>
+the maximum of the prefix sums should be 13 to which the underlined prefix corresponds.
+It is not obvious how to solve this problem
+efficiently with MapReduce (and we encourage the reader to 
+pause to think how to solve this). Such problems
+widely exist in the real world, e.g, 
+ financial time series analysis.<p>
+
+We have proposed two systematic approach to solving problems with
+MapReduce.  One idea is to ask the users to write two efficient
+sequential programs, one for solving the problem itself and the other
+for solving the inverse problem, from which an efficient MapReduce program 
+can be automatically generated. The related work can be found in 
+the following paper: <p>
+
+<ul>
+<A name="EuroPar11"/>
+<li>
+<a href="http://www.prg.nii.ac.jp/members/yuliu/index.html">Yu Liu</a>,
+<a href="http://research.nii.ac.jp/~hu"> 
+Zhenjiang Hu</a>, 
+<a href="http://www.ipl.t.u-tokyo.ac.jp/~kmatsu">
+Kiminori Matsuzaki</a>, 
+<b><a href="../pub/europar11.pdf">Towards Systematic Parallel Programming over MapReduce</a></b>,
+<em>17th International
+European Conference on Parallel and Distributed Computing</em>
+(<a href="http://europar2011.bordeaux.inria.fr/">EuroPar 2011</a>), Bordeaux, France,
+August 29 - September 2, 2011.
+</ul>
+<p>
+
+The other approach is a new framework to synthesize efficient
+MapReduce parallel program for a general class of problems which can
+be specified in the following generate-test-and-aggregate form:
+<BR>
+<center>
+aggregate . test . generate
+</center>
+<BR>
+Problems that match this specification can be solved by first
+generating possible solution candidates, then keeping those candidates
+that pass a test of a certain condition, and finally selecting a valid
+solution or making a summary of valid solutions with an aggregating
+computation.
+We have shown that this framework can be efficiently implemented
+on Hadoop as a Java library. Users of our library can
+concentrate on specifying naive generate-test-and-aggregate algorithms
+in Java, and obtain efficient MapReduce programs for free.
+<ul>
+<A name="EuroPar11"/>
+<A name="ESOP12"/>
+<li>
+<a href="http://www.ipl.t.u-tokyo.ac.jp/~emoto"> 
+Kento Emoto</a>, 
+Sebastian Fischer,
+<a href="http://research.nii.ac.jp/~hu"> 
+Zhenjiang Hu</a>, 
+<b><a href="../pub/esop12.pdf">Generate, Test, and Aggregate --- A Calculation-based Framework for Systematic Parallel Programming with MapReduce</a></b>,
+<em>22nd European Symposium on Programming</em>
+(<a href="http://www.etaps.org/2012/esop">ESOP 2012</a>), 
+ Tallinn, Estonia, March 24 - April 1, 2012. pp. 254-273.
+<li>
+<p>
+
+<A name="PMAM13"/>
+<li>
+<a href="http://www.prg.nii.ac.jp/members/yuliu/index.html">Yu Liu</a>
+<a href="http://www.ipl.t.u-tokyo.ac.jp/~emoto"> 
+Kento Emoto</a>, 
+<a href="http://research.nii.ac.jp/~hu"> 
+Zhenjiang Hu</a>, 
+<b>
+<a href="../pub/PMAM13.pdf">A Generate-Test-Aggregate Parallel Programming Library</a></b>,
+2013 International Workshop on Programming Models and Applications for Multicores and Manycores (<a href="http://www.cs.otago.ac.nz/pmam2013/">PMAM 2013</a>),
+conjunction with PPoPP 2013, Shenzhen, China, February 23, 2013.
+</li>
+<p>
+
+The purpose of this intern research is to evaluate and extend
+the above approaches through more practical examples.
+In addition, we may go further to see how computation on <b>trees/graphs</b> can
+be systematically mapped to MapReduce. As the first step, we would
+like to see how tree skeletons or graph queries can be efficiently implemented with 
+MapReduce. One related paper is:
+
+<ul>
+<li>
+<a href="http://www.ipl.t.u-tokyo.ac.jp/~kmatsu">
+Kiminori Matsuzaki</a>, 
+<a href="http://research.nii.ac.jp/~hu"> 
+Zhenjiang Hu</a>, 
+<a href="http://www.ipl.t.u-tokyo.ac.jp/~takeichi"> 
+Masato Takeichi</a>,
+<a href="../pub/paraComp06.pdf">
+<b>Parallel Skeletons for Manipulating General Trees</b></a>, 
+<em><a href="http://www.elsevier.com/wps/find/journaldescription.cws_home/505617/description#description">Parallel Computing</a></em>, Vol.32, No.7-8,
+Elsevier, 2006. pp.590-603.
+</ul>
+<p>
+
+<HR>
+
+<A name="t3"/>
+<h2>Bidirectional Model Transformation in Software Engineering</h2>
+
+<a href="http://en.wikipedia.org/wiki/Bidirectional_transformation">Bidirectional
+transformations</a> provide a novel mechanism for synchronizing and
+maintaining the consistency of information between input and
+output. They consist of a pair of well-behaved transformations:
+<em>forward</em> transformation is used to produce a target view from a
+source, while the <em>backward</em> transformation is used to reflect
+modification on the view to the source. 
+
+<ul>
+
+<A name="ICMT09b"/>
+<li>
+Krzysztof Czarnecki,
+J. Nathan Foster,
+Zhenjiang Hu,
+Ralf Lammel,
+Andy Schurr,
+James F. Terwilliger,
+<a href="../pub/ICMT09-grace.pdf">
+<b>
+Bidirectional Transformations: A Cross-Discipline Perspective,
+</b>
+</a>
+<em>International Conference on Model Transformation</em>
+(<a href="http://www.model-transformation.org/ICMT2009/">ICMT 2009</a>), 
+ETH Zurich, Switzerland, June 29-July 3 2009. 
+LNCS 5563, Springer. pp.260-283.
+<p>
+
+<A name="SIGMOD11">
+<li>
+<a href="http://research.nii.ac.jp/~hu"> 
+Zhenjiang Hu</a>,
+<a href="http://www.es.tu-darmstadt.de/mitarbeiter/andy-schuerr/">
+Andy Schurr</a>,
+<a href="http://homepages.inf.ed.ac.uk/perdita/"> 
+Perdita Stevens</a>, 
+<a href="James Terwilliger">
+James Terwilliger</a>,
+<a href="../pub/dagstuhl_bx11.pdf">Dagstuhl Seminar on Bidirectional Transformations</a>,
+<a href="http://www.sigmod.org/publications/sigmod-record/1012">SIGMOD Record</a>, Vol.40, No.1 2011. 
+pp.35-39.
+<p>
+
+</ul>
+
+This pair of forward and
+backward transformations should satisfy certain bidirectional
+properties.  Bidirectional transformations are indeed pervasive and
+can be seen in many interesting applications, including the
+synchronization of replicated data in different formats, 
+presentation-oriented structured document development, 
+interactive user interface design,
+coupled software transformation, 
+and the well-known view updating mechanism which has been intensively studied in the
+database community.<p>
+
+The purpose of this intern research is to investigate how to use the
+bidirectional graph (model) transformation system <a href="www.biglab.org">GRoundTram</a> in software engineering, say for co-evolution
+(synchronization) of models and codes
+in <a href="http://en.wikipedia.org/wiki/Model-driven_engineering">model-driven
+software development</a>. An application can be found in the following paper.
+<ul>
+<li>
+<a href="http://mcs.open.ac.uk/yy66/">
+Yijun Yu</a>,
+<a href="http://stap.sjtu.edu.cn/~lin/">
+Yu Lin</a>,
+<a href="http://research.nii.ac.jp/~hu"> 
+Zhenjiang Hu</a>, 
+<a href="http://research.nii.ac.jp/~hidaka/">
+Soichiro Hidaka</a>, 
+<a href="http://researchmap.jp/katohiroyuki/?lang=english">
+Hiroyuki Kato</a>, 
+<a href="http://crc.open.ac.uk/People/l.m.c.montrieux">
+Lionel Montrieux</a>,
+<a href="icse12.pdf">
+<b>Maintaining Invariant Traceability through Bidirectional Transformations</b></a>,
+<em>34th International Conference on Software Engineering</em>
+(<a href="http://www.ifi.uzh.ch/icse2012/home/">ICSE 2012</a>), 
+Zurich, Switzerland, Kune 2-9, 2012. pp.540-550.
+<p>
+</ul>
+
+<HR>
+
+<A name="t5"/>
+<h2>Adaptive (Incremental) Bidirectional Graph Transformationl</h2>
+
+The objective of this intern project is to make use of the
+<a href="http://en.wikipedia.org/wiki/Incremental_computing">incremental
+computing</a> atechnique to improve efficiency of bidirectional
+transformation in general, and of bidirectional graph transformation
+in particular.
+<p>
+
+The basic 
+idea about bidirectional graph transformation is discussed in the 
+following paper:
+<ul>
+<li>
+<a href="http://research.nii.ac.jp/~hidaka/">
+Soichiro Hidaka</a>, 
+<a href="http://research.nii.ac.jp/~hu"> 
+Zhenjiang Hu</a>, 
+<a href="http://www.kmonos.net/">
+Kazuhiro Inaba</a>,
+<a href="http://researchmap.jp/katohiroyuki/?lang=english">
+Hiroyuki Kato</a>, 
+<a href="http://millsmess.cs.uec.ac.jp/~ksk/en/">
+Keisuke Nakano</a>,
+<a href="http://www.kb.ecei.tohoku.ac.jp/~kztk/">
+Kazutaka Matsuda</a>,
+<a href="icfp10a.pdf">
+<b>
+Bidirectionalizing Graph Transformations</b></a>,
+<em>15th ACM SIGPLAN International Conference on Functional Programming</em>
+(<a href="http://www.icfpconference.org/icfp2010/">ICFP 2010</a>), 
+Baltimore, Maryland, USA, September 27-29, 2010.
+</li>
+</ul>
+
+As another reference, the following paper discusses about an implementation of 
+the combinator libary X/Inv in Haskell for bidirectional tree transformation.
+
+<ul>
+<li>
+<a href="http://research.nii.ac.jp/~hu"> 
+Zhenjiang Hu</a>, 
+<a href="http://www.ipl.t.u-tokyo.ac.jp/~scm"> 
+Shin-Cheng Mu</a>, 
+<a href="http://www.ipl.t.u-tokyo.ac.jp/~takeichi"> 
+Masato Takeichi</a>,
+<a href="hosc07.pdf">
+<b>A Programmable Editor for Developing Structured Documents
+based on Bidirectional Transformations</b></a>,
+<em>Higher-Order and Symbolic Computation</em> 
+(<a href="http://www.springerlink.com/content/1573-0557/">HOSC</a>), 
+Vol. 21, No. 1-2, Springer, June 2008. pp.89-118. (An extended version of the paper presented at ACM PEPM'04.)
+</ul>
+
+<HR>
+
+<!--
+<A name="t4"/>
+<h2>A Generic GUI for Supporting Bidirectional Model-driven Software Development</h2>
+As discussed <a href="t3">above</a>, we have develop a bidirectional graph transformation
+system <a href="www.biglab.org">GRoundTram</a> with a simple GUI, which can deal with
+edge-labelled graphs in <a href="http://en.wikipedia.org/wiki/DOT_language">the dot format</a>.<p>
+
+The purpose of this intern research is to develop a generic GUI (in Java) upon the current
+GRoundTram system, which can deal with various kinds of graphs such as UML, feature models,
+control flow graphs, etc. This needs us to express relationship between the edge-labelled graphs
+and other graphs. For instance, the relationship between the edge-labelled graphs and the
+UML graphs is discussed in the following paper:
+
+<ul>
+<li>
+<a href="http://www.sic.shibaura-it.ac.jp/~sasano/index.html">
+Isao Sasano</a>,
+<a href="http://research.nii.ac.jp/~hu"> 
+Zhenjiang Hu</a>, 
+<a href="http://research.nii.ac.jp/~hidaka/">
+Soichiro Hidaka</a>, 
+<a href="http://www.kmonos.net/">
+Kazuhiro Inaba</a>,
+<a href="http://researchmap.jp/katohiroyuki/?lang=english">
+Hiroyuki Kato</a>, 
+<a href="http://millsmess.cs.uec.ac.jp/~ksk/en/">
+Keisuke Nakano</a>,
+<b>
+<a href="../pub/icmt11.pdf">Toward bidirectionalization of ATL with GRoundTram</a></b>,
+<em>International Conference on Model Transformation</em>
+(<a href="http://www.model-transformation.org/">ICMT 2011</a>), 
+Zurich, Switzerland, June 27-28, 2011. LNCS 6707. pp.138-151.
+<p>
+</ul>
+
+-->
+
+
+<HR>
+Maintained by Zhenjiang Hu. Last modified on 2011.
+</BODY>
+</HTML>

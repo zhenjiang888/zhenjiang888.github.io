@@ -1,0 +1,67 @@
+<center>
+<h2>Programming Languages</h2>
+</center>
+<p>
+<dL>
+<dt><b>Implementation of an SML interpreter using SML.</b><dd>
+   Prerequisites: CSE5305 (compilers)<br>
+   Purpose:<ol><li> Learn a modern functional programming language
+                  (Standard ML of New Jersey)
+            <li> Learn the lambda calculus
+            <li> Write an interpreter of lambda calculus
+            <li> Write a compiler from a subset of SML to the lambda calculus
+            <li> Write a type inference program for type-checking
+          </ol>
+   Books: L. Paulson: "ML for the working programmer",
+          C. Reade: "Elements of functional programming",
+          P. Jones: "The implementation of functional programming languages"<br>
+   Platform: Gamma<br>
+   Programming language: all programs will be written in SML<br>
+   Unix tools: YACC or BISON, LEX or FLEX<br>
+   You can get more info about SML at <a href="http://foxnet.cs.cmu.edu/sml.html">CMU</a><br>
+   Lecture notes on SML implementation can be found
+      at <a href="http://www.cs.cornell.edu/Info/Courses/Spring-96/CS512/home.html">Cornell</a>
+      and at <a href="ftp://ftp.cs.pdx.edu/pub/faculty/apt/cfl/cfl.html">Portland State</a>
+<p>
+<dt><b>Impementation of a self-applicable partial evaluator.</b><dd>
+   A partial evaluator is a program transformation system: it reads the
+   representation of a program as input (eg. the parse tree of the source
+   of this program) and it generates the representation of an equivalent
+   program, which hopefully is more efficient to execute than the
+   original program.  Suppose that you have a program P with a
+   representation P that takes n parameters, some of which you know at
+   compile-time (ie. they are the same at every execution of P). The
+   parameters known at compile-time are called static and the others
+   dynamic parameters. When you are provided the dynamic parameters then
+   you know all the parameters, so you can execute P. But a better
+   solution is to instantiate P using the static parameters in order to
+   generate a more efficient program that is specific to these static
+   parameters only. This is called partial evaluation.  A partial
+   evaluator will get P as input along with the static parameters and
+   it will generate the instantiated program.  For example, a pattern
+   matcher takes a pattern and a string and returns true or false
+   depending whether the pattern matches the string.  If you know the
+   pattern beforehand and you feed the pattern matching program to the
+   partial evaluator, then you get a scanner for the strings that
+   match this particular pattern. The scanner is linear to the size
+   of the string while the original program was quadratic.<br>
+   Prerequisites: CSE5302 (Programming Languages)<br>
+   Reading: various papers on partial evaluation. Good paper to start:
+            C. Consel and O. Danvy: <a href="http://www.irisa.fr/EXTERNE/projet/lande/consel/papers/pe-tutorial.ps.gz">Notes on Partial Evaluation"</a>
+   Programming Language: all programs will be written in Scheme
+<p>
+<dt><b>Making Java a functional programming language.</b><dd>
+   Java embodies several great ideas, such as strong static typing,
+   automatic garbage collection, and safe execution that never corrupts
+   the store.  These features make Java a better alternative to C++.  In
+   spite that, Java is still missing many features found in advanced
+   programming languages, such as SML and Haskell. These include
+   parametric polymorphism, higher-order functions, and algebraic data
+   types. Your goal is to write a preprocessor for Java that accepts
+   these features and translates these features into pure Java.<br>
+   Prerequisites: CSE5302 (Programming Languages)<br>
+   Reading: M.Ordesky and P. Wadler: <a href="http://wwwipd.ira.uka.de/~odersky/papers/popl97-letter.ps.gz">"Pizza into Java: Translating theory into practice"</a><br>
+   Programming Language: all programs will be written in Java<br>
+   Unix tools: YACC or BISON, LEX or FLEX<br>
+   Web page of interest: <a href="http://wwwipd.ira.uka.de/~pizza/">http://wwwipd.ira.uka.de/~pizza/</a>
+</dl>

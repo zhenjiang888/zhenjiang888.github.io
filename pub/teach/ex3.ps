@@ -1,0 +1,2587 @@
+%!PS-Adobe-2.0
+%%Creator: /usr/local/bin/dvi2ps.bin
+%%Title: ex3.dvi
+%%Pages: (atend)
+%%BoundingBox: 0 0 595 842
+%%DocumentPaperSizes: A4
+%%EndComments
+%%BeginFile: /usr/local/lib/dvi2ps/dvi2.ps
+%
+/TeXDict 300 dict def
+TeXDict begin
+/inch {
+72 mul
+} bind def
+/largepaperarray [
+/letter /legal /11x17
+/b4 /b5 /a5 /a4 /a3
+] def
+/smallpaperarray [
+/note dup where {
+pop
+}{
+pop /lettersmall dup where {
+pop
+}{
+pop /letter
+} ifelse
+} ifelse
+/legal /11x17
+/b4 /b5 /a5
+/a4small dup where {
+pop
+}{
+pop /note dup where {
+pop
+}{
+pop /a4
+} ifelse
+} ifelse
+/a3
+] def
+/setpaper {
+papertray {
+dup where {
+exch get exec
+}{
+pop
+} ifelse
+}{
+pop
+} ifelse
+} bind def
+/trayarray [
+/lettertray /legaltray /11x17tray
+/b4tray /b5tray /a5tray /a4tray /a3tray
+] def
+/settray {
+dup statusdict exch known manualfeed not and {
+mark exch statusdict begin load 
+{
+exec
+} stopped {
+$error /newerror get {
+$error /errorname get /rangecheck eq {
+(Tray not found, using default tray.\n) print flush
+TeXDict /papertray false put
+}{
+handleerror
+} ifelse
+$error /newerror false put
+} if
+} if
+end cleartomark
+}{
+pop
+} ifelse
+} bind def
+/papertray true def
+/widtharray  [
+8.5 inch 8.5 inch 11 inch
+9.84 inch 6.93 inch
+5.83 inch 8.27 inch 11.69 inch
+] def
+/heightarray [
+11 inch 14 inch 17 inch
+13.9 inch 9.84 inch
+8.27 inch 11.69 inch 16.54 inch
+] def
+/xoffset 0 def
+/yoffset 0 def
+/leftm 72 def
+/topm 72 def
+/landscape false def
+/manualfeed false def
+/pagesetup {
+dup widtharray exch get /paperwidth exch def
+dup heightarray exch get /paperheight exch def
+dup trayarray exch get settray
+large {largepaperarray}{smallpaperarray} ifelse
+exch get setpaper
+} bind def
+/@letter {0 pagesetup} def
+/@legal {1 pagesetup} def
+/@tabloid {2 pagesetup} def
+/@b4 {3 pagesetup} def
+/@b5 {4 pagesetup} def
+/@a5 {5 pagesetup} def
+/@a4 {6 pagesetup} def
+/@a3 {7 pagesetup} def
+/@landscape {/landscape true def} bind def
+/@manualfeed {
+/manualfeed true def
+statusdict /manualfeed known {
+statusdict /manualfeed true put
+statusdict /manualfeedtimeout 120 put
+} if
+} bind def
+/@large {
+/large true def
+} bind def
+/@small {
+/large false def
+} bind def
+/@envelope {
+/xoffset 4.28 inch def
+/yoffset 1.5 inch def
+@letter
+} bind def
+/COPIES	{
+/#copies exch def
+} bind def
+/NF {
+/newname exch def
+/fsize exch def
+/corr exch def
+newname 7 dict def
+newname load begin
+/FontType 3 def
+/FontMatrix [corr 0 0 corr neg 0 0] def
+/FontBBox [0 0 1 1] def
+/BitMaps fsize array def
+/BuildChar /CharBuilder load def
+/Encoding 256 array def
+0 1 255 {Encoding exch /.notdef put} for
+end
+newname newname load definefont pop
+} bind def
+/ch-image {ch-data 0 get} bind def
+/ch-width {ch-data 1 get} bind def
+/ch-height {ch-data 2 get} bind def
+/ch-xoff {ch-data 3 get} bind def
+/ch-yoff {ch-data 4 get} bind def
+/ch-tfmw {ch-data 5 get} bind def
+/CharBuilder {
+/ch-code exch def
+/font-dict exch def
+/ch-data font-dict /BitMaps get ch-code get def
+ch-data null eq not {
+ch-tfmw 0
+ch-xoff neg  ch-yoff neg ch-width ch-xoff sub ch-height ch-yoff sub
+setcachedevice
+ch-width ch-height true [1 0  0 1  ch-xoff ch-yoff]
+{ch-image} imagemask
+} if
+} bind def
+/BFT {
+/bf-v exch def
+/bf-h exch def
+findfont [bf-h 0 0 bf-v 0 0] makefont def
+} bind def
+/BFE /BFT load def
+/BFF {
+/bf-v exch def
+/bf-h exch def
+/savecurfont currentfont def
+findfont dup setfont
+3 -1 roll
+/bf-stand exch def
+[
+bf-stand stringwidth pop
+dup bf-h exch div
+exch bf-v exch div 0 0 3 -1 roll
+0 0
+] makefont def
+savecurfont setfont
+} bind def
+/SF /setfont load def
+/s3 3 string def
+/D {
+/ch-code exch def
+/ch-data exch def
+currentfont /BitMaps get ch-code ch-data put
+currentfont /Encoding get ch-code
+dup s3 cvs cvn
+put
+} bind def
+/BP {
+userdict /bop-hook known { bop-hook } if
+/SaveImage save def
+xoffset yoffset translate
+leftm topm
+landscape {
+exch translate
+90 rotate
+}{
+paperheight exch sub translate
+} ifelse
+72 Resolution div dup neg scale
+0 0 moveto
+} bind def
+/EP {
+showpage 
+SaveImage restore
+userdict /eop-hook known { eop-hook } if
+} bind def
+/START {
+userdict /start-hook known { start-hook } if
+/DVImag exch def
+/magscale true def
+/Resolution exch def
+} bind def
+/END {
+end
+userdict /end-hook known { end-hook } if
+} bind def
+/l /lineto load def
+/p /moveto load def
+/r {
+0 rmoveto
+} def
+/s /show load def
+/ru {
+/dy exch neg def
+/dx exch def
+/x currentpoint /y exch def def
+newpath x y moveto
+dx 0 rlineto
+0 dy rlineto
+dx neg 0 rlineto
+closepath fill
+x y moveto
+} bind def
+/TeXscale { 65781.76 div } def
+/DocumentInitState [ matrix currentmatrix currentlinewidth currentlinecap
+currentlinejoin currentdash currentgray currentmiterlimit ] cvx def
+/startTexFig {
+/SavedState save def
+userdict maxlength dict begin
+currentpoint transform
+DocumentInitState setmiterlimit setgray setdash setlinejoin setlinecap
+setlinewidth setmatrix
+itransform moveto
+magscale { DVImag dup scale } if
+/ury exch TeXscale def
+/urx exch TeXscale def
+/lly exch TeXscale def
+/llx exch TeXscale def
+/y exch TeXscale def
+/x exch TeXscale def
+currentpoint /cy exch def /cx exch def
+/sx x urx llx sub div def
+/sy y ury lly sub div def
+sx sy scale
+cx sx div llx sub
+cy sy div ury sub translate
+/DefFigCTM matrix currentmatrix def
+/initmatrix {
+DefFigCTM setmatrix
+} def
+/defaultmatrix {
+DefFigCTM exch copy
+} def
+/initgraphics {
+DocumentInitState setmiterlimit setgray setdash 
+setlinejoin setlinecap setlinewidth setmatrix
+DefFigCTM setmatrix
+} def
+/showpage {} def
+/erasepage {} def
+/copypage {} def
+} def
+/clipFig {
+currentpoint 6 2 roll
+newpath 4 copy
+4 2 roll moveto
+6 -1 roll exch lineto
+exch lineto
+exch lineto
+closepath clip
+newpath
+moveto
+} def
+/doclip { llx lly urx ury clipFig } def
+/endTexFig {
+end SavedState restore
+} def
+/@SpecialDefaults {
+/hsi paperwidth inch def
+/vsi paperheight inch def
+/hof 0 def
+/vof 0 def
+/hsc 1 def
+/vsc 1 def
+/rotat 0 def
+/CLIP false def
+/BBOX false def
+/EPSF false def
+/ECL false def
+} bind def
+/@ecl {/ECL true def} bind def
+/@clip {/CLIP true def} bind def
+/@hsize {/hsi exch def @clip} bind def
+/@vsize {/vsi exch def @clip} bind def
+/@hoffset {/hof exch def} bind def
+/@voffset {/vof exch def} bind def
+/@scaleunit 1 def
+/@hscale {@scaleunit div /hsc exch def} bind def
+/@vscale {@scaleunit div /vsc exch def} bind def
+/@rotation {/rotat exch def} bind def
+/@angle /@rotation load def
+/@rwi {10 div /hsi exch def} bind def
+/@rhi {10 div /vsi exch def} bind def
+/@llx {/llx exch def /BBOX true def /hsi 0 def /vsi 0 def} bind def
+/@lly {/lly exch def} bind def
+/@urx {/urx exch def} bind def
+/@ury {/ury exch def} bind def
+/@bbox {{@clip}if @ury @urx @lly @llx} bind def
+/@setclipper {
+CLIP {
+newpath 0 0 moveto hsi 0 rlineto 0 vsi rlineto hsi neg 0 rlineto
+closepath clip
+} if
+} bind def
+/@beginspecial {
+/SpecialSave save def
+/dict_count countdictstack def
+/op_count count 1 sub def
+currentpoint transform initgraphics itransform translate
+magscale { DVImag dup scale } if
+landscape {90 rotate} if
+@SpecialDefaults
+@MacSetUp
+} bind def
+/@setspecial {
+hof vof translate
+BBOX {
+rotat rotate
+hsi 0 eq {
+vsi 0 eq {
+hsc vsc
+}{
+vsi ury lly sub div dup
+}ifelse
+}{
+vsi 0 eq {
+hsi urx llx sub div dup
+}{
+hsi urx llx sub div vsi ury lly sub div
+} ifelse
+} ifelse
+scale
+llx neg ECL{ury}{lly}ifelse neg translate
+CLIP {
+newpath
+llx lly moveto
+urx lly lineto
+urx ury lineto
+llx ury lineto
+closepath clip
+} if
+newpath
+}{
+@setclipper hsc vsc scale rotat rotate
+} ifelse
+/CTM matrix currentmatrix def
+end
+/letter {} def /note {} def /legal {} def /11x17 {} def
+/b4 {} def /b5 {} def /a5 {} def /a4 {} def /a4small {} def /a3 {} def
+/showpage {} def /copypage {} def /erasepage {} def
+/initmatrix {TeXDict /CTM get setmatrix} bind def
+/defaultmatrix {TeXDict /CTM get exch copy} bind def
+/*initclip /initclip load def
+/initclip {
+TeXDict begin
+*initclip
+matrix currentmatrix CTM setmatrix newpath
+BBOX {
+llx lly moveto urx lly lineto urx ury lineto llx ury lineto
+}{
+0 0 moveto hsi 0 rlineto 0 vsi rlineto hsi neg 0 rlineto
+} ifelse
+closepath clip setmatrix
+end
+} bind def
+/initgraphics {
+initmatrix newpath initclip
+1 setlinewidth 0 setlinecap 0 setlinejoin
+[] 0 setdash 0 setgray 10 setmiterlimit
+} bind def
+/languagelevel where {
+pop languagelevel 1 ne { false setstrokeadjust false setoverprint } if
+} if
+} bind def
+/@MacSetUp {
+userdict /md known {
+userdict /md get type /dicttype eq {
+md /txpose known {
+md /txpose {pxs pys neg scale} put
+} if
+md /cp known {
+md /cp {pop pop pm restore} put
+} if
+} if
+} if
+} bind def
+/@push {
+gsave
+currentpoint translate
+dup scale
+newpath
+} bind def
+/@pop {
+grestore
+} bind def
+/@ar {
+matrix currentmatrix
+7 -2 roll moveto
+currentpoint translate
+newpath
+5 -2 roll scale
+0 0 1 6 -2 roll arc
+setmatrix
+} bind def
+/@RGB /setrgbcolor load def
+/@HSB /sethsbcolor load def
+/@CMYK /setcmykcolor dup where {
+pop load
+}{
+pop {
+1 sub 4 1 roll
+3 { 3 index add neg dup 0 lt {pop 0} if 3 1 roll } repeat
+setrgbcolor pop
+} bind
+} ifelse def
+/normalscale {
+Resolution 72 div Resolution 72 div neg scale
+magscale { DVImag dup scale } if
+0 setgray
+} def
+end
+/@endspecial {
+TeXDict begin
+count op_count sub {pop} repeat
+countdictstack dict_count sub {end} repeat
+SpecialSave restore
+} bind def
+/SDict TeXDict def
+%%EndFile
+%%BeginFile: /usr/local/lib/dvi2ps/fonts/ascfix-c.ps
+% This file is included in this dvi2ps (j-version) kit by the courtesy of
+% Matsushita Electric Industrial Co., Ltd. You are free to distribute this
+% file as a part of this dvi2ps kit, but if you use this file as a part of
+% your own program and want to re-distribute the program, you should contact
+%	miyabe@sy6.isl.mei.co.jp, kakiuchi@sy6.isl.mei.co.jp
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Following procedures are used to define new japanese font which has 
+%%% correct metrics.
+%%%		Added by T.Kakiuchi (kakiuchi@sy6.isl.mei.co.JP) 89/5/19
+%%%		Copyright (c) Matsushita Electric Industrial Co.,Ltd. 1990
+%%%
+% If the packed-array facility is available, this program sets the
+% array-packing mode.
+%systemdict /setpacking known {
+%    /savepacking currentpacking def
+%    true setpacking
+%} if
+TeXDict begin
+% Procedure to make a new font which has new metrics.
+
+/Set-New-Metrics		% [New-FNam][FNam][Metrics-array]
+{/Set-Metrics exch def		% [New-FNam][FNam]  Set-Metrix=[Metrix-Array]
+ findfont			% [New-FNam][FDic]
+ /OrigCompFont exch def		% [New-FNam]  OrigCompFont=[FDic]
+ /NewCompFontName exch def	% NewCompFontName=[New-FNam]
+
+ % Create new composite font.
+ OrigCompFont dup		% [FDic][FDic]
+ length dict			% [FDic][dict]
+ /NewCompFont exch def		% [FDic]   NewCompFont=[dict]
+ {1 index			% [FDic][key][value][key]
+   /FID ne			% [FDic][key][value][T/F]
+   2 index /UniqueID ne and	% [FDic][key][value][T/F]
+  {NewCompFont 3 1 roll put}	% if TRUE   NewCompFont <- {key,value}
+  {pop pop}
+  ifelse
+ } forall
+
+ OrigCompFont /FDepVector get	% [FDepVector]
+ dup length array		% [FDepVector][array]
+ copy				% [array] (=[FDepVector])
+ /NewFDepVector exch def	% NewFDepVector=[arrray]
+ NewCompFont /FDepVector
+ NewFDepVector put		% [NewCompFont] <- {/FDepVector, NewFDepVector}
+ NewCompFont /FontName
+ NewCompFontName put		% [NewCompFont] <- {/FontName, NewCompFontName}
+
+ Set-Metrics	% [code,NewBaseFontName,Metrics-Array]
+ {dup 0 get /Code exch def	% set Code
+  dup 1 get
+  /NewBaseFontName exch def	% set NewBaseFontName
+  2 get /Metric-Array exch def	% set Metrics-Array
+
+  % Extract base font and its index to FDepVector.
+  /Index
+     OrigCompFont
+     /Encoding get
+     Code get def
+
+  /OrigBaseFont NewFDepVector Index get def
+
+  % Set Metric-Dictionary
+  Metric-Array length dict
+  /Metric-Dict exch def
+  Metric-Dict begin Metric-Array {exec def} forall end
+
+  % Create new base font.
+  OrigBaseFont dup			% [OrgFont][OrgFont] 
+  length 2 add				% [OrgFont][2+current size]
+  dict					% [OrgFont][dict]
+  /NewBaseFont exch def			% [OrgFont]    /NewBaseFont=[dict]
+  {1 index				% [OrgFont][key][value][key]
+     /FID ne				% [OrgFont][key][value][T/F]
+     2 index /UniqueID ne and		% [OrgFont][key][value][T/F]
+     {NewBaseFont			% [OrgFont][key][value][NewBaseFont]
+      3 1 roll				% [OrgFont][NewBaseFont][key][value]
+      put}					% [OrgFont]
+     {pop pop}
+     ifelse
+  } forall
+  
+  NewBaseFont /Kusumi-Metrics Metric-Dict put
+
+  NewBaseFont				% [OrgFont][NewBaseFont]
+  /CDevProc
+  {currentfont /Kusumi-Metrics get
+   exch 2 copy known
+    {get	% w0x w0y llx lly urx ury w1x w1y vx vy new-llx
+     dup	% w0x w0y llx lly urx ury w1x w1y vx vy new-llx new-llx
+     8 -1 roll	% w0x w0y llx lly ury w1x w1y vx vy new-llx new-llx urx
+     10 -1 roll	% w0x w0y lly ury w1x w1y vx vy new-llx new-llx urx llx
+     sub add	% w0x w0y lly ury w1x w1y vx vy new-llx new-urx
+     7 1 roll	% w0x w0y lly new-urx ury w1x w1y vx vy new-llx
+     8 1 roll	% w0x w0y new-llx lly new-urx ury w1x w1y vx vy
+    }
+    {pop pop}
+   ifelse
+  } bind put
+
+  %  Regist to FDepVector
+  NewFDepVector Index NewBaseFontName NewBaseFont definefont put
+
+ } forall
+ NewCompFontName NewCompFont
+ definefont pop			% Define [NewCompFont] as [NewCompFontName]
+}
+bind def
+
+
+% Definition of new metrics for /Ryumin-Light-H
+/Ryumin-Metrics
+[
+[33/Ryumin-Light-H-33[
+{/c2B 56.3327 }
+{/c78 36.5515 }
+{/c22 127.507 }
+{/c54 52.5065 }
+{/c4B 137.007 }
+{/c39 35.7169 }
+{/c27 105.323 }
+{/c42 79.8026 }
+{/c30 106.905 }
+{/c6B 129.961 }
+{/c50 192.016 }
+{/c47 101.333 }
+{/c59 104.456 }
+{/c35 124.507 }
+{/c3E 51.8327 }
+{/c2C 81.7527 }
+{/c23 102.007 }
+{/c4E 132.007 }
+{/c2A 111.833 }
+{/c43 153.333 }
+{/c55 52.5065 }
+{/c4A 137.007 }
+{/c26 106.333 }
+{/c51 192.017 }
+{/c2D 73.195 }
+{/c46 101.833 }
+{/c58 104.457 }
+{/c6A 53.6868 }
+{/c71 162.717 }
+{/c68 12.747 }
+{/c56 87.0065 }
+{/c4D 120.007 }
+{/c29 50.4616 }
+{/c52 99.5065 }
+{/c5B 122.007 }
+{/c37 145.717 }
+{/c6D 73.5612 }
+{/c49 95.824 }
+{/c2E 73.1949 }
+{/c72 45.6719 }
+{/c25 106.833 }
+{/c69 33.1968 }
+{/c70 147.722 }
+{/c57 87.0065 }
+{/c33 123.507 }
+{/c53 99.5065 }
+{/c28 101.333 }
+{/c4C 120.007 }
+{/c2F 86.4865 }
+{/c48 95.6039 }
+{/c5A 122.007 }
+{/c6C 154.132 }
+{/c36 154.717 }
+{/c24 103.833 }
+{/c4F 131.507 }
+]]
+[36/Ryumin-Light-H-36[
+{/c30 154.133 }
+{/c27 97.2168 }
+{/c39 76.6303 }
+{/c23 76.1769 }
+{/c67 149.762 }
+{/c43 67.7751 }
+{/c6E 77.4092 }
+{/c31 105.385 }
+{/c63 75.9087 }
+{/c26 241.525 }
+{/c6A 273.126 }
+{/c29 82.2642 }
+{/c32 65.1122 }
+{/c25 184.155 }
+{/c21 83.9483 }
+{/c65 90.2671 }
+{/c3A 51.3751 }
+{/c2F 295.128 }
+]]
+[37/Ryumin-Light-H-37[
+{/c22 140.608 }
+{/c6F 163.078 }
+{/c30 99.7332 }
+{/c27 57.7171 }
+{/c42 59.748 }
+{/c47 67.1082 }
+{/c35 83.0882 }
+{/c3E 72.1387 }
+{/c23 138.672 }
+{/c67 152.293 }
+{/c4E 197.608 }
+{/c2A 134.608 }
+{/c43 117.717 }
+{/c6E 126.697 }
+{/c31 115.108 }
+{/c55 168.068 }
+{/c63 80.217 }
+{/c4A 116.233 }
+{/c26 162.618 }
+{/c75 124.712 }
+{/c3F 192.108 }
+{/c46 123.608 }
+{/c6A 239.098 }
+{/c5F 258.608 }
+{/c44 162.608 }
+{/c56 84.1834 }
+{/c29 108.717 }
+{/c76 83.6869 }
+{/c32 61.9606 }
+{/c64 109.108 }
+{/c49 202.688 }
+{/c25 122.757 }
+{/c72 193.323 }
+{/c40 110.209 }
+{/c69 178.108 }
+{/c45 91.8148 }
+{/c57 89.1683 }
+{/c21 107.237 }
+{/c65 49.507 }
+{/c2F 187.108 }
+{/c41 97.8211 }
+{/c48 277.108 }
+{/c36 51.291 }
+{/c61 191.608 }
+{/c24 186.108 }
+{/c3D 164.236 }
+]]
+] def
+
+% Definition of new metrics for /GothicBBB-Medium-H
+/Gothic-Metrics
+[
+[33/GothicBBB-Medium-H-33[
+{/c2B 62.8327 }
+{/c78 11.5265 }
+{/c22 129.507 }
+{/c54 58.5065 }
+{/c4B 136.007 }
+{/c39 14.7171 }
+{/c27 104.333 }
+{/c42 76.8826 }
+{/c30 110.507 }
+{/c6B 138.987 }
+{/c50 178.072 }
+{/c47 104.833 }
+{/c59 107.036 }
+{/c35 67.0065 }
+{/c3E -13.1673 }
+{/c2C 78.8429 }
+{/c23 98.9866 }
+{/c4E 132.507 }
+{/c2A 132.288 }
+{/c43 149.333 }
+{/c55 58.5065 }
+{/c4A 136.007 }
+{/c26 102.833 }
+{/c51 177.982 }
+{/c2D 55.8326 }
+{/c46 104.333 }
+{/c58 107.037 }
+{/c6A 43.6568 }
+{/c71 130.717 }
+{/c68 5.70184 }
+{/c56 93.5065 }
+{/c4D 120.007 }
+{/c29 81.9568 }
+{/c52 97.5065 }
+{/c5B 121.007 }
+{/c37 148.717 }
+{/c6D 75.5065 }
+{/c49 56.9765 }
+{/c2E 55.8327 }
+{/c72 101.717 }
+{/c25 102.833 }
+{/c69 20.1768 }
+{/c70 109.182 }
+{/c57 94.0065 }
+{/c33 76.5065 }
+{/c53 97.5065 }
+{/c28 104.333 }
+{/c4C 120.007 }
+{/c2F 102.506 }
+{/c48 56.0265 }
+{/c5A 121.007 }
+{/c6C 157.007 }
+{/c36 133.717 }
+{/c24 105.833 }
+{/c4F 132.507 }
+]]
+[36/GothicBBB-Medium-H-36[
+{/c30 154.608 }
+{/c27 97.2418 }
+{/c39 93.5732 }
+{/c23 58.2168 }
+{/c67 106.287 }
+{/c43 51.2172 }
+{/c6E 71.752 }
+{/c31 128.098 }
+{/c63 52.2169 }
+{/c26 207.583 }
+{/c6A 211.098 }
+{/c29 51.7468 }
+{/c32 69.0981 }
+{/c25 155.272 }
+{/c21 86.707 }
+{/c65 84.167 }
+{/c3A 70.6131 }
+{/c2F 256.108 }
+]]
+[37/GothicBBB-Medium-H-37[
+{/c22 82.6082 }
+{/c6F 135.608 }
+{/c30 91.1081 }
+{/c27 74.2168 }
+{/c42 55.1081 }
+{/c47 49.6081 }
+{/c35 87.1181 }
+{/c3E 83.6081 }
+{/c23 102.766 }
+{/c67 113.717 }
+{/c4E 163.334 }
+{/c2A 111.608 }
+{/c43 84.5454 }
+{/c6E 96.2168 }
+{/c31 77.6081 }
+{/c55 140.608 }
+{/c63 67.7169 }
+{/c4A 75.6082 }
+{/c26 149.118 }
+{/c75 110.257 }
+{/c3F 144.608 }
+{/c46 96.6082 }
+{/c6A 225.578 }
+{/c5F 215.108 }
+{/c44 117.481 }
+{/c56 91.1081 }
+{/c29 72.2168 }
+{/c76 63.2168 }
+{/c32 48.6081 }
+{/c64 96.6081 }
+{/c49 209.108 }
+{/c25 104.207 }
+{/c72 165.608 }
+{/c40 76.6081 }
+{/c69 129.108 }
+{/c45 72.1081 }
+{/c57 64.6481 }
+{/c21 47.2171 }
+{/c65 41.7168 }
+{/c2F 135.608 }
+{/c41 97.6082 }
+{/c48 262.608 }
+{/c36 52.1181 }
+{/c61 188.976 }
+{/c24 148.446 }
+{/c3D 123.059 }
+]]
+] def
+end % TeXDict
+%systemdict /setpacking known {
+%    savepacking setpacking
+%} if
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%EndFile
+%%BeginFile: /usr/local/lib/dvi2ps/fonts/psfonts.ps
+%%BeginProcSet: psfonts 1 1
+% PostScript Font Utilities
+% version 1.1 12/12/1991
+% Copyright (C) 1991
+% Kazuhiro Kazama (kazama@expert-sun.ntt.jp)
+% NTT Software Laboratories 
+% All rights reserved.
+TeXDict begin
+/s1 ( ) def
+
+/TeXEncoding [
+%\00x
+    /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+%\01x
+    /.notdef /.notdef /.notdef /.notdef /fi /fl /.notdef /.notdef
+%\02x
+    /dotlessi /.notdef /grave /acute /caron /breve /macron /ring
+%\03x
+    /cedilla /germandbls /ae /oe /oslash /AE /OE /Oslash
+%\04x
+    /space /exclam /quotedblright /numbersign
+    /dollar /percent /ampersand /quoteright
+%\05x
+    /parenleft /parenright /asterisk /plus /comma /hyphen /period /slash
+%\06x
+    /zero /one /two /three /four /five /six /seven
+%\07x
+    /eight /nine /colon /semicolon /exclamdown /equal /questiondown /question
+%\10x
+    /at /A /B /C /D /E /F /G
+%\11x
+    /H /I /J /K /L /M /N /O
+%\12x
+    /P /Q /R /S /T /U /V /W
+%\13x
+    /X /Y /Z /bracketleft /quotedblleft /bracketright /circumflex /dotaccent
+%\14x
+    /quoteleft /a /b /c /d /e /f /g
+%\15x
+    /h /i /j /k /l /m /n /o
+%\16x
+    /p /q /r /s /t /u /v /w
+%\17x
+    /x /y /z /endash /emdash /quotedbl /tilde /dieresis
+%\20x
+    /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+%\21x
+    /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+%\22x
+    /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+%\23x
+    /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+%\24x
+    /.notdef /exclamdown /cent /sterling /fraction /yen /florin /section
+%\25x
+    /currency /quotesingle /quotedblleft /guillemotleft
+    /guilsinglleft /guilsinglright /fi /fl
+%\26x
+    /.notdef /endash /dagger /daggerdbl
+    /periodcentered /.notdef /paragraph /bullet
+%\27x
+    /quotesinglbase /quotedblbase /quotedblright /guillemotright
+    /ellipsis /perthousand /.notdef /questiondown
+%\30x
+    /.notdef /grave /acute /circumflex /tilde /macron /breve /dotaccent
+%\31x
+    /dieresis /.notdef /ring /cedilla /.notdef /hungarumlaut /ogonek /caron
+%\32x
+    /emdash /.notdef /.notdef /.notdef  /.notdef /.notdef /.notdef /.notdef
+%\33x
+    /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+%\34x
+    /.notdef /AE /.notdef /ordfeminine /.notdef /.notdef /.notdef /.notdef
+%\35x
+    /Lslash /Oslash /OE /ordmasculine /.notdef /.notdef /.notdef /.notdef
+%\36x
+    /.notdef /ae /.notdef /.notdef /.notdef /dotlessi /.notdef /.notdef
+%\37x
+    /lslash /oslash /oe /germandbls /.notdef /.notdef /.notdef /.notdef
+] def
+
+/TeXttEncoding [
+%\00x
+    /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+%\01x
+    /.notdef /.notdef /.notdef /.notdef
+    /.notdef /quotesingle /exclamdown /questiondown
+%\02x
+    /dotlessi /.notdef /grave /acute /caron /breve /macron /ring
+%\03x
+    /cedilla /germandbls /ae /oe /oslash /AE /OE /Oslash
+%\04x
+    /space /exclam /quotedbl /numbersign
+    /dollar /percent /ampersand /quoteright
+%\05x
+    /parenleft /parenright /asterisk /plus /comma /hyphen /period /slash
+%\06x
+    /zero /one /two /three /four /five /six /seven
+%\07x
+%    /eight /nine /colon /semicolon /exclamdown /less /questiondown /greater
+    /eight /nine /colon /semicolon /less /equal /greater /question
+%\10x
+    /at /A /B /C /D /E /F /G
+%\11x
+    /H /I /J /K /L /M /N /O
+%\12x
+    /P /Q /R /S /T /U /V /W
+%\13x
+    /X /Y /Z /bracketleft /backslash /bracketright /circumflex /underscore
+%\14x
+    /quoteleft /a /b /c /d /e /f /g
+%\15x
+    /h /i /j /k /l /m /n /o
+%\16x
+    /p /q /r /s /t /u /v /w
+%\17x
+    /x /y /z /braceleft /bar /braceright /tilde /dieresis
+%\20x
+    /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+%\21x
+    /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+%\22x
+    /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+%\23x
+    /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+%\24x
+    /.notdef /exclamdown /cent /sterling /fraction /yen /florin /section
+%\25x
+    /currency /quotesingle /quotedblleft /guillemotleft
+    /guilsinglleft /guilsinglright /fi /fl
+%\26x
+    /.notdef /endash /dagger /daggerdbl
+    /periodcentered /.notdef /paragraph /bullet
+%\27x
+    /quotesinglbase /quotedblbase /quotedblright /guillemotright
+    /ellipsis /perthousand /.notdef /questiondown
+%\30x
+    /.notdef /grave /acute /circumflex /tilde /macron /breve /dotaccent
+%\31x
+    /dieresis /.notdef /ring /cedilla /.notdef /hungarumlaut /ogonek /caron
+%\32x
+    /emdash /.notdef /.notdef /.notdef  /.notdef /.notdef /.notdef /.notdef
+%\33x
+    /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+%\34x
+    /.notdef /AE /.notdef /ordfeminine /.notdef /.notdef /.notdef /.notdef
+%\35x
+    /Lslash /Oslash /OE /ordmasculine /.notdef /.notdef /.notdef /.notdef
+%\36x
+    /.notdef /ae /.notdef /.notdef /.notdef /dotlessi /.notdef /.notdef
+%\37x
+    /lslash /oslash /oe /germandbls /.notdef /.notdef /.notdef /.notdef
+] def
+
+/CopyFont {
+    1 index maxlength add dict begin
+	{
+	    1 index /FID ne
+	    2 index /UniqueID ne and {
+		def
+	    }{
+		pop pop
+	    } ifelse
+	} forall
+	currentdict
+    end
+} bind def
+
+/ModifyFont {
+    4 1 roll
+    /es exch def
+    /proc exch def
+    /newfn exch def
+    MFSupp
+} bind def
+    
+/MFSupp {
+    dup length es add dict begin
+	{
+	    1 index /FID ne
+	    2 index /UniqueID ne and
+	    {
+		def
+	    }{
+		pop pop
+	    } ifelse
+	} forall
+	FontType 0 ne {
+	    proc
+	}{
+	    FDepVector dup length array copy /FDepVector exch def
+	    0 1 FDepVector length 1 sub {
+		FDepVector exch 2 copy get
+		MFSupp put
+	    } for
+	} ifelse
+	newfn currentdict definefont
+    end
+} bind def
+
+% fontname encoding TeXEncode dict
+/TeXEncode {
+    findfont 1 CopyFont
+    begin
+	/Encoding TeXEncoding def
+	currentdict
+    end
+    definefont pop
+} bind def
+
+% fontname TeXttEncode dict
+/TeXttEncode {
+    findfont 1 CopyFont
+    begin
+	/Encoding TeXttEncoding def
+	currentdict
+    end
+    definefont pop
+} bind def
+
+% fontname basefontname angle ObliqueFont -   Create a general oblique font
+/ObliqueFont {
+    [1 0 4 -1 roll dup sin exch cos div 1 0 0 ] exch
+    findfont 1 CopyFont
+    begin 
+	/FontMatrix exch FontMatrix exch matrix concatmatrix def
+	currentdict
+    end
+    definefont pop
+} bind def
+
+/TeXObliqueFont {
+    [1 0 4 -1 roll dup sin exch cos div 1 0 0 ] exch
+    findfont 2 CopyFont
+    begin 
+	/FontMatrix exch FontMatrix exch matrix concatmatrix def
+	/Encoding TeXEncoding def
+	currentdict
+    end
+    definefont pop
+} bind def
+    
+% fontname basefontname OutlineFont -   Create a outline font
+/OutlineFont {
+    {
+	/PaintType 2 def
+	/StrokeWidth 1 def
+    } 2
+    3 -1 roll
+    findfont ModifyFont pop
+} bind def
+
+% fontname basename SmallCapsFont -	Create a general smallcaps font
+/SmallCapsFont {
+    findfont
+    10 dict begin
+	dup /FontName exch def
+	/FontMatrix [1 0 0 1 0 0] def
+	/Encoding dup 2 index exch get def
+	/FontBBox dup 2 index exch get def
+	/FontArray [2 index dup 0.8 scalefont] def
+	/FontType 3 def
+	/BuildChar {
+	    exch begin
+		dup
+		dup 97 ge exch 122 le and {
+		    32 sub s1 0 3 -1 roll put
+		    1
+		}{
+		    s1 0 3 -1 roll put
+		    0
+		} ifelse
+		FontArray exch get setfont
+		s1 stringwidth FontBBox setcachedevice
+		newpath 0 0 moveto
+		s1 show
+	    end
+	} bind def
+	pop
+	currentdict
+    end
+    definefont pop
+} bind def
+
+/TeXSmallCapsFont {
+    dup 32 string cvs dup length 1 add string
+    dup 0 (@) putinterval dup 1 4 -1 roll putinterval cvn exch
+    findfont 1 CopyFont
+    begin
+	/Encoding TeXEncoding def
+	currentdict
+    end
+    definefont
+    10 dict begin
+	dup /FontName exch def
+	/FontMatrix [1 0 0 1 0 0] def
+	/Encoding dup 2 index exch get def
+	/FontBBox dup 2 index exch get def
+	/FontArray [2 index dup 0.8 scalefont] def
+	/FontType 3 def
+	/BuildChar {
+	    exch begin
+		dup
+		dup 97 ge exch 122 le and {
+		    32 sub s1 0 3 -1 roll put
+		    1
+		}{
+		    s1 0 3 -1 roll put
+		    0
+		} ifelse
+		FontArray exch get setfont
+		s1 stringwidth FontBBox setcachedevice
+		newpath 0 0 moveto
+		s1 show
+	    end
+	} bind def
+	pop
+	currentdict
+    end
+    definefont pop
+} bind def
+
+% fontname basename param BoldFont -
+/BoldFont {
+    exch findfont MakeBold pop
+} bind def
+
+% fontname param basefont MakeBold dict
+/MakeBold {
+    dup /FontType get 0 eq {
+	0 CopyFont
+	dup /FDepVector 2 copy get
+	[
+	    exch % fname param bfont bfont /FDepVector [ FDepVector % ]
+	    6 index 6 index 2 copy 5 -1 roll
+	    {
+		MakeBold 3 1 roll 2 copy
+	    } forall
+	    pop pop pop pop
+	] put
+	exch pop
+    }{
+	10 dict begin
+	    /FontMatrix [ 1 0 0 1 0 0 ] def
+	    /FontType 3 def
+	    /Encoding dup 2 index exch get def
+	    /df 1 index def
+	    /FontBBox [ 0 0 1 1 ] def
+	    /da 2 index def
+	    /BuildChar {
+		exch begin
+		    df setfont
+		    s1 dup 0 4 -1 roll put
+		    dup gsave stringwidth grestore
+		    1 index 0 ne {
+			exch da add exch
+		    } if
+		    setcharwidth
+		    0 0 moveto dup show
+		    da 0 moveto dup show
+		    da da moveto dup show
+		    0 da moveto show
+		end
+	    } def
+	    pop pop
+	    currentdict
+	end
+    } ifelse
+    definefont
+} bind def
+end % TeXDict
+%%EndProcSet
+%%EndFile
+%%EndProlog
+%%BeginSetup
+%%PaperSize: A4
+%%Feature: *ManualFeed False
+%%Feature: *Resolution 600
+TeXDict begin
+@large
+@a4
+1.000 49 /f0 NF
+f0 SF
+[<1000F000F800F80078007C007C007C003E003E003E003F001F001F001F801F800FC00FC00FC00FE007E007E007F007F007F0
+  03F803F803F801F000E0> 16 30 -3 -2 19.141] 48 D
+1.000 123 /f1 NF
+f1 SF
+[<FFFF80007FFFFFFFFF80007FFFFFFFFF80003FFFFF07F8000000FF8001F80000007F8000F00000007F8000700000007F0000
+  380000007F0000180000007F00000C0000007F00000C0000007F0000060000007F0000060000007F0000030000007F000001
+  8000007F000001800000FF000000C00000FF000000C00000FE000000600000FE0000003FFFFFFE0000003FFFFFFE0000001F
+  FFFFFE000000180000FE0000000C0000FE0000000E0000FE000000060000FE000000030001FE000000030001FE0000000180
+  01FC00000001C001FC00000000C001FC000000006001FC000000006001FC000000003001FC000000003001FC000000001801
+  FC000000000C01FC000000000C03FC000000000603FC000000000603F8000000000303F8000000000183F8000000000183F8
+  0000000000C3F80000000000C3F8000000000063F8000000000073F8000000000033F800000000001FF800000000001FF800
+  000000000FF000000000000FF0000000000007F0000000000003F0000000000003F0000000000001F0000000000001F00000
+  00000000F0000000000000700000000000006000> 56 60 -3 0 62.265] 65 D
+[<FFFFFFFFF8000000FFFFFFFFFF000000FFFFFFFFFFC0000000FF00003FF00000007F000007FC0000007F800001FE0000007F
+  800000FF0000003F8000007F8000003F8000003FC000003FC000001FE000003FC000000FF000001FC000000FF000001FC000
+  0007F800001FE0000007F800001FE0000003FC00000FE0000003FC00000FE0000003FC00000FF0000003FC00000FF0000001
+  FC000007F0000001FC000007F0000001FC000007F8000003FC000007F8000003F8000003F8000003F8000003F8000007F000
+  0003FC000007F0000003FC00000FE0000001FC00003FC0000001FC0000FF00000001FFFFFFF800000001FFFFFFFC00000000
+  FE0000FF00000000FE00001FC0000000FF00000FF0000000FF000003F80000007F000001FC0000007F000000FE0000007F80
+  00007F0000007F8000007F8000003F8000003F8000003F8000003FC000003FC000001FC000003FC000001FE000001FC00000
+  1FE000001FC000001FE000001FE000001FE000001FE000001FE000000FE000001FE000000FE000001FE000000FF000001FC0
+  00000FF000003FC0000007F000007F80000007F00000FF00000007F80003FE000007FFFFFFFFFC000007FFFFFFFFF0000003
+  FFFFFFFF8000> 64 57 -3 0 62.971] 66 D
+[<00007FC0000000000003FFFC00000000000FFFFF00000000003FE00FC000000000FF0001F000000001FC00007800000003F8
+  00003C00000007F000000E0000000FE00000078000000FE00000038000001FC0000001C000001F80000000E000003F800000
+  007000003F800000003800007F000000003800007F000000001C00007F000000000C00007F000000000E0000FF0000000006
+  0000FF00000000060000FF00000000070000FF00000000030000FF00000000030000FF00000000000000FF00000000000000
+  FF00000000000000FF00000000000000FF800000000000007F800000000000007F800000000000007F800000000000007FC0
+  0000000000003FC00000000000003FC00000000000003FC00000000000001FE00000000000001FE00000000000001FF00000
+  000030000FF00000000030000FF000000000380007F800000000380003F800000000380003FC00000000380001FE00000000
+  3C0000FE000000003C0000FF000000003C00007F800000003C00003F800000003E00001FC00000007E00000FE00000007E00
+  0007F00000007E000003F8000000FF000001FC000000FF000000FF000001FF0000003F800003BF0000001FE000079F800000
+  07F8000F0F80000001FF807E07800000007FFFF803800000000FFFE001C000000000FF8001C0> 64 61 -4 2 59.336] 67 D
+[<FFFFE0018007FFFFF00000FFFFE0038007FFFFF00000FFFFE003C007FFFFF0000007FC0003E00007F800000000F00003E000
+  03F000000000700003F00003F000000000700003F80003F800000000300003F80001F800000000300007EC0001F800000000
+  380007EC0001F800000000380007E60001FC00000000180007E30000FC00000000180007E30000FC000000001C0007E18000
+  FC000000001C0007E0C000FE000000000C0007E0C0007E000000000C000FC060007E000000000E000FC060007E000000000E
+  000FC030007F0000000006000FC018003F0000000006000FC018003F0000000007000FC00C003F0000000007000FC006003F
+  8000000003000FC006001F8000000003001F8003001F8000000003801F8003001F8000000003801F8001801FC00000000180
+  1F8000C00FC000000001801F8000C00FC000000001C01F8000600FC000000001C01F8000300FE000000000C03F00003007E0
+  00000000C03F00001807E000000000E03F00000C07E000000000E03F00000C07F000000000603F00000603F000000000603F
+  00000603F000000000703F00000303F000000000703F00000183F800000000307E00000181F800000000307E000000C1F800
+  000000387E00000061F800000000387E00000061FC00000000187E00000030FC00000000187E00000030FC000000001C7E00
+  000018FC000000001C7E0000000CFE000000000CFC0000000C7E000000000CFC000000067E000000000EFC000000037E0000
+  00000EFC000000037F0000000006FC00000001BF0000000006FC00000001BF0000000007FC00000000FF80000007FFFC0000
+  00007FFF800007FFF8000000007FFF800003FFF8000000003FFF80> 88 57 -4 0 80.541] 77 D
+[<00FC001F0003FF007F800F83C0F9C01F00E1F0E03E007BF0703E001FF0307E000FF0307C0007F038FC0007F018FC0003F018
+  FC0003F01CFC0003F80CFC0001F80CFC0001F80CFE0001F800FE0001FC00FE0000FC00FE0000FC00FF0000FC007F0000FE00
+  7F00007E007F00007E007F80007E003F80007F003F80003F001FC0003F001FC0003F000FE0003F8007E0001F8007F0001F80
+  03F0001F8001F8003FC000FC003FC0007E007FC0001F00EFC0000FC1C3800003FF800000007E0000> 40 38 -3 1 43.883] 97 D
+[<01FC000007FF00000F07C0001E03F0003C01F8007C00FC007C007E0078003F00F8003F80F8001F80F8000FC0F8000FE0F800
+  0FE0F80007F0FC0007F0FC0007F8FC0003F8FC0003F8FE0003FC7E0003FC7E0001FC7E0001FC7F0001FC3F0001FC3F0000FC
+  3F0000FC3F8000FC1F8000FC1F8000FC1FC000FC1FC000F80FE000F80FF001F80FF801F00FFE03E007E707C007E3FF0007E0
+  FC0007F0000003F0000003F0000003F0000003F8000001F8000001F8000001F8000001FC000000FC000000FC000000FC0000
+  00FE0000007E0000007E0000007E0000007F00001FFF00001FFF00001FFF0000003F0000> 32 59 -4 1 35.629] 98 D
+[<003FC00001FFF80007C03F000F8007C01F0000E03F0000703E00003C7E00000E7E000006FC000007FC000003FC000000FC00
+  0000FC000000FE000000FE000000FE000000FE000000FF0000007F0000007F0000007F0000007F8000003F8000003F800000
+  1FC000380FC000FE0FE000FF07E000FF03F000FF01F800FF00FC007F007E001F003F0007000F800E0007E03C0001FFF00000
+  3FC0> 32 38 -3 1 35.927] 99 D
+[<003FC00001FFF80003E03F000F8007C00F8000E01F0000703E00003C3E00000E7E0000067E0000077E000003FE000000FE00
+  0000FE000000FE000000FE000000FE000000FE000000FF0000007F0000007FFFE0007FFFFE007F803FC03F8003E03F8000F8
+  1FC0003C1FC0001C0FC0001E0FE0000E07F0000E03F0000E01F8000E00FC000E007E001E001F801C0007E0780001FFF00000
+  3FC0> 32 38 -3 1 38.656] 101 D
+[<07C0000000001FF0000000007878000000007C3C00000000FE1E00000000FF1E00000000FF8F000000007F8F800000007F8F
+  800000003F07C00000001E07C00000000007C00000000007E00000000007E00000000003E00000000003F00000000003F000
+  00000003F00000000003F00000000001F80000000001F80000000001F80000000001F80000000001FC0000000000FC000000
+  0000FC0000000000FC0000000000FC0000000000FE00000000007E00000000007E00000000007E00000000007E0000000000
+  7E00000000007F00000000003F00000000003F00000000003F00000000003F00000000003F80000000001F80000000001F80
+  000000001F80000000001F80000000001FC0000000000FC0000000000FC0000000000FC0000000000FC0000000000FE00000
+  0007FFFFF0000007FFFFF0000007FFFFF000000007E00000000007E00000000007F00000000003F00000000003F000000000
+  03F00000000003F00000000003F80000000001F80000000001F80000000001F80000000001F80000000000FC1C00000000FC
+  7F00000000FC7F800000007C7F800000007C7F800000003E7F800000003E3F800000001F0F800000000F870000000003FE00
+  00000000F800> 48 76 -4 17 40.645] 102 D
+[<03FF0000001FFFE000003C01F800007C007E0000FE003F0000FF001F8000FF800FC0007F8007E0007F8007F0003F0003F000
+  1E0003F000000003F800000001F800000001F800000001FC00000001FC00000000FC000007E0FC00001FF8FE00007C1EFE00
+  00F8077E0001F003FE0001F001FF0003F000FF0003E0007F0007E0003F0007E0003F8007E0003F8007E0001F8007E0001F80
+  07F0001FC007F0001FC007F0000FC007F0000FC007F8000FE003F8000FE003F80007E003F80007E003FC0007F001FC0007F0
+  01FC0003F000FE0003F000FE0003F8007E0003F8007F0001F8003F0001F8001F8001FC000FC003FC0007E003FC0003F007FC
+  0001F80EFC00007C1C3800001FF800000007E000> 40 54 -1 17 39.598] 103 D
+[<0700000E000003E0001F80003F00000FF8001FC0003F80001E1C000FC0003F80003E0E000FC0001F80003E07000FC0001F80
+  003E03000FE0001FC0003E038007E0001FC0003E018007E0000FC0003F01C007E0000FC0003F00C007F0000FE0003F00C003
+  F0000FE0003F80E003F00007E0001F806003F00007E0001FC06003F80007F0000FC00001F80007F0000FC00001F80003F000
+  0FE00001F80003F00007E00001FC0003F80007E00000FC0003F80007F00000FC0001F80003F00000FC0001F80003F00000FE
+  0001FC0003F000007E0001FC0003F800C07E0000FC0001F800C07E0000FC0001F800C07F0000FE0001F800E03F0000FE0001
+  F800603F80007F0000F800603F80007F0000F800703FC0007F8000F800303FE0007DC000F800303F7000FCE001F800383F38
+  00FC7001F8001C3E1E00F83C01F0000E3C0781F00F03E00007F801FFE003FFC00003E0007F0000FE0000> 72 38 -2 1 72.893] 109 D
+[<07000001F0001F800007FC001FC0000F0E000FC0001F07000FC0001F03800FC0001F01800FE0001F01C007E0001F00C007E0
+  001F80E007E0001F806007F0001F806003F0001FC07003F0000FC03003F0000FE03003F80007E00001F80007E00001F80007
+  F00001F80003F00001FC0003F00000FC0003F80000FC0001F80000FC0001F80000FE0001F800007E0001FC00C07E0000FC00
+  C07E0000FC00C07F0000FC00E03F0000FC00603F80007C00603F80007C00703FC0007C00303FE0007C00303F7000FC00383F
+  3800FC001C3E1E00F8000E3C0781F00007F801FFE00003E0007F0000> 48 38 -2 1 49.832] 110 D
+[<FFFFC0000000FFFFC0000000FFFFC000000007F00000000003F00000000003F80000000003F80000000001F80000000001F8
+  0000000001FC0000000001FC0000000000FC0000000000FC0000000000FE0000000000FE00000000007E07E00000007E1FFC
+  0000007F383F0000007F700F8000003FE007E000003FC003F000003FC001F800003F8000FC00001F8000FE00001F80007E00
+  001FC0007F00001FC0003F80000FC0003F80000FC0001FC0000FE0001FC0000FE0001FE00007E0000FE00007E0000FE00007
+  F0000FF00007F0000FF00003F00007F00003F00007F00003F80007F00003F80007F00301F80003F00301F80003F00301FC00
+  03F00381FC0003F00180FC0003F00180FE0003F001C0FE0003E000C0FF0007E000C0FF8007C000E0FDE007C00070F8700F80
+  0039F03C1F00001FE00FFC00000F8003F000> 48 53 3 16 41.769] 112 D
+[<07C003F000001FF00FFC000078383E0F00007C1C7C038000FE0E7C01C000FF07F800E000FF83F80060007F83F80070007F81
+  F80038003F01F80018001E01FC0018000001FC001C000000FC000C000000FC000C000000FE0000000000FE00000000007E00
+  000000007E00000000007F00000000007F00000000003F00000000003F00000000003F80000000003F80000018001F800000
+  18001F8000001C001F8000000C001FC03C000C000FC07E000E000FC0FF0007000FE0FF8003000FE0FF8003800FF07F8001C0
+  1F383F8000E01F1C1F0000783E0E0F00001FF807FC000007E001F000> 48 38 -2 1 47.448] 120 D
+[<01FC0000000FFF0000001E07C000003801F000007000F800007C007C00007F003E00007F801F00007F801F80007F800FC000
+  7F800FC0003F8007E0000E0007F000000003F000000003F000000003F800000FE1F800003FF9F800007C1FF80000F807FC00
+  01F003FC0003F001FC0003F000FC0003F000FE0003F0007E0003F0007E0003F0007E0003F0007F0003F0003F0003F0003F00
+  03F8003F0001F8003F8001F8001F8001F8001F8001FC001F8000FC001FC000FC000FC000FE000FC0007E000FC0007E000FE0
+  C07F0007E0C03F0007E0E03F0007E0603F8007F0601F8003F0701F8003F0300F8003F0380F8003F8180F8001F81C0F8001F8
+  0E0F8001F8070F0000F803FE00007000F8000000> 40 54 -2 17 40.703] 121 D
+[<C0007C0000E001FF00006003FFC0007003FFE0003807FFF0001E0FFFF8001FFF81F8000FFC007C000700001C000380000E00
+  01C000060000E000070000700003000038000300001C000000000E000000000700000000038000000001E000000000F00000
+  000038000000001C000000000E000000000700000000038000000001C000000000E0000180007000018000380001C0001C00
+  01E003FE0000F81FFF0000FFFF0700007FFF0380003FFE01C0001FFC00C0000FF800E00001E00060> 40 38 -3 1 38.608] 122 D
+[<6000700038001C000E0006000700030003800180018001C000C000C000C000C01CC07FC0FFC0FFC0FFC0FF80FF807F001C00> 16 25 -7 16 23.061] 59 D
+1.000 107 /f2 NF
+f2 SF
+[<0000780000000000000000780000000000000000780000000000000000780000000000000000F80000000000000000F00000
+  000000000000F00000000000000001F00000000000000001E00000000000000003E00000000000000007C000000000000000
+  07C0000000000000000F80000000000000001F00000000000000003F00000000000000007E0000000000000000FC00000000
+  00000001F80000000000000003F0000000000000000FE0000000000000003FFFFFFFFFFFFFFFFEFFFFFFFFFFFFFFFFFFFFFF
+  FFFFFFFFFFFFFF3FFFFFFFFFFFFFFFFE0FE00000000000000003F00000000000000001F80000000000000000FC0000000000
+  0000007E00000000000000003F00000000000000001F00000000000000000F800000000000000007C00000000000000007C0
+  0000000000000003E00000000000000001E00000000000000001F00000000000000000F00000000000000000F00000000000
+  000000F8000000000000000078000000000000000078000000000000000078000000000000000078000000000000> 72 44 -5 1 83.020] 32 D
+[<00001FFFFE0000FFFFFF0003FFFFFF000FFFFFFE001FF00000007F80000000FE00000001F800000003F000000007E0000000
+  0FC00000000F800000001F000000001F000000003E000000003E000000007C000000007C000000007800000000F800000000
+  F800000000F000000000F000000000FFFFFFFFFEFFFFFFFFFFFFFFFFFFFFFFFFFFFFFEF000000000F000000000F800000000
+  F80000000078000000007C000000007C000000003E000000003E000000001F000000001F000000000F800000000FC0000000
+  07E000000003F000000001F800000000FE000000007F800000001FF00000000FFFFFFE0003FFFFFF0000FFFFFF00001FFFFE> 40 50 -7 4 55.347] 50 D
+[<60F0F0F0F0F0F0F0F0F0F0F0F0F0F0F0F0F0F0F0F0F0F0F0F0F0F0F0F0F0F0F0F0F0F0F0F0F0F0F0F0F0F0F0F0F0F0F0F0F0
+  F0F0F0F0F0F0F0F0F0F0F0F0F0F0F0F0F0F0F0F0F0F0F0F0F0F0F0F0F0F0F0F060> 8 83 -9 21 23.061] 106 D
+[<1C007F00FF80FF80FF80FF80FF807F001C00> 16 9 -7 -17 23.061] 1 D
+[<000001F800000FF800003F800000FC000001F8000003F0000007E0000007E000000FE000000FC000000FC000000FC000000F
+  C000000FC000000FC000000FC000000FC000000FC000000FC000000FC000000FC000000FC000000FC000000FC000000FC000
+  000FC000000FC000000FC000000FC000000FC000000FC000000FC000000FC000000FC000001FC000001F8000003F8000007F
+  000000FE000003F800007FE00000FF0000007FE0000003F8000000FE0000007F0000003F8000001F8000001FC000000FC000
+  000FC000000FC000000FC000000FC000000FC000000FC000000FC000000FC000000FC000000FC000000FC000000FC000000F
+  C000000FC000000FC000000FC000000FC000000FC000000FC000000FC000000FC000000FC000000FC000000FC000000FE000
+  0007E0000007E0000003F0000001F8000000FC0000003F8000000FF8000001F8> 32 83 -6 21 41.510] 102 D
+[<FC000000FFC0000007F0000001FC0000007E0000003F0000003F8000001F8000001FC000000FC000000FC000000FC000000F
+  C000000FC000000FC000000FC000000FC000000FC000000FC000000FC000000FC000000FC000000FC000000FC000000FC000
+  000FC000000FC000000FC000000FC000000FC000000FC000000FC000000FC000000FC000000FE0000007E0000007F0000003
+  F8000001FC0000007E0000001FF0000007F800001FF000007E000001FC000003F8000007F0000007E000000FE000000FC000
+  000FC000000FC000000FC000000FC000000FC000000FC000000FC000000FC000000FC000000FC000000FC000000FC000000F
+  C000000FC000000FC000000FC000000FC000000FC000000FC000000FC000000FC000000FC000000FC000000FC000001FC000
+  001F8000003F8000003F0000007E000001FC000007F00000FFC00000FC000000> 32 83 -6 21 41.510] 103 D
+[<000FE000007FFC0000FFFE0003FFFF8007F83FC00FC007E01F8003F03F0001F83E0000F87C00007C7C00007C7800003CF800
+  003EF800003EF000001EF000001EF000001EF000001EF800003EF800003E7800003C7C00007C7C00007C3E0000F83F0001F8
+  1F8003F00FC007E007F83FC003FFFF8000FFFE00007FFC00000FE000> 32 32 -5 -5 41.510] 14 D
+1.000 64 /f3 NF
+f3 SF
+[<C0000000F0000000FC000000FF000000FFC00000FFF80000FFFE0000FFFFC000FFFFF800FFFFFF00FFFFFFE0FFFFFFFEFFFF
+  FFFEFFFFFFE0FFFFFF00FFFFF800FFFFC000FFFE0000FFF80000FFC00000FF000000FC000000F0000000C0000000> 32 24 -50 12 83.020] 45 D
+[<001800001800001800001800003C00003C00003C00007E00007E00007E0000FF0000FF0000FF0001FF8001FF8001FF8003FF
+  C003FFC007FFE007FFE007FFE00FFFF00FFFF01FFFF81FFFF83FFFFC3FFFFC7FFFFE7FFFFEFFFFFFFFFFFF> 24 31 12 -2 83.020] 63 D
+1.000 122 /f4 NF
+f4 SF
+[<FFFF8000FFFFFEFFFF8000FFFFFEFFFF8000FFFFFE0FFC000007FF8003F0000001FF0001E0000001FE0000E0000001FE0000
+  E0000003FC000060000003FC000060000003FC000030000007F8000030000007F8000030000007F800001800000FF0000018
+  00000FF000001800000FF000000C00001FE000000C00001FE000000FFFFFFFE0000007FFFFFFC0000007FFFFFFC000000600
+  007FC000000300007F8000000300007F800000030000FF800000018000FF000000018000FF000000018001FF00000000C001
+  FE00000000C001FE00000000C003FE000000006003FC000000006003FC000000007007FC000000003007F8000000003007F8
+  00000000380FF800000000180FF000000000180FF0000000001C1FF0000000000C1FE0000000000C1FE0000000000E3FE000
+  000000063FC000000000063FC000000000077FC000000000037F8000000000037F800000000001FF000000000001FF000000
+  000001FF000000000000FE000000000000FE000000000000FE0000000000007C0000000000007C0000000000007C00000000
+  0000380000000000003800000000000038000000> 56 60 -3 0 62.265] 65 D
+[<000001FF80000000000FFFF0000000007FFFFC00000001FF803F00000003FC000F8000000FF00003C000001FE00000E00000
+  3F8000007000007F000000380000FE000000180001FE0000001C0003FC0000000E0007F8000000060007F800000007000FF0
+  00000007000FF000000003001FE000000003001FE000000003803FE000000001803FC000000001807FC000000001807FC000
+  000001807FC000000001807F800000000000FF800000000000FF800000000000FF800000000000FF800000000000FF800000
+  000000FF800000000000FF800000000000FF800000000000FF800000000000FF800000000000FF800000000000FF80000000
+  0000FF8000000000007F8000000001807FC000000001807FC000000001807FC000000001803FC000000003803FE000000003
+  801FE000000003801FE000000007800FF000000007800FF0000000078007F80000000F8007F80000000F8003FC0000001F80
+  01FE0000003F8000FE0000003F80007F0000007F80003F800000FF80001FE00001DF80000FF000039F800003FC000F0F8000
+  01FF807E078000007FFFF8038000000FFFE00380000001FF800180> 56 61 -5 2 59.959] 67 D
+[<FFFFFFFFFFFF00FFFFFFFFFFFF00FFFFFFFFFFFF0001FF800007FF0000FF0000007F8000FF0000003F8000FF0000000F8000
+  FF000000078000FF000000078000FF000000038000FF000000038000FF00000001C000FF00000001C000FF00000001C000FF
+  00000000C000FF00000000C000FF00000000C000FF00000000C000FF0000C000E000FF0000C0006000FF0000C0006000FF00
+  00C0006000FF0000C0000000FF0000C0000000FF0001C0000000FF0001C0000000FF0003C0000000FF000FC0000000FFFFFF
+  C0000000FFFFFFC0000000FFFFFFC0000000FF000FC0000000FF0003C0000000FF0001C0000000FF0001C0000000FF0000C0
+  000000FF0000C0000000FF0000C0000000FF0000C0030000FF0000C0030000FF0000C0030000FF000000030000FF00000007
+  0000FF000000060000FF000000060000FF000000060000FF0000000E0000FF0000000E0000FF0000000E0000FF0000001E00
+  00FF0000003E0000FF0000007E0000FF000001FC0001FF80000FFC00FFFFFFFFFFFC00FFFFFFFFFFFC00FFFFFFFFFFFC00> 56 57 -3 0 56.500] 69 D
+[<FFFFFF000000FFFFFF000000FFFFFF00000001FF8000000000FF0000000000FF0000000000FF0000000000FF0000000000FF
+  0000000000FF0000000000FF0000000000FF0000000000FF0000000000FF0000000000FF0000000000FF0000000000FF0000
+  000000FF0000000000FF0000000000FF0000000000FF0000000000FF0000000000FF0000000000FF0000000000FF00000000
+  00FF0000000000FF0000000000FFFFFFF00000FFFFFFFC0000FF0001FF0000FF00003FC000FF00000FE000FF000007F000FF
+  000007F800FF000003FC00FF000003FC00FF000001FE00FF000001FE00FF000001FF00FF000001FF00FF000001FF00FF0000
+  01FF00FF000001FF00FF000001FF00FF000001FF00FF000001FE00FF000001FE00FF000003FE00FF000003FC00FF000003F8
+  00FF000007F000FF00000FE000FF00003FC001FF8001FF80FFFFFFFFFE00FFFFFFFFF800FFFFFFFFC000> 48 57 -3 0 56.500] 80 D
+[<C001FF0000E00FFFE000E03FFFF800F0FE00FE00FBF0003F00FF80001F80FF00000FC0FE000007C0FC000007E0F8000003E0
+  F0000003F0F0000001F0E0000001F0E0000001F8E0000001F8C0000001F8C0000001F8C0000001F8C0000003F8C0000003F8
+  00000007F800000007F80000000FF00000001FF00000003FF00000007FE0000007FFE000007FFFC00007FFFFC0003FFFFF80
+  00FFFFFF0003FFFFFE0007FFFFF8000FFFFFE0001FFFFF80001FFFF800003FFF8000007FF80000007FE00000007FC0000000
+  FF80000000FF000000C0FE000000C0FE000000C0FE000000C0FC000001C0FC000001C0FC000001C0FC000003C07C000003C0
+  7E000007C07E000007C03E00000FC03F00001FC01F80003FC00FC0007FC007E000F7C003F807E3C000FFFF81C0003FFE01C0
+  000FF800C0> 40 61 -4 2 46.122] 83 D
+[<001FFFFFFFE000001FFFFFFFE000001FFFFFFFE000000007FF800000000001FE000000000001FE000000000001FE00000000
+  0001FE000000000001FE000000000001FE000000000001FE000000000001FE000000000001FE000000000001FE0000000000
+  01FE000000000001FE000000000001FE000000000001FE000000000001FE000000000001FE000000000001FE000000000001
+  FE000000000001FE000000000001FE000000000001FE000000000001FE000000000001FE000000000001FE000000000001FE
+  000000000001FE000000000001FE000000000001FE000000000001FE000000000001FE000000000001FE000000000001FE00
+  0000000001FE000000000001FE000000C00001FE000018C00001FE000018C00001FE000018C00001FE000018E00001FE0000
+  38600001FE000030600001FE000030600001FE000030600001FE000030700001FE000070700001FE000070700001FE000070
+  780001FE0000F07C0001FE0001F03E0001FE0003E03FC003FF001FE03FFFFFFFFFFFE03FFFFFFFFFFFE03FFFFFFFFFFFE0> 56 57 -3 0 59.959] 84 D
+[<007F8007C003FFF00FE00FE0781FF03FC01E3E187F80063E187F00077C0CFF0003FC0CFE0001FC0CFE0001FC0CFE0000FC0C
+  FE0000FC0CFE0000FC0C7F0000FC0C7F0000FC007F8000FC003FC000FC001FC000FC000FF000FC0003F800FC0000FE00FC00
+  003FE0FC000007FFFC0000007FFC00000000FC00000000FC00000000FC00000000FC00078000FC000FC000FC001FE000FC00
+  1FE001F8001FE001F8001FE003F0001FC003F0000F8007E00007000F800003E03F000000FFFC0000001FE00000> 40 39 -3 1 41.510] 97 D
+[<00001FC0000300FFF8000381E07E0003C7801F0003C6000FC003EE0007E003FC0003F003F80003F003F80001F803F00001FC
+  03F00000FC03F00000FE03F00000FE03F000007E03F000007F03F000007F03F000007F03F000007F03F000007F03F000007F
+  03F000007F03F000007F03F000007F03F000007F03F000007E03F00000FE03F00000FE03F00000FC03F00000FC03F00001F8
+  03F80001F803FC0003F003FE0007E003F7000FC003F3801F8003F1E03E0003F07FF80003F01FE00003F000000003F0000000
+  03F000000003F000000003F000000003F000000003F000000003F000000003F000000003F000000003F000000003F0000000
+  03F000000003F000000003F000000003F00000000FF0000000FFF0000000FFF0000000FFF000000003F0000000> 40 59 -2 1 46.122] 98 D
+[<0007F800001FFF00007C07C001F800E003F0007007E000380FC0001C1FC0000C1F80000E3F8000063F0000067F0000007F00
+  00007E000000FE000000FE000000FE000000FE000000FE000000FE000000FE000000FE000000FE000000FE0000007E000000
+  7F0000007F0000007F0000F03F0001F83F8003FC1F8003FC0FC003FC0FC003FC07E001FC03F000F801F80070007E03E0001F
+  FF800003FC00> 32 39 -3 1 36.898] 99 D
+[<0007F80FC0001FFE0FFF007C078FFF01F801CFFF03F000EFF007E0007FC00FC0003FC01F80001FC01F80001FC03F00000FC0
+  3F00000FC07F00000FC07F00000FC07E00000FC0FE00000FC0FE00000FC0FE00000FC0FE00000FC0FE00000FC0FE00000FC0
+  FE00000FC0FE00000FC0FE00000FC0FE00000FC07E00000FC07F00000FC07F00000FC03F00000FC03F80000FC01F80000FC0
+  0FC0001FC00FC0001FC007E0003FC003F0007FC000F801EFC0007E078FC0001FFF0FC00003F80FC00000000FC00000000FC0
+  0000000FC00000000FC00000000FC00000000FC00000000FC00000000FC00000000FC00000000FC00000000FC00000000FC0
+  0000000FC00000000FC00000000FC00000000FC00000003FC0000003FFC0000003FFC0000003FFC00000000FC0> 40 59 -3 1 46.122] 100 D
+[<0003FC00001FFF80007E03E000F8007001F0003807E0001C07C0000E0FC000061F8000073F8000033F0000037F0000007F00
+  00007E0000007E000000FE000000FE000000FE000000FE000000FE000000FFFFFFFFFFFFFFFFFE00003FFE00003FFE00003F
+  7E00003F7F00003F7F00003E3F00003E3F00007E1F80007C1F80007C0FC000F807E001F803F001F001F803E0007C0FC0001F
+  FF000007F800> 32 39 -2 1 36.898] 101 D
+[<7FFFF8007FFFF8007FFFF80003FC000001F8000001F8000001F8000001F8000001F8000001F8000001F8000001F8000001F8
+  000001F8000001F8000001F8000001F8000001F8000001F8000001F8000001F8000001F8000001F8000001F8000001F80000
+  01F8000001F8000001F8000001F8000001F8000001F8000001F8000001F80000FFFFFC00FFFFFC00FFFFFC0001F8000001F8
+  000001F8000001F8000001F8000001F8000001F8000001F8000001F8000001F8000001F8000001F8000001F8000001F803C0
+  00FC0FF000FC0FF0007E0FF0007E0FF0003F0FF0001F87E0000FC1E00003FF8000007E00> 32 59 -1 0 25.367] 102 D
+[<0007FF0000007FFFF00001FC01FC0007E0003F000F80000F803F000007E03E000003E07C000001F0FC000001F8F8000000F8
+  F8000000F8F8000000F8F8000000F8F8000000F87C000001F87C000001F03E000003F01F00000FF00F80007FE003FFFFFFC0
+  01FFFFFF8003FFFFFE0007FFFFF80007FFFFC0000FC00000000F000000000F000000000E000000000E000000000E00000000
+  0E00000000060FF00000073FFC000003F81F000003F00F800003E007C00007C003E0000FC003F0000FC003F0001F8001F800
+  1F8001F8001F8001F8001F8001F8001F8001F8001F8001F8001F8001F8001F8001F8000FC003F0000FC003F00007C003E010
+  03E007C07C01F00FE07C00F81F707C003FFC3C3C000FF00FF800000003F0> 40 56 -2 18 41.510] 103 D
+[<FFFFC1FFFF80FFFFC1FFFF80FFFFC1FFFF8007F8000FF00003F00007E00003F00007E00003F00007E00003F00007E00003F0
+  0007E00003F00007E00003F00007E00003F00007E00003F00007E00003F00007E00003F00007E00003F00007E00003F00007
+  E00003F00007E00003F00007E00003F00007E00003F00007E00003F00007E00003F00007E00003F00007E00003F00007E000
+  03F80007E00003F80007E00003F80007E00003FC0007E00003FC0007E00003FE000FC00003F7000FC00003F3800FC00003F1
+  C01F800003F0F03F000003F03FFC000003F00FF0000003F00000000003F00000000003F00000000003F00000000003F00000
+  000003F00000000003F00000000003F00000000003F00000000003F00000000003F00000000003F00000000003F000000000
+  03F00000000003F00000000003F0000000000FF000000000FFF000000000FFF000000000FFF00000000003F000000000> 48 58 -2 0 46.122] 104 D
+[<FFFFC0FFFFC0FFFFC007F80003F00003F00003F00003F00003F00003F00003F00003F00003F00003F00003F00003F00003F0
+  0003F00003F00003F00003F00003F00003F00003F00003F00003F00003F00003F00003F00003F00003F00003F00007F000FF
+  F000FFF000FFF00003F0000000000000000000000000000000000000000000000000000000000000000380000FE0001FF000
+  1FF0001FF0001FF0001FF0000FE000038000> 24 56 -2 0 23.061] 105 D
+[<03F8000FFE003C0F007C07C0FE07C0FF03E0FF03F0FF03F0FF01F07E01F83C01F80001F80001F80001F80001F80001F80001
+  F80001F80001F80001F80001F80001F80001F80001F80001F80001F80001F80001F80001F80001F80001F80001F80001F800
+  01F80001F80001F80001F80001F80001F80001F80001F80001F80001F80001F80001F80001F80001F80001F80001F80007F8
+  00FFF800FFF800FFF80001F80000000000000000000000000000000000000000000000000000000000000001C00007F0000F
+  F8000FF8000FF8000FF8000FF80007F00001C0> 24 73 4 17 25.367] 106 D
+[<FFFFC0FFFFFFFFC0FFFFFFFFC0FFFF07F8003FF003F0001FC003F0003F8003F0003F0003F0007F0003F0007E0003F000FC00
+  03F001FC0003F001F80003F003F00003F007E00003F00FE00003F00FC00003F81F800003FE3F800003F73F000003F3FE0000
+  03F1FC000003F0FC000003F078000003F038000003F01E000003F007000003F003800003F001C00003F000E00003F0007000
+  03F0007C0003F0007F0003F0007FC003F001FFFC03F001FFFC03F001FFFC03F000000003F000000003F000000003F0000000
+  03F000000003F000000003F000000003F000000003F000000003F000000003F000000003F000000003F000000003F0000000
+  03F000000003F000000003F00000000FF0000000FFF0000000FFF0000000FFF000000003F0000000> 40 58 -2 0 43.816] 107 D
+[<FFFFC0FFFFC0FFFFC007F80003F00003F00003F00003F00003F00003F00003F00003F00003F00003F00003F00003F00003F0
+  0003F00003F00003F00003F00003F00003F00003F00003F00003F00003F00003F00003F00003F00003F00003F00003F00003
+  F00003F00003F00003F00003F00003F00003F00003F00003F00003F00003F00003F00003F00003F00003F00003F00003F000
+  03F00003F00003F0000FF000FFF000FFF000FFF00003F000> 24 58 -2 0 23.061] 108 D
+[<FFFFC1FFFF83FFFFFFFFC1FFFF83FFFFFFFFC1FFFF83FFFF07F8000FF0001FE003F00007E0000FC003F00007E0000FC003F0
+  0007E0000FC003F00007E0000FC003F00007E0000FC003F00007E0000FC003F00007E0000FC003F00007E0000FC003F00007
+  E0000FC003F00007E0000FC003F00007E0000FC003F00007E0000FC003F00007E0000FC003F00007E0000FC003F00007E000
+  0FC003F00007E0000FC003F00007E0000FC003F00007E0000FC003F00007E0000FC003F00007E0000FC003F00007E0000FC0
+  03F80007F0000FC003F80007F0000FC003F80007F0000FC003FC0007F8000FC003FC0007F8000FC003FE000FDC001F8003F7
+  000FCE001F800FF3800FC7001F80FFF1C01F83803F00FFF0F03F01E07E00FFF03FFC007FF80003F00FF0001FE000> 64 37 -2 0 69.184] 109 D
+[<FFFFC1FFFF80FFFFC1FFFF80FFFFC1FFFF8007F8000FF00003F00007E00003F00007E00003F00007E00003F00007E00003F0
+  0007E00003F00007E00003F00007E00003F00007E00003F00007E00003F00007E00003F00007E00003F00007E00003F00007
+  E00003F00007E00003F00007E00003F00007E00003F00007E00003F00007E00003F00007E00003F00007E00003F00007E000
+  03F80007E00003F80007E00003F80007E00003FC0007E00003FC0007E00003FE000FC00003F7000FC0000FF3800FC000FFF1
+  C01F8000FFF0F03F0000FFF03FFC000003F00FF00000> 48 37 -2 0 46.122] 110 D
+[<0003FE0000001FFFC000007E03F00000F800F80003F0007E0007E0003F000FC0001F800F80000F801F80000FC03F000007E0
+  3F000007E07F000007F07E000003F07E000003F0FE000003F8FE000003F8FE000003F8FE000003F8FE000003F8FE000003F8
+  FE000003F8FE000003F8FE000003F87E000003F07E000003F07E000003F07E000003F03F000007E03F000007E01F000007C0
+  1F80000FC00F80000F8007C0001F0003E0003E0001F0007C0000F800F800003E03E000000FFF80000003FE0000> 40 39 -2 1 41.510] 111 D
+[<FFFFC00000FFFFC00000FFFFC0000007F800000003F000000003F000000003F000000003F000000003F000000003F0000000
+  03F000000003F000000003F000000003F000000003F000000003F01FC00003F0FFF80003F1E07E0003F7803F0003F6000FC0
+  03FE000FE003FC0007F003F80003F003F80003F803F00001FC03F00001FC03F00000FE03F00000FE03F00000FE03F000007F
+  03F000007F03F000007F03F000007F03F000007F03F000007F03F000007F03F000007F03F000007F03F000007F03F00000FE
+  03F00000FE03F00000FE03F00000FC03F00001FC03F00001F803F80003F803FC0003F003FE0007E007F7000FC0FFF3801F80
+  FFF1E07E00FFF07FF80003F01FE000> 40 53 -2 16 46.122] 112 D
+[<000003FFFF000003FFFF000003FFFF0000001FE00000000FC00000000FC00000000FC00000000FC00000000FC00000000FC0
+  0000000FC00000000FC00000000FC00000000FC00000000FC00007F80FC0001FFE0FC0007E078FC001F801CFC003F000EFC0
+  07E0007FC00FC0003FC01FC0003FC01F80001FC03F80001FC03F00000FC07F00000FC07F00000FC07F00000FC0FE00000FC0
+  FE00000FC0FE00000FC0FE00000FC0FE00000FC0FE00000FC0FE00000FC0FE00000FC0FE00000FC0FE00000FC07F00000FC0
+  7F00000FC07F00000FC03F80000FC03F80001FC01FC0001FC00FC0003FC00FE00037C007F00077C003F000E3C000FC01C3C0
+  007E0781C0001FFE01C00003F800C0> 40 53 -3 16 43.816] 113 D
+[<FFFFF000FFFFF000FFFFF00007F8000003F0000003F0000003F0000003F0000003F0000003F0000003F0000003F0000003F0
+  000003F0000003F0000003F0000003F0000003F0000003F0000003F0000003F0000003F0000003F0000003F0000003F80000
+  03F8000003F8000003F8000003FC008003EC03E003EE07F003E607F00FE707F0FFE387F0FFE1E3E0FFE07FC007E01F00> 32 37 -2 0 32.516] 114 D
+[<C03F8000E1FFF000F3C07C00FF001E00FC000F00FC000780F8000780F0000380F00003C0E00003C0E00003C0E00003C0C000
+  07C0C00007C0C0000FC000001F8000007F800007FF8000FFFF0003FFFE000FFFFC001FFFF8003FFFE0007FFF00007FE00000
+  FF000000FC000300F8000300F8000300F0000300F0000700F00007007000070078000F003C001F001E003F000F80FF0003FF
+  E70000FF0300> 32 39 -3 1 32.747] 115 D
+[<0001F800000FFE00003F0700007E0300007C038000FC018000FC01C001F800C001F800C001F800C001F800C001F800C001F8
+  00C001F800C001F800C001F800C001F8000001F8000001F8000001F8000001F8000001F8000001F8000001F8000001F80000
+  01F8000001F8000001F8000001F8000001F8000001F8000001F8000001F8000001F80000FFFFFF00FFFFFF001FFFFF0007F8
+  000003F8000001F8000000F80000007800000078000000780000003800000038000000380000001800000018000000180000
+  0018000000180000> 32 52 -1 1 32.286] 116 D
+[<0003FC07E000001FFF87FF80003F03C7FF8000FC00E7FF8000F80077F80001F8003FE00001F0001FE00003F0001FE00003F0
+  000FE00003F0000FE00003F0000FE00003F00007E00003F00007E00003F00007E00003F00007E00003F00007E00003F00007
+  E00003F00007E00003F00007E00003F00007E00003F00007E00003F00007E00003F00007E00003F00007E00003F00007E000
+  03F00007E00003F00007E00003F00007E00003F00007E00003F00007E00003F00007E00003F00007E00003F00007E0000FF0
+  001FE000FFF001FFE000FFF001FFE000FFF001FFE00003F00007E000> 48 38 -2 1 46.122] 117 D
+[<0000380000000038000000007C000000007C000000007C00000000FE00000000FE00000001FF00000001FB00000001FB0000
+  0003F180000003F180000003F180000007E0C0000007E0C000000FE06000000FC06000000FC06000001F803000001F803000
+  003F803800003F001800003F001800007E000C00007E000C0000FE000E0000FC00060000FC00060001F800030001F8000300
+  03F800038003F00003C007F00007E00FF8000FF0FFFF803FFEFFFF803FFEFFFF803FFE> 40 37 -2 1 43.816] 118 D
+[<000060000C00000000E0000E00000000F0001E00000001F0001F00000001F0001F00000001F8003F00000003F8003F800000
+  03F8003F80000003FC007F80000007EC007CC0000007EC007CC0000007E600FCC000000FC600F86000000FC600F86000001F
+  C301F87000001F8301F03000001F8383F03000003F8183F03800003F0183E01800003F01C7E01800007E00C7C00C00007E00
+  C7C00C00007E00EFC00C0000FC006F80060000FC006F80060000FC003F80060001F8003F00030001F8003F00030001F8003F
+  00030003F0003E00018003F0003E00018007F0007E0003C007F0007E0003E00FF800FF000FF8FFFF1FFFE03FFEFFFF1FFFE0
+  3FFEFFFF1FFFE03FFE> 56 37 -2 1 59.959] 119 D
+[<FFFE00FFFF80FFFE00FFFF80FFFE00FFFF800FF8003FF00001F8001FC00000F0001F80000078003F00000038007F0000001C
+  007E0000000C00FC0000000601F80000000703F80000000383F000000001C7E000000000CFC0000000007FC0000000007F80
+  000000003F00000000007F0000000000FE0000000000FE0000000001FF0000000003FB8000000007F18000000007E0C00000
+  000FC0E00000001FC0700000001F80300000003F00180000007E001C000000FE001F000001FE001F800003FE003FF000FFFF
+  807FFF00FFFF807FFF00FFFF807FFF00> 48 36 -1 0 43.816] 120 D
+[<0FC00000001FF00000003838000000701C000000FC0E000000FE06000000FE03000000FE03800000FE018000007C01C00000
+  0000C000000000C00000000060000000006000000000700000000030000000003000000000380000000038000000007C0000
+  00007C000000007C00000000FE00000000FE00000001FF00000001FB00000001FB00000003F180000003F180000007F1C000
+  0007E0C0000007E0C000000FC06000000FC06000001FC07000001F803000001F803000003F001800003F001800007F000C00
+  007E000C00007E000C0000FC00060000FC00060001FC00030001F800030001F800038003F000038007F00007C00FF8000FF0
+  FFFF803FFEFFFF803FFEFFFF803FFE> 40 53 -2 17 43.816] 121 D
+[<7FFFFFF07FFFFFF07FFFFFF0003FE000001FC000001FC000001FC000001FC000001FC000001FC000001FC000001FC000001F
+  C000001FC000001FC000001FC000001FC000001FC000001FC000001FC000001FC000001FC000001FC000001FC000001FC000
+  001FC000001FC000001FC000001FC000001FC000001FC000001FC000001FC000001FC000001FC000001FC000001FC000001F
+  C000001FC000001FC000001FC000001FC000001FC000001FC000001FC000001FC000001FC000001FC000FF1FC000FFFFC000
+  FFFFC00000FFC000001FC0000007C0000003C0000001C000> 32 56 -7 0 41.510] 49 D
+[<FFFFFFFE00FFFFFFFE00FFFFFFFE007FFFFFFE003FFFFFFF001FFFFFFF000FFFFFFF000E00000700078000030003C0000300
+  01E000030000F00003800078000180003C000180001E000180000F000000000F8000000007C000000003E000000001F00000
+  0000F8000000007C000000003F000000003F800000001FC00000000FE000000007E000000007F000000003F800000003FC00
+  000001FC00000001FE00000000FF00000000FF00000000FF000000007F801C00007F807F00007F80FF80007F80FF80007F80
+  FF80007F80FF80007F80FF80007F80FF00007F80FC0000FF00600000FF00700000FF00300001FE00380001FE001C0003FC00
+  0E0007F8000F000FF00003E03FE00001FFFF8000007FFE0000000FF00000> 40 56 -4 0 41.510] 50 D
+[<0000600000E00001C0000380000700000E00001E00003C0000780000780000F00001E00001E00003C00003C00007C0000780
+  000F80000F00000F00001F00001E00001E00003E00003E00003E00007C00007C00007C00007C00007C00007C0000F80000F8
+  0000F80000F80000F80000F80000F80000F80000F80000F80000F80000F80000F80000F80000F80000F80000F80000F80000
+  7C00007C00007C00007C00007C00007C00003E00003E00003E00001E00001E00001F00000F00000F00000F800007800007C0
+  0003C00003C00001E00001E00000F000007800007800003C00001E00000E000007000003800001C00000E0000060> 24 82 -8 20 32.286] 40 D
+[<C00000E000007000003800001C00000E00000F000007800003C00003C00001E00000F00000F000007800007800007C00003C
+  00003E00001E00001E00001F00000F00000F00000F80000F80000F800007C00007C00007C00007C00007C00007C00003E000
+  03E00003E00003E00003E00003E00003E00003E00003E00003E00003E00003E00003E00003E00003E00003E00003E00003E0
+  0007C00007C00007C00007C00007C00007C0000F80000F80000F80000F00000F00001F00001E00001E00003E00003C00007C
+  0000780000780000F00000F00001E00003C00003C0000780000F00000E00001C0000380000700000E00000C00000> 24 82 -4 20 32.286] 41 D
+[<6000700038001C000E0006000700030003800180018001C000C000C000C000C01CC07FC0FFC0FFC0FFC0FF80FF807F001C00> 16 25 -7 16 23.061] 44 D
+[<1C007F00FF80FF80FF80FF80FF807F001C00> 16 9 -7 0 23.061] 46 D
+[<1C007F00FF80FF80FF80FF80FF807F001C000000000000000000000000000000000000000000000000000000000000000000
+  000000001C007F00FF80FF80FF80FF80FF807F001C00> 16 36 -7 0 23.061] 58 D
+[<60007000380018001C000E0006000600070003000300038001800180018001801D807F80FF80FF80FF80FF80FF007F001C00
+  0000000000000000000000000000000000000000000000000000000000000000000000001C007F00FF80FF80FF80FF80FF80
+  7F001C00> 16 52 -7 16 23.061] 59 D
+[<7FFFFFFFFFFFF8FFFFFFFFFFFFFCFFFFFFFFFFFFFCFFFFFFFFFFFFFC00000000000000000000000000000000000000000000
+  0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+  0000000000000000000000000000000000000000000000000000FFFFFFFFFFFFFCFFFFFFFFFFFFFCFFFFFFFFFFFFFC7FFFFF
+  FFFFFFF8> 56 22 -5 -10 64.571] 61 D
+[<7FFFE0FFFFC07FFFE0FFFFC07FFFE0FFFFC003FC0007F80001F80003F00001F80003F00001F80003F00001F80003F00001F8
+  0003F00001F80003F00001F80003F00001F80003F00001F80003F00001F80003F00001F80003F00001F80003F00001F80003
+  F00001F80003F00001F80003F00001F80003F00001F80003F00001F80003F00001F80003F00001F80003F00001F80003F000
+  01F80003F00001F80003F00001F80003F00001F80003F00001F80003F00001F80003F00001F80003F00001F8000FF000FFFF
+  FFFFF000FFFFFFFFF000FFFFFFFFF00001F80003F00001F80000000001F80000000001F80000000001F80000000001F80000
+  000001F80000000001F80000000001F80000000001F80000000001F80001800001F80007E00001F8000FF00000FC000FF000
+  00FC000FF000007E000FF000007E000FF000003F0007E000001F8000E0000007E001C0000001F807800000007FFE00000000
+  0FF80000> 48 59 -1 0 46.122] 12 D
+[<FFFFFCFFFFFCFFFFFCFFFFFCFFFFFC> 24 5 -1 -16 27.673] 45 D
+1.000 51 /f5 NF
+f5 SF
+[<FFFFFE00FFFFFE007FFFFE003FFFFF001FFFFF000C00030006000300030003000180018000E001800070018000380000001C
+  0000000E0000000780000003C0000003E0000001F0000000F80000007C0000007E0000003E0000003F0000001F0000001F80
+  7C001F80FE001F80FE001F80FE001F80FE001F80FC003F0078003F0060007E0030007C001800F8000E03F00003FFE00000FF
+  0000> 32 38 -3 0 33.093] 50 D
+1.000 118 /f6 NF
+f6 SF
+[<01F000F00007FE03FC001F0F079E003E038F8E003E01FF0F007C00FF07007C007F8700FC003F8780FC003F8380FC001F8380
+  FC001F83C0FC001FC1C0FC000FC1C0FC000FC1C0FE000FC000FE000FE000FE0007E000FE0007E000FF0007E0007F0007F000
+  7F0003F0007F0003F0007F8003F0003F8003F8003F8001F8001FC001F8001FC001F8000FC001FC000FE000FC0007E000FC00
+  03F000FC0001F801FE0000F801FE00007C03FE00003E03FE00001F871C000007FE00000000F80000> 40 38 -9 1 42.432] 97 D
+[<01F000000FFE00001E1F80003E07C0003C03E0007C01F0007801F800F800FC00F8007E00F8007F00F8003F00F8003F80F800
+  3F80F8001FC0FC001FC0FC001FE0FC000FE0FC000FE0FE000FF07E000FF07E0007F07E0007F07F0007F03F0007F03F0003F0
+  3F0003F03F8003F01F8003F01F8003F01FC003F01FC003F00FE003E00FF003E00FF807C00FFC07C007EF0F8007E7FE0007E0
+  F80007F0000003F0000003F0000003F0000003F8000001F8000001F8000001F8000001FC000000FC000000FC000000FC0000
+  00FE0000007E0000007E0000007E0000007F00001FFF00001FFF00001FFF0000003F0000> 32 59 -9 1 38.189] 98 D
+[<00FF000003FFE0000781F8000F003E001F000F803E0003C03E0001E07E0000F07C0000787C000038FC000030FC000000FC00
+  0000FE000000FE000000FE000000FE000000FE000000FF0000007F0000007FFF00007FFFF8007F81FF003F801F803F8007E0
+  3F8001F01FC000F00FC000F80FE0007807E0007803F0007801F8007800FC0078007E0078003F00F0000FC1E00003FFC00000
+  7F00> 32 38 -9 1 38.189] 101 D
+[<03FE0000001FFF8000007C07E000007801F80000FE00FC0000FE007E0000FE003F00007E001F80007E001FC0001C000FC000
+  00000FC00000000FE000000007E000000007E000000007F000000007F000000003F000000FC3F000003FF3F80000787BF800
+  00F01FF80001F00FF80003E007FC0003E003FC0003E001FC0007E000FC0007E000FE0007E000FE0007E0007E0007E0007E00
+  07F0007F0007F0007F0007F0003F0007F0003F0007F8003F8003F8003F8003F8001F8003F8001F8003FC001FC001FC001FC0
+  01FC000FC000FC000FC000FE000FE0007E000FE0007F0007E0003F0007E0001F8007F0000F800FF00007C00FF00003E01FF0
+  0001F01FF00000FC38E000003FF000000007C000> 40 54 -4 17 38.189] 103 D
+[<01E00007F8000F1C001F0E001F07001F07001F03801F83801F81C01F81C01FC1C00FC1E00FC0E00FE0E007E00007E00007F0
+  0003F00003F80003F80001F80001FC0000FC0000FC00E0FE00E07E00F07E00707F00703F00703F00383F00381F001C1F001C
+  1F000E1F00071E0003FC0000F000000000000000000000000000000000000000000000000000000000000000000000000380
+  0007E0000FE0000FF00007F00007E00001C0> 24 56 -7 1 25.459] 105 D
+[<0700000780001F80001FE0001FC0003C78000FC0007C38000FC0007C1C000FC0007C1E000FE0007C0E0007E0007E0E0007E0
+  007E070007E0007E070007F0007F070003F0003F078003F0003F038003F0003F838003F8001F800001F8001F800001F8001F
+  C00001F8000FC00001FC000FC00000FC000FE00000FC0007E00000FC0007E00000FE0007E000007E0007F000E07E0003F000
+  E07E0003F000F07F0003F000703F0003F000703F8001F800703FC001F800783FC001F000383FE001F000383FF001F0001C1F
+  7803F0001E3E3C03E0000E3C0F07C00007F803FF800001E000FE0000> 48 38 -7 1 46.675] 110 D
+[<FFFFC0000000FFFFC0000000FFFFC000000007F00000000003F00000000003F80000000003F80000000001F80000000001F8
+  0000000001FC0000000001FC0000000000FC0000000000FC0000000000FE0000000000FE00000000007E0F800000007E3FF0
+  0000007F70FC0000007FE03E0000003FE01F0000003FC00F8000003FC00FC000003F8007E000001F8003F000001F8003F800
+  001FC001F800001FC001FC00000FC001FC00000FC000FE00000FE000FE00000FE000FF000007E0007F000007E0007F000007
+  F0007F800007F0007F800003F0003F800003F0003F800003F8003F800003F8003F8001C1F8001F8001C1F8001F8001C1FC00
+  1F8001E1FC001F8000E0FC001F8000E0FE001F8000F0FE001F800070FF001F0000707F801F0000787FC03E000038F8E03E00
+  003CF0787C00001FE03FF00000078007C000> 48 53 0 16 42.432] 112 D
+[<01FFFFC001FFFFC001FFFFC00007F0000003F0000003F8000001F8000001F8000001F8000001FC000000FC000000FC000000
+  FC000000FE0000007E0001F07E0007FE7E001F0F7F003E03BF003E01FF007C00FF007C007F80FC003F80FC003F80FC001F80
+  FC001FC0FC000FC0FC000FC0FC000FC0FE000FE0FE0007E0FE0007E0FE0007E0FF0007F07F0003F07F0003F07F0003F07F80
+  03F83F8001F83F8001F81FC001F81FC001FC0FC000FC0FE000FC07E000FC03F000FE01F801FE00F801FE007C03FE003E03BF
+  001F871F0007FE070000F803> 32 53 -9 16 38.189] 113 D
+[<0E000000003F000000003F800000001F800000001F800000001F800000001FC00000000FC00000000FC00000000FC0000000
+  0FE000000007E000000007E000000007E000000007F000000003F000000003F000000003F000000003F800000001F8000000
+  01F800000001F800000001FC00000000FC000000E0FC000000E0FC000000E0FE000000F07E000000707F001C00707F003F00
+  787F803F00387F803F80383FC03F803C3EE03F801C7C700F001E783C0F000FF01FFC0003C003F000> 40 38 -7 1 35.006] 114 D
+[<01FE00000FFFC0001E03E0003800F80070007C00F0003E00E0001F00FC001F00FE000F80FE000F80FE000F807E000FC03E00
+  0FC000000FC000001FC000003FC00000FFC0000FFFC0003FFF80007FFF8000FFFF0001FFFE0001FFF80003FFC00003FC0000
+  03F8000003F001C001F003E001F003F001F003F001F803F000F800F000780070007C00F0003E00E0000F83C00007FF800000
+  FE00> 32 38 -6 1 33.946] 115 D
+[<01F00007FC000F0F001F07803E03C03F01C03F00E03F00F03F00703F00783F80381F803C1F801C1F801C1FC0000FC0000FC0
+  000FC0000FE00007E00007E00007E00007F00003F00003F00003F00003F80001F80001F80001F80001FC0000FC0000FC0000
+  FC00FFFFFF7FFFFF7FFFFF007E00007F00003F00003F00003F00003F80001F80001F80001F80001FC0000FC0000FC0000FC0
+  000FC00007C0000380> 24 53 -7 1 27.581] 116 D
+[<000FC00F00003FF03FC000F83C78E001F01EF8F001F007F07003F007F83803F003F83803E001F83C03E001F81C03F001F81C
+  03F001FC1C03F001FC1E03F000FC0E03F000FC0E03F800FE0001F800FE0001F8007E0001F8007E0001FC007F0000FC007F00
+  00FC003F0000FE003F00007E003F80007E003F80E07F001F80E03F001F80F03F001FC0703F801FC0701F800FC0781F800FC0
+  381F800FE0380F800FE01C0F8007E01E0F8007E00E0F8007E0078F0003E003FE0001C000F8000000> 40 38 -7 1 44.554] 117 D
+[<FFFFFE03FFFFF80000FFFFFE03FFFFF800007FFFFE01FFFFF8000000FF000003FC000000007F000001FC000000007F800001
+  FC000000007F800001FE000000003F800000FE000000003F800000FE000000003FC00000FE000000003FC00000FF00000000
+  1FC000007F000000001FC000007F000000001FE000007F000000001FE000007F800000000FE000003F800000000FE000003F
+  800000000FF000003F800000000FF000003FC000000007F000001FC000000007F000001FC000000007F800001FC000000007
+  F800001FE000000003F800000FE000000003F800000FE000000003FC00000FE000000003FC00000FF000000001FC000007F0
+  00000001FFFFFFFFF000000001FFFFFFFFF000000001FFFFFFFFF800000000FE000003F800000000FE000003F800000000FF
+  000003F800000000FF000003FC000000007F000001FC000000007F000001FC000000007F800001FC000000007F800001FE00
+  0000003F800000FE000000003F800000FE000000003FC00000FE000000003FC00000FF000000001FC000007F000000001FC0
+  00007F000000001FE000007F000000001FE000007F800000000FE000003F800000000FE000003F800000000FF000003F8000
+  00000FF000003FC000000007F000001FC000000007F000001FC000000007F800001FE0000003FFFFF80FFFFFE00003FFFFF8
+  0FFFFFE00003FFFFF80FFFFFE0> 72 57 -4 0 61.711] 72 D
+1.000 118 /f7 NF
+f7 SF
+[<FFFFFFFF000000FFFFFFFF000000FFFFFFFF000000FFFFFFFF000000007FF800000000007FF800000000007FF80000000000
+  7FF800000000007FF800000000007FF800000000007FF800000000007FF800000000007FF800000000007FF800000000007F
+  F800000000007FF800000000007FF800000000007FF800780000007FF800780000007FF800780000007FF800780000007FF8
+  00780000007FF800780000007FF800F80000007FF800F80000007FF801F80000007FF807F80000007FFFFFF80000007FFFFF
+  F80000007FFFFFF80000007FFFFFF80000007FF807F80000007FF801F80000007FF800F80000007FF800F80000007FF80078
+  0000007FF800780000007FF8007800F0007FF8007800F0007FF8007800F0007FF8007800F0007FF8000001F0007FF8000001
+  E0007FF8000001E0007FF8000001E0007FF8000003E0007FF8000003E0007FF8000007E0007FF8000007E0007FF800000FE0
+  007FF800001FE0007FF800007FE0007FF80003FFC0FFFFFFFFFFFFC0FFFFFFFFFFFFC0FFFFFFFFFFFFC0FFFFFFFFFFFFC0> 56 57 -3 0 60.074] 70 D
+[<FFFFFC3FFFFFFFFFFC3FFFFFFFFFFC3FFFFFFFFFFC3FFFFF03FF0000FFC003FF0000FFC003FF0000FFC003FF0000FFC003FF
+  0000FFC003FF0000FFC003FF0000FFC003FF0000FFC003FF0000FFC003FF0000FFC003FF0000FFC003FF0000FFC003FF0000
+  FFC003FF0000FFC003FF0000FFC003FF0000FFC003FF0000FFC003FF0000FFC003FF0000FFC003FF0000FFC003FF0000FFC0
+  03FF8000FFC003FF8000FFC003FFC000FFC003FFC000FFC003FFE000FFC003FEF000FF8007FE7801FF80FFFE3C01FF80FFFE
+  1F03FF00FFFE0FFFFE00FFFE03FFF80000FE007FC000> 48 37 -3 0 53.040] 110 D
+[<0003FF80FFFF001FFFF0FFFF007FFFFCFFFF00FFC03EFFFF01FF800FFFE001FF0007FFC003FF0003FFC003FF0003FFC003FF
+  0001FFC003FF0001FFC003FF0000FFC003FF0000FFC003FF0000FFC003FF0000FFC003FF0000FFC003FF0000FFC003FF0000
+  FFC003FF0000FFC003FF0000FFC003FF0000FFC003FF0000FFC003FF0000FFC003FF0000FFC003FF0000FFC003FF0000FFC0
+  03FF0000FFC003FF0000FFC003FF0000FFC003FF0000FFC003FF0000FFC003FF0000FFC007FF0001FFC0FFFF003FFFC0FFFF
+  003FFFC0FFFF003FFFC0FFFF003FFFC000FF00003FC0> 48 37 -3 0 53.040] 117 D
+1.000 121 /f8 NF
+f8 SF
+[<FFFFFFFFFFFFFFFFFFC0FFFFFFFFFFFFFFFFFFC0FFFFFFFFFFFFFFFFFFC0FFFFFFFFFFFFFFFFFFC000FFFC00000003FFFFE0
+  003FF8000000001FFFE0001FF80000000003FFE0001FF80000000000FFE0001FF800000000007FE0001FF800000000001FE0
+  001FF800000000000FE0001FF8000000000007F0001FF8000000000007F0001FF8000000000003F0001FF8000000000001F0
+  001FF8000000000001F0001FF8000000000000F0001FF8000000000000F0001FF8000000000000F0001FF800000000000078
+  001FF800000000000078001FF800000000000078001FF800000000000078001FF800000000000038001FF800000000000038
+  001FF800000000000038001FF80000000000003C001FF80000000000001C001FF80000000000001C001FF80000000000001C
+  001FF80000000000001C001FF80000000000001C001FF80000007000001C001FF80000007000000E001FF80000007000000E
+  001FF80000007000000E001FF80000007000000E001FF800000070000000001FF800000070000000001FF800000070000000
+  001FF8000000F0000000001FF8000000F0000000001FF8000000F0000000001FF8000000F0000000001FF8000001F0000000
+  001FF8000003F0000000001FF8000007F0000000001FF800000FF0000000001FF800007FF0000000001FFFFFFFFFF0000000
+  001FFFFFFFFFF0000000001FFFFFFFFFF0000000001FFFFFFFFFF0000000001FF800007FF0000000001FF800000FF0000000
+  001FF8000007F0000000001FF8000003F0000000001FF8000001F0000000001FF8000000F0000000001FF8000000F0000000
+  001FF8000000F0000000001FF8000000F0000000001FF800000070000000001FF800000070000000001FF800000070000000
+  001FF800000070000000001FF800000070000070001FF800000070000070001FF800000070000070001FF800000070000070
+  001FF800000000000070001FF8000000000000E0001FF8000000000000E0001FF8000000000000E0001FF8000000000000E0
+  001FF8000000000000E0001FF8000000000000E0001FF8000000000001E0001FF8000000000001E0001FF8000000000001E0
+  001FF8000000000001E0001FF8000000000003E0001FF8000000000003C0001FF8000000000003C0001FF8000000000007C0
+  001FF8000000000007C0001FF800000000000FC0001FF800000000001FC0001FF800000000003FC0001FF800000000007FC0
+  001FF80000000000FFC0001FF80000000003FFC0003FF8000000001FFFC000FFFC00000001FFFF80FFFFFFFFFFFFFFFFFF80
+  FFFFFFFFFFFFFFFFFF80FFFFFFFFFFFFFFFFFF80FFFFFFFFFFFFFFFFFF80> 80 98 -7 0 90.122] 69 D
+[<000001FF80000000000FFFF8000000003FFFFE00000000FF803F80000003FC0007C000000FF80001E000001FE00000F00000
+  3FC000007800007F8000003C0000FF0000001E0001FE0000000F0003FE000000070003FC000000078007F800000003800FF8
+  00000003800FF000000003C01FF000000001C01FE000000001C03FE000000000003FE000000000003FC000000000007FC000
+  000000007FC000000000007FC000000000007FC000000000007F800000000000FF800000000000FF800000000000FF800000
+  000000FF800000000000FF800000000000FF800000000000FF800000000000FF800000000000FF800000000000FF80000000
+  0000FF800000000000FF800000000000FF8000000000007F8000000000007FC000000000007FC000000000007FC000000000
+  003FC000000000003FC00000007C003FE0000001FF001FE0000003FF801FE0000003FF800FF0000003FF800FF0000003FF80
+  07F8000003FF8007F8000003FF8003FC000001FF8001FC000000FF0001FE0000001F0000FF0000000F00007F8000001E0000
+  3FC000003C00001FE0000078000007F00001F0000003FC0007E0000000FF007F800000003FFFFE000000000FFFF800000000
+  01FF800000> 56 65 -4 1 58.298] 99 D
+[<000001FF80000000000FFFF0000000003FFFFC00000000FF803F00000003FC0007C0000007F00003E000001FE00000F00000
+  3FC000007800007F8000003C0000FF0000001E0001FE0000000E0001FC0000000F0003FC000000078007F8000000038007F8
+  00000003800FF000000003C00FF000000001C01FE000000001C01FE000000000003FE000000000003FC000000000003FC000
+  000000007FC000000000007FC000000000007FC000000000007F800000000000FF800000000000FF800000000000FF800000
+  000000FF800000000000FF800000000000FF800000000000FF800000000000FF800000000000FF800000000000FFFFFFFFFF
+  FFC0FFFFFFFFFFFFC0FFFFFFFFFFFFC0FF800000003FC07F800000003FC07F800000003FC07FC00000003FC07FC00000003F
+  C07FC00000003FC03FC00000003F803FC00000003F803FE00000007F801FE00000007F801FE00000007F000FF00000007F00
+  0FF0000000FF0007F0000000FE0007F8000001FE0003F8000001FC0001FC000003FC0000FE000003F80000FF000007F80000
+  7F00000FF000003FC0001FE000000FE0003FC0000007F0007F80000001FE03FE00000000FFFFF8000000001FFFE000000000
+  03FE000000> 56 65 -4 1 58.298] 101 D
+[<FFFFFFE0FFFFFFE0FFFFFFE0FFFFFFE000FFF000007FE000003FC000003FC000003FC000003FC000003FC000003FC000003F
+  C000003FC000003FC000003FC000003FC000003FC000003FC000003FC000003FC000003FC000003FC000003FC000003FC000
+  003FC000003FC000003FC000003FC000003FC000003FC000003FC000003FC000003FC000003FC000003FC000003FC000003F
+  C000003FC000003FC000003FC000003FC000003FC000003FC000003FC000003FC000003FC000003FC000003FC000003FC000
+  003FC000003FC000003FC000003FC000007FC000007FC00001FFC0007FFFC0007FFFC0007FFFC0007FFFC00007FFC0000003
+  C000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+  0000000000000000000000000000000000000000000000000000000000000000003C000000FF000001FF800003FFC00003FF
+  C00003FFC00003FFC00003FFC00003FFC00001FF800000FF0000003C0000> 32 95 -3 0 35.813] 105 D
+[<FFFFFFFC0000FFFFFFFC0000FFFFFFFC0000FFFFFFFC000000FFF8000000007FE0000000003FC0000000003FC0000000003F
+  C0000000003FC0000000003FC0000000003FC0000000003FC0000000003FC0000000003FC0000000003FC0000000003FC000
+  0000003FC0000000003FC0000000003FC0000000003FC0000000003FC0000000003FC0000000003FC0000000003FC0000000
+  003FC0000000003FC0000000003FC0000000003FC0000000003FC0000000003FC0000000003FC0000000003FC0000000003F
+  C0000000003FC0000000003FC0000000003FC0000000003FC0000000003FC0000000003FC0000000003FE0000000003FE000
+  0000003FE0000000003FE0000000003FE0000000003FF0000000003FF0000000003FB0000000003FB8000000003FB8000000
+  003F98000300003F9C000FC0003F9C001FE0003F8E003FF0007F8F003FF0007F87003FF001FF83803FF0FFFF81E03FF0FFFF
+  81F01FE0FFFF807C0FE0FFFF803FFFC007FF800FFF0000078003F800> 48 63 -4 0 50.803] 114 D
+[<C0003FF80000E001FFFF8000F007FFFFE000F01FC00FF800F83E0000FC00F8F800007F00FDF000001F80FFE000000F80FFC0
+  00000FC0FF80000007E0FF00000003E0FF00000003F0FE00000003F0FE00000001F0FC00000001F8FC00000001F8F8000000
+  01F8F800000001F8F800000001F8F000000003F8F000000003F8F000000003F8F000000007F8E00000000FF8E00000000FF0
+  E00000001FF0000000007FE000000000FFE000000003FFC00000003FFFC0000003FFFF8000007FFFFF000007FFFFFE00001F
+  FFFFF800007FFFFFF00001FFFFFFC00003FFFFFF000007FFFFF800000FFFFF8000001FFFF00000003FFE000000007FF80000
+  00007FE0000000007FC000000380FF8000000380FF0000000380FE0000000380FE0000000380FC0000000380FC0000000780
+  FC0000000780FC00000007807C0000000F807C0000000F807E0000000F803E0000001F803F0000003F801F8000007F800FC0
+  0000FF8007E00001FF8003F80003EF8001FF001FCF80007FFFFF0780000FFFFC03800000FFE00180> 48 65 -3 1 51.553] 115 D
+[<FFFFFC00000FFFFFF8FFFFFC00000FFFFFF8FFFFFC00000FFFFFF8FFFFFC00000FFFFFF807FFF8000003FFFC0000FFF00000
+  01FFE000003FE0000000FFC000000FE0000000FF80000007E0000001FF00000003E0000001FF00000001F0000003FE000000
+  00F0000007FC000000007800000FF8000000003C00000FF8000000001C00001FF0000000001E00003FE0000000000F00007F
+  C0000000000780007FC00000000003C000FF800000000003C001FF000000000001E003FE000000000000F003FC0000000000
+  007807FC000000000000380FF80000000000003C1FF00000000000001E1FE00000000000000F3FE000000000000007FFC000
+  000000000003FF8000000000000003FF0000000000000001FF0000000000000003FE0000000000000007FC00000000000000
+  07F8000000000000000FFC000000000000001FFE000000000000003FEF000000000000003FC7000000000000007FC7800000
+  00000000FF83C0000000000001FF01E0000000000003FE00E0000000000003FE00F0000000000007FC007800000000000FF8
+  003C00000000001FF0001E00000000001FF0000E00000000003FE0000F00000000007FC000078000000000FF800003C00000
+  0000FF800003E000000001FF000001F000000003FE000001F800000007FC000000FC0000000FFC000000FE0000000FFC0000
+  01FF8000003FFE000001FFE00000FFFF000003FFFC007FFFFFC0000FFFFFE07FFFFFC0000FFFFFE07FFFFFC0000FFFFFE07F
+  FFFFC0000FFFFFE0> 72 62 0 0 69.540] 120 D
+1.000 122 /f9 NF
+f9 SF
+[<FFFFFFC003FFFFFFFFFFFFC003FFFFFFFFFFFFC003FFFFFF01FFE0000007FF80007F80000001FE00007F80000001FE00007F
+  80000001FE00007F80000001FE00007F80000001FE00007F80000001FE00007F80000001FE00007F80000001FE00007F8000
+  0001FE00007F80000001FE00007F80000001FE00007F80000001FE00007F80000001FE00007F80000001FE00007F80000001
+  FE00007F80000001FE00007F80000001FE00007F80000001FE00007F80000001FE00007F80000001FE00007F80000001FE00
+  007F80000001FE00007F80000001FE00007F80000001FE00007F80000001FE00007F80000001FE00007F80000001FE00007F
+  80000001FE00007F80000001FE00007F80000001FE00007FFFFFFFFFFE00007FFFFFFFFFFE00007FFFFFFFFFFE00007F8000
+  0001FE00007F80000001FE00007F80000001FE00007F80000001FE00007F80000001FE00007F80000001FE00007F80000001
+  FE00007F80000001FE00007F80000001FE00007F80000001FE00007F80000001FE00007F80000001FE00007F80000001FE00
+  007F80000001FE00007F80000001FE00007F80000001FE00007F80000001FE00007F80000001FE00007F80000001FE00007F
+  80000001FE00007F80000001FE00007F80000001FE00007F80000001FE00007F80000001FE00007F80000001FE00007F8000
+  0001FE00007F80000001FE0001FFE0000007FF80FFFFFFC003FFFFFFFFFFFFC003FFFFFFFFFFFFC003FFFFFF> 64 68 -4 0 73.126] 72 D
+[<FFFFF0001C0007FFFFFCFFFFF0001C0007FFFFFCFFFFF0001C0007FFFFFC0FFF00003E00000FFE0001F800003E000003F800
+  00F000007F000003F80000F000007F000003F800006000007F000003F80000600000FF800003F80000600000FF800003F800
+  00600000FF800003F80000600001FCC00003F80000600001FCC00003F80000600003F8600003F80000600003F8600003F800
+  00600003F8600003F80000600007F0300003F80000600007F0300003F80000600007F0300003F8000060000FE0180003F800
+  0060000FE0180003F8000060001FC00C0003F8000060001FC00C0003F8000060001FC00C0003F8000060003F80060003F800
+  0060003F80060003F8000060003F80060003F8000060007F00030003F8000060007F00030003F800006000FE00018003F800
+  006000FE00018003F800006000FE00018003F800006001FC0000C003F800006001FC0000C003F800006001FC0000C003F800
+  006003F800006003F800006003F800006003F800006007F000003003F800006007F000003003F800006007F000003003F800
+  00600FE000001803F80000600FE000001803F80000600FE000001803F80000601FC000000C03F80000601FC000000C03F800
+  00603F8000000603F80000603F8000000603F80000603F8000000603F80000607F0000000303F80000607F0000000303F800
+  00607F0000000303F8000060FE0000000183F8000060FE0000000183F8000061FC00000000C3F8000061FC00000000C3F800
+  0061FC00000000C3F8000063F80000000063F8000063F80000000063F8000063F80000000063F8000067F00000000033F800
+  0067F00000000033F800006FE0000000001BF800006FE0000000001BF800006FE0000000001BF80001FFC0000000000FFE00
+  FFFFC0000000000FFFFCFFFFC0000000000FFFFCFFFF800000000007FFFC> 80 68 -5 0 89.384] 77 D
+[<0001FFFFFFFF80000001FFFFFFFF80000001FFFFFFFF80000000007FFE0000000000001FF80000000000000FF00000000000
+  000FF00000000000000FF00000000000000FF00000000000000FF00000000000000FF00000000000000FF00000000000000F
+  F00000000000000FF00000000000000FF00000000000000FF00000000000000FF00000000000000FF00000000000000FF000
+  00000000000FF00000000000000FF00000000000000FF00000000000000FF00000000000000FF00000000000000FF0000000
+  0000000FF00000000000000FF00000000000000FF00000000000000FF00000000000000FF00000000000000FF00000000000
+  000FF00000000000000FF00000000000000FF00000000000000FF00000000000000FF00000000000000FF00000000000000F
+  F00000000000000FF00000000000000FF00000000000000FF00000000000000FF00000000000000FF00000000000000FF000
+  00000000000FF00000000000000FF0000000C000000FF0000006C000000FF0000006C000000FF0000006C000000FF0000006
+  C000000FF00000066000000FF000000C6000000FF000000C6000000FF000000C6000000FF000000C6000000FF000000C7000
+  000FF000001C7000000FF000001C7000000FF000001C7800000FF000003C7800000FF000003C7C00000FF000007C3E00000F
+  F00000F83F80000FF00003F83FF0001FF8001FF83FFFFFFFFFFFFFF83FFFFFFFFFFFFFF83FFFFFFFFFFFFFF8> 64 68 -3 0 70.451] 84 D
+[<FFFFFFFFFFFE00FFFFFFFFFFFE00FFFFFFFFFFFE007FC00000FFFE007FC000000FFE003FE0000003FE001FF0000000FE001F
+  F00000007F000FF80000003F000FF80000001F0007FC0000000F0003FE0000000F0003FE000000070001FF000000070000FF
+  800000070000FF8000000300007FC000000300003FE000000300003FE000000300001FF000000300001FF000000380000FF8
+  000001800007FC000001800007FC000001800003FE000001800001FF000001800001FF000000000000FF800000000000FFC0
+  00000000007FC000000000003FE000000000003FE000000000001FF000000000000FF800000000000FF8000000000007FC00
+  0000000003FE000000000003FE000000000001FF000000000001FF800000000000FF8000000000007FC000000000007FC000
+  000000003FE000000000001FF000000000001FF000003000000FF8000030000007FC000030000007FC000030000003FE0000
+  30000003FE000038000001FF000038000000FF800038000000FF8000380000007FC0003C0000003FE0003C0000003FE0001E
+  0000001FF0001E0000000FF8001F0000000FF8001F80000007FC001FC0000007FC001FF0000003FE001FFC000001FF001FFF
+  800001FF001FFFFFFFFFFF801FFFFFFFFFFF801FFFFFFFFFFF80> 56 68 -5 0 59.612] 90 D
+[<001FE0007C0001FFFC01FF0007F81E03FF801FE00783F1C03FC001C7E0C07FC000C7E0C07F8000EFC060FF80007FC060FF00
+  003FC060FF00003FC060FF00003FC060FF00001FC060FF00001FC060FF00001FC0607F80001FC0607F80001FC0007FC0001F
+  C0003FC0001FC0001FE0001FC0000FF0001FC00007F8001FC00003FC001FC00000FF001FC000003FC01FC000000FFE1FC000
+  0001FFFFC00000000FFFC0000000001FC0000000001FC0000000001FC0000000001FC0000380001FC0000FE0001FC0001FF0
+  001FC0001FF0001FC0001FF0003F80001FF0003F80001FF0003F80001FE0007F00000FC0007E00000E0000FC0000070001F8
+  000003C003F0000000F80FE00000003FFF8000000007FC000000> 48 46 -4 1 48.774] 97 D
+[<0000FF80000007FFF000001FC07800003F001E0000FC00070001F800038003F80001C007F00000C00FE00000E00FE0000060
+  1FC00000703FC00000303F800000303F800000007F800000007F800000007F00000000FF00000000FF00000000FF00000000
+  FF00000000FF00000000FF00000000FF00000000FF00000000FF00000000FF00000000FF000000007F000000007F80000000
+  7F800000007F800007003F80001FC03F80003FE01FC0003FE01FC0003FE00FE0003FE007E0003FE007F0001FE003F8000FC0
+  01F80001C000FC000380003F000F00000FC07C000003FFF00000007F8000> 40 46 -3 1 43.354] 99 D
+[<00007F007F000003FFE07FFE000FC0F87FFE003F001C7FFE00FC000E7FC001F800077F8003F00003FF0007F00001FF000FE0
+  0000FF000FC00000FF001FC000007F001FC000007F003F8000007F003F8000007F007F8000007F007F8000007F007F000000
+  7F00FF0000007F00FF0000007F00FF0000007F00FF0000007F00FF0000007F00FF0000007F00FF0000007F00FF0000007F00
+  FF0000007F00FF0000007F00FF0000007F007F0000007F007F8000007F007F8000007F003F8000007F003F8000007F001FC0
+  00007F001FC000007F000FE000007F0007E00000FF0007F00000FF0003F80001FF0000FC0003FF00007E00077F00003F000E
+  7F00000FC07C7F000003FFF07F0000007F807F00000000007F00000000007F00000000007F00000000007F00000000007F00
+  000000007F00000000007F00000000007F00000000007F00000000007F00000000007F00000000007F00000000007F000000
+  00007F00000000007F00000000007F00000000007F00000000007F00000000007F0000000000FF0000000001FF000000003F
+  FF000000003FFF000000003FFF00000000007F00> 48 70 -3 1 54.193] 100 D
+[<0000FF00000003FFE000001F80F800003E001E0000FC00070001F800038003F00001C007F00000C00FE00000E00FC0000060
+  1FC00000701FC00000303F800000303F800000007F800000007F800000007F000000007F00000000FF00000000FF00000000
+  FF00000000FF00000000FF00000000FF00000000FFFFFFFFF0FFFFFFFFF0FF000007F0FF000007F0FF000007F07F000007F0
+  7F000007F07F800007F03F800007E03F800007E03F80000FE01FC0000FC00FC0000FC00FE0001FC007E0001F8003F0003F00
+  01F8003F0000FC007E00007E00FC00001F03F0000007FFC0000001FE0000> 40 46 -3 1 43.354] 101 D
+[<FFFFF83FFFFEFFFFF83FFFFEFFFFF83FFFFE03FE0000FF8001FC00007F0001FC00007F0001FC00007F0001FC00007F0001FC
+  00007F0001FC00007F0001FC00007F0001FC00007F0001FC00007F0001FC00007F0001FC00007F0001FC00007F0001FC0000
+  7F0001FC00007F0001FC00007F0001FC00007F0001FC00007F0001FC00007F0001FC00007F0001FC00007F0001FC00007F00
+  01FC00007F0001FC00007F0001FC00007F0001FC00007F0001FC00007F0001FE00007F0001FE00007F0001FE00007F0001FF
+  00007F0001FF00007F0001FF80007F0001FD8000FE0001FDC000FE0001FCE000FC0001FC7001FC0001FC3801F80001FC1E07
+  F00001FC07FFC00001FC01FE000001FC0000000001FC0000000001FC0000000001FC0000000001FC0000000001FC00000000
+  01FC0000000001FC0000000001FC0000000001FC0000000001FC0000000001FC0000000001FC0000000001FC0000000001FC
+  0000000001FC0000000001FC0000000001FC0000000001FC0000000003FC0000000007FC00000000FFFC00000000FFFC0000
+  0000FFFC0000000001FC00000000> 48 69 -3 0 54.193] 104 D
+[<FFFFF8FFFFF8FFFFF803FE0001FC0001FC0001FC0001FC0001FC0001FC0001FC0001FC0001FC0001FC0001FC0001FC0001FC
+  0001FC0001FC0001FC0001FC0001FC0001FC0001FC0001FC0001FC0001FC0001FC0001FC0001FC0001FC0001FC0001FC0001
+  FC0001FC0001FC0001FC0001FC0003FC0007FC00FFFC00FFFC00FFFC0001FC00000000000000000000000000000000000000
+  00000000000000000000000000000000000000000001E00007F80007F8000FFC000FFC000FFC000FFC0007F80007F80001E0
+  00> 24 67 -3 0 27.097] 105 D
+[<FFFFF81FFFF8FFFFF81FFFF8FFFFF81FFFF803FE0007FF8001FC0003FF0001FC0003FE0001FC0003FC0001FC0007F80001FC
+  0007F00001FC000FF00001FC000FE00001FC001FC00001FC003FC00001FC003F800001FC007F000001FC00FF000001FC00FE
+  000001FC01FC000001FC03FC000001FE03F8000001FF07F0000001FF8FF0000001FDCFE0000001FCFFC0000001FC7FC00000
+  01FC3F80000001FC0F00000001FC0700000001FC0380000001FC01C0000001FC00E0000001FC0070000001FC0038000001FC
+  001C000001FC000E000001FC0007800001FC0007C00001FC0007E00001FC0007F80001FC000FFF0001FC001FFFE001FC001F
+  FFE001FC001FFFE001FC0000000001FC0000000001FC0000000001FC0000000001FC0000000001FC0000000001FC00000000
+  01FC0000000001FC0000000001FC0000000001FC0000000001FC0000000001FC0000000001FC0000000001FC0000000001FC
+  0000000001FC0000000001FC0000000001FC0000000001FC0000000003FC0000000007FC00000000FFFC00000000FFFC0000
+  0000FFFC0000000001FC00000000> 48 69 -3 0 51.483] 107 D
+[<FFFFF83FFFFEFFFFF83FFFFEFFFFF83FFFFE03FE0000FF8001FC00007F0001FC00007F0001FC00007F0001FC00007F0001FC
+  00007F0001FC00007F0001FC00007F0001FC00007F0001FC00007F0001FC00007F0001FC00007F0001FC00007F0001FC0000
+  7F0001FC00007F0001FC00007F0001FC00007F0001FC00007F0001FC00007F0001FC00007F0001FC00007F0001FC00007F00
+  01FC00007F0001FC00007F0001FC00007F0001FC00007F0001FC00007F0001FE00007F0001FE00007F0001FE00007F0001FF
+  00007F0001FF00007F0001FF80007F0001FD8000FE0001FDC000FE0003FCE000FC0007FC7001FC00FFFC3801F800FFFC1E07
+  F000FFFC07FFC00001FC01FE0000> 48 44 -3 0 54.193] 110 D
+[<00007F807F000003FFF07FFE000FC0787FFE003F001C7FFE007F000E7FC0007E00077F8000FE0003FF0000FC0001FF0001FC
+  0001FF0001FC0001FF0001FC0000FF0001FC0000FF0001FC0000FF0001FC00007F0001FC00007F0001FC00007F0001FC0000
+  7F0001FC00007F0001FC00007F0001FC00007F0001FC00007F0001FC00007F0001FC00007F0001FC00007F0001FC00007F00
+  01FC00007F0001FC00007F0001FC00007F0001FC00007F0001FC00007F0001FC00007F0001FC00007F0001FC00007F0001FC
+  00007F0001FC00007F0001FC00007F0001FC00007F0001FC00007F0001FC00007F0003FC0000FF0007FC0001FF00FFFC003F
+  FF00FFFC003FFF00FFFC003FFF0001FC00007F00> 48 45 -3 1 54.193] 117 D
+[<03F0000000000FFC000000003C1E000000007007000000007C0380000000FE01C0000000FF00C0000000FF0060000000FF00
+  60000000FF00300000007E00300000003C001800000000001800000000001800000000000C00000000000C00000000000600
+  000000000600000000000600000000000300000000000300000000000780000000000780000000000780000000000FC00000
+  00000FC0000000001FE0000000001FE0000000001FE0000000003FB0000000003FB0000000007FB8000000007F1800000000
+  7F1800000000FE0C00000000FE0C00000001FE0E00000001FC0600000001FC0600000003F80300000003F80300000007F803
+  80000007F00180000007F0018000000FE000C000000FE000C000001FE000E000001FC0006000001FC0006000003F80003000
+  003F80003000007F80003800007F00001800007F0000180000FF00001C0000FE00000C0001FE00000E0001FE00001F0003FE
+  00001F8007FF00007FE0FFFFF001FFFCFFFFF001FFFCFFFFF001FFFC> 48 63 -2 20 51.483] 121 D
+[<7FFFFFFF7FFFFFFF7FFFFFFF001FFC00000FF8000007F0000007F0000007F0000007F0000007F0000007F0000007F0000007
+  F0000007F0000007F0000007F0000007F0000007F0000007F0000007F0000007F0000007F0000007F0000007F0000007F000
+  0007F0000007F0000007F0000007F0000007F0000007F0000007F0000007F0000007F0000007F0000007F0000007F0000007
+  F0000007F0000007F0000007F0000007F0000007F0000007F0000007F0000007F0000007F0000007F0000007F0000007F000
+  0007F0000007F0000007F0000007F0000007F0000007F0000007F000FF07F000FFE7F000FFFFF00000FFF000001FF0000003
+  F0000001F0000000F00000003000> 32 66 -8 0 48.774] 49 D
+[<FFFFFFFFE0FFFFFFFFE0FFFFFFFFE07FFFFFFFF03FFFFFFFF01FFFFFFFF01FFFFFFFF00E0000007007000000300380000038
+  01C000001800E000001800700000180038000018003C00000C001E00000C000F00000C00078000000003C000000001E00000
+  0000F000000000F8000000007C000000003F000000001F800000000FC000000007E000000007F000000003F800000001FC00
+  000000FE00000000FF000000007F000000007F800000003FC00000001FE00000001FE00000001FF00000000FF00000000FF8
+  00000007F800000007F800000007FC3F000007FC7F800007FCFFC00003FCFFC00003FCFFC00003FCFFC00003FCFFC00007FC
+  FF800007FCFF000007FC6C000007F860000007F87000000FF83000000FF03800001FF01C00001FE01C00003FC00E00007F80
+  078000FF0003C001FE0001F80FFC00007FFFF000001FFFC0000003FE0000> 40 66 -5 0 48.774] 50 D
+[<0001C00000000007F0000000000FF8000000000FF8000000000FF8000000000FF8000000000FF8000000000FF8000000000F
+  F8000000000FF8000000000FF8000000000FF80000000007F80000000007F80000000007F80000000007F80000000007F800
+  00000007F80000000003F80000000003F80000000003F80000000003F80000000001FC0000000001FC0000000001FC000000
+  0000FC0000000000FC00000000007C00000000007C00000000007E00000000003E00000000003E00000000001E0000000000
+  1F00000000000F00000000000F000000000007000000000007800000000003800000000001C00000000001C00000000000E0
+  00000000006000000000007000000000003800000000001800000000001C00000000000E0000000000060000C00000070000
+  C00000038000C0000001C00060000000C00060000000E000600000007000600000003000700000003800300000001C003800
+  00000C003FFFFFFFFE003FFFFFFFFF003FFFFFFFFF803FFFFFFFFF801FFFFFFFFFC01FFFFFFFFFC01FFFFFFFFFC01F800000
+  00001C00000000001C0000000000> 48 69 -5 2 48.774] 55 D
+[<001FF0000000FFFE000003FFFF800007E01FE0000F0003F0001C0001F8001E0000FC003F80007E003FC0003F003FE0001F80
+  3FE0001F803FE0000FC03FE0000FE01FC00007E00F800007F000000003F000000003F800000003F800000001FC00000001FC
+  00000001FC00000001FC00000001FE00000000FE0001FE00FE000FFF80FE003F01E0FF007C0070FF01F80038FF03F0001CFF
+  07E0000EFF07E00006FF0FC00007FF1FC00003FF1F800003FF3F800003FF3F800001FF7F000001FF7F000001FF7F000001FF
+  FF000000FFFF000000FFFF000000FFFF000000FFFF000000FEFF000000FEFF000000FEFF000000FEFF000000FEFF000001FE
+  FF000001FCFF000001FC7F000001FC7F000001FC7F800001F83F800003F83F800003F01FC00003F01FC00007E00FE00007E0
+  07E0000FC003F0001F8001F8003F0000FC007E00007F80FC00001FFFF8000007FFE0000000FF0000> 40 68 -4 2 48.774] 57 D
+[<6000700038001C000E000600070003000380018001C000C000C000C000E000600060006000601E607FE0FFE0FFE0FFE0FFC0
+  FFC0FF807F801E00> 16 29 -8 19 27.097] 44 D
+[<1E007F807F80FFC0FFC0FFC0FFC07F807F801E00> 16 10 -8 0 27.097] 46 D
+1.000 118 /f10 NF
+f10 SF
+[<00000000FFFC000000000000001FFFFFC0003000000001FFFFFFF000F000000007FFFFFFFC03F00000003FFFFFFFFF0FF000
+  0000FFFFF001FF9FF0000001FFFE00003FFFF0000007FFF000000FFFF000000FFFC0000007FFF000001FFF80000003FFF000
+  003FFE00000003FFF000007FFC00000001FFF00000FFF800000001FFF00001FFF000000001FFF00003FFE000000001FFF000
+  07FFE000000001FFF00007FFC000000001FFF0000FFF8000000001FFF0000FFF8000000001FFF0001FFF0000000001FFF000
+  1FFF0000000001FFF0003FFF0000000001FFF0003FFE0000000001FFF0003FFE0000000001FFF0007FFE0000007FFFFFFFF0
+  7FFE0000007FFFFFFFF07FFE0000007FFFFFFFF07FFC0000007FFFFFFFF0FFFC0000007FFFFFFFF0FFFC0000000000000000
+  FFFC0000000000000000FFFC0000000000000000FFFC0000000000000000FFFC0000000000000000FFFC0000000000000000
+  FFFC0000000000000000FFFC0000000000000000FFFC0000000000000000FFFC0000000000000000FFFC0000000000000000
+  FFFC0000000000000000FFFC00000000000000007FFC00000000000000007FFE000000000001F0007FFE000000000001F000
+  7FFE000000000001F0003FFE000000000003F0003FFE000000000003F0003FFF000000000003F0001FFF000000000003F000
+  1FFF000000000007F0000FFF800000000007F0000FFF80000000000FF00007FFC0000000000FF00007FFE0000000001FF000
+  03FFE0000000001FF00001FFF0000000003FF00000FFF8000000007FF000007FFC00000000FFF000003FFE00000001FFF000
+  001FFF00000003FFF000000FFFC0000007FFF0000007FFF000000FFFF0000001FFFE00003F9FF0000000FFFFE001FF0FF000
+  00003FFFFFFFFE07F000000007FFFFFFF803F000000001FFFFFFE001F0000000001FFFFF0000F00000000000FFF000007000> 80 70 -6 1 88.093] 71 D
+[<00001FFC0000000001FFFFC00000000FFFFFF80000003FFFFFFE0000007FF80FFF000001FFC001FFC00003FF8000FFE00007
+  FE00003FF00007FE00003FF0000FFC00001FF8001FFC00001FFC001FF800000FFC003FF800000FFE003FF800000FFE007FF0
+  000007FF007FF0000007FF007FF0000007FF007FF0000007FF00FFF0000007FF80FFF0000007FF80FFF0000007FF80FFF000
+  0007FF80FFF0000007FF80FFF0000007FF80FFF0000007FF80FFF0000007FF80FFF0000007FF80FFF0000007FF807FF00000
+  07FF007FF0000007FF007FF0000007FF007FF0000007FF003FF0000007FE003FF800000FFE001FF800000FFC001FF800000F
+  FC000FF800000FF8000FFC00001FF80007FE00003FF00003FE00003FE00001FF8000FFC00000FFC001FF8000007FF80FFF00
+  00001FFFFFFC00000007FFFFF000000001FFFFC0000000001FFC000000> 56 47 -3 1 56.039] 111 D
+[<FFFFFF80000000FFFFFF80000000FFFFFF80000000FFFFFF80000000FFFFFF8000000001FFC00000000001FFC00000000001
+  FFC00000000001FFC00000000001FFC00000000001FFC00000000001FFC00000000001FFC00000000001FFC00000000001FF
+  C00000000001FFC00000000001FFC00000000001FFC00000000001FFC01FF0000001FFC0FFFF000001FFC3FFFFC00001FFCF
+  FFFFF00001FFDFC07FFC0001FFFE001FFE0001FFFC000FFF0001FFF80007FF8001FFF00003FFC001FFE00001FFC001FFC000
+  01FFE001FFC00000FFF001FFC00000FFF001FFC000007FF001FFC000007FF801FFC000007FF801FFC000007FF801FFC00000
+  3FFC01FFC000003FFC01FFC000003FFC01FFC000003FFC01FFC000003FFC01FFC000003FFC01FFC000003FFC01FFC000003F
+  FC01FFC000003FFC01FFC000003FFC01FFC000003FFC01FFC000003FFC01FFC000007FF801FFC000007FF801FFC000007FF8
+  01FFC000007FF801FFC00000FFF001FFC00000FFF001FFC00001FFE001FFE00001FFE001FFF00003FFC001FFF80003FF8003
+  FFFC0007FF00FFFFFF001FFE00FFFFDFC03FFC00FFFFCFFFFFF800FFFFC3FFFFE000FFFFC0FFFF8000007FC00FF80000> 56 64 -3 19 62.265] 112 D
+[<FFFFFFE000FFFFFFE000FFFFFFE000FFFFFFE000FFFFFFE00001FFC0000001FFC0000001FFC0000001FFC0000001FFC00000
+  01FFC0000001FFC0000001FFC0000001FFC0000001FFC0000001FFC0000001FFC0000001FFC0000001FFC0000001FFC00000
+  01FFC0000001FFC0000001FFC0000001FFC0000001FFC0000001FFC0000001FFC0000001FFC0000001FFE0000001FFE00000
+  01FFE0000001FFE001E001FFE007F801FFF00FFC01FFF01FFE01FFF81FFE01FFF81FFE01FFBC1FFE03FFBE1FFEFFFF9F1FFE
+  FFFF8F8FFCFFFF8FFFF8FFFF83FFF0FFFF81FFE0007F807F00> 40 45 -3 0 45.776] 114 D
+[<00007FF007FC000003FFFE07FFFE000FFFFF07FFFE003FFFFFC7FFFE007FF807E7FFFE007FE001F7FFFE00FFE0007FFF8000
+  FFC0003FFF0001FFC0003FFF0001FFC0001FFF0001FFC0001FFF0001FFC0000FFF0001FFC0000FFF0001FFC00007FF0001FF
+  C00007FF0001FFC00007FF0001FFC00007FF0001FFC00007FF0001FFC00007FF0001FFC00007FF0001FFC00007FF0001FFC0
+  0007FF0001FFC00007FF0001FFC00007FF0001FFC00007FF0001FFC00007FF0001FFC00007FF0001FFC00007FF0001FFC000
+  07FF0001FFC00007FF0001FFC00007FF0001FFC00007FF0001FFC00007FF0001FFC00007FF0001FFC00007FF0001FFC00007
+  FF0001FFC00007FF0001FFC00007FF0001FFC00007FF0003FFC0000FFF00FFFFC003FFFF00FFFFC003FFFF00FFFFC003FFFF
+  00FFFFC003FFFF00FFFFC003FFFF00007FC00001FF00> 56 46 -4 1 62.265] 117 D
+[<0001F80000000003FC0000000007FE000000000FFF000000000FFF000000000FFF000000000FFF000000000FFF000000000F
+  FF000000000FFF000000000FFF000000000FFF000000000FFF0000000007FF0000000007FF0000000007FF0000000007FF00
+  00000007FF0000000003FF0000000003FF0000000003FF0000000003FF8000000001FF8000000001FF8000000001FF800000
+  0000FF8000000000FF80000000007F80000000007FC0000000003FC0000000003FC0000000001FC0000000001FE000000000
+  0FE0000000000FE00000000007F00000000003F00000000003F80000000001F80000000000FC0000000000FC00000000007E
+  00000000003F0000F000001F8000F000000F8000F000000FC000F8000007E00078000003F00078000001F80078000000F800
+  7C000000FC007C0000007E007E0000003F007FFFFFFFFF803FFFFFFFFFC03FFFFFFFFFC03FFFFFFFFFE03FFFFFFFFFF03FFF
+  FFFFFFF83FFFFFFFFFFC3FFFFFFFFFFE1FFFFFFFFFFE1FFFFFFFFFFE1FFFFFFFFFFE1FFFFFFFFFFE1FFC000000001F000000
+  00001E0000000000> 48 68 -6 1 56.039] 55 D
+[<0000FFF00000000FFFFF0000003FFFFFC00000FFFFFFF00003FFFFFFFC0007FFC00FFE000FFE0001FF001FF800007F803FF0
+  00003FC03FE000001FE07FC000000FE07F8000000FF07F80000007F0FF80000007F0FF00000007F8FF00000007F8FF000000
+  07F8FF0000000FF8FF0000000FF8FF0000001FF8FF0000003FF8FF8000007FF87F800000FFF87F800003FFF87FC00007FFF0
+  3FE0001FFFF01FE0007FFFF01FF000FFFFE00FF803FFFFE007FC0FFFFFC001FF3FFFFF8000FFFFFFFF00003FFFFFFE00000F
+  FFFFFC00000FFFFFF800003FFFFFE000007FFFFFC00000FFFFFF000001FFFFFFC00003FFFFFFE00007FFFFE7F80007FFFF83
+  FC000FFFFE01FE000FFFFC00FF001FFFF0007F001FFFC0007F801FFF00003F801FFE00003FC01FF800001FC01FF000001FC0
+  1FE000001FC01FE000001FC01FC000001FC01FC000001FC00FC000003FC00FC000003FC007E000003F8007E000007F8003F0
+  0000FF0003F80001FF0001FC0003FE00007F801FFC00003FFFFFF000000FFFFFC0000003FFFF000000007FF00000> 48 66 -5 1 56.039] 56 D
+[<0007FE000000007FFFE0000001FFFFF8000003FFFFFE000007FFFFFF80000FF003FFC0001FC000FFE0001FF0003FF0003FF8
+  001FF8003FFC000FFC003FFC000FFE003FFC0007FE003FFC0003FF003FFC0003FF803FFC0003FF801FF80001FFC00FF00001
+  FFC003C00001FFE000000001FFE000000001FFE000000000FFE000000000FFF000000000FFF00001FF00FFF0000FFFC0FFF0
+  003FFFF0FFF800FFFFF8FFF801FFC07CFFF803FF001EFFF807FE000FFFF80FFE000FFFF81FFC0007FFF81FFC0003FFF83FF8
+  0003FFF83FF80003FFF87FF80001FFF87FF80001FFF87FF80001FFF8FFF80001FFF8FFF80000FFF8FFF80000FFF8FFF80000
+  FFF8FFF80000FFF8FFF80000FFF0FFF80000FFF0FFF80000FFF0FFF80000FFF0FFF80000FFF0FFF80000FFF0FFF80000FFE0
+  7FF80000FFE07FF80000FFE07FF80000FFC07FF80001FFC03FFC0001FF803FFC0001FF801FFC0001FF000FFC0003FF0007FE
+  0007FE0003FF0007FC0001FF800FF80000FFE03FF000007FFFFFE000001FFFFF80000007FFFE000000007FF00000> 48 66 -5 1 56.039] 57 D
+600 1.000 START
+%%EndSetup
+
+%%Page: 1 1
+BP
+f8 SF
+1693 963 p (Exercises)s
+f9 SF
+1470 1204 p (M.)s
+33 r (T)s
+-7 r (ak)s
+-3 r (eic)s
+-3 r (hi)s
+32 r (and)s
+32 r (Z.)s
+33 r (Hu)s
+1669 1398 p (Ma)s
+-1 r (y)s
+31 r (22,)s
+33 r (1997)s
+f10 SF
+523 1714 p (Group)s
+37 r (7)s
+f4 SF
+624 1867 p (1.)s
+42 r (A)s
+32 r (monoid)s
+32 r (\()s
+f1 SF
+(M)s
+4 r (;)s
+f2 SF
+14 r (\001)s
+f1 SF
+(;)s
+14 r (e)s
+f4 SF
+(\))s
+32 r (is)s
+32 r (a)s
+32 r (set)s
+f1 SF
+32 r (M)s
+f4 SF
+41 r (equipp)s
+2 r (ed)s
+32 r (with)s
+32 r (a)s
+32 r (binary)s
+32 r (op)s
+2 r (eration)s
+f2 SF
+32 r (\001)s
+f4 SF
+32 r (and)s
+32 r (a)s
+731 1967 p (distinguished)s
+27 r (elemen)s
+-1 r (t)s
+f1 SF
+27 r (e)s
+f4 SF
+27 r (suc)s
+-1 r (h)s
+27 r (that)s
+766 2130 p (\(a\))s
+41 r (\()s
+f1 SF
+(x)s
+f2 SF
+19 r (\001)s
+f1 SF
+18 r (y)s
+f4 SF
+3 r (\))s
+f2 SF
+18 r (\001)s
+f1 SF
+19 r (z)s
+f4 SF
+27 r (=)s
+f1 SF
+23 r (x)s
+f2 SF
+18 r (\001)s
+f4 SF
+19 r (\()s
+f1 SF
+(y)s
+f2 SF
+21 r (\001)s
+f1 SF
+18 r (z)s
+f4 SF
+4 r (\),)s
+28 r (for)s
+27 r (all)s
+f1 SF
+28 r (x)s
+f4 SF
+(,)s
+f1 SF
+28 r (y)s
+f4 SF
+3 r (,)s
+27 r (and)s
+f1 SF
+28 r (z)s
+f4 SF
+31 r (in)s
+f1 SF
+28 r (M)s
+f4 SF
+9 r (;)s
+761 2260 p (\(b\))s
+f1 SF
+42 r (e)s
+f2 SF
+18 r (\001)s
+f1 SF
+18 r (x)s
+f4 SF
+23 r (=)s
+f1 SF
+24 r (x)s
+f4 SF
+23 r (=)s
+f1 SF
+23 r (x)s
+f2 SF
+18 r (\001)s
+f1 SF
+19 r (e)s
+f4 SF
+27 r (for)s
+28 r (all)s
+f1 SF
+28 r (x)s
+f4 SF
+27 r (in)s
+f1 SF
+28 r (M)s
+f4 SF
+9 r (.)s
+731 2423 p (Sho)s
+-2 r (w)s
+27 r (ho)s
+-1 r (w)s
+26 r (an)s
+28 r (arbitrary)s
+28 r (monoid)s
+27 r (can)s
+28 r (b)s
+2 r (e)s
+28 r (consider)s
+28 r (as)s
+27 r (a)s
+28 r (category)s
+-6 r (.)s
+731 2522 p (\()s
+f6 SF
+(Hint)s
+f4 SF
+(:)s
+45 r (Consider)s
+32 r (a)s
+32 r (category)s
+32 r (with)s
+31 r (a)s
+32 r (single)s
+32 r (ob)s
+5 r (ject)s
+f1 SF
+32 r (M)s
+f4 SF
+9 r (,)s
+33 r (and)s
+32 r (considr)s
+32 r (the)s
+31 r (ele-)s
+731 2622 p (men)s
+-2 r (ts)s
+27 r (of)s
+f1 SF
+28 r (M)s
+f4 SF
+36 r (as)s
+28 r (arro)s
+-1 r (ws\))s
+624 2785 p (2.)s
+42 r (Complete)s
+22 r (the)s
+22 r (follo)s
+-1 r (wing)s
+20 r (sp)s
+3 r (eci\014cation)s
+22 r (of)s
+22 r (the)s
+22 r (category)s
+f1 SF
+21 r (M)s
+f4 SF
+31 r (and)s
+22 r (v)s
+-1 r (erify)s
+21 r (the)s
+22 r (la)s
+-1 r (ws)s
+731 2884 p (that)s
+f1 SF
+27 r (M)s
+f4 SF
+37 r (should)s
+28 r (satisfy)s
+-6 r (.)s
+766 3047 p (\(a\))s
+41 r (The)s
+28 r (ob)s
+4 r (jects)s
+28 r (of)s
+f1 SF
+28 r (M)s
+f4 SF
+36 r (are)s
+28 r (the)s
+28 r (natural)s
+28 r (n)s
+-2 r (um)s
+-2 r (b)s
+1 r (ers;)s
+761 3177 p (\(b\))s
+42 r (An)s
+27 r (arro)s
+-1 r (w)s
+f1 SF
+27 r (f)s
+f4 SF
+32 r (:)s
+f1 SF
+23 r (n)s
+f2 SF
+23 r ( )s
+f1 SF
+23 r (m)s
+f4 SF
+27 r (is)s
+28 r (an)s
+f1 SF
+28 r (m)s
+f4 SF
+(-b)s
+-2 r (y-)s
+f1 SF
+(n)s
+f4 SF
+27 r (matrix)s
+28 r (of)s
+27 r (real)s
+28 r (n)s
+-1 r (um)s
+-2 r (b)s
+1 r (ers;)s
+770 3307 p (\(c\))s
+42 r (The)s
+28 r (comp)s
+2 r (osition)s
+f1 SF
+28 r (g)s
+f2 SF
+21 r (\016)s
+f1 SF
+19 r (f)s
+f4 SF
+37 r (of)s
+28 r (t)s
+-2 r (w)s
+-2 r (o)s
+27 r (arro)s
+-1 r (ws)s
+f1 SF
+26 r (f)s
+f4 SF
+33 r (:)s
+f1 SF
+23 r (n)s
+f2 SF
+24 r ( )s
+f1 SF
+23 r (m)s
+f4 SF
+28 r (and)s
+f1 SF
+28 r (g)s
+f4 SF
+26 r (:)s
+f1 SF
+23 r (p)s
+f2 SF
+24 r ( )s
+f1 SF
+23 r (n)s
+f4 SF
+28 r (is)s
+28 r (the)s
+913 3407 p (matrix)s
+28 r (pro)s
+2 r (duct)s
+28 r (of)s
+f1 SF
+28 r (f)s
+f4 SF
+36 r (and)s
+f1 SF
+28 r (g)s
+f4 SF
+3 r (.)s
+f10 SF
+523 3638 p (Group)s
+37 r (8)s
+f4 SF
+624 3791 p (1.)s
+42 r (Pro)s
+-1 r (v)s
+-3 r (e)s
+28 r (that)s
+29 r (if)s
+28 r (b)s
+3 r (oth)s
+28 r (inner)s
+29 r (squares)s
+29 r (of)s
+28 r (the)s
+29 r (follo)s
+-2 r (wing)s
+28 r (diagram)s
+29 r (comm)s
+-2 r (ute,)s
+28 r (then)s
+731 3891 p (so)s
+27 r (do)s
+3 r (es)s
+27 r (the)s
+28 r (outer)s
+28 r (rectangle.)s
+f1 SF
+1543 4111 p (A)s
+1638 4093 p 339 3 ru
+1798 4053 p (f)s
+f3 SF
+1921 4091 p (-)s
+f1 SF
+2038 4111 p (B)s
+2139 4093 p 338 3 ru
+2285 4053 p (f)s
+f0 SF
+2334 4023 p (0)s
+f3 SF
+2420 4091 p (-)s
+f1 SF
+2537 4111 p (C)s
+1531 4609 p (A)s
+f0 SF
+1593 4575 p (0)s
+f1 SF
+1523 4360 p (a)s
+f3 SF
+1576 4510 p (?)s
+-86 r 3 365 ru
+1650 4591 p 316 3 ru
+f1 SF
+1802 4551 p (g)s
+f3 SF
+1909 4589 p (-)s
+f1 SF
+2027 4609 p (B)s
+f0 SF
+2094 4575 p (0)s
+f1 SF
+2030 4360 p (b)s
+f3 SF
+2074 4510 p (?)s
+-86 r 3 365 ru
+2150 4591 p 315 3 ru
+f1 SF
+2288 4551 p (g)s
+f0 SF
+2331 4521 p (0)s
+f3 SF
+2408 4589 p (-)s
+f1 SF
+2526 4609 p (C)s
+f0 SF
+2591 4575 p (0)s
+f1 SF
+2528 4360 p (c)s
+f3 SF
+2572 4510 p (?)s
+-86 r 3 365 ru
+f4 SF
+624 4782 p (2.)s
+42 r (Sho)s
+-1 r (w)s
+23 r (that)s
+25 r (in)s
+25 r (an)s
+-1 r (y)s
+23 r (category)s
+-6 r (,)s
+25 r (if)s
+24 r (t)s
+-1 r (w)s
+-2 r (o)s
+24 r (arro)s
+-2 r (ws)s
+f1 SF
+24 r (f)s
+f4 SF
+34 r (and)s
+f1 SF
+24 r (g)s
+f4 SF
+28 r (are)s
+25 r (b)s
+2 r (oth)s
+25 r (epic,)s
+25 r (then)s
+25 r (their)s
+731 4882 p (comp)s
+2 r (osition)s
+f1 SF
+28 r (g)s
+f2 SF
+21 r (\016)s
+f1 SF
+18 r (f)s
+f4 SF
+37 r (is)s
+28 r (epic.)s
+1934 5147 p (1)s
+EP
+
+%%Page: 2 2
+BP
+f10 SF
+523 614 p (Group)s
+37 r (9)s
+f4 SF
+624 768 p (1.)s
+42 r (Consider)s
+28 r (the)s
+f6 SF
+27 r (squaring)s
+f4 SF
+35 r (functor)s
+28 r (\()s
+5 r 25 3 ru
+25 r (\))s
+f5 SF
+1943 737 p (2)s
+f4 SF
+2003 768 p (:)s
+f7 SF
+23 r (F)s
+-7 r (un)s
+f2 SF
+22 r ( )s
+f7 SF
+23 r (F)s
+-7 r (un)s
+f4 SF
+27 r (de\014ned)s
+28 r (b)s
+-2 r (y)s
+f1 SF
+1403 949 p (A)s
+f5 SF
+1465 919 p (2)s
+f4 SF
+1781 949 p (=)s
+f2 SF
+83 r (f)s
+f4 SF
+(\()s
+f1 SF
+(a;)s
+14 r (b)s
+f4 SF
+(\))s
+f2 SF
+28 r (j)s
+f1 SF
+27 r (a)s
+f2 SF
+23 r (2)s
+f1 SF
+24 r (A;)s
+13 r (b)s
+f2 SF
+23 r (2)s
+f1 SF
+23 r (A)s
+f2 SF
+(g)s
+f1 SF
+1403 1049 p (f)s
+f5 SF
+1452 1019 p (2)s
+f4 SF
+1517 1049 p (\()s
+f1 SF
+(a;)s
+14 r (b)s
+f4 SF
+(\))s
+83 r (=)s
+83 r (\()s
+f1 SF
+(f)s
+37 r (a;)s
+14 r (f)s
+36 r (b)s
+f4 SF
+(\))s
+731 1228 p (Cheac)s
+-2 r (k)s
+27 r (that)s
+28 r (the)s
+27 r (sequaring)s
+28 r (functor)s
+28 r (preserv)s
+-2 r (es)s
+27 r (iden)s
+-1 r (tities)s
+26 r (and)s
+28 r (comp)s
+2 r (osition.)s
+624 1394 p (2.)s
+42 r (Consider)s
+28 r (the)s
+27 r (datat)s
+-1 r (yp)s
+1 r (e)s
+28 r (of)s
+28 r (binary)s
+27 r (tree:)s
+f6 SF
+1398 1577 p (tr)s
+-3 r (e)s
+-4 r (e)s
+f1 SF
+26 r (A)s
+f4 SF
+23 r (::=)s
+f6 SF
+24 r (tip)s
+f1 SF
+27 r (A)s
+f2 SF
+28 r (j)s
+f6 SF
+28 r (bin)s
+f4 SF
+27 r (\()s
+f6 SF
+(tr)s
+-3 r (e)s
+-4 r (e)s
+f1 SF
+26 r (A;)s
+f6 SF
+14 r (tr)s
+-3 r (e)s
+-4 r (e)s
+f1 SF
+26 r (A)s
+f4 SF
+(\))s
+731 1759 p (This)s
+34 r (giv)s
+-1 r (es)s
+33 r (a)s
+34 r (mapping)s
+34 r (taking)s
+35 r (sets)s
+34 r (to)s
+34 r (sets.)s
+57 r (Extending)s
+34 r (this)s
+34 r (mapping)s
+35 r (to)s
+34 r (a)s
+731 1859 p (functor,)s
+27 r (i.e.,)s
+28 r (de\014ne)s
+f6 SF
+28 r (tr)s
+-4 r (e)s
+-4 r (e)s
+f4 SF
+27 r (on)s
+27 r (functions.)s
+1934 5147 p (2)s
+EP
+%%Trailer
+%%Pages: 2
+END
+%%EOF

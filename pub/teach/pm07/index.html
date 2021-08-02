@@ -1,0 +1,188 @@
+<html>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=ISO-2022-JP">
+<META name="keywords" content="functional programming,Haskell,関数プログラミング,プログラム運算,プログラムの数理">
+
+<head>
+<title>Mathematical Structures in Computer Programs</title>
+</head>
+
+<body
+background="http://www.ipl.t.u-tokyo.ac.jp/~hu/pub/bk500.jpg"
+bgcolor="#FFFFFF" text="#000000" link="#0000EE" vlink="#551A8B"
+alink="#FF0000" bgproperties="fixed">
+
+<h1 align="center"><font color="#0033FF">プログラムの数理</font></h1>
+
+<hr>
+
+<p align="center">時間： 2007 年度冬学期 月曜日午前
+8:30 -- 10:00 </p>
+
+<p align="center">場所： 工学部 6 号館 2 階 63 講義室
+</p>
+
+<h2>お知らせ</h2>
+<ul>
+<li> 2008/01/13: 河瀬君の指摘を受け、「可変長の算術演算」の中のnormの定義を次のように修正しました。
+<blockquote>
+<pre>
+norm :: VInt -> VInt
+norm = strep . addCarry . foldr carry [0]
+  where carry :: Bigit -> VInt -> VInt
+	carry x (c:xs) = (x+c) `div` b : (x+c) `mod` b : xs
+
+addCarry :: VInt -> VInt
+addCarry (c:xs) = if (-1 <= c) && (c < b) then c : xs
+                  else addCarry (c `div` b : c `mod` b : xs)
+</pre>
+</blockquote>
+中間レポートの課題を解くときに参考してみてください。<p>
+
+<li> 2007/12/17: 期末試験は2/4です。
+</ul>
+
+
+<h2>講義内容</h2>
+計算機プログラムに内在する数理的構造を捉え、アルゴリズム設計における構
+成的手法の体系化とそれに基づくプログラミング方法論を扱う。
+
+<ul>
+<li>算法言語の基本概念（文法・意味・型・計算モデル）を学習することによっ
+て、厳密な科学・工学としてのプログラミングのあり方を学ぶ。
+
+<li>算法設計・プログラミングを数学的な活動としてとらえる考え方を理解す
+る。計算機プログラムの数理的構造を捉え．それに基づいて構成的にアルゴリ
+ズムを記述する構成的アルゴリズム論(constructive algorithmics)の基礎を扱
+う。
+</ul>
+
+<h2>教科書・参考書</h2>
+
+<ul>
+<li><a href="http://www.ipl.t.u-tokyo.ac.jp/~takeichi">武市正人訳</a>、
+「関数プログラミング」, 近代科学社, 1994年. ISBN4-7649-0181-1、定価
+4,500円．(R. Bird and P. Wadler, Introduction to Functional
+Programming, Prentice Hall, 1988)
+<li>Richard Bird, Lecture Notes on Constructive Functional
+  Programming, Technical monograph 69; PRG, Oxford University,
+  September 1988.
+<li>Richard Bird and Oege de Moor. The Algebra of
+  Programming. Prentice-Hall, 1996.
+</ul>
+
+<h2>講義資料</h2>
+
+参考のための講義資料を講義後にここにおくようにします。
+<ul>
+<li>講義の概要 (<a href="intro.pdf">PDF</a>)
+<li>関数プログラミングの基本概念 (<a href="FPBasic.pdf">PDF</a>)
+<li>基本データ型上の関数 (<a href="FunOnBasicTypes.pdf">PDF</a>)
+<li>合成型上の関数 (<a href="FunOnDerivedTypes.pdf">PDF</a>)
+<li>関数プログラムの設計 (<a href="FunDevelop.pdf">PDF</a>)
+<li>帰納法によるプログラムの証明 (<a href="Proof.pdf">PDF</a>)
+<li>構成的アルゴリズム論1（基本概念） (<a href="CA1.pdf">PDF</a>)
+<li>中間レポートについて (<a href="Report1.pdf">PDF</a>、<a href="Arithmetic.hs">Haskellソース</a>)
+<li>構成的アルゴリズム論2（準同型） (<a href="CA2.pdf">PDF</a>)
+<li>構成的アルゴリズム論3（方向付き簡約計算） (<a href="CA3.pdf">PDF</a>)
+</ul>
+<!--
+<ul>
+<li>講義の概要 (<a href="intro.pdf">PDF</a>)
+<li>関数プログラミングの基本概念 (<a href="FPBasic.pdf">PDF</a>)
+<li>基本データ型上の関数 (<a href="FunOnBasicTypes.pdf">PDF</a>)
+<li>関数プログラムの設計 (<a href="FunDevelop.pdf">PDF</a>)
+<li>合成型上の関数 (<a href="FunOnDerivedTypes.pdf">PDF</a>)
+<li>帰納法によるプログラムの証明 (<a href="Proof.pdf">PDF</a>)
+<li>中間レポートについて (<a href="Report1.pdf">PDF</a>)
+<li>構成的アルゴリズム論1（基本概念） (<a href="CA1.pdf">PDF</a>)
+<li>構成的アルゴリズム論2（準同型） (<a href="CA2.pdf">PDF</a>)
+<li>構成的アルゴリズム論3（方向付き簡約計算） (<a href="CA3.pdf">PDF</a>)
+<li>構成的アルゴリズム論4（リストから行列への拡張） (<a href="CA4.pdf">PDF</a>)
+<li>講義の復習（まとめ） (<a href="review.pdf">PDF</a>)
+<li>期末試験問題 (<a href="http://www.ipl.t.u-tokyo.ac.jp/~hu/pub/pm06_exam.pdf">PDF</a>)
+</ul>
+-->
+
+<h2>関連リンク</h2>
+
+<ul>
+<li>Haskell関連
+<ul>
+ <li ><a href="http://www.haskell.org/">The Haskell Home Page</a></li> 
+
+ <li>和田先生
+ の<a href="http://www.ipsj.or.jp/07editj/promenade/4604.pdf">「関数プ
+ ログラミングの妙味」</a>
+</li>
+
+ <li><a href="http://www.ipl.t.u-tokyo.ac.jp/~onoue">尾上さん</a>の
+     <a href="http://www.ipl.t.u-tokyo.ac.jp/~hu/pub/jssst01.pdf">
+     Haskell言語とその処理系のチュートリアル</a>（日本語）
+     </li> 
+
+<li>山下さんの<a
+href="http://www.sampou.org/cgi-bin/haskell.cgi">「Programming in
+Haskell」ページ</a>
+</li>
+
+<li>「情報処理」学会誌は2005年4月より，
+<a href="http://www.ipsj.or.jp/07editj/promenade/">「Haskellプログラミ
+ング」連載</a>が開始した．
+</li>
+
+<li><a
+     href="http://www.cs.mu.oz.au/tr_submit/test/cover_db/mu_TR_1999_14.html">
+     Haskell for Miranda Programmers</a>
+</li>
+</ul>
+</li>
+
+<li>プログラム運算関連
+<ul>
+
+<li><a href="http://web.comlab.ox.ac.uk/oucl/work/jeremy.gibbons/wg21/">
+IFIP Working Group 2.1</a> -- Algorithmic Languages and Calculi</a>
+</li>
+
+<li>
+<a href="http://www.cs.ioc.ee/mpc-amast06/mpc/">8th International
+Conference on Mathematics of Program Construction</a>, Kuressaare,
+Estonia, 3-5 July 2006.
+</li>
+
+<li><a href="http://web.comlab.ox.ac.uk/oucl/people/pdt.html">Program
+Development and Tools Group in Oxford University</a>
+</li>
+
+<li>
+Roland Backhouse's
+<a href="http://www.cs.nott.ac.uk/~rcb/G5BPCV/G5BPCV.html">Course
+Page</a> on Program Construction and Verification
+</li>
+
+</ul>
+</li>
+
+<li><a href="../pm06/"> 2006年度の講義資料</a></li>
+
+<li>過去期末試験問題
+<ul>
+<li><a href="http://www.ipl.t.u-tokyo.ac.jp/~hu/pub/pm03_exam.pdf">2003年度期末試験問題</a>
+<li><a href="http://www.ipl.t.u-tokyo.ac.jp/~hu/pub/pm04_exam.pdf">2004年度期末試験問題</a>
+<li><a href="http://www.ipl.t.u-tokyo.ac.jp/~hu/pub/pm05_exam.pdf">2005年度期末試験問題</a>
+<li><a href="http://www.ipl.t.u-tokyo.ac.jp/~hu/pub/pm06_exam.pdf">2006年度期末試験問題</a>
+</ul>
+</li>
+
+</ul>
+
+<hr>
+
+<address>
+    <a href="http://www.ipl.t.u-tokyo.ac.jp/~hu">胡振江</a>
+    (hu at mist.i.u-tokyo.ac.jp). Last modifed on October 2007.
+</address>
+</body>
+</html>
+
+

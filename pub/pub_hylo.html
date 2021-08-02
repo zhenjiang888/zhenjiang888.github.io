@@ -1,0 +1,115 @@
+<head>
+<title>HYLO Publiscations</title>
+</head>
+<h1>Design and Implementation of HYLO system</h1>
+
+We aim at the "first" practical program calculator, 
+called HYLO, which can automatically optimize functional programs by means of
+calculation. The preliminary system has been implemented by Onoue. The following are related publications. <p>
+
+<ul>
+
+<li> <a href="http://www.ipl.t.u-tokyo.ac.jp/~hu">Z. Hu</a> , H. Iwasaki , 
+     <a href="http://www.ipl.t.u-tokyo.ac.jp/~takeichi">M. Takeichi</a>, A. Takano,
+     	<b>Tupling Calculation Eliminates Multiple Data Traversals </b>
+	,
+	to appear in <em>2nd ACM SIGPLAN International Conference on Functional Programming 
+	(<a href="http://www.fwi.uva.nl/research/func/icfp97.html">ICFP'97</a>)</em>, 
+	Amsterdam, The Netherlands, June 1997. ACM Press. <p>
+
+Tupling is a well-known transformation tactic to obtain new efficient
+recursive functions without multiple traversals over common data
+structure, which is achieved by grouping some recursive functions  
+into a tuple. The major difficulty in tupling transformation is to
+find what functions are to be tupled and how to transform the tupled
+function into an efficient one. Previous approach to tupling
+transformation is essentially based on fold/unfold
+transformation. Though general, this approach suffers from the high
+cost of keeping track of function calls to avoid infinite unfolding,
+which prevent it from being used in a practical compiler of functional 
+languages.  
+<br> 
+To remedy this situation, we propose a new approach based on the
+theory of constructive algorithmics, in which a more practical tupling
+calculation algorithm is proposed showing how  to expose recursive
+structures in recursive definitions and how this  structural
+information can be explored for calculating out efficient programs by
+means of tupling. Being less general, our
+new tupling calculation algorithm can be
+successfully used to eliminate most of multiple
+data traversals and and can be easily implemented. 
+<p>
+
+<li> <a href="http://www.ipl.t.u-tokyo.ac.jp/~onoue">Y. Onoue</a>, <a href="http://www.ipl.t.u-tokyo.ac.jp/~hu">Z. Hu</a>, H. Iwasaki ,  
+     <a href="http://www.ipl.t.u-tokyo.ac.jp/~takeichi">M. Takeichi</a>,
+     <a href="http://www.ipl.t.u-tokyo.ac.jp/~hu/pub/ifip97.ps.gz"><b>A Calculational Fusion System HYLO </b></a>,
+	to appear in <em>IFIP TC 2 Working
+Conference on Algorithmic Languages and Calculi</em>. Le Bischenberg, France. 
+February 1997. Chapman&Hall.<p>
+
+Fusion, one of the most
+useful transformation tactics for deriving 
+efficient programs, is the process whereby separate pieces of programs 
+are fused into a single one, leading to an efficient program with no
+intermediate data structures produced. In this paper, we report
+our on-going investigation on 
+the design and implementation of an automatic transformation system \hc
+which performs fusion transformation in a more systematic
+and more general way than any other systems.
+The distinguished point of our system is its
+calculational feature based on simple application of
+transformation laws rather than traditional
+search-based transformation. <p>
+
+<li> <a href="http://www.ipl.t.u-tokyo.ac.jp/~hu">Z. Hu</a> , H. Iwasaki , 
+     <a href="http://www.ipl.t.u-tokyo.ac.jp/~takeichi">M. Takeichi</a>,
+     <a href="http://www.ipl.t.u-tokyo.ac.jp/~hu/pub/fuji96.ps.gz"><b>An Extension of the Acid Rain Theorem</b></a>,
+	<em>2nd Fuji International Workshop
+                    on Functional and Logic Programming
+</em> (<a href = "http://www.kurims.kyoto-u.ac.jp/~ohori/fuji96.html">Fuji'96</a>). Shonan Village, Japan. November 1996. World Scientific.<p>
+
+  Program fusion is a well-known
+  transformation whereby compositions of several pieces of code are
+  fused into a single one, resulting in an efficient functional
+  program without intermediate data structures. Recent work has made
+  it clear that fusion transformation is especially successful if
+  recursions are expressed in terms of hylomorphisms. The
+  point of this success is that fusion transformation proceeds merely
+  based on a simple but effective rule called  Acid Rain
+    Theorem. However, there remains a problem.  The
+  Acid Rain Theorem can only handle hylomorphisms inducting over a
+  single data structure. For hylomorphisms, like zip,
+  which induct over  multiple data structures, it will leave
+  some of the data structures remained which should be removed. In
+  this paper, we extend the Acid Rain Theorem so that it can deal with
+  such hylomorphisms, enabling more intermediate data structures to be
+  eliminated.<p>
+
+<li> <a href="http://www.ipl.t.u-tokyo.ac.jp/~hu">Z. Hu</a> , H. Iwasaki , 
+     <a href="http://www.ipl.t.u-tokyo.ac.jp/~takeichi">M. Takeichi</a>,
+     	<a href="http://www.ipl.t.u-tokyo.ac.jp/~hu/pub/icfp96.ps.gz">
+	<b>Deriving Structural Hylomorphisms from Recursive Definitions</b>
+	</a>,
+	<em>ACM SIGPLAN International Conference on Functional Programming 
+	(<a href="http://www.cs.indiana.edu/icfp96">ICFP'96</a>)</em>, 
+	Philadelphia, pp.73-82. May 1996. ACM Press. <p>
+
+In functional programming, small programs are often glued together
+to construct a complex program. Program fusion is an optimizing process
+whereby these small programs are fused into a single one and
+intermediate data structures are removed. Recent work has made it
+clear that this process is especially successful if the recursive
+definitions are expressed in terms of hylomorphisms. In this paper, we
+propose an algorithm which can automatically turn  
+all practical recursive definitions into structural hylomorphisms
+making program fusion be easily applied.
+<p>
+
+
+</ul>
+
+<hr>
+<address>
+<a href="http:/~hu">Z. Hu</a>(hu@ipl.t.u-tokyo.ac.jp)
+</address>
+</body>

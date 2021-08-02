@@ -1,0 +1,5931 @@
+%!PS-Adobe-2.0
+%%Creator: /usr/local/bin/dvi2ps.bin
+%%Title: paper.dvi
+%%Pages: (atend)
+%%BoundingBox: 0 0 595 842
+%%DocumentPaperSizes: A4
+%%EndComments
+%%BeginFile: /usr/local/lib/dvi2ps/dvi2.ps
+%
+/TeXDict 300 dict def
+TeXDict begin
+/inch {
+72 mul
+} bind def
+/largepaperarray [
+/letter /legal /11x17
+/b4 /b5 /a5 /a4 /a3
+] def
+/smallpaperarray [
+/note dup where {
+pop
+}{
+pop /lettersmall dup where {
+pop
+}{
+pop /letter
+} ifelse
+} ifelse
+/legal /11x17
+/b4 /b5 /a5
+/a4small dup where {
+pop
+}{
+pop /note dup where {
+pop
+}{
+pop /a4
+} ifelse
+} ifelse
+/a3
+] def
+/setpaper {
+papertray {
+dup where {
+exch get exec
+}{
+pop
+} ifelse
+}{
+pop
+} ifelse
+} bind def
+/trayarray [
+/lettertray /legaltray /11x17tray
+/b4tray /b5tray /a5tray /a4tray /a3tray
+] def
+/settray {
+dup statusdict exch known manualfeed not and {
+mark exch statusdict begin load 
+{
+exec
+} stopped {
+$error /newerror get {
+$error /errorname get /rangecheck eq {
+(Tray not found, using default tray.\n) print flush
+TeXDict /papertray false put
+}{
+handleerror
+} ifelse
+$error /newerror false put
+} if
+} if
+end cleartomark
+}{
+pop
+} ifelse
+} bind def
+/papertray true def
+/widtharray  [
+8.5 inch 8.5 inch 11 inch
+9.84 inch 6.93 inch
+5.83 inch 8.27 inch 11.69 inch
+] def
+/heightarray [
+11 inch 14 inch 17 inch
+13.9 inch 9.84 inch
+8.27 inch 11.69 inch 16.54 inch
+] def
+/xoffset 0 def
+/yoffset 0 def
+/leftm 72 def
+/topm 72 def
+/landscape false def
+/manualfeed false def
+/pagesetup {
+dup widtharray exch get /paperwidth exch def
+dup heightarray exch get /paperheight exch def
+dup trayarray exch get settray
+large {largepaperarray}{smallpaperarray} ifelse
+exch get setpaper
+} bind def
+/@letter {0 pagesetup} def
+/@legal {1 pagesetup} def
+/@tabloid {2 pagesetup} def
+/@b4 {3 pagesetup} def
+/@b5 {4 pagesetup} def
+/@a5 {5 pagesetup} def
+/@a4 {6 pagesetup} def
+/@a3 {7 pagesetup} def
+/@landscape {/landscape true def} bind def
+/@manualfeed {
+/manualfeed true def
+statusdict /manualfeed known {
+statusdict /manualfeed true put
+statusdict /manualfeedtimeout 120 put
+} if
+} bind def
+/@large {
+/large true def
+} bind def
+/@small {
+/large false def
+} bind def
+/@envelope {
+/xoffset 4.28 inch def
+/yoffset 1.5 inch def
+@letter
+} bind def
+/COPIES	{
+/#copies exch def
+} bind def
+/NF {
+/newname exch def
+/fsize exch def
+/corr exch def
+newname 7 dict def
+newname load begin
+/FontType 3 def
+/FontMatrix [corr 0 0 corr neg 0 0] def
+/FontBBox [0 0 1 1] def
+/BitMaps fsize array def
+/BuildChar /CharBuilder load def
+/Encoding 256 array def
+0 1 255 {Encoding exch /.notdef put} for
+end
+newname newname load definefont pop
+} bind def
+/ch-image {ch-data 0 get} bind def
+/ch-width {ch-data 1 get} bind def
+/ch-height {ch-data 2 get} bind def
+/ch-xoff {ch-data 3 get} bind def
+/ch-yoff {ch-data 4 get} bind def
+/ch-tfmw {ch-data 5 get} bind def
+/CharBuilder {
+/ch-code exch def
+/font-dict exch def
+/ch-data font-dict /BitMaps get ch-code get def
+ch-data null eq not {
+ch-tfmw 0
+ch-xoff neg  ch-yoff neg ch-width ch-xoff sub ch-height ch-yoff sub
+setcachedevice
+ch-width ch-height true [1 0  0 1  ch-xoff ch-yoff]
+{ch-image} imagemask
+} if
+} bind def
+/BFT {
+/bf-v exch def
+/bf-h exch def
+findfont [bf-h 0 0 bf-v 0 0] makefont def
+} bind def
+/BFE /BFT load def
+/BFF {
+/bf-v exch def
+/bf-h exch def
+/savecurfont currentfont def
+findfont dup setfont
+3 -1 roll
+/bf-stand exch def
+[
+bf-stand stringwidth pop
+dup bf-h exch div
+exch bf-v exch div 0 0 3 -1 roll
+0 0
+] makefont def
+savecurfont setfont
+} bind def
+/SF /setfont load def
+/s3 3 string def
+/D {
+/ch-code exch def
+/ch-data exch def
+currentfont /BitMaps get ch-code ch-data put
+currentfont /Encoding get ch-code
+dup s3 cvs cvn
+put
+} bind def
+/BP {
+userdict /bop-hook known { bop-hook } if
+/SaveImage save def
+xoffset yoffset translate
+leftm topm
+landscape {
+exch translate
+90 rotate
+}{
+paperheight exch sub translate
+} ifelse
+72 Resolution div dup neg scale
+0 0 moveto
+} bind def
+/EP {
+showpage 
+SaveImage restore
+userdict /eop-hook known { eop-hook } if
+} bind def
+/START {
+userdict /start-hook known { start-hook } if
+/DVImag exch def
+/magscale true def
+/Resolution exch def
+} bind def
+/END {
+end
+userdict /end-hook known { end-hook } if
+} bind def
+/l /lineto load def
+/p /moveto load def
+/r {
+0 rmoveto
+} def
+/s /show load def
+/ru {
+/dy exch neg def
+/dx exch def
+/x currentpoint /y exch def def
+newpath x y moveto
+dx 0 rlineto
+0 dy rlineto
+dx neg 0 rlineto
+closepath fill
+x y moveto
+} bind def
+/TeXscale { 65781.76 div } def
+/DocumentInitState [ matrix currentmatrix currentlinewidth currentlinecap
+currentlinejoin currentdash currentgray currentmiterlimit ] cvx def
+/startTexFig {
+/SavedState save def
+userdict maxlength dict begin
+currentpoint transform
+DocumentInitState setmiterlimit setgray setdash setlinejoin setlinecap
+setlinewidth setmatrix
+itransform moveto
+magscale { DVImag dup scale } if
+/ury exch TeXscale def
+/urx exch TeXscale def
+/lly exch TeXscale def
+/llx exch TeXscale def
+/y exch TeXscale def
+/x exch TeXscale def
+currentpoint /cy exch def /cx exch def
+/sx x urx llx sub div def
+/sy y ury lly sub div def
+sx sy scale
+cx sx div llx sub
+cy sy div ury sub translate
+/DefFigCTM matrix currentmatrix def
+/initmatrix {
+DefFigCTM setmatrix
+} def
+/defaultmatrix {
+DefFigCTM exch copy
+} def
+/initgraphics {
+DocumentInitState setmiterlimit setgray setdash 
+setlinejoin setlinecap setlinewidth setmatrix
+DefFigCTM setmatrix
+} def
+/showpage {} def
+/erasepage {} def
+/copypage {} def
+} def
+/clipFig {
+currentpoint 6 2 roll
+newpath 4 copy
+4 2 roll moveto
+6 -1 roll exch lineto
+exch lineto
+exch lineto
+closepath clip
+newpath
+moveto
+} def
+/doclip { llx lly urx ury clipFig } def
+/endTexFig {
+end SavedState restore
+} def
+/@SpecialDefaults {
+/hsi paperwidth inch def
+/vsi paperheight inch def
+/hof 0 def
+/vof 0 def
+/hsc 1 def
+/vsc 1 def
+/rotat 0 def
+/CLIP false def
+/BBOX false def
+/EPSF false def
+/ECL false def
+} bind def
+/@ecl {/ECL true def} bind def
+/@clip {/CLIP true def} bind def
+/@hsize {/hsi exch def @clip} bind def
+/@vsize {/vsi exch def @clip} bind def
+/@hoffset {/hof exch def} bind def
+/@voffset {/vof exch def} bind def
+/@scaleunit 1 def
+/@hscale {@scaleunit div /hsc exch def} bind def
+/@vscale {@scaleunit div /vsc exch def} bind def
+/@rotation {/rotat exch def} bind def
+/@angle /@rotation load def
+/@rwi {10 div /hsi exch def} bind def
+/@rhi {10 div /vsi exch def} bind def
+/@llx {/llx exch def /BBOX true def /hsi 0 def /vsi 0 def} bind def
+/@lly {/lly exch def} bind def
+/@urx {/urx exch def} bind def
+/@ury {/ury exch def} bind def
+/@bbox {{@clip}if @ury @urx @lly @llx} bind def
+/@setclipper {
+CLIP {
+newpath 0 0 moveto hsi 0 rlineto 0 vsi rlineto hsi neg 0 rlineto
+closepath clip
+} if
+} bind def
+/@beginspecial {
+/SpecialSave save def
+/dict_count countdictstack def
+/op_count count 1 sub def
+currentpoint transform initgraphics itransform translate
+magscale { DVImag dup scale } if
+landscape {90 rotate} if
+@SpecialDefaults
+@MacSetUp
+} bind def
+/@setspecial {
+hof vof translate
+BBOX {
+rotat rotate
+hsi 0 eq {
+vsi 0 eq {
+hsc vsc
+}{
+vsi ury lly sub div dup
+}ifelse
+}{
+vsi 0 eq {
+hsi urx llx sub div dup
+}{
+hsi urx llx sub div vsi ury lly sub div
+} ifelse
+} ifelse
+scale
+llx neg ECL{ury}{lly}ifelse neg translate
+CLIP {
+newpath
+llx lly moveto
+urx lly lineto
+urx ury lineto
+llx ury lineto
+closepath clip
+} if
+newpath
+}{
+@setclipper hsc vsc scale rotat rotate
+} ifelse
+/CTM matrix currentmatrix def
+end
+/letter {} def /note {} def /legal {} def /11x17 {} def
+/b4 {} def /b5 {} def /a5 {} def /a4 {} def /a4small {} def /a3 {} def
+/showpage {} def /copypage {} def /erasepage {} def
+/initmatrix {TeXDict /CTM get setmatrix} bind def
+/defaultmatrix {TeXDict /CTM get exch copy} bind def
+/*initclip /initclip load def
+/initclip {
+TeXDict begin
+*initclip
+matrix currentmatrix CTM setmatrix newpath
+BBOX {
+llx lly moveto urx lly lineto urx ury lineto llx ury lineto
+}{
+0 0 moveto hsi 0 rlineto 0 vsi rlineto hsi neg 0 rlineto
+} ifelse
+closepath clip setmatrix
+end
+} bind def
+/initgraphics {
+initmatrix newpath initclip
+1 setlinewidth 0 setlinecap 0 setlinejoin
+[] 0 setdash 0 setgray 10 setmiterlimit
+} bind def
+/languagelevel where {
+pop languagelevel 1 ne { false setstrokeadjust false setoverprint } if
+} if
+} bind def
+/@MacSetUp {
+userdict /md known {
+userdict /md get type /dicttype eq {
+md /txpose known {
+md /txpose {pxs pys neg scale} put
+} if
+md /cp known {
+md /cp {pop pop pm restore} put
+} if
+} if
+} if
+} bind def
+/@push {
+gsave
+currentpoint translate
+dup scale
+newpath
+} bind def
+/@pop {
+grestore
+} bind def
+/@ar {
+matrix currentmatrix
+7 -2 roll moveto
+currentpoint translate
+newpath
+5 -2 roll scale
+0 0 1 6 -2 roll arc
+setmatrix
+} bind def
+/@RGB /setrgbcolor load def
+/@HSB /sethsbcolor load def
+/@CMYK /setcmykcolor dup where {
+pop load
+}{
+pop {
+1 sub 4 1 roll
+3 { 3 index add neg dup 0 lt {pop 0} if 3 1 roll } repeat
+setrgbcolor pop
+} bind
+} ifelse def
+/normalscale {
+Resolution 72 div Resolution 72 div neg scale
+magscale { DVImag dup scale } if
+0 setgray
+} def
+end
+/@endspecial {
+TeXDict begin
+count op_count sub {pop} repeat
+countdictstack dict_count sub {end} repeat
+SpecialSave restore
+} bind def
+/SDict TeXDict def
+%%EndFile
+%%BeginFile: /usr/local/lib/dvi2ps/fonts/ascfix-c.ps
+% This file is included in this dvi2ps (j-version) kit by the courtesy of
+% Matsushita Electric Industrial Co., Ltd. You are free to distribute this
+% file as a part of this dvi2ps kit, but if you use this file as a part of
+% your own program and want to re-distribute the program, you should contact
+%	miyabe@sy6.isl.mei.co.jp, kakiuchi@sy6.isl.mei.co.jp
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Following procedures are used to define new japanese font which has 
+%%% correct metrics.
+%%%		Added by T.Kakiuchi (kakiuchi@sy6.isl.mei.co.JP) 89/5/19
+%%%		Copyright (c) Matsushita Electric Industrial Co.,Ltd. 1990
+%%%
+% If the packed-array facility is available, this program sets the
+% array-packing mode.
+%systemdict /setpacking known {
+%    /savepacking currentpacking def
+%    true setpacking
+%} if
+TeXDict begin
+% Procedure to make a new font which has new metrics.
+
+/Set-New-Metrics		% [New-FNam][FNam][Metrics-array]
+{/Set-Metrics exch def		% [New-FNam][FNam]  Set-Metrix=[Metrix-Array]
+ findfont			% [New-FNam][FDic]
+ /OrigCompFont exch def		% [New-FNam]  OrigCompFont=[FDic]
+ /NewCompFontName exch def	% NewCompFontName=[New-FNam]
+
+ % Create new composite font.
+ OrigCompFont dup		% [FDic][FDic]
+ length dict			% [FDic][dict]
+ /NewCompFont exch def		% [FDic]   NewCompFont=[dict]
+ {1 index			% [FDic][key][value][key]
+   /FID ne			% [FDic][key][value][T/F]
+   2 index /UniqueID ne and	% [FDic][key][value][T/F]
+  {NewCompFont 3 1 roll put}	% if TRUE   NewCompFont <- {key,value}
+  {pop pop}
+  ifelse
+ } forall
+
+ OrigCompFont /FDepVector get	% [FDepVector]
+ dup length array		% [FDepVector][array]
+ copy				% [array] (=[FDepVector])
+ /NewFDepVector exch def	% NewFDepVector=[arrray]
+ NewCompFont /FDepVector
+ NewFDepVector put		% [NewCompFont] <- {/FDepVector, NewFDepVector}
+ NewCompFont /FontName
+ NewCompFontName put		% [NewCompFont] <- {/FontName, NewCompFontName}
+
+ Set-Metrics	% [code,NewBaseFontName,Metrics-Array]
+ {dup 0 get /Code exch def	% set Code
+  dup 1 get
+  /NewBaseFontName exch def	% set NewBaseFontName
+  2 get /Metric-Array exch def	% set Metrics-Array
+
+  % Extract base font and its index to FDepVector.
+  /Index
+     OrigCompFont
+     /Encoding get
+     Code get def
+
+  /OrigBaseFont NewFDepVector Index get def
+
+  % Set Metric-Dictionary
+  Metric-Array length dict
+  /Metric-Dict exch def
+  Metric-Dict begin Metric-Array {exec def} forall end
+
+  % Create new base font.
+  OrigBaseFont dup			% [OrgFont][OrgFont] 
+  length 2 add				% [OrgFont][2+current size]
+  dict					% [OrgFont][dict]
+  /NewBaseFont exch def			% [OrgFont]    /NewBaseFont=[dict]
+  {1 index				% [OrgFont][key][value][key]
+     /FID ne				% [OrgFont][key][value][T/F]
+     2 index /UniqueID ne and		% [OrgFont][key][value][T/F]
+     {NewBaseFont			% [OrgFont][key][value][NewBaseFont]
+      3 1 roll				% [OrgFont][NewBaseFont][key][value]
+      put}					% [OrgFont]
+     {pop pop}
+     ifelse
+  } forall
+  
+  NewBaseFont /Kusumi-Metrics Metric-Dict put
+
+  NewBaseFont				% [OrgFont][NewBaseFont]
+  /CDevProc
+  {currentfont /Kusumi-Metrics get
+   exch 2 copy known
+    {get	% w0x w0y llx lly urx ury w1x w1y vx vy new-llx
+     dup	% w0x w0y llx lly urx ury w1x w1y vx vy new-llx new-llx
+     8 -1 roll	% w0x w0y llx lly ury w1x w1y vx vy new-llx new-llx urx
+     10 -1 roll	% w0x w0y lly ury w1x w1y vx vy new-llx new-llx urx llx
+     sub add	% w0x w0y lly ury w1x w1y vx vy new-llx new-urx
+     7 1 roll	% w0x w0y lly new-urx ury w1x w1y vx vy new-llx
+     8 1 roll	% w0x w0y new-llx lly new-urx ury w1x w1y vx vy
+    }
+    {pop pop}
+   ifelse
+  } bind put
+
+  %  Regist to FDepVector
+  NewFDepVector Index NewBaseFontName NewBaseFont definefont put
+
+ } forall
+ NewCompFontName NewCompFont
+ definefont pop			% Define [NewCompFont] as [NewCompFontName]
+}
+bind def
+
+
+% Definition of new metrics for /Ryumin-Light-H
+/Ryumin-Metrics
+[
+[33/Ryumin-Light-H-33[
+{/c2B 56.3327 }
+{/c78 36.5515 }
+{/c22 127.507 }
+{/c54 52.5065 }
+{/c4B 137.007 }
+{/c39 35.7169 }
+{/c27 105.323 }
+{/c42 79.8026 }
+{/c30 106.905 }
+{/c6B 129.961 }
+{/c50 192.016 }
+{/c47 101.333 }
+{/c59 104.456 }
+{/c35 124.507 }
+{/c3E 51.8327 }
+{/c2C 81.7527 }
+{/c23 102.007 }
+{/c4E 132.007 }
+{/c2A 111.833 }
+{/c43 153.333 }
+{/c55 52.5065 }
+{/c4A 137.007 }
+{/c26 106.333 }
+{/c51 192.017 }
+{/c2D 73.195 }
+{/c46 101.833 }
+{/c58 104.457 }
+{/c6A 53.6868 }
+{/c71 162.717 }
+{/c68 12.747 }
+{/c56 87.0065 }
+{/c4D 120.007 }
+{/c29 50.4616 }
+{/c52 99.5065 }
+{/c5B 122.007 }
+{/c37 145.717 }
+{/c6D 73.5612 }
+{/c49 95.824 }
+{/c2E 73.1949 }
+{/c72 45.6719 }
+{/c25 106.833 }
+{/c69 33.1968 }
+{/c70 147.722 }
+{/c57 87.0065 }
+{/c33 123.507 }
+{/c53 99.5065 }
+{/c28 101.333 }
+{/c4C 120.007 }
+{/c2F 86.4865 }
+{/c48 95.6039 }
+{/c5A 122.007 }
+{/c6C 154.132 }
+{/c36 154.717 }
+{/c24 103.833 }
+{/c4F 131.507 }
+]]
+[36/Ryumin-Light-H-36[
+{/c30 154.133 }
+{/c27 97.2168 }
+{/c39 76.6303 }
+{/c23 76.1769 }
+{/c67 149.762 }
+{/c43 67.7751 }
+{/c6E 77.4092 }
+{/c31 105.385 }
+{/c63 75.9087 }
+{/c26 241.525 }
+{/c6A 273.126 }
+{/c29 82.2642 }
+{/c32 65.1122 }
+{/c25 184.155 }
+{/c21 83.9483 }
+{/c65 90.2671 }
+{/c3A 51.3751 }
+{/c2F 295.128 }
+]]
+[37/Ryumin-Light-H-37[
+{/c22 140.608 }
+{/c6F 163.078 }
+{/c30 99.7332 }
+{/c27 57.7171 }
+{/c42 59.748 }
+{/c47 67.1082 }
+{/c35 83.0882 }
+{/c3E 72.1387 }
+{/c23 138.672 }
+{/c67 152.293 }
+{/c4E 197.608 }
+{/c2A 134.608 }
+{/c43 117.717 }
+{/c6E 126.697 }
+{/c31 115.108 }
+{/c55 168.068 }
+{/c63 80.217 }
+{/c4A 116.233 }
+{/c26 162.618 }
+{/c75 124.712 }
+{/c3F 192.108 }
+{/c46 123.608 }
+{/c6A 239.098 }
+{/c5F 258.608 }
+{/c44 162.608 }
+{/c56 84.1834 }
+{/c29 108.717 }
+{/c76 83.6869 }
+{/c32 61.9606 }
+{/c64 109.108 }
+{/c49 202.688 }
+{/c25 122.757 }
+{/c72 193.323 }
+{/c40 110.209 }
+{/c69 178.108 }
+{/c45 91.8148 }
+{/c57 89.1683 }
+{/c21 107.237 }
+{/c65 49.507 }
+{/c2F 187.108 }
+{/c41 97.8211 }
+{/c48 277.108 }
+{/c36 51.291 }
+{/c61 191.608 }
+{/c24 186.108 }
+{/c3D 164.236 }
+]]
+] def
+
+% Definition of new metrics for /GothicBBB-Medium-H
+/Gothic-Metrics
+[
+[33/GothicBBB-Medium-H-33[
+{/c2B 62.8327 }
+{/c78 11.5265 }
+{/c22 129.507 }
+{/c54 58.5065 }
+{/c4B 136.007 }
+{/c39 14.7171 }
+{/c27 104.333 }
+{/c42 76.8826 }
+{/c30 110.507 }
+{/c6B 138.987 }
+{/c50 178.072 }
+{/c47 104.833 }
+{/c59 107.036 }
+{/c35 67.0065 }
+{/c3E -13.1673 }
+{/c2C 78.8429 }
+{/c23 98.9866 }
+{/c4E 132.507 }
+{/c2A 132.288 }
+{/c43 149.333 }
+{/c55 58.5065 }
+{/c4A 136.007 }
+{/c26 102.833 }
+{/c51 177.982 }
+{/c2D 55.8326 }
+{/c46 104.333 }
+{/c58 107.037 }
+{/c6A 43.6568 }
+{/c71 130.717 }
+{/c68 5.70184 }
+{/c56 93.5065 }
+{/c4D 120.007 }
+{/c29 81.9568 }
+{/c52 97.5065 }
+{/c5B 121.007 }
+{/c37 148.717 }
+{/c6D 75.5065 }
+{/c49 56.9765 }
+{/c2E 55.8327 }
+{/c72 101.717 }
+{/c25 102.833 }
+{/c69 20.1768 }
+{/c70 109.182 }
+{/c57 94.0065 }
+{/c33 76.5065 }
+{/c53 97.5065 }
+{/c28 104.333 }
+{/c4C 120.007 }
+{/c2F 102.506 }
+{/c48 56.0265 }
+{/c5A 121.007 }
+{/c6C 157.007 }
+{/c36 133.717 }
+{/c24 105.833 }
+{/c4F 132.507 }
+]]
+[36/GothicBBB-Medium-H-36[
+{/c30 154.608 }
+{/c27 97.2418 }
+{/c39 93.5732 }
+{/c23 58.2168 }
+{/c67 106.287 }
+{/c43 51.2172 }
+{/c6E 71.752 }
+{/c31 128.098 }
+{/c63 52.2169 }
+{/c26 207.583 }
+{/c6A 211.098 }
+{/c29 51.7468 }
+{/c32 69.0981 }
+{/c25 155.272 }
+{/c21 86.707 }
+{/c65 84.167 }
+{/c3A 70.6131 }
+{/c2F 256.108 }
+]]
+[37/GothicBBB-Medium-H-37[
+{/c22 82.6082 }
+{/c6F 135.608 }
+{/c30 91.1081 }
+{/c27 74.2168 }
+{/c42 55.1081 }
+{/c47 49.6081 }
+{/c35 87.1181 }
+{/c3E 83.6081 }
+{/c23 102.766 }
+{/c67 113.717 }
+{/c4E 163.334 }
+{/c2A 111.608 }
+{/c43 84.5454 }
+{/c6E 96.2168 }
+{/c31 77.6081 }
+{/c55 140.608 }
+{/c63 67.7169 }
+{/c4A 75.6082 }
+{/c26 149.118 }
+{/c75 110.257 }
+{/c3F 144.608 }
+{/c46 96.6082 }
+{/c6A 225.578 }
+{/c5F 215.108 }
+{/c44 117.481 }
+{/c56 91.1081 }
+{/c29 72.2168 }
+{/c76 63.2168 }
+{/c32 48.6081 }
+{/c64 96.6081 }
+{/c49 209.108 }
+{/c25 104.207 }
+{/c72 165.608 }
+{/c40 76.6081 }
+{/c69 129.108 }
+{/c45 72.1081 }
+{/c57 64.6481 }
+{/c21 47.2171 }
+{/c65 41.7168 }
+{/c2F 135.608 }
+{/c41 97.6082 }
+{/c48 262.608 }
+{/c36 52.1181 }
+{/c61 188.976 }
+{/c24 148.446 }
+{/c3D 123.059 }
+]]
+] def
+end % TeXDict
+%systemdict /setpacking known {
+%    savepacking setpacking
+%} if
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%EndFile
+%%BeginFile: /usr/local/lib/dvi2ps/fonts/psfonts.ps
+%%BeginProcSet: psfonts 1 1
+% PostScript Font Utilities
+% version 1.1 12/12/1991
+% Copyright (C) 1991
+% Kazuhiro Kazama (kazama@expert-sun.ntt.jp)
+% NTT Software Laboratories 
+% All rights reserved.
+TeXDict begin
+/s1 ( ) def
+
+/TeXEncoding [
+%\00x
+    /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+%\01x
+    /.notdef /.notdef /.notdef /.notdef /fi /fl /.notdef /.notdef
+%\02x
+    /dotlessi /.notdef /grave /acute /caron /breve /macron /ring
+%\03x
+    /cedilla /germandbls /ae /oe /oslash /AE /OE /Oslash
+%\04x
+    /space /exclam /quotedblright /numbersign
+    /dollar /percent /ampersand /quoteright
+%\05x
+    /parenleft /parenright /asterisk /plus /comma /hyphen /period /slash
+%\06x
+    /zero /one /two /three /four /five /six /seven
+%\07x
+    /eight /nine /colon /semicolon /exclamdown /equal /questiondown /question
+%\10x
+    /at /A /B /C /D /E /F /G
+%\11x
+    /H /I /J /K /L /M /N /O
+%\12x
+    /P /Q /R /S /T /U /V /W
+%\13x
+    /X /Y /Z /bracketleft /quotedblleft /bracketright /circumflex /dotaccent
+%\14x
+    /quoteleft /a /b /c /d /e /f /g
+%\15x
+    /h /i /j /k /l /m /n /o
+%\16x
+    /p /q /r /s /t /u /v /w
+%\17x
+    /x /y /z /endash /emdash /quotedbl /tilde /dieresis
+%\20x
+    /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+%\21x
+    /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+%\22x
+    /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+%\23x
+    /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+%\24x
+    /.notdef /exclamdown /cent /sterling /fraction /yen /florin /section
+%\25x
+    /currency /quotesingle /quotedblleft /guillemotleft
+    /guilsinglleft /guilsinglright /fi /fl
+%\26x
+    /.notdef /endash /dagger /daggerdbl
+    /periodcentered /.notdef /paragraph /bullet
+%\27x
+    /quotesinglbase /quotedblbase /quotedblright /guillemotright
+    /ellipsis /perthousand /.notdef /questiondown
+%\30x
+    /.notdef /grave /acute /circumflex /tilde /macron /breve /dotaccent
+%\31x
+    /dieresis /.notdef /ring /cedilla /.notdef /hungarumlaut /ogonek /caron
+%\32x
+    /emdash /.notdef /.notdef /.notdef  /.notdef /.notdef /.notdef /.notdef
+%\33x
+    /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+%\34x
+    /.notdef /AE /.notdef /ordfeminine /.notdef /.notdef /.notdef /.notdef
+%\35x
+    /Lslash /Oslash /OE /ordmasculine /.notdef /.notdef /.notdef /.notdef
+%\36x
+    /.notdef /ae /.notdef /.notdef /.notdef /dotlessi /.notdef /.notdef
+%\37x
+    /lslash /oslash /oe /germandbls /.notdef /.notdef /.notdef /.notdef
+] def
+
+/TeXttEncoding [
+%\00x
+    /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+%\01x
+    /.notdef /.notdef /.notdef /.notdef
+    /.notdef /quotesingle /exclamdown /questiondown
+%\02x
+    /dotlessi /.notdef /grave /acute /caron /breve /macron /ring
+%\03x
+    /cedilla /germandbls /ae /oe /oslash /AE /OE /Oslash
+%\04x
+    /space /exclam /quotedbl /numbersign
+    /dollar /percent /ampersand /quoteright
+%\05x
+    /parenleft /parenright /asterisk /plus /comma /hyphen /period /slash
+%\06x
+    /zero /one /two /three /four /five /six /seven
+%\07x
+%    /eight /nine /colon /semicolon /exclamdown /less /questiondown /greater
+    /eight /nine /colon /semicolon /less /equal /greater /question
+%\10x
+    /at /A /B /C /D /E /F /G
+%\11x
+    /H /I /J /K /L /M /N /O
+%\12x
+    /P /Q /R /S /T /U /V /W
+%\13x
+    /X /Y /Z /bracketleft /backslash /bracketright /circumflex /underscore
+%\14x
+    /quoteleft /a /b /c /d /e /f /g
+%\15x
+    /h /i /j /k /l /m /n /o
+%\16x
+    /p /q /r /s /t /u /v /w
+%\17x
+    /x /y /z /braceleft /bar /braceright /tilde /dieresis
+%\20x
+    /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+%\21x
+    /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+%\22x
+    /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+%\23x
+    /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+%\24x
+    /.notdef /exclamdown /cent /sterling /fraction /yen /florin /section
+%\25x
+    /currency /quotesingle /quotedblleft /guillemotleft
+    /guilsinglleft /guilsinglright /fi /fl
+%\26x
+    /.notdef /endash /dagger /daggerdbl
+    /periodcentered /.notdef /paragraph /bullet
+%\27x
+    /quotesinglbase /quotedblbase /quotedblright /guillemotright
+    /ellipsis /perthousand /.notdef /questiondown
+%\30x
+    /.notdef /grave /acute /circumflex /tilde /macron /breve /dotaccent
+%\31x
+    /dieresis /.notdef /ring /cedilla /.notdef /hungarumlaut /ogonek /caron
+%\32x
+    /emdash /.notdef /.notdef /.notdef  /.notdef /.notdef /.notdef /.notdef
+%\33x
+    /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+%\34x
+    /.notdef /AE /.notdef /ordfeminine /.notdef /.notdef /.notdef /.notdef
+%\35x
+    /Lslash /Oslash /OE /ordmasculine /.notdef /.notdef /.notdef /.notdef
+%\36x
+    /.notdef /ae /.notdef /.notdef /.notdef /dotlessi /.notdef /.notdef
+%\37x
+    /lslash /oslash /oe /germandbls /.notdef /.notdef /.notdef /.notdef
+] def
+
+/CopyFont {
+    1 index maxlength add dict begin
+	{
+	    1 index /FID ne
+	    2 index /UniqueID ne and {
+		def
+	    }{
+		pop pop
+	    } ifelse
+	} forall
+	currentdict
+    end
+} bind def
+
+/ModifyFont {
+    4 1 roll
+    /es exch def
+    /proc exch def
+    /newfn exch def
+    MFSupp
+} bind def
+    
+/MFSupp {
+    dup length es add dict begin
+	{
+	    1 index /FID ne
+	    2 index /UniqueID ne and
+	    {
+		def
+	    }{
+		pop pop
+	    } ifelse
+	} forall
+	FontType 0 ne {
+	    proc
+	}{
+	    FDepVector dup length array copy /FDepVector exch def
+	    0 1 FDepVector length 1 sub {
+		FDepVector exch 2 copy get
+		MFSupp put
+	    } for
+	} ifelse
+	newfn currentdict definefont
+    end
+} bind def
+
+% fontname encoding TeXEncode dict
+/TeXEncode {
+    findfont 1 CopyFont
+    begin
+	/Encoding TeXEncoding def
+	currentdict
+    end
+    definefont pop
+} bind def
+
+% fontname TeXttEncode dict
+/TeXttEncode {
+    findfont 1 CopyFont
+    begin
+	/Encoding TeXttEncoding def
+	currentdict
+    end
+    definefont pop
+} bind def
+
+% fontname basefontname angle ObliqueFont -   Create a general oblique font
+/ObliqueFont {
+    [1 0 4 -1 roll dup sin exch cos div 1 0 0 ] exch
+    findfont 1 CopyFont
+    begin 
+	/FontMatrix exch FontMatrix exch matrix concatmatrix def
+	currentdict
+    end
+    definefont pop
+} bind def
+
+/TeXObliqueFont {
+    [1 0 4 -1 roll dup sin exch cos div 1 0 0 ] exch
+    findfont 2 CopyFont
+    begin 
+	/FontMatrix exch FontMatrix exch matrix concatmatrix def
+	/Encoding TeXEncoding def
+	currentdict
+    end
+    definefont pop
+} bind def
+    
+% fontname basefontname OutlineFont -   Create a outline font
+/OutlineFont {
+    {
+	/PaintType 2 def
+	/StrokeWidth 1 def
+    } 2
+    3 -1 roll
+    findfont ModifyFont pop
+} bind def
+
+% fontname basename SmallCapsFont -	Create a general smallcaps font
+/SmallCapsFont {
+    findfont
+    10 dict begin
+	dup /FontName exch def
+	/FontMatrix [1 0 0 1 0 0] def
+	/Encoding dup 2 index exch get def
+	/FontBBox dup 2 index exch get def
+	/FontArray [2 index dup 0.8 scalefont] def
+	/FontType 3 def
+	/BuildChar {
+	    exch begin
+		dup
+		dup 97 ge exch 122 le and {
+		    32 sub s1 0 3 -1 roll put
+		    1
+		}{
+		    s1 0 3 -1 roll put
+		    0
+		} ifelse
+		FontArray exch get setfont
+		s1 stringwidth FontBBox setcachedevice
+		newpath 0 0 moveto
+		s1 show
+	    end
+	} bind def
+	pop
+	currentdict
+    end
+    definefont pop
+} bind def
+
+/TeXSmallCapsFont {
+    dup 32 string cvs dup length 1 add string
+    dup 0 (@) putinterval dup 1 4 -1 roll putinterval cvn exch
+    findfont 1 CopyFont
+    begin
+	/Encoding TeXEncoding def
+	currentdict
+    end
+    definefont
+    10 dict begin
+	dup /FontName exch def
+	/FontMatrix [1 0 0 1 0 0] def
+	/Encoding dup 2 index exch get def
+	/FontBBox dup 2 index exch get def
+	/FontArray [2 index dup 0.8 scalefont] def
+	/FontType 3 def
+	/BuildChar {
+	    exch begin
+		dup
+		dup 97 ge exch 122 le and {
+		    32 sub s1 0 3 -1 roll put
+		    1
+		}{
+		    s1 0 3 -1 roll put
+		    0
+		} ifelse
+		FontArray exch get setfont
+		s1 stringwidth FontBBox setcachedevice
+		newpath 0 0 moveto
+		s1 show
+	    end
+	} bind def
+	pop
+	currentdict
+    end
+    definefont pop
+} bind def
+
+% fontname basename param BoldFont -
+/BoldFont {
+    exch findfont MakeBold pop
+} bind def
+
+% fontname param basefont MakeBold dict
+/MakeBold {
+    dup /FontType get 0 eq {
+	0 CopyFont
+	dup /FDepVector 2 copy get
+	[
+	    exch % fname param bfont bfont /FDepVector [ FDepVector % ]
+	    6 index 6 index 2 copy 5 -1 roll
+	    {
+		MakeBold 3 1 roll 2 copy
+	    } forall
+	    pop pop pop pop
+	] put
+	exch pop
+    }{
+	10 dict begin
+	    /FontMatrix [ 1 0 0 1 0 0 ] def
+	    /FontType 3 def
+	    /Encoding dup 2 index exch get def
+	    /df 1 index def
+	    /FontBBox [ 0 0 1 1 ] def
+	    /da 2 index def
+	    /BuildChar {
+		exch begin
+		    df setfont
+		    s1 dup 0 4 -1 roll put
+		    dup gsave stringwidth grestore
+		    1 index 0 ne {
+			exch da add exch
+		    } if
+		    setcharwidth
+		    0 0 moveto dup show
+		    da 0 moveto dup show
+		    da da moveto dup show
+		    0 da moveto show
+		end
+	    } def
+	    pop pop
+	    currentdict
+	end
+    } ifelse
+    definefont
+} bind def
+end % TeXDict
+%%EndProcSet
+%%EndFile
+%%EndProlog
+%%BeginSetup
+%%PaperSize: A4
+%%Feature: *ManualFeed False
+%%Feature: *Resolution 600
+TeXDict begin
+@large
+@a4
+1.000 111 /f0 NF
+f0 SF
+[<07800FE01E701C181E181E0C1E0C0F060F040F000780078003C003C003C0C1E0C1E0C1E060F030E038E01FC0078000000000
+  0000000000000000000000700078007C007C0038> 16 35 -3 1 22.196] 105 D
+[<0C0007801E001FE01E001C700F003C380F003C180F003C0C0F001E0C07801E0607801E0407800F0007800F0003C00F0003C0
+  078003C0078003C00780C1E003C0C1F003C0C1F003C061F803C061EC038031C707801FC3FF000F00FC00> 32 23 -3 1 38.339] 110 D
+1.000 49 /f1 NF
+f1 SF
+[<0001FE0000000FFFC000003E31F000007030380001E0301E00038030070007003003800E003001C01C003000E01800300060
+  38003000703000300030700030003860003000186000300018E00030001CC00030000CC00030000CC00030000CFFFFFFFFFC
+  FFFFFFFFFCC00030000CC00030000CE00030001C600030001860003000187000300038300030003038003000701800300060
+  1C003000E00E003001C00700300380038030070001E0301E000070303800003E31F000000FFFC0000001FE0000> 40 39 -4 7 47.967] 8 D
+[<6000E000F00070007800780078003C003C003E001E001E001F001F000F800F800FC00FC007C007E007E003F003F003F003F0
+  01E0> 16 26 -2 -2 18.218] 48 D
+1.000 123 /f2 NF
+f2 SF
+[<FFFE0001FFFFF0FFFF0001FFFFF0FFFF0001FFFFF007F0000007FC0001E0000003F80000E0000003F8000060000003F80000
+  70000003F8000030000003F8000018000003F800000C000003F800000C000007F8000006000007F8000006000007F0000003
+  000007F0000001800007F0000001800007F0000000FFFFFFF0000000FFFFFFF00000007FFFFFF000000030000FF000000030
+  000FF000000018000FE00000001C000FE00000000C000FE000000006000FE000000006000FE000000003000FE00000000380
+  0FE000000001801FE000000000C01FE000000000C01FC000000000601FC000000000701FC000000000301FC000000000181F
+  C000000000181FC0000000000C1FC000000000061FC000000000063FC000000000033FC000000000033F800000000001BF80
+  0000000000FF800000000000FF8000000000007F8000000000007F8000000000003F8000000000001F8000000000001F8000
+  000000000F0000000000000F00000000000007000000000000030000> 56 54 -3 0 57.583] 65 D
+[<FFFFFF00000000FFFFFF00000000FFFFFF0000000001FF000000000000FE000000000000FF000000000000FF000000000000
+  7F0000000000007F0000000000007F8000000000007F8000000000003F8000000000003F8000000000003FC000000000003F
+  C000000000001FC000C00000001FC000C00000001FE000C00000001FE000E00000000FE000600000000FE000600000000FF0
+  00600000000FF000F000000007F001F000000007FFFFF000000007FFFFF800000007FFFFF800000003F800F800000003F800
+  3800000003FC003800000003FC001C00000001FC000C00000001FC000C00000001FE000C00600001FE000E00700000FE0006
+  00300000FE000000300000FF000000300000FF0000003000007F0000003000007F0000003000007F8000003000007F800000
+  3800003F8000003800003F8000007800003FC000007800003FC00000F800003FC00007F8000FFFFFFFFFF8000FFFFFFFFFFC
+  000FFFFFFFFFFC> 56 51 -3 0 49.033] 70 D
+[<0001FF80000000000FFFF8000000003F80FE00000000FE001F80000001F80007E0000003F00001F8000007E00000FC00000F
+  E000007E00000FC000003F80001FC000001FC0001F8000000FE0003F80000007F0003F80000003F8007F00000003F8007F00
+  000001FC007F00000000FE007F00000000FF007F000000007F00FF000000007F80FF000000003F80FF000000003FC0FF0000
+  00003FC07F000000001FE07F800000001FE07F800000001FE07F800000000FF07F800000000FF07F800000000FF03FC00000
+  0007F83FC000000007F83FC000000007F81FC000000007F81FE000000007F80FE000000003F80FF000000003F807F0000000
+  03F807F000000003F803F800000003F803F800000003F801FC00000003F800FC00000003F800FE00000003F0007F00000007
+  F0003F80000007F0001F80000007E0000FC0000007E00007E000000FC00003F000001F800000FC00001F8000007E00003F00
+  00001F80007E0000000FE001F800000001F807F0000000007FFFC00000000007FC0000> 56 55 -3 2 58.434] 79 D
+[<1FFFFFFE0000001FFFFFFE0000001FFFFFFE0000000007FC000000000003F8000000000003FC000000000003FC0000000000
+  01FC000000000001FC000000000001FE000000000001FE000000000000FE000000000000FE000000000000FF000000000000
+  FF0000000000007F0000000000007F0000000000007F8000000000007F8000000000003F8000000000003F8000000000003F
+  C000000000003FC000000000001FC000000000001FC000000000001FE000000000001FE000000000000FE000000000000FE0
+  00000000000FF000000000000FF0000000000007F0000000000007F0000000E00007F8000300600007F8000380600003F800
+  0180600003F8000180700003FC000180300003FC000180380001FC0001C0380001FC0001C0180001FE0000C01C0001FE0000
+  C01C0000FE0000C00E0000FE0001E00F0000FF0001E00F8000FF0003E007F0007F000FE007FFFFFFFFFFE007FFFFFFFFFFF0
+  03FFFFFFFFFFF0> 56 51 -1 0 44.799] 84 D
+[<FFFFC0007FFFF800FFFFC0007FFFFC00FFFFC0007FFFFC0003FE000007FE0000007C000003FC0000003C000003FC0000000E
+  000003F800000006000007F800000003000007F80000000180000FF000000000C0000FF00000000060001FE0000000003000
+  1FE00000000018001FC0000000000C003FC00000000006003FC00000000003007F800000000003807F800000000001C0FF00
+  0000000000E0FF00000000000070FE00000000000039FE0000000000001DFE0000000000000FFC00000000000007FC000000
+  00000007F800000000000007F800000000000007F00000000000000FF00000000000000FF00000000000001FF80000000000
+  001FEC0000000000003FC60000000000003FC30000000000003F818000000000007F80C000000000007F80600000000000FF
+  00700000000000FF00380000000001FE001C0000000001FE000E0000000001FC00070000000003FC00038000000003FC0001
+  C000000007F80000E000000007F80000F00000000FF80000FC0000000FFC0000FF800007FFFFC007FFFC0007FFFFC007FFFC
+  0003FFFFC007FFFC> 64 51 -2 0 63.432] 88 D
+[<07FFFFE000000007FFFFE000000007FFFFE0000000000FF0000000000007F0000000000007F0000000000003F00000000000
+  03F8000000000003F8000000000003F8000000000001F8000000000001FC000000000001FC000000000001FC000000000000
+  FC000000000000FE000000000000FE000000000000FE0000000000007E0000000000007F0000000000007F0000000000007F
+  800000000000FFC00000000000FFE00000000000FF600000000001FE300000000001FE180000000003FC0C0000000003FC06
+  0000000003FC030000000007F8038000000007F801C000000007F800E00000000FF000600000000FF000300000001FE00018
+  0000001FE0000C0000001FE000060000003FC000070000003FC000038000003FC00001C000007F800000C000007F80000060
+  0000FF000000380000FF0000001C0000FF0000001E0001FE0000000F0003FF0000001FE0FFFFF80000FFFEFFFFF80000FFFE
+  7FFFF80000FFFE> 56 51 -2 0 44.571] 89 D
+[<00F800F80007FE03FE000F0787C7001E01C7C3003E00EF83803C007F81807C003FC1807C001FC1C07C000FC0C0FC000FC0C0
+  FC000FC0E0FC000FE060FC0007E040FC0007E000FE0007E0007E0007F0007E0003F0007E0003F0007F0003F0003F0003F800
+  3F0001F8003F0001F8001F8001F8001F8001FC000FC000FC0007C000FC0007E000FC0003F000FE0001F001FE0000F801FE00
+  007C03FE00001F071C000007FE00000001F80000> 40 34 -2 1 40.682] 97 D
+[<007F800001FFF00007C07E000F800F001F0003C03E0000E03E0000707C0000387C00001C7C00000C7C000000FC000000FC00
+  0000FC0000007E0000007E0000007E0000007E0000007F0000003F0000003F0000003F8000001F8000000F8001F00FC003F8
+  07E003F803E003F801F001F800F800F8007C0038003F0038000FC0F00003FFC000007F00> 32 34 -2 1 33.245] 99 D
+[<00F800F80007FE03FE000F0787C7001E01C7C3003E00EF83803C007F81807C003FC1807C001FC1C07C000FC0C0FC000FC0C0
+  FC000FE0E0FC000FE060FC0007E040FC0007E000FE0007F0007E0007F0007E0003F0007E0003F0007F0003F8003F0003F800
+  3F0001F8003F0001F8001F8001FC001F8001FC000FC000FC0007C000FC0007E000FE0003F000FE0001F001FE0000F801FE00
+  007C03FF00001F077F000007FE3F000001F83F000000003F800000003F800000001F800000001F800000001FC00000001FC0
+  0000000FC00000000FC00000000FE00000000FE000000007E000000007E000000007F000000007F000000007F0000000FFF0
+  000000FFF8000000FFF800000001F8> 40 53 -2 1 39.789] 100 D
+[<00FF000003FFE0000F80FC001F001E003E0007803C0001C07C0000E07C000070FC000038F8000018F8000000F8000000F800
+  0000F8000000FC000000FC000000FC000000FC000000FFFF80007FFFF8007E00FE007E000F803F0003C03F0001C01F8001E0
+  1F8000E00FC000E007E000E003F000E001F800E0007C01E0001F03C00007FF800000FE00> 32 34 -3 1 35.701] 101 D
+[<0F800000003FC000000070F00000007878000000FE78000000FE3C0000007F3E0000007F3E0000007F1E0000001C1F000000
+  001F000000001F800000001F800000000F800000000FC00000000FC00000000FC00000000FC00000000FE000000007E00000
+  0007E000000007E000000007E000000007F000000003F000000003F000000003F000000003F000000003F800000001F80000
+  0001F800000001F800000001F800000001FC00000000FC00000000FC00000000FC00000000FC00000000FC00000000FE0000
+  00007E000000007E000000007E000000007E000000007F0000003FFFFF00003FFFFF80001FFFFF8000003F000000003F8000
+  00001F800000001F800000001F800000001F800000001FC00000000FC00000000FC00000000FC00000000FC00000000FC1C0
+  000007E3F0000007E3F0000003E3F8000003E3F8000001E3F8000001F0F800000078700000003FE00000000F80> 40 69 -4 16 37.272] 102 D
+[<03FE0000001FFFC000003C03F000007801FC0000FE007E0000FE003F00007F003F80007F001F80007F000FC0001C000FC000
+  00000FE000000007E000000007E000000007F000000007F000000003F000000FC3F000003FF3F80000F83BF80001F01FF800
+  03E007F80003E003FC0007C001FC0007C000FC0007C000FC0007C000FE0007C000FE0007C0007E0007C0007E0007E0007F00
+  07E0007F0007E0003F0007E0003F0007F0003F8003F0003F8003F0001F8003F0001F8001F8001FC001F8001FC000FC000FC0
+  007C000FC0007E000FE0003F000FE0001F000FE0000F801FE00007C03FE00001F071C000007FE00000001F8000> 40 49 -1 16 36.618] 103 D
+[<3800003C00FC0000FF00FE0001E3807E0003E1C07E0003E0E07E0007E0707F0007E0303F0007F0303F0003F0383F0003F018
+  3F8003F8181F8001F81C1F8001F8081F8001FC001FC000FC000FC000FC000FC000FE000FC0007E000FE0007E0007E0007F00
+  07E0003F0007E0003F0007F0003F0003F0003F8003F0001F8003F8001F8003FC001F8001FC001F8001FE001F0001FF001F00
+  01FFC03F0000FCF07E0000FC3FF80000FC0FE00000FE000000007E000000007E000000007E000000007F000000003F000000
+  003F000000003F000000003F800000001F800000001F800000001F800000001FC00000001FC00000001FC0000003FFC00000
+  03FFE0000003FFE000000007E00000> 40 53 -3 1 44.248] 104 D
+[<00F00003FC00078E000F87000F83800F81C01F80C00FC0C00FC0E00FC0600FE06007E07007F02007F00003F00003F80001F8
+  0001F80001FC0000FC0000FE0040FE00E07E00607F00603F00703F00303F00301F80381F001C1F000E1F00071E0003FC0000
+  F0000000000000000000000000000000000000000000000000000000000000000003800007E0000FE0000FF00007F00007E0
+  0001C0> 24 51 -2 1 26.277] 105 D
+[<380003E000FC0007F800FE001F1C007E001F0E007E003E06007E003E07007F003F03003F003F03803F003F01803F003F0180
+  3F803F01801F803F81C01F803F80801F803F00001FC03F00000FC07E00000FC1FE00000FC7F800000FFFE0000007FE000000
+  07FC00000007EE00000007F780000003F1C0000003F0E0070003F0700FC003F8380FC001F81C0FE001F80E0FE001F8070FE0
+  01FC0383E000FC01E0C000FC007FC000FC001F0000FE000000007E000000007E000000007E000000007F000000003F000000
+  003F000000003F000000003F800000001F800000001F800000001F800000001FC00000001FC00000001FC0000003FFC00000
+  03FFE0000003FFE000000007E00000> 40 53 -3 1 39.982] 107 D
+[<0F80003FE0007C60007C7000F83800F81800FC1800FC1C00FC0C00FC0C00FE0C00FE0E007E04007E00007F00007F00003F00
+  003F00003F80003F80001F80001F80001FC0001FC0000FC0000FC0000FE0000FE00007E00007E00007F00007F00003F00003
+  F00003F80003F80001F80001F80001FC0001FC0000FC0000FC0000FE0000FE00007E00007E00007F00007F00007F000FFF00
+  0FFF8007FF80001F80> 24 53 -3 1 22.917] 108 D
+[<03800003C0000FC0000FF0000FE0001E380007E0003E1C0007E0003E0E0007E0007E070007F0007E030003F0007F030003F0
+  003F038003F0003F018003F8003F818001F8001F81C001F8001F808001F8001FC00001FC000FC00000FC000FC00000FC000F
+  E00000FC0007E00000FE0007E000007E0007F000007E0003F000407E0003F000E07F0003F000603F0003F800603F0001F800
+  603F8001F800703FC001F800303FC001F800381FE001F000181F7001F0001C3E3C03F0000E3E0F07E00007F803FF800001E0
+  00FE0000> 48 34 -2 1 46.324] 110 D
+[<007F00000001FFE0000007C1F800000F807E00001F001F00003E000F80003E0007C0007C0003E0007C0003F0007C0001F800
+  7C0000F800FC0000FC00FC0000FE00FC00007E007E00007E007E00007F007E00003F007E00003F007F00003F003F00003F00
+  3F00001F803F80001F801F80001F800F80001F000FC0001F0007E0001F0003E0001F0001F0003E0000F8003E00007C007C00
+  003F00F800000FC1F0000003FFC00000007F0000> 40 34 -2 1 37.174] 111 D
+[<FFFF800000FFFF800000FFFF80000007E000000007F000000007F000000003F000000003F000000003F800000003F8000000
+  01F800000001F800000001FC00000001FC00000000FC1F800000FC7FE00000FEE0F80000FFC03E00007F801F00007F800F80
+  007F000FC0007F0007E0003F0003E0003F0003F0003F8001F8003F8001F8001F8000FC001F8000FC001FC000FC001FC000FE
+  000FC0007E000FC0007E000FE0007E000FE0007F0007E0003F0207E0003F0607F0003F0707F0003F0303F0003F0303F0003E
+  0383F8003E0183FC003E0181FE003C01C1F7007C00C3E3807800E3E1E0F0007FC07FE0001F001F00> 40 48 3 15 38.549] 112 D
+[<070000001F8000001FC000000FC000000FC000000FC000000FE0000007E0000007E0000007E0000007F0000003F0000003F0
+  000003F0000003F8000001F8000001F8000001F8000001FC000000FC000000FC000040FC0000C0FE0000E07E0000607E0070
+  607E00FC707F00FC307F80FE303FC0FE383EE0FE187C703E1C7C3C1C0FF81FF803E003E0> 32 34 -2 1 34.649] 114 D
+[<03FE00000FFFC0003C01F00070007800E0003C00C0001E00FC000F00FE000F00FE000780FE000780FE0007807E0007C00000
+  0FC000001FC000007FC0000FFF80007FFF8000FFFF0001FFFE0003FFFC0003FFF00003FF000003F0000003E0038003E007E0
+  03C007E003E007E001E003E001E001E000F00060007800E0003E03C0000FFF000001FC00> 32 34 -4 1 35.773] 115 D
+[<01F80007FE000F87000F83801F01C01F00E01F80601F80701F80381F80181FC0181FC01C0FC0080FC0000FE0000FE00007E0
+  0007E00007F00007F00003F00003F00003F80003F80001F80001F80001FC0001FC0000FC0000FC00FFFFFE7FFFFE7FFFFE00
+  7E00007F00007F00003F00003F00003F80003F80001F80001F80001FC0001FC0000FC0000FC0000FC0000380> 24 48 -1 1 27.731] 116 D
+[<0007E00780003FF81FE0007C1C7C7000F80F7C3801F803F81801F803F81C01F001FC0C01F000FC0E01F000FC0601F000FC06
+  01F800FE0601F800FE0701F8007E0201F8007E0001FC007F0000FC007F0000FC003F0000FC003F0000FE003F80007E003F80
+  007F001F80403F001F80E03F001FC0603F801FC0601F800FC0701F800FC0301FC00FE0380FC00FE0180FC007E01C0F8007E0
+  0E0F8007E0070F0003E003FE0001C000F8000000> 40 34 -2 1 44.191] 117 D
+[<0F801F80003FE07FE0007070F87800F839F01C00FE1BE00E00FE1FE00700FE0FE003807E0FE001807E07E001C01C07E000C0
+  0007F000C00007F000E00003F000400003F000000003F800000003F800000001F800000001F800000001F800000001FC0000
+  0000FC00001000FC00003800FC00001800FE000018007E01C01C007E03F00C007F03F00E007F03F807007F83F803807D83F8
+  01C0F9C0F800E0F0E070007FE07FE0001F801F80> 40 34 -2 1 43.528] 120 D
+[<01F800000007FF0000001E07C000001803F000003800F800003E007C00003F007E00003F803F00003F801F80003F801F8000
+  1F800FC00007000FE000000007E000000007E000000007F000000FC3F000003FFBF00000F83FF00001F00FF80003F007F800
+  03F003F80003E001F80003E001FC0003E000FC0003E000FC0003F000FC0003F000FE0003F0007E0003F0007E0003F8007E00
+  01F8007F0001F8003F0001F8003F0001FC003F0000FC003F8000FE001F80407E001F80E07E001F80607F001FC0603F000FC0
+  703F000FC0303F800FC0301F800FE0381F8007E01C1F0007E00E1F0007E0071E0003E003FC0001C000F0000000> 40 49 -2 16 37.820] 121 D
+[<C000F000E003FE006007FF00700FFF80381FFFC01F3FFFE00FFE03F00EC000F0070000780380003801C0001800E0001C0070
+  000C003C0000000E000000070000000380000001C0000000E0000000700000003C0000000E000000070000000380030001C0
+  030000E0038001F001E03FF001FFFE7800FFFC1C007FF80E003FF006001FE00700078003> 32 34 -3 1 35.716] 122 D
+[<03F0000007FC00001E1F00001E0F80003C07C0003C03E0007801F0007800F8007800F800F8007C00F8003E00F8003E00F800
+  1F00F8001F80F8001F80F8000FC0F8000FC0FC0007C0FC0007E0FC0007E0FC0003F0FC0003F0FE0003F07E0003F87E0001F8
+  7FFFFFF87FFFFFFC3FFFFFFC3FFFFFFC3F0000FC3F8000FC1F8000FE1F80007E1F80007E0FC0007E0FC0007E07C0007E07E0
+  003E07E0003E03F0003E03F0003E01F0003E00F8003E00F8003E007C003E003E003C003E003C001F003C000F80780007C078
+  0003E0F00001F0F000007FC000001F80> 32 54 -3 1 35.946] 18 D
+[<07C0001FF8003C3C007C0F007C03807C01C0FC00C07E00E07E00707E00307F00303F00383F00103F80001F80001F80001FC0
+  000FC0000FC0000FE00007E00007E00007E00007F00003F00003F00003F00003F80001F80001F80001FC0001FC0000FC0000
+  7000> 24 34 -3 1 27.183] 19 D
+[<3C7EFFFFFFFF7E3C> 8 8 -6 0 21.331] 58 D
+[<6000700038001C000C000E000600070003000300038001800180018001803D807F80FF80FF80FF00FF007E003C00> 16 23 -6 15 21.331] 59 D
+[<60000000F0000000F8000000F8000000780000007C0000007C0000003C0000003E0000003E0000001E0000001F0000001F00
+  00000F0000000F8000000F8000000780000007C0000007C0000003E0000003E0000001E0000001F0000001F0000000F00000
+  00F8000000F8000000780000007C0000007C0000003C0000003E0000003E0000001E0000001F0000001F0000000F0000000F
+  8000000F80000007C0000007C0000003C0000003E0000003E0000001E0000001F0000001F0000000F0000000F8000000F800
+  0000780000007C0000007C0000003C0000003E0000003E0000001F0000001F0000000F0000000F8000000F80000007800000
+  07C0000007C0000003C0000003E0000003E0000001E0000001F0000001F0000000F0000000F8000000F80000007800000030> 32 75 -4 19 38.397] 61 D
+[<700000000000FC0000000000FF00000000007FC0000000001FF00000000007FC0000000001FF00000000007FC0000000001F
+  F00000000007FC0000000001FF00000000007FC0000000001FF00000000007FC0000000001FF00000000007FC0000000001F
+  F00000000007FC0000000001FF00000000007FC0000000001FF00000000007FC0000000001FE0000000001FE0000000007FC
+  000000001FF0000000007FC000000001FF0000000007FC000000001FF0000000007FC000000001FF0000000007FC00000000
+  1FF0000000007FC000000001FF0000000007FC000000001FF0000000007FC000000001FF0000000007FC000000001FF00000
+  00007FC000000000FF0000000000FC0000000000700000000000> 48 46 -6 4 59.728] 62 D
+1.000 16 /f3 NF
+f3 SF
+[<7FFFFFFFFFFCFFFFFFFFFFFEFFFFFFFFFFFE7FFFFFFFFFFC> 48 4 -6 -17 59.728] 0 D
+[<00000FFE00000000007FFFC000000003F061F80000000F80603E0000001C00600700000078006003C00000E0006000E00001
+  C000600070000380006000380007000060001C000E000060000E000C0000600006001C000060000700180000600003003800
+  006000038030000060000180700000600001C0600000600000C0600000600000C0600000600000C0E00000600000E0C00000
+  60000060C0000060000060C0000060000060FFFFFFFFFFFFE0FFFFFFFFFFFFE0C0000060000060C0000060000060C0000060
+  000060E00000600000E0600000600000C0600000600000C0600000600000C0700000600001C0300000600001803800006000
+  0380180000600003001C0000600007000C0000600006000E000060000E0007000060001C000380006000380001C000600070
+  0000E0006000E0000078006003C000001C0060070000000F80603E00000003F061F8000000007FFFC0000000000FFE000000> 56 50 -4 6 59.728] 8 D
+[<00000FFE00000000007FFFC000000003F001F80000000F80003E0000001C00000700000078000003C00000E0000000E00001
+  C0000000700003C0000000780007E0000000FC000E70000001CE000C3800000386001C1C0000070700180E00000E03003807
+  00001C0380300380003801807001C0007001C06000E000E000C060007001C000C0600038038000C0E0001C070000E0C0000E
+  0E000060C000071C000060C00003B8000060C00001F0000060C00001F0000060C00003B8000060C000071C000060C0000E0E
+  000060E0001C070000E0600038038000C060007001C000C06000E000E000C07001C0007001C030038000380180380700001C
+  0380180E00000E03001C1C00000707000C3800000386000E70000001CE0007E0000000FC0003C0000000780001C000000070
+  0000E0000000E0000078000003C000001C0000070000000F80003E00000003F001F8000000007FFFC0000000000FFE000000> 56 50 -4 6 59.728] 10 D
+[<3C7EFFFFFFFF7E3C> 8 8 -6 -15 21.331] 1 D
+[<6000000030F8000000F8FC000001F87E000003F03F000007E01F80000FC00FC0001F8007E0003F0003F0007E0001F800FC00
+  00FC01F800007E03F000003F07E000001F8FC000000FDF80000007FF00000003FE00000001FC00000001FC00000003FE0000
+  0007FF0000000FDF8000001F8FC000003F07E000007E03F00000FC01F80001F800FC0003F0007E0007E0003F000FC0001F80
+  1F80000FC03F000007E07E000003F0FC000001F8F8000000F86000000030> 40 36 -11 -1 59.728] 2 D
+[<000E0000001F0000001F0000001F0000001F0000001F0000001F0000700E01C0F80E03E0FE0E0FE0FF0E1FE07F8E3FC01FEE
+  FF0003FFF80000FFE000003F8000003F800000FFE00003FFF8001FEEFF007F8E3FC0FF0E1FE0FE0E0FE0F80E03E0700E01C0
+  001F0000001F0000001F0000001F0000001F0000001F0000000E0000> 32 32 -5 -3 38.397] 3 D
+[<001FC00000FFF80001FFFC0007FFFF000FFFFF801FFFFFC03FFFFFE03FFFFFE07FFFFFF07FFFFFF0FFFFFFF8FFFFFFF8FFFF
+  FFF8FFFFFFF8FFFFFFF8FFFFFFF8FFFFFFF8FFFFFFF8FFFFFFF8FFFFFFF87FFFFFF07FFFFFF03FFFFFE03FFFFFE01FFFFFC0
+  0FFFFF8007FFFF0001FFFC0000FFF800001FC000> 32 30 -4 -4 38.397] 15 D
+1.000 54 /f4 NF
+f4 SF
+[<7FFFFFFF807FFFFFFF807FFFFFFF807FFFFFFF80000FFE0000000FFE0000000FFE0000000FFE0000000FFE0000000FFE0000
+  000FFE0000000FFE0000000FFE0000000FFE0000000FFE0000000FFE0000000FFE0000000FFE0000000FFE0000000FFE0000
+  000FFE0000000FFE0000000FFE0000000FFE0000000FFE0000000FFE0000000FFE0000000FFE0000000FFE0000000FFE0000
+  000FFE0000000FFE0000000FFE0000000FFE0000000FFE0000000FFE0000000FFE0000000FFE0000000FFE0000000FFE0000
+  000FFE0000000FFE0000000FFE0000000FFE0000000FFE0000000FFE0000FFCFFE0000FFFFFE0000FFFFFE0000FFFFFE0000
+  003FFE00000007FE00000000FE000000003E000000001E0000> 40 55 -7 0 47.736] 49 D
+[<FFFFFFFFE0FFFFFFFFE0FFFFFFFFE0FFFFFFFFE07FFFFFFFE03FFFFFFFF01FFFFFFFF00FFFFFFFF007FFFFFFF003FFFFFFF0
+  03FFFFFFF001F00001F000F80000F0007C0000F0003E0000F8001F800078000FC000780007E000780003F000780001F80000
+  0000FE000000007F000000007F800000003FE00000001FF00000000FF800000007FC00000007FE00000003FF00000003FF80
+  000001FFC0000001FFE0000000FFE0000000FFF0000000FFF00000007FF80F00007FF83FC0007FF87FE0007FF8FFF0007FF8
+  FFF0007FF8FFF0007FF8FFF0007FF8FFF000FFF0FFF000FFF0FFE000FFF07FC001FFE07F0003FFC03F0003FFC01F800FFF80
+  0FF03FFF0007FFFFFC0001FFFFF000007FFFC000000FFC0000> 40 55 -5 0 47.736] 50 D
+[<0007FF0000007FFFF00001FFFFFC0007FFFFFF000FFC07FF801FC001FFC03F8000FFE07FC000FFF07FF0007FF8FFF0007FF8
+  FFF8003FFCFFF8003FFCFFF8003FFEFFF8003FFEFFF8003FFEFFF8003FFE7FF0003FFE3FE0003FFE1FC0003FFE0000003FFE
+  0000003FFC0000003FFC0000007FFC0000007FF80000007FF0000000FFE0000000FFC0000001FF80000007FE00000FFFF000
+  000FFF0000000FFFC00000003FF00000000FFC00000007FE00000003FF00000003FF80000001FFC003F001FFE00FFC00FFE0
+  0FFC00FFE01FFE00FFF01FFE00FFF01FFE00FFF01FFE00FFF01FFE00FFF01FFC00FFF00FFC00FFF00FF000FFE007C000FFE0
+  07E001FFC003F003FF8001FC07FF00007FFFFC00001FFFF0000003FF0000> 40 56 -4 1 47.736] 51 D
+[<0003FFFFFF800003FFFFFF800003FFFFFF800003FFFFFF80000001FFC000000001FFC000000001FFC000000001FFC0000000
+  01FFC000000001FFC000000001FFC000000001FFC000000001FFC000000001FFC000FFFFFFFFFF80FFFFFFFFFF80FFFFFFFF
+  FF80FFFFFFFFFF80F80000FFC0007C0000FFC0003C0000FFC0001E0000FFC0000F0000FFC0000F8000FFC00007C000FFC000
+  03C000FFC00001E000FFC00000F000FFC00000F800FFC000007C00FFC000003C00FFC000001E00FFC000000F00FFC000000F
+  80FFC0000007C0FFC0000003C0FFC0000001E0FFC0000000F0FFC0000000F8FFC00000007CFFC00000003CFFC00000001EFF
+  C00000000FFFC00000000FFFC000000007FFC000000003FFC000000001FFC000000000FFC000000000FFC0000000007FC000
+  0000003FC0000000001FC0000000000FC0000000000FC00000000007C000> 48 55 -3 0 47.736] 52 D
+[<000FF80000007FFF800001FFFFE00007FFFFF8000FF01FFE001FC007FF001F0003FF803E0001FFC07C0000FFC07F0000FFE0
+  7FC000FFF0FFE0007FF0FFE0007FF0FFF0007FF8FFF0007FF8FFF0007FF8FFF0007FF8FFE0007FF87FE0007FF83F80007FF8
+  0600007FF80000007FF80000007FF80000007FF00000007FF00000007FE0000000FFE00E0000FFC01F0000FFC01F8001FF80
+  1FE003FF001FFC07FC001FFFFFF8001F3FFFE0001F07FE00001F000000001F000000001F000000001F000000001F00000000
+  1F000000001F000000001F000000001FFFF000001FFFFE00001FFFFF80001FFFFFE0001FFFFFF0001FFFFFFC001FFFFFFE00
+  1FFFFFFF001FFFFFFF801FFFFFFF801FF8007FC01F800007C01C000000C0> 40 56 -5 1 47.736] 53 D
+/f5 /Ryumin-Light-H 59.998 -59.998 BFE
+/f6 /Ryumin-Light-H 67.998 -67.998 BFE
+/f7 /GothicBBB-Medium-H 75.998 -75.998 BFE
+/f8 /GothicBBB-Medium-H 157.620 -157.620 BFE
+1.000 123 /f9 NF
+f9 SF
+[<FFFFFFFFC000FFFFFFFFF800FFFFFFFFFE0003FC0003FF0001FC00007FC001FC00003FE001FC00001FE001FC00000FF001FC
+  000007F801FC000007F801FC000003F801FC000003FC01FC000003FC01FC000003FC01FC000003FC01FC000003FC01FC0000
+  03FC01FC000003F801FC000007F801FC000007F001FC00000FF001FC00000FE001FC00001FC001FC00003F8001FC0000FE00
+  01FC0007FC0001FFFFFFE00001FFFFFFF00001FC0003FC0001FC0000FE0001FC00007F0001FC00003F8001FC00001FC001FC
+  00001FE001FC00000FE001FC00000FF001FC00000FF001FC00000FF001FC00000FF001FC00000FF001FC00000FF001FC0000
+  0FE001FC00001FE001FC00001FC001FC00003FC001FC00007F8001FC0000FF0003FC0003FE00FFFFFFFFF800FFFFFFFFE000
+  FFFFFFFF0000> 48 51 -3 0 54.389] 66 D
+[<FFFFFE000000FFFFFE000000FFFFFE00000003FE0000000001FC0000000001FC0000000001FC0000000001FC0000000001FC
+  0000000001FC0000000001FC0000000001FC0000000001FC0000000001FC0000000001FC0000000001FC000C000001FC000C
+  000001FC000C000001FC000C000001FC000C000001FC001C000001FC001C000001FC003C000001FC00FC000001FFFFFC0000
+  01FFFFFC000001FFFFFC000001FC00FC000001FC003C000001FC001C000001FC001C000001FC000C000001FC000C000001FC
+  000C006001FC000C006001FC000C006001FC0000006001FC000000C001FC000000C001FC000000C001FC000000C001FC0000
+  01C001FC000001C001FC000003C001FC000003C001FC000007C001FC00001F8003FC0000FF80FFFFFFFFFF80FFFFFFFFFF80
+  FFFFFFFFFF80> 48 51 -3 0 50.123] 70 D
+[<FFFF001C007FFFF8FFFF001C007FFFF8FFFF001C007FFFF80FF0003E0001FE0003C0003E0000FC000180007F0000FC000180
+  007F0000FC000180007F0000FC00018000FD8000FC00018000FD8000FC00018001F8C000FC00018001F8C000FC00018001F8
+  C000FC00018003F06000FC00018003F06000FC00018003F06000FC00018007E03000FC00018007E03000FC0001800FC01800
+  FC0001800FC01800FC0001800FC01800FC0001801F800C00FC0001801F800C00FC0001801F800C00FC0001803F000600FC00
+  01803F000600FC0001807E000300FC0001807E000300FC0001807E000300FC000180FC000180FC000180FC000180FC000181
+  F80000C0FC000181F80000C0FC000181F80000C0FC000183F0000060FC000183F0000060FC000183F0000060FC000187E000
+  0030FC000187E0000030FC00018FC0000018FC00018FC0000018FC00018FC0000018FC00019F8000000CFC00019F8000000C
+  FC0001BF00000006FC0001BF00000006FC0001BF00000006FC0003FE00000003FE00FFFE00000003FFF8FFFE00000003FFF8
+  FFFC00000001FFF8> 64 51 -4 0 70.382] 77 D
+[<FFFFC000001800FFFFC000003800FFFFC00000380007F8000000780001E0000000F80000C0000001F80000C0000001F80000
+  C0000003F80000C0000007F80000C0000007F80000C000000FF80000C000001FF80000C000003FD80000C000003FD80000C0
+  00007F980000C00000FF180000C00000FF180000C00001FE180000C00003FC180000C00007F8180000C00007F8180000C000
+  0FF0180000C0001FE0180000C0001FE0180000C0003FC0180000C0007F80180000C000FF00180000C000FF00180000C001FE
+  00180000C003FC00180000C003FC00180000C007F800180000C00FF000180000C01FE000180000C01FE000180000C03FC000
+  180000C07F8000180000C07F8000180000C0FF0000180000C1FE0000180000C3FC0000180000C3FC0000180000C7F8000018
+  0000CFF00000180000CFF00000180000DFE00000180000FFC000003C0000FF800000FF00FFFF80001FFFF8FFFF00001FFFF8
+  FFFE00001FFFF8> 56 51 -2 0 57.583] 78 D
+[<0000007000000000000070000000000000F8000000000000F8000000000000F8000000000001FC000000000001FC00000000
+  0003FE000000000003FE000000000003FE000000000007FB000000000007F3000000000007F300000000000FE18000000000
+  0FE180000000001FE1C0000000001FC0C0000000001FC0C0000000003F8060000000003F8060000000007F8070000000007F
+  0030000000007F003000000000FF001800000000FE001800000001FE001C00000001FC000C00000001FC000C00000003FC00
+  0600000003F8000600000003F8000600000007F0000300000007F000030000000FF000018000000FE000018000000FE00001
+  8000001FC00000C000001FC00000C000003FC00000E000003F8000006000003F8000006000007F0000003000007F00000030
+  0000FF000000380000FE000000180000FE000000180001FE0000001C0001FC0000001E0003FC0000001F0007FE0000007FC0
+  FFFFF00003FFF8FFFFF00003FFF8FFFFF00003FFF8> 56 53 -2 2 57.583] 86 D
+[<00FE003C0007FFC0FF001FC1E1FF803F8071F1807F003BE0C0FF001FE0C0FE000FE0C0FE000FE0C0FE0007E0C0FE0007E0C0
+  FE0007E0C0FF0007E0C07F0007E0007F8007E0003F8007E0001FC007E0000FF007E00003FC07E00000FF87E000001FFFE000
+  0001FFE000000007E000000007E000000007E000000007E0001F0007E0003F8007E0003F800FC0003F800FC0003F801F8000
+  3F003F00001C003E00000F80FC000003FFF00000007F800000> 40 35 -3 1 38.397] 97 D
+[<0007F000003FFE0000FC0F8003F001C007E000E00FC000701FC000301F8000383F8000183F0000187F0000007F000000FE00
+  0000FE000000FE000000FE000000FE000000FE000000FE000000FE000000FE000000FE0000007E0000007F0000007F000000
+  3F0003E03F8007F01F8007F00FC007F007C007F003E003F001F000E000FC07C0003FFF000007F800> 32 35 -2 1 34.130] 99 D
+[<000FE03F00003FFC3FFC00F81E3FFC03F007BFFC07E001FF800FC000FF001F80007F001F80007F003F00003F007F00003F00
+  7F00003F007E00003F00FE00003F00FE00003F00FE00003F00FE00003F00FE00003F00FE00003F00FE00003F00FE00003F00
+  FE00003F00FE00003F007E00003F007F00003F003F00003F003F00003F001F80003F001F80007F000FC000FF0007E001FF00
+  01F003BF0000FC0F3F00003FFC3F000007F03F000000003F000000003F000000003F000000003F000000003F000000003F00
+  0000003F000000003F000000003F000000003F000000003F000000003F000000003F000000003F000000007F0000000FFF00
+  00000FFF0000000FFF000000003F00> 40 53 -3 1 42.663] 100 D
+[<0007F000003FFE0000FC0F0001F003C007E000E00FC000700F8000301F8000383F0000183F0000187F0000007F0000007E00
+  0000FE000000FE000000FE000000FE000000FE000000FFFFFFF8FFFFFFF8FE0001F8FE0001F87E0001F87E0001F87F0001F8
+  3F0001F03F0003F01F8003F01F8003E00FC007E007E00FC003F00F8000F83F00007FFC00000FE000> 32 35 -2 1 34.159] 101 D
+[<7FFFE0007FFFE0007FFFE00007F8000003F0000003F0000003F0000003F0000003F0000003F0000003F0000003F0000003F0
+  000003F0000003F0000003F0000003F0000003F0000003F0000003F0000003F0000003F0000003F0000003F0000003F00000
+  03F0000003F0000003F0000003F00000FFFFF000FFFFF000FFFFF00003F0000003F0000003F0000003F0000003F0000003F0
+  000003F0000003F0000003F0000003F0000003F0000003F0000003F8070001F81FC001F81FC000FC1FC0007C1FC0003E0FC0
+  001F07800007FF000001FC00> 32 53 -1 0 23.465] 102 D
+[<001FFC000000FFFF800003F007E0000FC001F8001F00007C003E00003E007C00001F00FC00001F80F800000F80F800000F80
+  F800000F80F800000F80F800000F807C00001F807C00003F003E00007F001F0001FE0007FFFFFE0003FFFFFC0007FFFFF000
+  0FFFFFC0000FFFFE00001F000000001E000000001E000000001C000000001C000000001C000000000C1FC000000EFFF80000
+  07F07C000007E03F00000FC01F80000F800F80001F800FC0001F0007C0003F0007E0003F0007E0003F0007E0003F0007E000
+  3F0007E0003F0007E0001F0007C0001F800FC0000F800F80000FC01F838007E03F03C001F07FC7C000FFF8E3C0001FC07F80
+  0000001F00> 40 51 -2 17 38.397] 103 D
+[<FFFFC7FFFCFFFFC7FFFCFFFFC7FFFC07F8007F8003F0003F0003F0003F0003F0003F0003F0003F0003F0003F0003F0003F00
+  03F0003F0003F0003F0003F0003F0003F0003F0003F0003F0003F0003F0003F0003F0003F0003F0003F0003F0003F0003F00
+  03F0003F0003F0003F0003F0003F0003F8003F0003F8003F0003FC003F0003FC003F0003FE007E0003F7007E0003F3807C00
+  03F1E0FC0003F07FF00003F01FC00003F000000003F000000003F000000003F000000003F000000003F000000003F0000000
+  03F000000003F000000003F000000003F000000003F000000003F000000003F000000007F0000000FFF0000000FFF0000000
+  FFF000000003F0000000> 40 52 -2 0 42.663] 104 D
+[<FFFFFFFFFFFF0FF007E007E007E007E007E007E007E007E007E007E007E007E007E007E007E007E007E007E007E007E007E0
+  07E007E007E00FE0FFE0FFE0FFE007E0000000000000000000000000000000000000000007800FC01FE01FE01FE01FE00FC0
+  0780> 16 51 -2 0 21.331] 105 D
+[<FFFFC3FFF0FFFFC3FFF0FFFFC3FFF007F800FF8003F000FE0003F000FC0003F001F80003F003F80003F003F00003F007E000
+  03F00FE00003F00FC00003F01F800003F03F800003F87F000003FC7E000003FEFC000003F7FC000003F3F8000003F0F00000
+  03F070000003F038000003F01C000003F00F000003F003800003F001C00003F001E00003F000F80003F001FF0003F003FFE0
+  03F003FFE003F003FFE003F000000003F000000003F000000003F000000003F000000003F000000003F000000003F0000000
+  03F000000003F000000003F000000003F000000003F000000003F000000003F000000007F0000000FFF0000000FFF0000000
+  FFF000000003F0000000> 40 52 -2 0 40.530] 107 D
+[<FFFFFFFFFFFF0FF007E007E007E007E007E007E007E007E007E007E007E007E007E007E007E007E007E007E007E007E007E0
+  07E007E007E007E007E007E007E007E007E007E007E007E007E007E007E007E007E007E007E007E007E007E00FE0FFE0FFE0
+  FFE007E0> 16 52 -2 0 21.331] 108 D
+[<FFFFC7FFFE3FFFF0FFFFC7FFFE3FFFF0FFFFC7FFFE3FFFF007F8003FC001FE0003F0001F8000FC0003F0001F8000FC0003F0
+  001F8000FC0003F0001F8000FC0003F0001F8000FC0003F0001F8000FC0003F0001F8000FC0003F0001F8000FC0003F0001F
+  8000FC0003F0001F8000FC0003F0001F8000FC0003F0001F8000FC0003F0001F8000FC0003F0001F8000FC0003F0001F8000
+  FC0003F0001F8000FC0003F0001F8000FC0003F0001F8000FC0003F0001F8000FC0003F8001FC000FC0003F8001FC000FC00
+  03FC001FE000FC0003FC001FE000FC0003FE003F7001F80007F7003F3801F800FFF3803E1C01F000FFF1E07C0F03E000FFF0
+  7FF803FFC00003F01FE000FF0000> 64 33 -2 0 63.994] 109 D
+[<FFFFC7FFFCFFFFC7FFFCFFFFC7FFFC07F8007F8003F0003F0003F0003F0003F0003F0003F0003F0003F0003F0003F0003F00
+  03F0003F0003F0003F0003F0003F0003F0003F0003F0003F0003F0003F0003F0003F0003F0003F0003F0003F0003F0003F00
+  03F0003F0003F0003F0003F0003F0003F8003F0003F8003F0003FC003F0003FC003F0003FE007E0007F7007E00FFF3807C00
+  FFF1E0FC00FFF07FF00003F01FC000> 40 33 -2 0 42.663] 110 D
+[<0007F00000003FFE000000FC1F800003F007E00007C001F0000FC001F8001F8000FC001F00007C003F00007E003F00007E00
+  7E00003F007E00003F007E00003F00FE00003F80FE00003F80FE00003F80FE00003F80FE00003F80FE00003F80FE00003F80
+  FE00003F807E00003F007E00003F007E00003F003E00003E003F00007E001F00007C001F00007C000F8000F80007C001F000
+  03C001E00001F007C00000FC1F8000003FFE00000007F00000> 40 35 -2 1 38.397] 111 D
+[<FFFFC00000FFFFC00000FFFFC0000007F800000003F000000003F000000003F000000003F000000003F000000003F0000000
+  03F000000003F000000003F000000003F000000003F07F000003F1FFE00003F381F80003FF00FC0003FC003F0003FC003F80
+  03F8001FC003F0000FC003F0000FE003F00007E003F00007F003F00007F003F00007F803F00003F803F00003F803F00003F8
+  03F00003F803F00003F803F00003F803F00003F803F00003F803F00003F803F00007F003F00007F003F00007F003F0000FE0
+  03F0000FC003F8001FC003FC001F8007FE003F00FFF7007E00FFF3C0F800FFF0FFE00003F03F8000> 40 48 -2 15 42.663] 112 D
+[<FFFFE000FFFFE000FFFFE00007F8000003F0000003F0000003F0000003F0000003F0000003F0000003F0000003F0000003F0
+  000003F0000003F0000003F0000003F0000003F0000003F0000003F0000003F0000003F0000003F8000003F8000003F80000
+  03FC0F8003EC1FC003EC1FC007EE1FC0FFE71FC0FFE38F80FFE1FF0003E07C00> 32 33 -1 0 30.037] 114 D
+[<C07F8000E1FFE000F7807800FE001C00FC000E00F8000F00F0000700F0000780E0000780E0000780E0000780C0000F80C000
+  1F8000003F800000FF00000FFF0000FFFE0007FFFC000FFFF8003FFFF0003FFFC0007FFC0000FF800000FE000000F8000600
+  F8000600F0000600F0000600F0000E0078000E0078001E003C003E001F00FE0007FFCE0000FF0600> 32 35 -2 1 30.291] 115 D
+[<0007E0001FF8007E1C00FC0E01F80601F80603F00703F00303F00303F00303F00303F00303F00303F00303F00303F00003F0
+  0003F00003F00003F00003F00003F00003F00003F00003F00003F00003F00003F00003F00003F000FFFFFEFFFFFE1FFFFE07
+  F00003F00001F00001F00000F00000F000007000007000007000003000003000003000003000003000> 24 47 -1 1 29.864] 116 D
+[<0007F83F00001FFE3FFC007E073FFC00F803BFFC01F801FF8001F000FF0003F000FF0003F0007F0003F0007F0003F0007F00
+  03F0003F0003F0003F0003F0003F0003F0003F0003F0003F0003F0003F0003F0003F0003F0003F0003F0003F0003F0003F00
+  03F0003F0003F0003F0003F0003F0003F0003F0003F0003F0003F0003F0003F0003F0003F0003F0003F0003F0007F0007F00
+  FFF00FFF00FFF00FFF00FFF00FFF0003F0003F00> 40 34 -2 1 42.663] 117 D
+[<0000C0003000000001E0007800000001E0007800000001E0007800000003F000FC00000003F000FC00000003F000FC000000
+  07F801FE00000007F801F600000007FC03F60000000FCC03E30000000FCC03E30000001FC607E38000001F8607C18000001F
+  8607C18000003F030FC0C000003F030F80C000003F030F80C000007E019F806000007E019F006000007E01FF00600000FC00
+  FE00300000FC00FE00300001FC007E00380001F8007C00180001F8007C00180003F000FC001C0003F000F8001C0007F001F8
+  001E0007F801FC003F80FFFF1FFF81FFF0FFFF1FFF81FFF0FFFF1FFF81FFF0> 56 33 -1 1 55.462] 119 D
+[<FFFFFFE0FFFFFFE0FF000FE07F0003E03F8000E01FC000E01FE000600FE0007007F0007003F8003003FC003001FC003000FE
+  0030007F0030007F0000003F8000001FC000000FE000000FE0000007F0006003F8006003FC006001FC006000FE0070007F00
+  70007F8030003F8038001FC03C000FE03F000FF03FFFFFF03FFFFFF0> 32 32 -2 0 34.130] 122 D
+[<000FE000007FFC0000F83E0003E00F8007C007C007C007C00F8003E01F0001F01F0001F03F0001F83F0001F83F0001F87E00
+  00FC7E0000FC7E0000FC7E0000FC7E0000FCFE0000FEFE0000FEFE0000FEFE0000FEFE0000FEFE0000FEFE0000FEFE0000FE
+  FE0000FEFE0000FEFE0000FEFE0000FEFE0000FEFE0000FEFE0000FEFE0000FEFE0000FEFE0000FE7E0000FC7E0000FC7E00
+  00FC7E0000FC7E0000FC3E0000F83F0001F83F0001F81F0001F01F0001F00F8003E0078003C007C007C003E00F8000F83E00
+  007FFC00000FE000> 32 52 -3 2 38.397] 48 D
+[<7FFFFF807FFFFF807FFFFF80007F8000003F0000003F0000003F0000003F0000003F0000003F0000003F0000003F0000003F
+  0000003F0000003F0000003F0000003F0000003F0000003F0000003F0000003F0000003F0000003F0000003F0000003F0000
+  003F0000003F0000003F0000003F0000003F0000003F0000003F0000003F0000003F0000003F0000003F0000003F0000003F
+  0000003F0000003F0000003F0000003F0000F83F0000FFBF0000FFFF000007FF0000007F0000001F0000000F000000070000> 32 50 -6 0 38.397] 49 D
+[<FFFFFFE0FFFFFFE0FFFFFFE07FFFFFF03FFFFFF01FFFFFF01C0000700F0000300780003003C0003001E0001800F000180078
+  0018003C0000003E0000001F0000000F80000007C0000003E0000001F0000001F8000000FC0000007E0000003F0000003F80
+  00001FC000001FC000000FE000000FF0000007F0000007F0000007F83C0007F87E0007F8FF0003F8FF0003F8FF0003F8FF00
+  07F8FE0007F8FC0007F0600007F070000FF070000FE038001FE01C003FC01E007F800F80FF0003FFFC0000FFF000003FC000> 32 50 -4 0 38.397] 50 D
+[<001FE00000FFFC0003FFFF000FE03F801F001FE03C000FF0380007F0700007F8780003FCFE0003FCFF0001FCFF0001FEFF00
+  01FEFF0001FEFF0001FE7E0001FE000001FE000001FE000001FE000001FC000003FC000003F8000007F8000007F000000FE0
+  00001FC000003F00007FFC00007FE0000001F80000007E0000003F8000001FC000000FC000000FE0000007F0000007F00000
+  07F81F0007F83F8003F83F8003F83FC003F83F8003F83F8007F83F0007F01C0007F01E000FE00F001FC007E03F8001FFFF00
+  00FFFC00001FE000> 32 52 -3 2 38.397] 51 D
+[<0007FFFF800007FFFF800007FFFF8000001FE00000000FC00000000FC00000000FC00000000FC00000000FC00000000FC000
+  00000FC00000000FC00000000FC000FFFFFFFF80FFFFFFFF80FFFFFFFF80E0000FC00060000FC00030000FC00038000FC000
+  18000FC0000C000FC0000E000FC00006000FC00003000FC00003800FC00001800FC00000C00FC00000E00FC00000700FC000
+  00300FC00000380FC000001C0FC000000C0FC000000E0FC00000070FC00000030FC00000038FC0000001CFC0000000CFC000
+  00006FC00000007FC00000003FC00000001FC00000001FC00000000FC000000007C000000007C000000003C000000001C000
+  000001C000> 40 51 -2 0 38.397] 52 D
+[<003F800001FFE00007FFF8000F80FE001E007F003C001F8038001FC070000FC0700007E0600007E0F80007F0FE0007F0FE00
+  03F0FE0003F8FE0003F8FE0003F87E0003F8180003F8000003F8000003F8000003F8000003F8000003F0000003F0000007F0
+  0C0007E00C0007E00E000FC00F000FC00F001F800FC03F000CF07C000C7FF8000C0FC0000C0000000C0000000C0000000C00
+  00000C0000000C0000000C0000000C0000000C0000000C1800000FFFC0000FFFF0000FFFFC000FFFFE000FFFFF000FFFFF80
+  0FC00FC00C0000C0> 32 52 -4 2 38.397] 53 D
+[<000FE000003FFC0000FFFF0001F81F8003E00FC007C007E00FC003F00F8001F01F8001F81F0001FC3F0000FC3F0000FC7F00
+  00FE7E0000FE7E0000FE7E0000FE7E0000FEFE0000FEFE0000FEFE0000FEFE0000FEFE0000FEFF0000FCFF0000FCFF0001FC
+  FF0001F8FF8001F8FF8003F0FFC003E0FEE007C0FE700F80FE381F007E1FFC007E07F0007E0000007F0000003F0000003F00
+  00003F0000001F8000001F8000000FC001F00FC003F807E003F803E003F801F003F801F801F8007C0070003F00F0001FFFE0
+  0007FF800000FE00> 32 52 -3 2 38.397] 54 D
+[<001C0000007F0000007F0000007F0000007F0000007F0000007F0000007F0000007F0000007F0000003F0000003F0000003F
+  0000003F0000003F0000001F0000001F0000001F8000000F8000000F8000000F800000078000000780000003C0000003C000
+  0003C0000001C0000000E0000000E0000000700000007000000038000000180000001C0000000E000000060000000700C000
+  0380C00001C0C00000C0600000E06000007060000030700000387FFFFFFC7FFFFFFE7FFFFFFE3FFFFFFF3FFFFFFF3FFFFFFF
+  3C00000030000000> 32 52 -4 2 38.397] 55 D
+[<00FF000003FFC0000FFFF0001F01FC001C007E003F003F003F801F803F800FC03F8007C03F8007E01F0003E0000003F00000
+  01F0000001F8000001F8000001FC000001FC000000FC001FC0FC007FF0FE01F038FE03E01CFE07C00EFE0F8007FE1F8003FE
+  3F0003FE3F0001FE7F0001FE7E0001FE7E0001FEFE0000FEFE0000FEFE0000FEFE0000FEFE0000FEFE0000FCFE0000FCFE00
+  00FCFE0000FCFE0001FC7E0001F87E0001F87F0001F83F0003F01F8003F01F8007E00FC007C007E00F8003F83F0000FFFE00
+  007FF800000FE000> 32 52 -3 2 38.397] 57 D
+[<0000C00001C0000380000F00000E00001C00003C0000780000F00000F00001E00003C00003C00007C0000780000F80000F00
+  001F00001F00001E00003E00003E00003E00003C00007C00007C00007C00007C00007C0000F80000F80000F80000F80000F8
+  0000F80000F80000F80000F80000F80000F80000F80000F80000F80000F80000F800007C00007C00007C00007C00007C0000
+  3C00003E00003E00003E00001E00001F00001F00000F00000F800007800007C00003C00003C00001E00000F00000F0000078
+  00003C00001C00000E00000F000003800001C00000C0> 24 74 -7 18 29.864] 40 D
+[<C00000E000007000003C00001C00000E00000F000007800003C00003C00001E00000F00000F00000F800007800007C00003C
+  00003E00003E00001E00001F00001F00001F00000F00000F80000F80000F80000F80000F800007C00007C00007C00007C000
+  07C00007C00007C00007C00007C00007C00007C00007C00007C00007C00007C00007C0000F80000F80000F80000F80000F80
+  000F00001F00001F00001F00001E00003E00003E00003C00007C0000780000F80000F00000F00001E00003C00003C0000780
+  000F00000E00001C00003C0000700000E00000C00000> 24 74 -4 18 29.864] 41 D
+[<00000060000000000000F0000000000000F0000000000000F0000000000000F0000000000000F0000000000000F000000000
+  0000F0000000000000F0000000000000F0000000000000F0000000000000F0000000000000F0000000000000F00000000000
+  00F0000000000000F0000000000000F0000000000000F0000000000000F0000000000000F0000000000000F0000000000000
+  F0000000000000F00000007FFFFFFFFFFFC0FFFFFFFFFFFFE0FFFFFFFFFFFFE07FFFFFFFFFFFC0000000F0000000000000F0
+  000000000000F0000000000000F0000000000000F0000000000000F0000000000000F0000000000000F0000000000000F000
+  0000000000F0000000000000F0000000000000F0000000000000F0000000000000F0000000000000F0000000000000F00000
+  00000000F0000000000000F0000000000000F0000000000000F0000000000000F0000000000000F000000000000060000000> 56 50 -4 6 59.728] 43 D
+[<6000700038001C000C000E000600070003000300038001800180018001803D807F80FF80FF80FF00FF007E003C00> 16 23 -6 15 21.331] 44 D
+[<3C7EFFFFFFFF7E3C> 8 8 -6 0 21.331] 46 D
+[<3C7EFFFFFFFF7E3C000000000000000000000000000000003C7EFFFFFFFF7E3C> 8 32 -6 0 21.331] 58 D
+[<7FFFFFFFFFFFC0FFFFFFFFFFFFE0FFFFFFFFFFFFE07FFFFFFFFFFFC000000000000000000000000000000000000000000000
+  0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+  0000000000000000000000007FFFFFFFFFFFC0FFFFFFFFFFFFE0FFFFFFFFFFFFE07FFFFFFFFFFFC0> 56 20 -4 -9 59.728] 61 D
+[<FFF0FFF0FFF0FFF0F000F000F000F000F000F000F000F000F000F000F000F000F000F000F000F000F000F000F000F000F000
+  F000F000F000F000F000F000F000F000F000F000F000F000F000F000F000F000F000F000F000F000F000F000F000F000F000
+  F000F000F000F000F000F000F000F000F000F000F000F000F000F000F000F000F000F000F000F000F000FFF0FFF0FFF0FFF0> 16 75 -7 19 21.331] 91 D
+[<FFF0FFF0FFF0FFF000F000F000F000F000F000F000F000F000F000F000F000F000F000F000F000F000F000F000F000F000F0
+  00F000F000F000F000F000F000F000F000F000F000F000F000F000F000F000F000F000F000F000F000F000F000F000F000F0
+  00F000F000F000F000F000F000F000F000F000F000F000F000F000F000F000F000F000F000F000F000F0FFF0FFF0FFF0FFF0> 16 75 -1 19 21.331] 93 D
+[<FFFF83FFFF00FFFF83FFFF00FFFF83FFFF0007F8003FC00003F0001F800003F0001F800003F0001F800003F0001F800003F0
+  001F800003F0001F800003F0001F800003F0001F800003F0001F800003F0001F800003F0001F800003F0001F800003F0001F
+  800003F0001F800003F0001F800003F0001F800003F0001F800003F0001F800003F0001F800003F0001F800003F0001F8000
+  03F0001F800003F0001F800003F0001F800003F0001F8000FFFFFFFFFFC0FFFFFFFFFFC0FFFFFFFFFFC003F0001F800003F0
+  001F800003F0001F800003F0001F800003F0001F800003F0001F800003F0001F800003F0001F800003F0001F800003F0001F
+  800003F0001F800003F0001F800001F8003FC03801F8003FC0FE00FC003FC0FE007E003FE0FE003F001FE0FE001F800FF07E
+  0007E01EF83C0001FFF83FF800003FE00FE0> 48 53 -1 0 44.796] 11 D
+[<7FFFC1FFFE0FFFF87FFFC1FFFE0FFFF87FFFC1FFFE0FFFF803FC001FE000FF0001F8000FC0007E0001F8000FC0007E0001F8
+  000FC0007E0001F8000FC0007E0001F8000FC0007E0001F8000FC0007E0001F8000FC0007E0001F8000FC0007E0001F8000F
+  C0007E0001F8000FC0007E0001F8000FC0007E0001F8000FC0007E0001F8000FC0007E0001F8000FC0007E0001F8000FC000
+  7E0001F8000FC0007E0001F8000FC0007E0001F8000FC0007E0001F8000FC0007E0001F8000FC0007E0001F8000FC0007E00
+  01F8000FC0007E0001F8000FC0007E0001F8000FC0007E0001F8000FC000FE00FFFFFFFFFFFFFE00FFFFFFFFFFFFFE00FFFF
+  FFFFFFFFFE0001F8000FC0007E0001F8000FC000000001F8000FC000000001F8000FC000000001F8000FC000000001F8000F
+  C000000001F8000FC000000001F8000FC000000001F8000FC000000001F8000FC000000001F8000FC0007C0001F8001FC000
+  FE0000FC001FE000FE0000FC001FE000FE00007E001FF000FE00003F001FF8007E00001F8007FC003C00000FC0077E003C00
+  0003F01E1F80F0000000FFFC07FFE00000001FE000FF0000> 64 53 -1 0 63.994] 14 D
+[<6001807001C03800E01C00700C00300E003806001807001C03000C03000C03800E0180060180060180060180063D80F67F81
+  FEFF83FEFF83FEFF03FCFF03FC7E01F83C00F0> 24 23 -2 -29 38.397] 34 D
+[<FFFFF0FFFFF0FFFFF0FFFFF0FFFFF0> 24 5 -1 -14 25.598] 45 D
+[<1E00783F00FC7F81FE7F81FEFF83FEFF83FEFF03FCDE0378C00300C00300C00300C00300E003806001806001807001C03000
+  C03800E01800601C00700E003807001C03000C> 24 23 -12 -29 38.397] 92 D
+1.000 52 /f10 NF
+f10 SF
+[<FFFFC0FFFFC003F00001E00001E00001E00001E00001E00001E00001E00001E00001E00001E00001E00001E00001E00001E0
+  0001E00001E00001E00001E00001E00001E00001E00001E00001E00001E00001E000F9E000FFE00007E00001E00000E000> 24 33 -6 0 30.440] 49 D
+[<FFFFF0FFFFF07FFFF83FFFF81800180C001806001803800C01C00C00E000007000003800001E00000F000007800003C00003
+  E00001F00000F80000F80000FC3000FC78007CFC007CFC00FCFC00FCF800F86000F86001F03003E01C0FC007FF8001FC00> 24 33 -4 0 30.440] 50 D
+[<01FF000FFFC01E03F03800F860007CF8007EFC003EFC003FFC003F78003F30003F00003F00003E00007C0000780000F00003
+  E001FF0001FF00000FC00003E00001F00000F80000F80C00FC1E00FC3E007C3E007C3E00FC1C00F81C00F00F03E003FFC000
+  FF00> 24 34 -3 1 30.440] 51 D
+1.000 117 /f11 NF
+f11 SF
+[<0003FFE000001FFFFC00007FFFFF0001FF807F8003FE000FC007F80003E00FF00001F01FF00000F03FE00000F03FE0000000
+  7FE00000007FC0000000FFC0000000FFC0000000FFC0000000FFC0000000FFFFFFFFF0FFFFFFFFF0FFFFFFFFF0FFC00007F0
+  FFC0000FF07FC0000FF07FC0000FE07FE0000FE03FE0000FE01FE0001FC01FF0001FC00FF8003F8007FC007F0001FF03FE00
+  00FFFFFC00003FFFF0000003FF8000> 40 33 -2 0 40.570] 101 D
+[<7FFFF8007FFFF8007FFFF8007FFFF80003FE000003FE000003FE000003FE000003FE000003FE000003FE000003FE000003FE
+  000003FE000003FE000003FE000003FE000003FE000003FE000003FE000003FE000003FE000003FE000003FE000003FE0000
+  03FE000003FE000003FE000003FE0000FFFFFE00FFFFFE00FFFFFE00FFFFFE0003FE000003FE000003FE000003FE000003FE
+  000003FE000003FE000003FE007803FE01FE03FE01FE03FE03FF01FF03FF01FF03FF00FF83FF007FC3FF003FF1FE000FFFFC
+  0003FFF800003FE0> 32 52 -2 0 27.016] 102 D
+[<FFFFE07FFFF0FFFFE07FFFF0FFFFE07FFFF0FFFFE07FFFF007FC0003FE0007FC0003FE0007FC0003FE0007FC0003FE0007FC
+  0003FE0007FC0003FE0007FC0003FE0007FC0003FE0007FC0003FE0007FC0003FE0007FC0003FE0007FC0003FE0007FC0003
+  FE0007FC0003FE0007FC0003FE0007FC0003FE0007FC0003FE0007FC0003FE0007FE0003FE0007FE0003FE0007FF0003FE00
+  07FF0003FE0007FF8003FE0007FFC007FC0007FDE007FC0007FCFC0FF80007FC3FFFF00007FC0FFFC00007FC03FF000007FC
+  0000000007FC0000000007FC0000000007FC0000000007FC0000000007FC0000000007FC0000000007FC0000000007FC0000
+  000007FC0000000007FC0000000007FC0000000007FC000000000FFC00000000FFFC00000000FFFC00000000FFFC00000000
+  FFFC0000000001FC00000000> 48 52 -3 0 49.119] 104 D
+[<FFFFC0FFFFC0FFFFC0FFFFC007FC0007FC0007FC0007FC0007FC0007FC0007FC0007FC0007FC0007FC0007FC0007FC0007FC
+  0007FC0007FC0007FC0007FC0007FC0007FC0007FC0007FC0007FC0007FC000FFC00FFFC00FFFC00FFFC00FFFC0001FC0000
+  000000000000000000000000000000000000000000000003F00007F8000FFC001FFE001FFE001FFE001FFE001FFE001FFE00
+  0FFC0007F80003F000> 24 53 -3 0 24.560] 105 D
+[<FFFFE0FFFFE0FFFFE0FFFFE007FC0007FC0007FC0007FC0007FC0007FC0007FC0007FC0007FC0007FC0007FC0007FC0007FC
+  0007FC0007FC0007FC0007FC0007FC0007FC0007FC0007FC0007FC0007FC0007FC0007FC0007FC0007FC0007FC0007FC0007
+  FC0007FC0007FC0007FC0007FC0007FC0007FC0007FC0007FC0007FC0007FC0007FC0007FC000FFC00FFFC00FFFC00FFFC00
+  FFFC0001FC00> 24 52 -3 0 24.560] 108 D
+[<FFFFE07FFFF0FFFFE07FFFF0FFFFE07FFFF0FFFFE07FFFF007FC0003FE0007FC0003FE0007FC0003FE0007FC0003FE0007FC
+  0003FE0007FC0003FE0007FC0003FE0007FC0003FE0007FC0003FE0007FC0003FE0007FC0003FE0007FC0003FE0007FC0003
+  FE0007FC0003FE0007FC0003FE0007FC0003FE0007FC0003FE0007FC0003FE0007FE0003FE0007FE0003FE0007FF0003FE00
+  07FF0003FE0007FF8003FE000FFBC007FC00FFF9E007FC00FFF8FC0FF800FFF83FFFF000FFF80FFFC00001F803FF0000> 48 33 -3 0 49.119] 110 D
+[<E03FE000F9FFFC00FFFFFF00FFC01F80FF000FC0FE0007E0FC0003E0F80003F0F80003F0F00003F0F00007F000000FF00000
+  7FF0000FFFF000FFFFE007FFFFE00FFFFFC03FFFFF807FFFFE007FFFFC00FFFFE000FFFC0000FF800000FE0003C0FE0003C0
+  FC0003C0FC0007C07E0007C07E000FC03F803FC00FFFFFC007FFFFC000FFE1C0> 32 33 -3 0 34.875] 115 D
+[<000FF000003FFC0000FFFE0001FF0F0003FE078007FE078007FC03C007FC03C007FC03C007FC03C007FC03C007FC03C007FC
+  03C007FC000007FC000007FC000007FC000007FC000007FC000007FC000007FC000007FC000007FC000007FC000007FC0000
+  07FC000007FC000007FC000007FC0000FFFFFF80FFFFFF80FFFFFF801FFFFF8007FC000003FC000001FC000001FC000000FC
+  000000FC0000007C0000007C0000007C0000003C0000003C0000003C0000003C0000003C0000> 32 47 -2 0 34.384] 116 D
+1.000 124 /f12 NF
+f12 SF
+[<FFFC0003FFFFFFFC0003FFFF0FF000003FE007C000001FC003C000001F8001C000001F8000C000003F0000C000003F0000E0
+  00007F00006000007E00006000007E0000300000FC0000300000FC0000300000FC0000180001F800001FFFFFF800001FFFFF
+  F800000C0003F000000C0003F00000060007E00000060007E00000060007E0000003000FC0000003000FC0000003801FC000
+  0001801F80000001801F80000000C03F00000000C03F00000000C03F00000000607E00000000607E0000000070FE00000000
+  30FC0000000030FC0000000019F80000000019F8000000001BF8000000000FF0000000000FF0000000000FF00000000007E0
+  0000000007E00000000003C00000000003C00000000003C00000000001800000> 48 47 -2 0 52.857] 65 D
+[<FFFFFFFE0000FFFFFFFFC00003F8000FF00001F80003FC0001F80000FE0001F800007F0001F800003F0001F800003F8001F8
+  00001F8001F800001FC001F800001FC001F800001FC001F800001FC001F800001FC001F800001FC001F800001F8001F80000
+  3F8001F800003F0001F800007F0001F80000FE0001F80001FC0001F80003F00001FFFFFFE00001FFFFFF000001F8007F8000
+  01F8000FE00001F80003F00001F80001F80001F80000FC0001F80000FE0001F800007E0001F800007F0001F800007F0001F8
+  00007F0001F800007F0001F800007F0001F800007F0001F800007E0001F80000FE0001F80000FC0001F80001F80001F80003
+  F00003F8000FC000FFFFFFFF8000FFFFFFFC0000> 48 45 -3 0 49.951] 66 D
+[<00001FF000000000FFFE00000003F00FC000000F8001E000003F00007800007C00001C0001F800000E0003F00000060007E0
+  0000070007E0000003800FC0000001801FC0000001801F80000001C03F80000000C03F00000000C07F00000000C07F000000
+  00C07F0000000000FE0000000000FE0000000000FE0000000000FE0000000000FE0000000000FE0000000000FE0000000000
+  FE0000000000FE0000000000FE0000000000FE00000000007F00000000C07F00000000C07F00000000C03F00000001C03F80
+  000001C01F80000001C01FC0000003C00FC0000003C007E0000007C007E0000007C003F000000FC001F800001FC0007C0000
+  3FC0003F000077C0000F8001E3C00003F00F83C00000FFFE01C000001FF000C0> 48 47 -4 1 50.966] 67 D
+[<FFFFFFF80000FFFFFFFF800003F8001FE00001F80003F00001F80000FC0001F800007E0001F800003F0001F800001F8001F8
+  00000FC001F8000007C001F8000007E001F8000003E001F8000003F001F8000003F001F8000001F801F8000001F801F80000
+  01F801F8000001FC01F8000001FC01F8000001FC01F8000001FC01F8000001FC01F8000001FC01F8000001FC01F8000001FC
+  01F8000001FC01F8000001FC01F8000001F801F8000001F801F8000001F801F8000003F801F8000003F001F8000003F001F8
+  000007E001F8000007E001F800000FC001F800000F8001F800001F8001F800003F0001F800007E0001F80000F80001F80003
+  F00003F8001FE000FFFFFFFF0000FFFFFFF80000> 48 45 -3 0 53.872] 68 D
+[<FFFFFFFFFF00FFFFFFFFFF0003F80001FF0001F800003F8001F800000F8001F80000078001F80000038001F80000038001F8
+  0000018001F8000001C001F8000000C001F8000000C001F8000000C001F8000000C001F80018006001F80018006001F80018
+  006001F80018000001F80018000001F80038000001F80078000001F800F8000001FFFFF8000001FFFFF8000001F800F80000
+  01F80078000001F80038000001F80018000001F80018000001F80018000001F80018018001F80018018001F80000018001F8
+  0000038001F80000030001F80000030001F80000030001F80000070001F80000070001F800000F0001F800001F0001F80000
+  3E0003F80001FE00FFFFFFFFFE00FFFFFFFFFE00> 48 45 -2 0 47.991] 69 D
+[<FFFFF80000FFFFF8000003FC00000001F800000001F800000001F800000001F800000001F800000001F800000001F8000000
+  01F800000001F800000001F800000001F800000001F800180001F800180001F800180001F800180001F800180001F8003800
+  01F800780001F800F80001FFFFF80001FFFFF80001F800F80001F800780001F800380001F800180001F800180001F8001800
+  01F800180301F800180301F800000301F800000701F800000601F800000601F800000601F800000E01F800000E01F800001E
+  01F800003E01F800007C03F80003FCFFFFFFFFFCFFFFFFFFFC> 40 45 -2 0 46.031] 70 D
+[<00001FF800000000FFFF00C00003F007C1C0000F8000F3C0003F00003FC0007C00001FC001F800001FC003F000000FC007E0
+  00000FC007E000000FC00FC000000FC01FC000000FC01F8000000FC03F8000000FC03F0000000FC07F0000000FC07F000000
+  0FC07F0000001FE0FE00001FFFFEFE00001FFFFEFE0000000000FE0000000000FE0000000000FE0000000000FE0000000000
+  FE0000000000FE0000000000FE0000000000FE00000000007F00000000C07F00000000C07F00000000C03F00000001C03F80
+  000001C01F80000001C01FC0000003C00FC0000003C007E0000007C007E0000007C003F000000FC001F800001FC0007C0000
+  3FC0003F000077C0000F8001E3C00003F00F83C00000FFFE01C000001FF000C0> 48 47 -4 1 55.359] 71 D
+[<FFFFF03FFFFCFFFFF03FFFFC03FC0000FF0001F800007E0001F800007E0001F800007E0001F800007E0001F800007E0001F8
+  00007E0001F800007E0001F800007E0001F800007E0001F800007E0001F800007E0001F800007E0001F800007E0001F80000
+  7E0001F800007E0001F800007E0001F800007E0001F800007E0001F800007E0001FFFFFFFE0001FFFFFFFE0001F800007E00
+  01F800007E0001F800007E0001F800007E0001F800007E0001F800007E0001F800007E0001F800007E0001F800007E0001F8
+  00007E0001F800007E0001F800007E0001F800007E0001F800007E0001F800007E0001F800007E0001F800007E0001F80000
+  7E0003FC0000FF00FFFFF03FFFFCFFFFF03FFFFC> 48 45 -3 0 52.857] 72 D
+[<FFFFF0FFFFF003FC0001F80001F80001F80001F80001F80001F80001F80001F80001F80001F80001F80001F80001F80001F8
+  0001F80001F80001F80001F80001F80001F80001F80001F80001F80001F80001F80001F80001F80001F80001F80001F80001
+  F80001F80001F80001F80001F80001F80001F80001F80001F80003FC00FFFFF0FFFFF0> 24 45 -2 0 25.414] 73 D
+[<01FC000007FF80001E07E0003803F0007001F8007800FC00FE00FC00FE00FE00FE007E00FE007E00FE007E0038007E000000
+  7E0000007E0000007E0000007E0000007E0000007E0000007E0000007E0000007E0000007E0000007E0000007E0000007E00
+  00007E0000007E0000007E0000007E0000007E0000007E0000007E0000007E0000007E0000007E0000007E0000007E000000
+  7E0000007E0000007E0000007E0000007E0000007E000000FF00007FFFF0007FFFF0> 32 46 -3 1 36.230] 74 D
+[<FFFFFFFFF0FFFFFFFFF003F8001FF001F80007F001F80001F801F80000F801F800007801F800003801F800003801F8000018
+  01F800001801F800001801F800001801F800000C01F800000C01F800000C01F800000C01F800000001F800000001F8000000
+  01F800000001F800000001F800000001F800000001F800000001F800000001F800000001F800000001F800000001F8000000
+  01F800000001F800000001F800000001F800000001F800000001F800000001F800000001F800000001F800000001F8000000
+  01F800000001F800000003FC000000FFFFF80000FFFFF80000> 40 45 -2 0 44.070] 76 D
+[<FFFF003801FFFFC0FFFF003801FFFFC00FF0007C0007F00003C0007C0003E0000180007C0003E000018000FE0003E0000180
+  00FE0003E000018001F30003E000018001F30003E000018001F30003E000018003E18003E000018003E18003E000018007C0
+  C003E000018007C0C003E000018007C0C003E00001800F806003E00001800F806003E00001801F003003E00001801F003003
+  E00001803E001803E00001803E001803E00001803E001803E00001807C000C03E00001807C000C03E0000180F8000603E000
+  0180F8000603E0000180F8000603E0000181F0000303E0000181F0000303E0000183E0000183E0000183E0000183E0000183
+  E0000183E0000187C00000C3E0000187C00000C3E000018F80000063E000018F80000063E000019F00000033E000019F0000
+  0033E000019F00000033E00001BE0000001BE00001BE0000001BE00001FC0000000FE00003FC0000000FF000FFFC0000000F
+  FFC0FFF800000007FFC0> 64 45 -3 0 64.618] 77 D
+[<FFFF00000600FFFF00000E000FF000000E0003C000001E00018000003E00018000003E00018000007E0001800000FE000180
+  0001FE0001800001FE0001800003FE0001800007F60001800007E6000180000FE6000180001FC6000180001F86000180003F
+  86000180007F0600018000FE0600018000FC0600018001FC0600018003F80600018003F00600018007F0060001800FE00600
+  01800FC0060001801FC0060001803F80060001807F00060001807E0006000180FE0006000181FC0006000181F80006000183
+  F80006000187F00006000187E0000600018FE0000600019FC000060001BF8000060001BF8000060001FF0000060001FE0000
+  0F0001FC00003FC0FFFC0003FFFCFFF80003FFFC> 48 45 -3 0 52.857] 78 D
+[<00003FF000000001FFFE00000007E01F8000001F8007E000007E0001F80000FC0000FC0001F800007E0003F000003F0007E0
+  00001F800FE000001FC00FC000000FC01F80000007E01F80000007E03F80000007F03F00000003F07F00000003F87F000000
+  03F87F00000003F8FE00000001FCFE00000001FCFE00000001FCFE00000001FCFE00000001FCFE00000001FCFE00000001FC
+  FE00000001FCFE00000001FCFE00000001FC7E00000001F87E00000001F87F00000003F87F00000003F83F00000003F03F00
+  000003F01F80000007E01F80000007E00FC000000FC007C000000F8007E000001F8003F000003F0001F800007E0000FC0000
+  FC00003E0001F000001F8007E0000007E01F80000001FFFE000000003FF00000> 48 47 -4 1 54.886] 79 D
+[<FFFFF0000000FFFFF000000003FC0000000001F80000000001F80000000001F80000000001F80000000001F80000000001F8
+  0000000001F80000000001F80000000001F80000000001F80000000001F80000000001F80000000001F80000000001F80000
+  000001F80000000001F80000000001F80000000001F80000000001FFFFFC000001FFFFFF800001F8000FE00001F80003F000
+  01F80000F80001F80000FC0001F800007E0001F800007F0001F800003F0001F800003F8001F800003F8001F800003F8001F8
+  00003F8001F800003F8001F800003F8001F800003F0001F800007F0001F800007E0001F80000FC0001F80000F80001F80003
+  F00003F8000FE000FFFFFFFF8000FFFFFFFC0000> 48 45 -2 0 47.991] 80 D
+[<0000000007E0FFFFF0003FF8FFFFF000FE1C03FC0001FC0E01F80003F80701F80003F80301F80007F80301F80007F00301F8
+  0007F00001F80007F00001F80007F00001F80007F00001F80007F00001F80007E00001F80007E00001F80007E00001F80007
+  E00001F80007E00001F8000FC00001F8000F800001F8001F800001F8003E000001F800FC000001FFFFF0000001FFFFFC0000
+  01F8007F000001F8000FC00001F80007E00001F80003F00001F80001F80001F80001FC0001F80000FC0001F80000FE0001F8
+  0000FE0001F80000FE0001F80000FE0001F80000FE0001F80000FC0001F80001FC0001F80001F80001F80003F00001F80007
+  E00001F8000FC00003F8007F0000FFFFFFFC0000FFFFFFC00000> 48 46 -3 1 51.911] 82 D
+[<C00FF000E07FFE00E3F00F00F78003C0FE0001E0FC0000F0F8000070F0000078E0000078E000003CE000003CC000003CC000
+  003CC000003CC000007C0000007C000000FC000000F8000001F8000007F800003FF00003FFE0003FFFE001FFFF8007FFFF00
+  0FFFFC001FFFE0003FFE00003FE000007F0000007E000000FC000000F8000030F8000030F0000030F0000070F0000070F000
+  0070700000F0780000F0780001F03C0003F01E0007F00F000EF007C07C7001FFF070003F8030> 32 47 -4 1 39.204] 83 D
+[<001FFFFFE000001FFFFFE00000001FE0000000000FC0000000000FC0000000000FC0000000000FC0000000000FC000000000
+  0FC0000000000FC0000000000FC0000000000FC0000000000FC0000000000FC0000000000FC0000000000FC0000000000FC0
+  000000000FC0000000000FC0000000000FC0000000000FC0000000000FC0000000000FC0000000000FC0000000000FC00000
+  00000FC0000000000FC0000000000FC0000000000FC0000000000FC00000C0000FC0000CC0000FC0000CC0000FC0000CC000
+  0FC0000CC0000FC0000CE0000FC0001CE0000FC0001C60000FC0001860000FC0001870000FC0003870000FC000387C000FC0
+  00F87F000FC003F87FFFFFFFFFF87FFFFFFFFFF8> 48 45 -2 0 50.966] 84 D
+[<00000FF0000000007FFC00000001F80F00000007E0038000000F8001E000001F00006000003F00007000007E00003800007C
+  0000180000FC00001C0000FC00000C0000F800000C0001F800000E0001F80000060001F80000060001F80000060001F80000
+  060001F80000060001F80000060001F80000060001F80000060001F80000060001F80000060001F80000060001F800000600
+  01F80000060001F80000060001F80000060001F80000060001F80000060001F80000060001F80000060001F80000060001F8
+  0000060001F80000060001F80000060001F80000060001F80000060001F80000060001F80000060001F80000060001F80000
+  060001F800000F0003FC00003FC0FFFFF003FFFCFFFFF003FFFC> 48 46 -3 1 52.857] 85 D
+[<000000C0000000000001E0000000000001E0000000000003F0000000000003F0000000000003F0000000000007F800000000
+  0007F800000000000FFC00000000000FCC00000000000FCC00000000001F8600000000001F8600000000003F830000000000
+  3F0300000000003F0300000000007E0180000000007E018000000000FE00C000000000FC00C000000001FC00E000000001F8
+  006000000001F8006000000003F0003000000003F0003000000007F0003800000007E0001800000007E000180000000FC000
+  0C0000000FC0000C0000001FC000060000001F8000060000003F8000070000003F0000030000003F0000030000007E000001
+  8000007E000001800000FE000001C00000FC000000C00000FC000000E00001F8000000E00001F8000000F00003F8000000F8
+  0007FC000003FE00FFFFC0000FFFC0FFFFC0000FFFC0> 56 46 -1 1 52.857] 86 D
+[<00000C00000180000000000E00000380000000001E000003C0000000001E000003C0000000001F000007C0000000003F0000
+  07E0000000003F000007E0000000003F80000FE0000000007F80000FF0000000007F80000FF000000000FEC0001FB8000000
+  00FCC0001F9800000000FCC0001F9800000001FC60003F1C00000001F860003F0C00000001F860003F0C00000003F830007E
+  0E00000003F030007E0600000003F030007E0600000007F01800FC0700000007E01800FC0300000007E01800FC030000000F
+  E00C01F8038000000FC00C01F8018000000FC00C01F8018000001FC00603F001C000001F800603F000C000001F800603F000
+  C000003F800307E000E000003F000307E0006000003F000307E0006000007F00018FC0007000007E00018FC0003000007E00
+  018FC000300000FE0000DF8000380000FC0000DF8000180000FC0000DF8000180001FC00007F00001C0001F800007F00000C
+  0001F800007F00000C0003F000007E00000E0003F000007E00000E0003F00000FE00001F0007FC0001FF00003FC0FFFF801F
+  FFF001FFF8FFFF801FFFF001FFF8> 72 46 -1 1 72.459] 87 D
+[<FFFFFFFFC0FFFFFFFFC0FE0000FFC07F00001FC03F800007C03F800003C01FC00001C00FE00001C00FE00000C007F00000E0
+  03F80000E003F80000E001FC00006000FE00006000FE000060007F000060003F800060003F800000001FC00000000FE00000
+  000FE000000007F000000003F000000003F800000001FC00000001FC00000000FE000000007F000000007F000000003F8000
+  60001FC00060001FC00060000FE000600007F000700007F000700003F800700001FC00380001FC00380000FE003C00007F00
+  3E00007F003F80003F803FF0001FC03FFFFFFFC03FFFFFFFC0> 40 45 -4 0 43.125] 90 D
+[<01FC01E00FFF03F81F83C7FC7F00EF8C7E007F06FE003F06FC003F06FC001F06FC001F06FC001F06FE001F067E001F007F00
+  1F003F801F001FC01F0007F01F0001FE1F00007FFF000007FF0000001F0000001F0000001F0000001F001E001F003F003F00
+  3F003E003F003E003F007C001C00F8000F01F00007FFC00000FF0000> 32 32 -3 1 35.284] 97 D
+[<0001FC00000607FF8000070E07E00007BC01F00007B000F80007F0007C0007E0003E0007C0003F0007C0001F0007C0001F80
+  07C0001F8007C0000FC007C0000FC007C0000FC007C0000FC007C0000FC007C0000FC007C0000FC007C0000FC007C0000FC0
+  07C0000F8007C0001F8007C0001F8007C0001F0007E0003E0007F0007E0007F8007C0007DC01F00007CF03E00007C7FF8000
+  07C0FE000007C000000007C000000007C000000007C000000007C000000007C000000007C000000007C000000007C0000000
+  07C000000007C000000007C00000000FC0000000FFC0000000FFC000000007C0000000> 40 47 -2 1 39.204] 98 D
+[<001FC000007FF80001F03E0007E007000FC003801F8001801F0001C03F0000C07E0000C07E0000007E000000FC000000FC00
+  0000FC000000FC000000FC000000FC000000FC000000FC000000FC0000007C0000007E0000007E0000003E000F003F001F80
+  1F001F800F801F8007C01F8003E0070001F01E00007FFC00001FE000> 32 32 -2 1 31.364] 99 D
+[<001FC0F800007FF0FFC001F03CFFC003E00EFC000F8007F8001F8003F8001F0001F8003E0001F8007E0000F8007E0000F800
+  7C0000F800FC0000F800FC0000F800FC0000F800FC0000F800FC0000F800FC0000F800FC0000F800FC0000F800FC0000F800
+  7E0000F8007E0000F8003E0000F8003F0000F8001F0001F8000F8001F80007C003F80003E007F80001F81EF800007FF8F800
+  000FE0F800000000F800000000F800000000F800000000F800000000F800000000F800000000F800000000F800000000F800
+  000000F800000000F800000000F800000001F80000001FF80000001FF800000000F800> 40 47 -2 1 39.204] 100 D
+[<001FC000007FF80001F03C0003E00F000FC003000F8003801F0001C03F0000C03E0000C07E0000007E000000FC000000FC00
+  0000FC000000FC000000FC000000FFFFFFC0FFFFFFC0FC0007C0FC0007C0FC0007C07C0007C07E0007C07E0007803E000F80
+  1F000F801F001F000F801E0007C03E0003E0780000FFF000001F8000> 32 32 -2 1 31.364] 101 D
+[<7FFF807FFF8007F00003E00003E00003E00003E00003E00003E00003E00003E00003E00003E00003E00003E00003E00003E0
+  0003E00003E00003E00003E00003E00003E00003E00003E00003E00003E000FFFFE0FFFFE003E00003E00003E00003E00003
+  E00003E00003E00003E00003E00003E00003E00C01F03F01F03F00F83F007C3F003E1E000FFC0003F0> 24 47 -1 0 21.562] 102 D
+[<003FF00001FFFE0007E01F801F0003E03E0001F07C0000F8F800007CF000003CF000003CF000003CF000003CF800007C7800
+  007C3C0000F81E0007F80FFFFFF007FFFFC00FFFFF000FFFF8001F0000001E0000001C0000001C0000001C0000001C3F0000
+  0CFFC0000FE1F000078078000F807C001F003E001F003E003E001F003E001F003E001F003E001F003E001F003E001F003E00
+  1F001F003E001F003E000F807C0C07807C1E03E1FF1E00FFC3FE003F00F8> 32 45 -2 15 35.284] 103 D
+[<FFFE1FFFC0FFFE1FFFC00FE001FC0007C000F80007C000F80007C000F80007C000F80007C000F80007C000F80007C000F800
+  07C000F80007C000F80007C000F80007C000F80007C000F80007C000F80007C000F80007C000F80007C000F80007C000F800
+  07C000F80007E000F80007E000F80007F000F80007F000F80007F801F00007DE01F00007C703E00007C3FF800007C0FE0000
+  07C000000007C000000007C000000007C000000007C000000007C000000007C000000007C000000007C000000007C0000000
+  07C000000007C00000000FC0000000FFC0000000FFC000000007C0000000> 40 46 -2 0 39.204] 104 D
+[<FFFCFFFC0FE007C007C007C007C007C007C007C007C007C007C007C007C007C007C007C007C007C007C007C007C007C007C0
+  07C00FC0FFC0FFC007C00000000000000000000000000000000007800FC01FE01FE01FE01FE00FC00780> 16 46 -2 0 19.602] 105 D
+[<07E0003FF800783E00F81F00FC0F00FC0F80FC0F807807C03007C00007C00007C00007C00007C00007C00007C00007C00007
+  C00007C00007C00007C00007C00007C00007C00007C00007C00007C00007C00007C00007C00007C00007C00007C00007C000
+  07C00007C00007C00007C00007C00007C00007C0000FC000FFC000FFC00007C0000000000000000000000000000000000000
+  000000000000000F00001F80003FC0003FC0003FC0003FC0001F80000F00> 24 60 3 14 21.562] 106 D
+[<FFFE07FF80FFFE07FF800FE003FC0007C001F80007C003F00007C003E00007C007C00007C00FC00007C01F800007C01F0000
+  07C03E000007C07E000007E0FC000007F0F8000007F9F0000007DFF0000007CFE0000007C7C0000007C3C0000007C0E00000
+  07C070000007C038000007C01C000007C00E000007C007800007C007C00007C00FF00007C01FFE0007C01FFE0007C0000000
+  07C000000007C000000007C000000007C000000007C000000007C000000007C000000007C000000007C000000007C0000000
+  07C000000007C00000000FC0000000FFC0000000FFC000000007C0000000> 40 46 -2 0 37.244] 107 D
+[<FFFEFFFE0FE007C007C007C007C007C007C007C007C007C007C007C007C007C007C007C007C007C007C007C007C007C007C0
+  07C007C007C007C007C007C007C007C007C007C007C007C007C007C007C007C007C00FC0FFC0FFC007C0> 16 46 -2 0 19.602] 108 D
+[<FFFE0FFFE0FFFEFFFE0FFFE0FFFE0FE000FE000FE007C0007C0007C007C0007C0007C007C0007C0007C007C0007C0007C007
+  C0007C0007C007C0007C0007C007C0007C0007C007C0007C0007C007C0007C0007C007C0007C0007C007C0007C0007C007C0
+  007C0007C007C0007C0007C007C0007C0007C007C0007C0007C007C0007C0007C007C0007C0007C007C0007C0007C007E000
+  7E0007C007E0007E0007C007F0007F0007C007F800FF800FC007DC00F9C00F800FCE01F8E01F80FFC783F0783F00FFC3FFC0
+  3FFC0007C07F0007F000> 56 30 -2 0 58.807] 109 D
+[<FFFE1FFFC0FFFE1FFFC00FE001FC0007C000F80007C000F80007C000F80007C000F80007C000F80007C000F80007C000F800
+  07C000F80007C000F80007C000F80007C000F80007C000F80007C000F80007C000F80007C000F80007C000F80007C000F800
+  07C000F80007E000F80007E000F80007F000F80007F000F80007F801F0000FDE01F000FFC703E000FFC3FF800007C0FE0000> 40 30 -2 0 39.204] 110 D
+[<001FE000007FF80001F03E0007C00F800F8007C01F0003E01F0003E03E0001F03E0001F07C0000F87C0000F8FC0000FCFC00
+  00FCFC0000FCFC0000FCFC0000FCFC0000FCFC0000FCFC0000FCFC0000FC7C0000F87C0000F87C0000F83E0001F03E0001F0
+  1F0003E00F0003C00780078003C00F0001F03E00007FF800001FE000> 32 32 -2 1 35.284] 111 D
+[<FFFE000000FFFE0000000FE000000007C000000007C000000007C000000007C000000007C000000007C000000007C0000000
+  07C000000007C000000007C1FC000007C7FF800007CE07E00007FC01F00007F000F80007F0007C0007E0007E0007C0003F00
+  07C0003F0007C0001F8007C0001F8007C0001FC007C0000FC007C0000FC007C0000FC007C0000FC007C0000FC007C0000FC0
+  07C0000FC007C0000FC007C0001F8007C0001F8007C0001F8007C0003F0007E0003E0007F0007E0007F800FC000FDC01F000
+  FFCF03E000FFC7FF800007C0FE0000> 40 43 -2 13 39.204] 112 D
+[<FFFF00FFFF000FE00007C00007C00007C00007C00007C00007C00007C00007C00007C00007C00007C00007C00007C00007C0
+  0007C00007C00007E00007E00007E00007E00007F01E07B03F07B83F0F9C3FFF8E3FFF87FE0781F8> 24 30 -2 0 27.501] 114 D
+[<C0FF00E3FFC0FF01F0FC0078F8003CF8003CF0001EF0001EE0001EE0001EC0003EC0003EC0007E0001FC001FFC01FFF80FFF
+  F01FFFC03FFF007FF000FF0000FC0018F80018F00018F00018F00038F000387800783C00F81E01F807FFB801FE18> 24 32 -2 1 27.835] 115 D
+[<000F80003FE000F86001F07001F03003E03803E01803E01803E01803E01803E01803E01803E01803E00003E00003E00003E0
+  0003E00003E00003E00003E00003E00003E00003E00003E00003E00003E00003E000FFFFF0FFFFF01FE00007E00003E00003
+  E00001E00000E00000E00000E000006000006000006000006000> 24 42 -1 1 27.443] 116 D
+[<001FE0F800007FF8FFC001F81CFFC003E00EFC0003E007F80007C003F80007C001F80007C001F80007C001F80007C000F800
+  07C000F80007C000F80007C000F80007C000F80007C000F80007C000F80007C000F80007C000F80007C000F80007C000F800
+  07C000F80007C000F80007C000F80007C000F80007C000F80007C000F80007C000F8000FC001F800FFC01FF800FFC01FF800
+  07C000F800> 40 31 -2 1 39.204] 117 D
+[<0000C000000001E000000001E000000003F000000003F000000003F000000007D800000007D80000000FDC0000000F8C0000
+  000F8C0000001F060000001F060000003F070000003E030000003E030000007C018000007C01800000F800C00000F800C000
+  00F800C00001F000600001F000600003E000700003E000300007E000380007E0007C000FE0007E00FFFC01FFC0FFFC01FFC0> 40 30 -1 1 37.244] 118 D
+[<00030000C00000078001E00000078001E00000078001E000000FC003F000000FC003F000000FC003F000001F6007D800001F
+  60079800001F60079800003E300F8C00003E300F0C00003E300F0C00007C181F0600007C181E0600007C181E060000F80C3C
+  030000F80C3C030001F80E7C038001F00678018001F00678018003E007F801C003E003F000C003E003F000C007C001F000E0
+  07C001E000E00FC003E000F00FE003F001F8FFFC3FFE07FFFFFC3FFE07FF> 48 30 -1 1 50.966] 119 D
+[<FFF007FFC0FFF007FFC01FE003FC0007C001F80003C003F00000E003E00000E007C00000700F800000381F8000001C1F0000
+  000C3E000000067C00000007F800000003F800000001F000000003E000000007E00000000FB00000001FB80000001F1C0000
+  003E0E0000007C06000000F803000001F803800001F001C00003F001F0000FF003FC00FFFC07FF80FFFC07FF80> 40 29 -1 0 37.244] 120 D
+[<0F800000003FE000000070700000007838000000FC1C000000FC0C000000FC06000000FC0600000078030000000003000000
+  0003800000000180000000018000000000C000000000C000000001E000000001E000000003F000000003F000000003F00000
+  0007D800000007D80000000F8C0000000F8C0000001F8E0000001F060000001F060000003E030000003E030000007E038000
+  007C01800000FC01C00000F800C00000F800C00001F000600001F000600003F000700003E000300007E000380007E0007C00
+  0FE0007E00FFFC01FFC0FFFC01FFC0> 40 43 -1 14 37.244] 121 D
+[<FFFFFF00FFFFFF00FE003F007E000F003F0007001F8003001FC003000FC0038007E0038003F0018003F8018001F8018000FC
+  0180007E0000007F0000003F0000001F8000000FC000600FE0006007E0006003F0006001F8007001FC003000FC0038007E00
+  3C003F003F003F803FFFFF803FFFFF80> 32 29 -2 0 31.364] 122 D
+[<003FC00000FFF00003F0FC0007C03E000F801F000F000F001F000F803E0007C03E0007C03E0007C07E0007E07C0003E07C00
+  03E07C0003E0FC0003F0FC0003F0FC0003F0FC0003F0FC0003F0FC0003F0FC0003F0FC0003F0FC0003F0FC0003F0FC0003F0
+  FC0003F0FC0003F0FC0003F0FC0003F0FC0003F07C0003E07C0003E07C0003E07C0003E07C0003E03E0007C03E0007C01E00
+  07801E0007800F000F000F801F0007C03E0003E07C0000FFF000003FC000> 32 45 -3 1 35.284] 48 D
+[<7FFFFE7FFFFE00FE00007C00007C00007C00007C00007C00007C00007C00007C00007C00007C00007C00007C00007C00007C
+  00007C00007C00007C00007C00007C00007C00007C00007C00007C00007C00007C00007C00007C00007C00007C00007C0000
+  7C00007C00007C00007C00007C00FC7C00FFFC0003FC00007C00003C00000C00> 24 44 -6 0 35.284] 49 D
+[<FFFFFFC0FFFFFFC07FFFFFC03FFFFFE01FFFFFE00E0000E0070000600380006001C0003000E0003000F0003000780000003C
+  0000001E0000000F80000007C0000003E0000001F0000000F80000007C0000007E0000003F0000001F8000001FC000000FC0
+  00000FE0000007E0000007F0000007F07C0007F0FE0003F0FE0003F0FE0003F0FE0007F0FC0007F0F00007E0600007E07000
+  0FC038000FC01C001F800E003F000780FC0001FFF000007F8000> 32 44 -3 0 35.284] 50 D
+[<007FC00001FFF0000780FC001E003F0038001F8070001FC060000FC0F8000FE0FE000FE0FE0007F0FE0007F0FE0007F07C00
+  07F0380007F0000007F0000007F000000FE000000FE000000FC000001FC000001F8000003F000000FC0000FFF00000FFC000
+  0003F0000000F80000007C0000003E0000003F0000001F8000001F8000001FC00C001FC03F000FC03F000FC03F800FC03F00
+  1FC03F001FC01C001F801C003F000E007E0007C0FC0001FFF000003FC000> 32 45 -3 1 35.284] 51 D
+[<001FFFFC001FFFFC00007F0000003E0000003E0000003E0000003E0000003E0000003E0000003E0000003E0000003E00FFFF
+  FFFCFFFFFFFCE0003E0060003E0030003E0038003E0018003E000C003E000E003E0006003E0003003E0003803E0001803E00
+  00C03E0000E03E0000603E0000303E0000383E0000183E00000C3E00000E3E0000063E0000033E000003BE000001BE000000
+  FE000000FE0000007E0000003E0000003E0000001E0000000E0000000E00> 32 45 -2 0 35.284] 52 D
+[<007F800001FFE0000780F8000E003E001C001F0038000F8070000FC0600007C0E00007E0F80007E0FC0003F0FC0003F0FC00
+  03F0FC0003F0780003F0000003F0000003F0000003F0000003F0000003E0000007E0000007E00C0007C00E000F800F001F80
+  0F801F000DE07C000C7FF8000C1FC0000C0000000C0000000C0000000C0000000C0000000C0000000C0000000C0000000C7E
+  00000FFFC0000FFFF0000FFFFC000FFFFE000FFFFF000FC01F800C000180> 32 45 -3 1 35.284] 53 D
+[<001FC000007FF00001E07C0003C03E0007801F000F000F801F0007C01E0007E03E0007E03E0003E07E0003F07E0003F07C00
+  03F07C0003F07C0003F0FC0003F0FC0003F0FC0003F0FC0003F0FE0003E0FE0007E0FE0007E0FF0007C0FF000F80FF800F00
+  FDC01E00FCF07C00FC3FF0007C0FC0007C0000007E0000007E0000003E0000003E0000001F0000001F0007800F800FC00F80
+  0FC007C00FC003E00FC001F007C000F80180003E0780000FFE000003F800> 32 45 -3 1 35.284] 54 D
+[<0078000000FC000000FC000000FC000000FC000000FC000000FC000000FC000000FC000000FC0000007C0000007C0000007C
+  0000007C0000003C0000003E0000003E0000003E0000001E0000001E0000000E0000000F0000000700000007000000038000
+  000380000001C0000001C0000000E00000007000000030000000380000001C00C0000C00C0000E00C0000700600003806000
+  0180700001C07FFFFFE07FFFFFF03FFFFFF03FFFFFF83FFFFFF83C00000030000000> 32 46 -4 1 35.284] 55 D
+[<003FC00001FFF00007E03C000F800F001E0007803C0003C07C0001C0780001E0F80000E0F00000F0F00000F0F00000F0F000
+  00F0F00001F0F80003F0780003F07C0007E03C001FE01E003FC01F00FFC00783FF8003C7FF0000FFFC00003FF80000FFE000
+  03FFE00007FFF8000FFC3C001FF81E001FE00F001FC00F803F0007803E0007C03E0003C03C0003C03C0003C03C0003C03C00
+  03C01E0007801E0007800F000F0007801E0003E07C0000FFF000001FC000> 32 45 -3 1 35.284] 56 D
+[<01FE000007FF80000E03E0001C00F0003E0078003F003C003F003E003F001F003F000F001E000F8000000FC0000007C00000
+  07C0000007E0000007E0000003E0003F03E000FFC3F003E0F3F007803BF00F001FF01F000FF03E000FF07E0007F07E0007F0
+  7C0007F0FC0003F0FC0003F0FC0003F0FC0003F0FC0003F0FC0003E0FC0003E0FC0003E0FC0007E07C0007C07E0007C03E00
+  07803E000F801F000F000F801F0007C03E0003E0780000FFF000003F8000> 32 45 -3 1 35.284] 57 D
+[<00030007000E001C0038007000F001E001C003C0078007800F000F001E001E001E003C003C003C003C007800780078007800
+  7800F800F800F000F000F000F000F000F000F000F000F000F000F000F800F800780078007800780078003C003C003C003C00
+  1E001E001E000F000F000780078003C001C001E000F000700038001C000E00070003> 16 67 -6 17 27.443] 40 D
+[<C000E000700038001C000E000F000780038003C001E001E000F000F0007800780078003C003C003C003C001E001E001E001E
+  001E001F001F000F000F000F000F000F000F000F000F000F000F000F001F001F001E001E001E001E001E003C003C003C003C
+  00780078007800F000F001E001E003C0038007800F000E001C0038007000E000C000> 16 67 -4 17 27.443] 41 D
+[<6000700038001C000E00060007000300030003800180018001803D807F80FF80FF80FF00FF007E003C00> 16 21 -6 13 19.602] 44 D
+[<3C7EFFFFFFFF7E3C> 8 8 -6 0 19.602] 46 D
+[<3C7EFFFFFFFF7E3C000000000000000000000000003C7EFFFFFFFF7E3C> 8 29 -6 0 19.602] 58 D
+[<FFE0FFE0FFE0E000E000E000E000E000E000E000E000E000E000E000E000E000E000E000E000E000E000E000E000E000E000
+  E000E000E000E000E000E000E000E000E000E000E000E000E000E000E000E000E000E000E000E000E000E000E000E000E000
+  E000E000E000E000E000E000E000E000E000E000E000E000E000E000FFE0FFE0FFE0> 16 67 -7 17 19.602] 91 D
+[<FFE0FFE0FFE000E000E000E000E000E000E000E000E000E000E000E000E000E000E000E000E000E000E000E000E000E000E0
+  00E000E000E000E000E000E000E000E000E000E000E000E000E000E000E000E000E000E000E000E000E000E000E000E000E0
+  00E000E000E000E000E000E000E000E000E000E000E000E000E000E0FFE0FFE0FFE0> 16 67 -1 17 19.602] 93 D
+[<7FFF0FFFF0007FFF0FFFF00007F000FE000003E0007C000003E0007C000003E0007C000003E0007C000003E0007C000003E0
+  007C000003E0007C000003E0007C000003E0007C000003E0007C000003E0007C000003E0007C000003E0007C000003E0007C
+  000003E0007C000003E0007C000003E0007C000003E0007C000003E0007C000003E0007C000003E0007C000003E0007C0000
+  03E0007C000003E0007C0000FFFFFFFFFC00FFFFFFFFFC0003E0007C000003E0007C000003E0007C000003E0007C000003E0
+  007C000003E0007C000003E0007C000003E0007C000003E0007C000003E0007C000003F000FC018001F000FE07E000F800FE
+  07E0007C00FF07E0003E007F87E0001F807FC3C00007FFE1FF800000FF807E00> 48 47 -1 0 41.165] 11 D
+[<7FFF07FFF0FFFE7FFF07FFF0FFFE07F0007F000FE003E0003E0007C003E0003E0007C003E0003E0007C003E0003E0007C003
+  E0003E0007C003E0003E0007C003E0003E0007C003E0003E0007C003E0003E0007C003E0003E0007C003E0003E0007C003E0
+  003E0007C003E0003E0007C003E0003E0007C003E0003E0007C003E0003E0007C003E0003E0007C003E0003E0007C003E000
+  3E0007C003E0003E0007C003E0003E0007C003E0003E0007C003E0003E0007C003E0003E000FC0FFFFFFFFFFFFC0FFFFFFFF
+  FFFFC003E0003E0007C003E0003E00000003E0003E00000003E0003E00000003E0003E00000003E0003E00000003E0003E00
+  000003E0003E00000003E0003E00030003E0007E00078001F0007F000FC001F0007F000FC000F8007F800FC0007C003FC007
+  C0003E001FE00380001FC079F80F000003FFE07FFE0000007F800FF000> 56 47 -1 0 58.807] 14 D
+[<FFFFC0FFFFC0FFFFC0FFFFC0> 24 4 -1 -13 23.523] 45 D
+[<FFFFFFFFC0FFFFFFFFC0> 40 2 0 -17 35.284] 123 D
+1.000 122 /f13 NF
+f13 SF
+[<03E00F000FF81FC01E1E3DE03C0F78E07C03F8707C03F8707801FC78F800FC38F8007C38F8007C38FC007C38FC007E18FC00
+  3E00FC003E00FE003E007E003F007E001F007E001F007F001F003F001F803F000F801F800F801F800F800FC00FC007C00FC0
+  03E00FC001F01FC000F81FC0007C39C0001FF0000007C000> 32 31 -7 1 36.437] 97 D
+[<03E0000FF8001E3E003C0F807807C07807E0F803E0F801F0F801F8F800F8F800FCF800FCF8007EF8007EFC007E7C007F7C00
+  3F7C003F7E003F7E003F3E001F3E001F3F001F3F001F1F801F1FC01E1FE03E1FF03C0FF8780F9FF00FC7C00FC00007C00007
+  C00007E00007E00003E00003E00003F00003F00001F00001F00001F80001F8001FF8001FF80000F800> 24 47 -8 1 32.793] 98 D
+[<00FE000007FFC0000F83F0001E007C003E001E007C000F007C0007807C0003C0FC000180FC000000FC000000FC000000FC00
+  0000FC000000FE0000007E0000007E0000007E0000007F0000003F0000003F0000001F800F800F800F800FC00FC007E00FC0
+  03E007C001F003C000FC0380003E0780000FFE000001F800> 32 31 -7 1 32.793] 99 D
+[<03E00F000FF81FC01E1E3DE03C0F78E07C03F8707C03F8707801FC78F800FC38F8007C38F8007C38FC007E38FC007E18FC00
+  3E00FC003E00FE003F007E003F007E001F007E001F007F001F803F001F803F000F801F800F801F800FC00FC00FC007C00FC0
+  03E00FC001F01FE000F81FE0007C3BE0001FF3E00007C3F0000003F0000001F0000001F0000001F8000001F8000000F80000
+  00F8000000FC000000FC0000007C0000007C0000007E0000007E000007FE000007FE0000003E> 32 47 -7 1 36.437] 100 D
+[<00FE000003FFC0000F83F0001F007C003E001E003E000F007C0007807C0003C07C0001807C000000FC000000FC000000FC00
+  0000FC000000FE0000007E0000007FFE00007FFFE0007F03F8003F003C003F001E001F800F001F8007000FC0078007C00380
+  03E0038001F0038000F80700003E0F00000FFE000003F800> 32 31 -7 1 32.793] 101 D
+[<1E0000007F800000F3C00000F1E00000FDF00000FCF00000FCF80000FCF8000038F80000007C0000007C0000007C0000007E
+  0000003E0000003E0000003E0000003E0000003F0000001F0000001F0000001F0000001F0000001F8000000F8000000F8000
+  000F8000000F8000000FC0000007C0000007C0000007C0000007C0000007E0000003E0000003E0000003E0000003E0000003
+  F0000001F0000001F0000001F000007FFFF0007FFFF00000F8000000F8000000F8000000F8000000F8000000FC0000007C00
+  00007C0000007C0000007C3800003E7E00003E7E00003E7E00001E3E00001F1E00000F9E000007FC000001F0> 32 61 1 14 21.862] 102 D
+[<1FF000007FFE0000F01F8000F807C000FC03E000FC01F000FC01F8003800F8000000FC0000007C0000007C0000007E000000
+  7E0000003E00007E3E0001FFBF0003C3FF0007C0FF000F807F000F803F800F801F801F801F801F800F801F800FC01F800FC0
+  1F8007C01F8007C01FC007E00FC007E00FC003E00FC003E00FE003F007E003F007E001F003F001F003F001F801F801F800F8
+  01F8007C01F8007E03F8001F03F8000F87380003FE000000F800> 32 44 -4 14 32.793] 103 D
+[<70000780F8001FE0FC003C70FC003C387C003C387C007C1C7E007E1C7E003E1E3E003E0E3E003F0E3F001F0E3F001F061F00
+  1F801F000F801F800F801F800FC00F8007C00F8007C00FC007C00FC007E007C003E007E003E007E003E007F003E003F803E0
+  03F803E003FC03E003FE03E001F787C001F3FF8001F87E0001F8000000F8000000F8000000FC000000FC0000007C0000007C
+  0000007E0000007E0000003E0000003E0000003F0000003F000003FF000003FF0000001F0000> 32 47 -5 1 36.437] 104 D
+[<03C0000FF0001E38001E3C001E1C003E0E003F0E001F0F001F07001F87000F87000F83000FC00007C00007C00007E00003E0
+  0003F00001F000C1F000E1F800E0F800F0F80070FC00707C00787C00387C001C7C001E78000FF00003E00000000000000000
+  0000000000000000000000000000000000000000000E00001F00003F80003F80001F00000E00> 24 46 -6 1 21.862] 105 D
+[<70001E00F8007F00FC00F380FC01E1C07C01E1E07C01E0E07E01F0E07E01F0F03E01F0703E01F0703F01F0703F01F0301F01
+  F0001F03F0001F87E0001F9FC0000FFF00000FF000000FF000000FFC000007CE000007C7000007E300E007E381F803E1C1F8
+  03E0E1F803F071F803F0387801F01E3801F007F001F801E001F8000000F8000000F8000000FC000000FC0000007C0000007C
+  0000007E0000007E0000003E0000003E0000003F0000003F000003FF000003FF0000001F0000> 32 47 -5 1 32.793] 107 D
+[<1E007F80FBC0F1C0F1E0F0E0F8E0F8F0F870F870FC70FC307C007C007E007E003E003E003F003F001F001F001F801F800F80
+  0F800FC00FC007C007C007E007E003E003E003F003F001F001F001F801F800F800F800FC00FC0FFC0FFC007C> 16 47 -6 1 18.218] 108 D
+[<1C000700003C003E000F8000FF003F000FC001E3803F000FC001E1C01F0007C003E1C01F0007C003E0E01F8007E003F0E01F
+  8007E001F0F00F8003E001F0700F8003E001F8700FC003F000F8700FC003F000F83007C001F000FC0007C001F0007C0007E0
+  01F8007C0007E001F8007E0003E000F8003E0003E000F8003E0003F000FC003E00C3F000FC003F00E1F0007C001F00E1F800
+  7E001F00E1F8007E001F00F1FC007F001F0070FE007F801F0070FE007F801F0078FF007DC01F0038F3C078F01E003DF1E0F8
+  783E001FE07FF01FFC0007801FC007F000> 56 31 -6 1 58.299] 109 D
+[<1C0000F0003E0003FC003F00078E003F000787001F000787001F000F83801F800FC3801F8007C3C00F8007C1C00F8007E1C0
+  0FC003E1C00FC003E0C007C003F00007C001F00007E001F00007E001F80003E000F80003E000F80003F000F800C3F000FC00
+  E1F0007C00E1F8007C00E1F8007C00F1FC007C0070FE007C0070FE007C0078FF007C0038F3C078003DF1E0F8001FE07FF000
+  07801FC000> 40 31 -6 1 40.080] 110 D
+[<01FC000007FF00000F07C0001E01F0003E00F8007C007C007C003E007C003F00FC001F80FC001F80FC000FC0FC000FC0FC00
+  07E0FC0007E0FE0007E07E0007F07E0003F07E0003F07F0003F03F0003F03F0001F01F8001F00F8001F00FC001F007E003E0
+  03E003E001F003C000FC07C0003E0F80000FFE000003F800> 32 31 -7 1 36.437] 111 D
+[<FFFC000000FFFC0000000FC00000000FC000000007C000000007C000000007E000000007E000000003E000000003E0000000
+  03F000000003F000000001F0F8000001F3FE000001FF0F800001FF03E00000FE01F00000FE01F80000FC00F80000FC007C00
+  007C007E00007C003E00007E003F00007E003F00003E001F80003E001F80003F001F80003F001FC0001F000FC0001F000FC0
+  001F800FC0061F800FC0070F8007C0070F8007C0070FC007C0078FC007C00387E007C00387F0078003C7F80F8001C7BC0F00
+  01E79E1E0000FF07FC00003C01F000> 40 43 -1 13 36.437] 112 D
+[<1C0000003E0000003F0000003F0000001F0000001F0000001F8000001F8000000F8000000F8000000FC000000FC0000007C0
+  000007C0000007E0000007E0000003E0000003E0000003F00000C3F00000E1F00000E1F80000E1F80380F1FC07E070FC07E0
+  70FE07E078FF07E038F781E03CF3C1C01FE0FF8007803E00> 32 31 -6 1 30.060] 114 D
+[<07F0001FFC00781F00F00780E003C0E001E0F801E0FC01F0FC00F0FC00F07800F00001F00003F00007F0007FF001FFF003FF
+  E007FFC00FFF000FF8000FC0000F80180F803C07803E07803E07801E03C01E01E01C00F03C007FF0000FC0> 24 31 -6 1 29.149] 115 D
+[<07C0000FF0001E3C003C1E003C0E003C07003E07803E03803E03C03E01C03F01C03F00C01F00001F00001F80001F80000F80
+  000F80000FC0000FC00007C00007C00007E00007E00003E00003E00003F00003F000FFFFE0FFFFE001F80001F80000F80000
+  F80000FC0000FC00007C00007C00007E00007E00003E00003E00001C00> 24 43 -6 1 23.684] 116 D
+[<007E01E001FF83F803E1E7BC07C07F1C07807F0E07803F0E0F801F8F0F801F870F800F870F800F870FC00F8707C00FC307C0
+  07C007C007C007E007C003E007E003E003E003F003E001F003E0C1F003F0E1F801F0E0F801F0F0F801F070FC01F8707C00F8
+  787C00F8387C00F81C7C00FC1E78007C0FF0003803C00000> 32 31 -6 1 38.259] 117 D
+[<003F000000FFC00003E0E00003C0700007C0380007801C000F801C000F800E000F800E000F8007000FC0070007C0070007C0
+  038007C0038007E0038003E003C003E001C003F001C001F001C0C1F001E0E1F800E0E0F801E0F0F801E070FC01F0707C01F0
+  787C03F0387C07F01C7C07F01E7807F00FF003E003C001C0> 32 31 -6 1 32.793] 118 D
+[<07E000001FF800003C3E0000380F80007007C0007C03E0007E01F0007E01F0003E00F8003E00F80000007C0000007C000000
+  7E00007E3E0001FFBE0003E1FE0007C07F0007807F0007803F000F801F000F801F800F800F800F800F800FC00F8007C00FC0
+  07C007C007C007C007E007C003E007E003E003E003F003E001F003E0C1F003F0E1F801F0E0F801F0F0F801F070FC01F8707C
+  00F8787C00F8387C00F81C7C00FC1E78007C0FF0003803C00000> 32 44 -6 14 34.615] 121 D
+[<FFFC001FFFF0FFFC001FFFF00FF00000FF0003E000007E0001E000007E0001E000007E0000F000007E00007000007E000038
+  00007E0000380000FE00001C0000FC00001E0000FC00000E0000FC0000070000FC0000070000FC000003FFFFFC000003FFFF
+  FC000001C000FC000001E000FC000000E000FC0000007000FC0000007001FC0000003801F80000003C01F80000001C01F800
+  00000E01F80000000E01F80000000701F80000000701F80000000381F800000003C1F800000001C1F800000000E3F8000000
+  00E3F00000000073F0000000007BF0000000003BF0000000001FF0000000001FF0000000000FF0000000000FF00000000007
+  F00000000003F00000000003F00000000001F00000000001E00000000000E000> 48 47 -4 0 52.902] 65 D
+[<FFFFFFF80000FFFFFFFE000003F8003F800001F80007E00001F80003F00001FC0001F80001FC0000FC0000FC00007E0000FC
+  00003F0000FE00003F0000FE00001F80007E00001F80007E00001F80007F00000F80007F00000F80003F00000F80003F0000
+  0F80003F80001F80003F80001F80001F80001F00001F80003E00001FC0007C00001FFFFFF800000FFFFFE000000FC007F800
+  000FE000FE00000FE0003F000007E0000F800007E00007C00007F00003E00007F00003F00003F00001F80003F00001F80003
+  F80000F80003F80000FC0001F80000FC0001F80000FC0001FC0000FC0001FC0000F80000FC0001F80000FC0001F00000FE00
+  03E00000FE000FC0001FFFFFFF80001FFFFFFC00> 48 45 -5 0 50.135] 66 D
+[<000FF8000000007FFF00000000F80FC0000003E001F0000007C0007800000F80003C00001F00000E00003E00000700003E00
+  000380007C000003C0007C000001E0007C000000E000FC000000F000FC0000007000F80000007000F80000007800FC000000
+  3800FC0000000000FC0000000000FC0000000000FC0000000000FC0000000000FE00000000007E00000000007E0000000000
+  7E00000000007F00000000003F00000000003F00000000001F80000007001F80000007800FC0000007800FC00000078007E0
+  0000078003E0000007C003F0000007C001F8000007C000FC000007C0007E000007E0003F00000FE0001F80000FE00007C000
+  1FE00003E0003DF00000F80079F000003F01E0F000000FFFC070000001FE0030> 48 47 -11 1 51.011] 67 D
+[<FFFFFFE00000FFFFFFFC000003F8003F000001F80007C00001F80001F00001FC0000F80001FC00007C0000FC00003E0000FC
+  00001F0000FE00000F8000FE000007C0007E000003E0007E000003E0007F000001F0007F000001F0003F000000F8003F0000
+  00FC003F800000FC003F8000007C001F8000007E001F8000007E001FC000003E001FC000003F000FC000003F000FC000003F
+  000FE000001F000FE000001F0007E000001F0007E000001F0007F000001F0007F000001F0003F000001F0003F000001F0003
+  F800001F0003F800001F0001F800001E0001F800003E0001FC00003C0001FC00007C0000FC0000F80000FC0001F00000FE00
+  03E00000FE000FC0001FFFFFFF80001FFFFFFC00> 48 45 -5 0 53.779] 68 D
+[<FFFFFFFFF000FFFFFFFFF80003F8000FF80001F80001FC0001F800007C0001FC00003C0001FC00001E0000FC00001E0000FC
+  00000F0000FE0000070000FE00000780007E00000380007E000003C0007F000001C0007F000E01E0003F000E00E0003F000E
+  00E0003F800F0000003F800F0000001F800F0000001F800F0000001FC01F8000001FFFFF8000000FFFFF8000000FC00F8000
+  000FE007C000000FE003C0000007E003C0000007E001C0000007F001E0000007F001E01C0003F000E01C0003F000001C0003
+  F800001C0003F800001C0001F800001C0001F800001C0001FC00001C0001FC00001E0000FC00003E0000FC00003E0000FE00
+  007E0000FE0001FE001FFFFFFFFE001FFFFFFFFE> 48 45 -4 0 48.313] 69 D
+[<FFFFF0000000FFFFF000000003F80000000001F80000000001F80000000001FC0000000001FC0000000000FC0000000000FC
+  0000000000FE0000000000FE00000000007E00000000007E00000000007F00000000007F000E0000003F000E0000003F000E
+  0000003F800F0000003F800F0000001F800F0000001F800F0000001FC01F8000001FFFFF8000000FFFFF8000000FC00F8000
+  000FE007C000000FE003C0000007E003C0000007E001C0000007F001E0000007F001E0700003F000E0700003F00000700003
+  F80000700003F80000700001F80000700001F80000700001FC0000700001FC0000780000FC0000780000FC0000F80000FE00
+  01F80000FE0007F8001FFFFFFFF8001FFFFFFFF8> 48 45 -4 0 46.491] 70 D
+[<0007FC000000003FFF80C00000F803F1C00003E00079E00007C0003FE0000F80000FE0001F000007E0001E000007F0003E00
+  0003F0007E000003F0007C000003F0007C000003F800FC000001F800FC000001F800FC000001F800FC000001FC00FC000000
+  FC00FC000001FE00FC0000FFFFE0FC0000FFFFE0FC0000000000FC0000000000FE00000000007E00000000007E0000000000
+  7E00000000007F00000000003F00000000003F00000000001F80000003801F80000003C00FC0000003C00FC0000003C007E0
+  000003C003F0000003E003F0000003E001F8000003E000FC000003E0007E000007F0003F000007F0001F80000FF00007C000
+  0FF00003F0001CF80000F80038F800003F00F07800000FFFC038000000FF0018> 48 47 -11 1 55.128] 71 D
+[<FFFFC000FFFFC00003F8000001F8000001F8000001FC000001FC000000FC000000FC000000FE000000FE0000007E0000007E
+  0000007F0000007F0000003F0000003F0000003F8000003F8000001F8000001F8000001FC000001FC000000FC000000FC000
+  000FE000000FE0000007E0000007E0000007F0000007F0000003F0000003F0000003F8000003F8000001F8000001F8000001
+  FC000001FC000000FC000000FC000000FE000000FE00001FFFF8001FFFF8> 32 45 -4 0 27.397] 73 D
+[<FFFFFFFF00FFFFFFFF8003F800FF8001F8003F8001F8000FC001FC0007C001FC0003E000FC0001E000FC0001E000FE0000F0
+  00FE0000F0007E000070007E000078007F000038007F00003C003F00001C003F00001C003F800000003F800000001F800000
+  001F800000001FC00000001FC00000000FC00000000FC00000000FE00000000FE000000007E000000007E000000007F00000
+  0007F000000003F000000003F000000003F800000003F800000001F800000001F800000001FC00000001FC00000000FC0000
+  0000FC00000000FE00000000FE0000001FFFFE00001FFFFE00> 40 45 -5 0 44.669] 76 D
+[<FFFE00E00FFFF800FFFE00F00FFFF8000FF000F8003F000003E000F8001F000001C001FC001F000001E001FC001F000001E0
+  01FE001F800000E001F7000F800000E001F7000F800000F001F3800F800000F001F3800FC000007001F1C007C000007001F0
+  E007C000007803E0E007C000007803E07007E000003803E03803E000003803E03803E000003C03E01C03E000003C03E01C03
+  F000001C03E00E01F000001C03E00701F000001E07C00701F000001E07C00381F800000E07C00380F800000E07C001C0F800
+  000F07C000E0F800000F07C000E0FC00000707C000707C00000707C000387C00000787C000387C0000078F80001C7E000003
+  8F80001C3E0000038F80000E3E000003CF8000073E000003CF8000073F000001CF8000039F000001CF800001DF000001EF80
+  0001DF000001EF800000FF800000FF000000EF800000FF0000007F800000FF0000003FC00000FF0000003FC0001FFF000000
+  1FFF001FFF0000000FFF> 64 45 -5 0 63.833] 77 D
+[<FFFE0000700000FFFE00007000000FE00000F8000003E00000F8000001C00000F8000001E00001F8000001E00001FC000000
+  E00001FC000000E00003FC000000F00003FC000000F00007FE000000700007EE000000700007EE00000078000FEE00000078
+  000FCF00000038000FC700000038001F870000003C001F870000003C003F878000001C003F038000001C003F038000001E00
+  7F038000001E007E03C000000E007E01C000000E00FC01C000000F00FC01C000000F01FC01E000000701F800E000000701F8
+  00E000000783F800E000000783F000F000000383F0007000000387E00070000003C7E00070000003CFE00078000001CFC000
+  38000001CFC00038000001FFC00038000001FF80003C000000FF80001C000000FF00001E000000FF00001E000000FF00003F
+  80001FFE0003FFF8001FFE0003FFF8> 56 45 -5 0 52.902] 78 D
+[<000FF0000000007FFF00000001F80FC0000003E003F000000FC000F800000F80003E00001F00001F00003E00000F80003E00
+  0007C0007C000003E0007C000001F000FC000001F800FC000000FC00FC0000007C00FC0000007E00FC0000003E00FC000000
+  3F00FC0000001F00FC0000001F80FC0000001F80FC0000000FC0FC0000000FC0FC0000000FC07E00000007E07E00000007E0
+  7E00000007E03E00000007E03F00000003E03F00000003E01F00000003E01F80000003E00F80000003E007C0000003E007C0
+  000003E003E0000003E001F0000003E001F0000007C000F8000007C0007C00000780003E00000F80001F00000F0000078000
+  1F000003E0003E000000F8007C0000003E03F00000000FFFC000000001FF0000> 48 47 -11 1 54.655] 79 D
+[<FFFFC0000000FFFFC000000003F80000000001F80000000001F80000000001FC0000000000FC0000000000FC0000000000FC
+  0000000000FE00000000007E00000000007E00000000007E00000000007F00000000003F00000000003F00000000003F0000
+  0000003F80000000001F80000000001F80000000001F80000000001FFFFF0000000FFFFFF000000FC001FC00000FC0003F00
+  000FE0000F80000FE00007C00007E00003E00007E00003F00007F00001F80007F00001F80003F00000FC0003F00000FC0003
+  F80000FC0003F800007E0001F800007E0001F800007C0001FC00007C0001FC00007C0000FC0000F80000FC0000F80000FE00
+  03F00000FE000FE0001FFFFFFF80001FFFFFFC00> 48 45 -4 0 48.313] 80 D
+[<C00FF00000E07FFC0000F1F01F00007F8003C0007F0001E0007E0000F0007E000078003C00003C003C00003C003C00001E00
+  3C00001E001C00001F001C00000F001C00000F001C00000F000000000F000000001F000000001F000000003F000000007F00
+  000001FF0000001FFE000001FFFE000007FFFC00001FFFF800003FFFE000007FFF8000007FF8000000FF80000000FE000000
+  00FC00000000F800000000F80000E000F80000E000F80000F000780000F000780000F000780000F0003C0000F8003C0000F8
+  001E0001F8000F0001F800078003FC0003C007BC0000F80F3C00003FFC1C00000FF00C> 40 47 -5 1 40.080] 83 D
+[<3FFFFF8000003FFFFF800000003F80000000001F80000000001F80000000001FC0000000001FC0000000000FC0000000000F
+  C0000000000FE0000000000FE00000000007E00000000007E00000000007F00000000007F00000000003F00000000003F000
+  00000003F80000000003F80000000001F80000000001F80000000001FC0000000001FC0000000000FC0000000000FC000000
+  0000FE0000000000FE00000000007E00000000007E00000000007F000000E0007F0001C0E0003F0001C0E0003F0001C0F000
+  3F8001C070003F8001C078001F8001E078001F8001E038001FC000E03C001FC000E03C000FC000E01E000FC001E01F000FE0
+  01F01FE00FE007F00FFFFFFFFFF00FFFFFFFFFF0> 48 45 -12 0 51.011] 84 D
+[<01C00000E000000001E00001E000000001E00001F000000001F00001F800000001F80001F800000001F80001FC00000001FC
+  0001FC00000003FC0001FE00000003FE0001FE00000003FE0001FF00000003F70001FF00000003F70001FB80000003F38001
+  FBC0000003F3C001F9C0000003F1C001F8E0000003F1E001F8E0000003F0E001F870000003F07001F870000003F07003F838
+  000003F03803F038000003F03803F01C000003F01C03F01E000003F01E03F00E000003F00E03F00F000003F00F03F0070000
+  03F00703F003800007E00383F003800007E00383F001C00007E001C3F001C00007E001C3F000E00007E000E3F000F00007E0
+  00E3F000700007E00073F000780007E0007BF000380007E0003BF0001C0007E0001FF0001C0007E0001FF0000E0007E0000F
+  E0000E0007E0000FE000070007E00007E000078007E00007E000038007E00007E00003C007E00007F00003E00FF00007F000
+  07F0FFFF807FFF803FFFFFFF807FFF803FFF> 64 46 -14 1 71.121] 87 D
+[<FFFFF8FFFFF800FC00007C00007C00007E00007E00003E00003E00003F00003F00001F00001F00001F80001F80000F80000F
+  80000FC0000FC00007C00007C00007E00007E00003E00003E00003F00003F00001F00001F00001F80001F80000F80000F800
+  60FC007CFC001F7C0003FC0000FE00007E00003E00001E00000F000007000003> 24 44 -7 0 36.437] 49 D
+[<E000F800E003FE00F00FFF00703FFFC078FFFFC07FFE03E03FC001F03C0000F01E0000780F0000380780003807C0003C03E0
+  001C01F00000007C0000003E0000000F80000007E0000001F8000000FC0000003F0000001F8000000FC0000007E001E003F0
+  03F801F8071C00FC070E00FE0706007E0707007E0783007E0383807F0381803F03C1803F01C1803F01E1803F00E3803E00F3
+  003E0078003E0038007C001E007C000F00F80007C1F00001FFC000007F00> 32 45 -6 1 36.437] 50 D
+[<03F800000FFE00001E0F80003803E0007801F0007000F80070007C00E0007E00E0003F00F8001F80FE001F807E001FC07E00
+  0FC07E000FC03C000FC000000FE0000007E0000007E0000007E0000007E0000007E0000003E0038007C003C007C003E007C0
+  01F00F8001FC0F0001CFFE0001E3F80000E0000000E0000000E0000000F00000007000000070000000700000007800000038
+  0000003BFC00003FFF80003FFFE0001FFFF0001FFFFC001F007E00180006> 32 45 -7 1 36.437] 53 D
+[<0FE000003FF80000781E0000700F8000F807C000FC03E000FE01F000FE00F8007E007C0038007E0000003E0000001F000000
+  1F8000001F8000000FC000000FC0001F87E0007FE7E000F077E001E03FF003E01FF003C00FF007C007F007C003F807C003F8
+  07C001F807E001F807E001FC07E000FC07E000FC07F000FC03F000FC03F0007C03F0007C01F8007C01F8007C00F8007C00FC
+  007C007E007C003E0078001F0078000F80F00003E1E00000FFC000003F00> 32 45 -7 1 36.437] 57 D
+[<C000F00038001C000E00060007000380018001C000C000E0006007601FE01FF01FF01FE01FE00FE00380> 16 21 -5 13 21.862] 44 D
+[<38FEFFFFFFFF7F1C> 8 8 -8 0 21.862] 46 D
+[<3800FE00FF00FF00FF00FF007F001C00000000000000000000000000000000000000000000000000000001C003F007F807F8
+  07F803F801F800F0> 16 29 -8 0 21.862] 58 D
+[<7FFF00FFFFC0FFFFC07FFFC07FFFC0> 24 5 -6 -12 25.506] 45 D
+1.000 51 /f14 NF
+f14 SF
+[<000FFC0000007FFF800001FFFFE00003FC0FF00007F003F8000FE001FC001FE001FE001FC000FE003FC000FF003FC000FF00
+  7F80007F807F80007F807F80007F807F80007F80FF80007FC0FF80007FC0FF80007FC0FF80007FC0FF80007FC0FF80007FC0
+  FF80007FC0FF80007FC0FF80007FC0FF80007FC0FF80007FC0FF80007FC0FF80007FC0FF80007FC0FF80007FC0FF80007FC0
+  7F80007F807F80007F807F80007F807F80007F803F80007F003FC000FF003FC000FF001FC000FE001FC000FE000FE001FC00
+  07F003F80003FC0FF00001FFFFE000007FFF8000000FFC0000> 40 45 -3 1 40.680] 48 D
+[<7FFFFFF07FFFFFF07FFFFFF07FFFFFF0003FE000003FE000003FE000003FE000003FE000003FE000003FE000003FE000003F
+  E000003FE000003FE000003FE000003FE000003FE000003FE000003FE000003FE000003FE000003FE000003FE000003FE000
+  003FE000003FE000003FE000003FE000003FE000003FE000003FE000003FE000003FE000003FE000003FE000FF3FE000FFFF
+  E000FFFFE000FFFFE00000FFE000001FE0000003E0000001E000> 32 44 -6 0 40.680] 49 D
+[<FFFFFFFCFFFFFFFCFFFFFFFCFFFFFFFC7FFFFFFE3FFFFFFE1FFFFFFE0FFFFFFE07FFFFFE03E0001E01F0001E00FC001F003E
+  000F001F000F000FC00F0007E0000003F0000001FC000000FE0000007F8000003FC000003FE000001FF000000FF800000FFC
+  000007FE000007FE000003FF000003FF3F0003FF7F8003FFFFC003FFFFC003FFFFC003FFFFC007FFFFC007FEFF800FFE7F00
+  1FFC7F003FF83F80FFF01FFFFFE007FFFF8001FFFE00003FF000> 32 44 -4 0 40.680] 50 D
+/f15 /GothicBBB-Medium-H 59.998 -59.998 BFE
+/f16 /Ryumin-Light-H 131.325 -131.325 BFE
+/f17 /GothicBBB-Medium-H 67.998 -67.998 BFE
+600 1.000 START
+%%EndSetup
+
+%%Page: 1 1
+BP
+f9 SF
+0 -132 p (\()s
+38 r (1)s
+38 r (\))s
+3323 r (1)s
+0 15 p 204 24 ru
+f15 SF
+228 r (FC=8!|)s
+f14 SF
+15 r (2000)s
+f15 SF
+15 r (G/$N)s
+f14 SF
+15 r (1)s
+f15 SF
+15 r (7n9fFC=8)s
+8 r 24 24 ru
+24 r 24 24 ru
+23 r 24 24 ru
+24 r 24 24 ru
+23 r 24 24 ru
+24 r 24 24 ru
+24 r 24 24 ru
+23 r 24 24 ru
+24 r 24 24 ru
+24 r 24 24 ru
+23 r 24 24 ru
+24 r 24 24 ru
+23 r 24 24 ru
+24 r 24 24 ru
+24 r 24 24 ru
+23 r 24 24 ru
+24 r 24 24 ru
+24 r 24 24 ru
+23 r 24 24 ru
+24 r 24 24 ru
+23 r 24 24 ru
+24 r 24 24 ru
+24 r 24 24 ru
+23 r 24 24 ru
+24 r 24 24 ru
+23 r 24 24 ru
+24 r 24 24 ru
+24 r 24 24 ru
+23 r 24 24 ru
+24 r 24 24 ru
+24 r 24 24 ru
+23 r 24 24 ru
+24 r 24 24 ru
+23 r 24 24 ru
+24 r 24 24 ru
+24 r 24 24 ru
+23 r 24 24 ru
+24 r 24 24 ru
+24 r 24 24 ru
+23 r 24 24 ru
+24 r 24 24 ru
+23 r 24 24 ru
+24 r 24 24 ru
+24 r 24 24 ru
+23 r 24 24 ru
+24 r 24 24 ru
+24 r 24 24 ru
+23 r 24 24 ru
+24 r 24 24 ru
+23 r 24 24 ru
+24 r 24 24 ru
+24 r 24 24 ru
+23 r 24 24 ru
+24 r 24 24 ru
+24 r 24 24 ru
+23 r 24 24 ru
+24 r 24 24 ru
+23 r 24 24 ru
+24 r 24 24 ru
+24 r 24 24 ru
+23 r 24 24 ru
+24 r 24 24 ru
+23 r 24 24 ru
+24 r 24 24 ru
+24 r 24 24 ru
+23 r 24 24 ru
+24 r 24 24 ru
+24 r 24 24 ru
+23 r 24 24 ru
+24 r 24 24 ru
+23 r 24 24 ru
+24 r 24 24 ru
+24 r 24 24 ru
+23 r 24 24 ru
+24 r 24 24 ru
+24 r 24 24 ru
+23 r 24 24 ru
+24 r 24 24 ru
+23 r 24 24 ru
+24 r 24 24 ru
+24 r 24 24 ru
+23 r 24 24 ru
+24 r 24 24 ru
+24 r 24 24 ru
+23 r 24 24 ru
+24 r 24 24 ru
+23 r 24 24 ru
+24 r 24 24 ru
+24 r 24 24 ru
+23 r 24 24 ru
+24 r 24 24 ru
+23 r 24 24 ru
+24 r 24 24 ru
+24 r 24 24 ru
+23 r 24 24 ru
+24 r 24 24 ru
+24 r 24 24 ru
+23 r 24 24 ru
+24 r 24 24 ru
+23 r 24 24 ru
+24 r 24 24 ru
+24 r 24 24 ru
+23 r 24 24 ru
+24 r 24 24 ru
+24 r 24 24 ru
+f8 SF
+118 393 p (%W%m%0%i%`1?;;$K$h$kJBNs%W%m%0%i%_%s%0)s
+f16 SF
+118 760 p (8U)s
+43 r (?69>)s
+f4 SF
+76 1523 p (1)s
+f7 SF
+68 r ($O)s
+15 r ($8)s
+15 r ($a)s
+16 r ($K)s
+f6 SF
+68 1673 p (JB)s
+1 r (Ns)s
+1 r (%W)s
+1 r (%m)s
+1 r (%0)s
+1 r (%i)s
+1 r (%`)s
+1 r ($r)s
+1 r (3+)s
+1 r (H/)s
+1 r ($9$k)s
+1 r (:])s
+1 r ($K)s
+1 r ($O)s
+f9 SF
+(,)s
+f6 SF
+27 r (JB)s
+1 r (Ns)s
+1 r (@-)s
+1 r ($r)s
+1 r (;})s
+1 r ($D)s
+1 r ($$)s
+1 r ($/)s
+0 1800 p ($D)s
+1 r ($+)s
+1 r ($N)s
+1 r (JB)s
+1 r (Ns)s
+1 r (7W)s
+1 r (;;)s
+1 r (%Q)s
+1 r (%?)s
+1 r (%s)s
+1 r ($r)s
+1 r (4pK\\)s
+1 r (%V)s
+1 r (%m%C)s
+1 r (%/)s
+1 r ($H)s
+1 r ($7)s
+1 r ($F)s
+f9 SF
+(,)s
+f6 SF
+27 r (%W)s
+1 r (%m)s
+1 r (%0)s
+1 r (%i)s
+0 1927 p (%^)s
+3 r ($,)s
+3 r (JB)s
+3 r (Ns)s
+4 r (%W)s
+3 r (%m)s
+3 r (%0)s
+3 r (%i)s
+3 r (%`)s
+3 r ($r)s
+4 r (9=)s
+3 r (C[)s
+3 r ($9)s
+3 r ($k)s
+3 r (<j)s
+3 r (K!)s
+f12 SF
+9 r ([4])s
+f9 SF
+28 r (\()s
+f6 SF
+(JB)s
+3 r (Ns)s
+3 r (%Q)s
+3 r (%?)s
+3 r (%s)s
+4 r (<j)s
+0 2054 p (K!)s
+f9 SF
+17 r (\(sk)s
+-1 r (eleton)s
+27 r (approac)s
+-1 r (h\)\))s
+f6 SF
+16 r ($,)s
+2 r (9-)s
+3 r ($/)s
+3 r (;H)s
+3 r ($o)s
+2 r ($l)s
+3 r ($F)s
+3 r ($$)s
+3 r ($k)s
+f9 SF
+(.)s
+f6 SF
+41 r (JB)s
+3 r (Ns)s
+2 r (7W)s
+0 2181 p (;;%Q%?%s$K$h$kCj>]2=$K$h$C$F!$%W%m%0%i%^$ODc%l%Y%k)s
+0 2308 p ($NJBNs7W;;$r9MN8$;$:JBNs%W%m%0%i%`$r3+H/$9$k$3$H$,)s
+0 2435 p ($G)s
+1 r ($-$k!%)s
+1 r ($7$+)s
+1 r ($7!$Ld)s
+1 r (Bj)s
+1 r ($,0l)s
+1 r ($D;D$C)s
+1 r ($F)s
+1 r ($$$k)s
+f9 SF
+(.)s
+f6 SF
+36 r (8zN\()s
+1 r ($N)s
+1 r ($h$$)s
+1 r (JB)s
+0 2562 p (Ns%W%m%0%i%`$r9=C[$9$k:]$K!$$I$N$h$&$JJBNs%Q%?%s$r)s
+0 2689 p (A*)s
+1 r ($S)s
+f9 SF
+(,)s
+f6 SF
+26 r ($^)s
+1 r ($?)s
+1 r ($=)s
+1 r ($l)s
+1 r ($r)s
+1 r ($I)s
+1 r ($N)s
+1 r ($h)s
+1 r ($&)s
+1 r ($K)s
+1 r (AH)s
+1 r ($_9g)s
+1 r ($o)s
+1 r ($;)s
+1 r ($l)s
+1 r ($P)s
+1 r ($h)s
+1 r ($$)s
+1 r ($+)s
+1 r ($r)s
+1 r (%W)s
+0 2816 p (%m%0%i%^$,9M$\($J$1$l$P$J$i$J$$)s
+f9 SF
+(.)s
+f6 SF
+68 2943 p ($3)s
+3 r ($l)s
+3 r ($r)s
+2 r (GX)s
+3 r (7J)s
+3 r ($K)s
+3 r (O@)s
+3 r (J8)s
+f12 SF
+8 r ([6])s
+f6 SF
+($G)s
+3 r ($O!$)s
+3 r (<+)s
+2 r (A3)s
+3 r ($J)s
+3 r (:F)s
+3 r (5")s
+3 r (E*)s
+2 r (Dj)s
+3 r (5A)s
+3 r ($+)s
+3 r ($i)s
+3 r (JB)s
+0 3070 p (Ns%Q%?%s$rMQ$$$?8zN\($N$h$$JBNs%W%m%0%i%`$KJQ49$9$k)s
+0 3197 p (5U)s
+3 r (M;)s
+2 r (9g)s
+3 r (1?)s
+3 r (;;)s
+2 r (Dj)s
+3 r (M})s
+f9 SF
+17 r (\(di\013usion)s
+28 r (calculation)s
+28 r (theorem\))s
+f6 SF
+17 r ($r)s
+2 r (Ds)s
+0 3324 p (0F)s
+2 r ($7)s
+2 r ($?!%)s
+3 r (K\\)s
+2 r (>.)s
+2 r (O@)s
+2 r (J8)s
+3 r ($G)s
+2 r ($O!$)s
+2 r ($3)s
+2 r ($N)s
+2 r (Dj)s
+3 r (M})s
+2 r ($r)s
+2 r (3H)s
+2 r (D%)s
+3 r ($9)s
+2 r ($k)s
+2 r ($H)s
+2 r ($H)s
+2 r ($b)s
+3 r ($K)s
+f9 SF
+(,)s
+f6 SF
+0 3451 p ($=)s
+1 r ($N)s
+1 r (1~)s
+1 r (MQ)s
+1 r (Nc)s
+1 r ($rDL)s
+1 r ($7)s
+1 r ($F)s
+f9 SF
+(,)s
+f6 SF
+27 r (1?)s
+1 r (;;)s
+1 r ($K)s
+1 r ($h)s
+1 r ($kJB)s
+1 r (Ns)s
+1 r (%W)s
+1 r (%m)s
+1 r (%0)s
+1 r (%i)s
+1 r (%_)s
+1 r (%s)s
+1 r (%0)s
+1 r ($N)s
+0 3578 p (%"%$%G%"$r4JC1$K=R$Y$k)s
+f9 SF
+(.)s
+f4 SF
+76 3808 p (2)s
+f7 SF
+68 r (%W%m%0%i%`1?;;!&5UM;9g1?;;DjM})s
+f6 SF
+68 3958 p (?t3XJ,Ln$G$O2C;;)s
+f9 SF
+(,)s
+f6 SF
+24 r (>h;;)s
+f9 SF
+(,)s
+f6 SF
+25 r (HyJ,)s
+f9 SF
+(,)s
+f6 SF
+24 r (@QJ,$J$I$N?t<0$N1?;;)s
+f9 SF
+0 4085 p (\(calculation\))s
+f6 SF
+17 r ($,9T$o$l)s
+1 r ($k)s
+f9 SF
+(.)s
+f6 SF
+34 r (1?;;$K$O)s
+f9 SF
+(,)s
+f6 SF
+26 r (Be?tE*@-)s
+1 r (<A$K4p$E)s
+0 4212 p ($$)s
+1 r ($F)s
+2 r (<0)s
+1 r ($r)s
+1 r (7A)s
+2 r (<0)s
+1 r (E*)s
+1 r ($K)s
+2 r (A`)s
+1 r (:n)s
+1 r ($7!$)s
+2 r (<0)s
+1 r ($N)s
+f9 SF
+17 r (\\)s
+f6 SF
+(0U)s
+1 r (L#)s
+f9 SF
+(")s
+f6 SF
+17 r ($r)s
+2 r (2r)s
+1 r (<a)s
+1 r ($7)s
+2 r ($J)s
+1 r ($$)s
+1 r ($H)s
+0 4339 p ($$)s
+2 r ($&)s
+1 r (FC)s
+2 r (D')s
+2 r ($,)s
+1 r ($")s
+2 r ($k)s
+f9 SF
+(.)s
+f6 SF
+38 r (Nc)s
+2 r ($\()s
+1 r ($P)s
+f9 SF
+(,)s
+28 r (123)s
+f3 SF
+18 r (\002)s
+f9 SF
+18 r (456)s
+f6 SF
+17 r ($N)s
+1 r ($h)s
+2 r ($&)s
+2 r ($J)s
+1 r (1?)s
+2 r (;;)s
+2 r ($r)s
+1 r (9T)s
+0 4433 p 827 3 ru
+f12 SF
+59 4501 p (P)s
+-1 r (arallel)s
+23 r (Programming)s
+23 r (b)s
+-1 r (y)s
+23 r (Program)s
+23 r (Calculation)s
+59 4600 p (Zhenjiang)s
+24 r (HU,)s
+f5 SF
+24 r (El5~Bg3X)s
+1 r (Bg3X1!9\))s
+1 r (3X7O8&5f)s
+1 r (2J>pJs9\))s
+1 r (3X@l96)s
+f12 SF
+(,)s
+118 4688 p (Departmen)s
+-1 r (t)s
+22 r (of)s
+22 r (Information)s
+22 r (Engineering,)s
+23 r (Univ)s
+-1 r (ersit)s
+-2 r (y)s
+118 4777 p (of)s
+24 r (T)s
+-5 r (oky)s
+-2 r (o)s
+22 r (.)s
+f5 SF
+59 4876 p (%3%s%T%e!<%?%=%U%H%&%'%")s
+f12 SF
+(,)s
+21 r (V)s
+-5 r (ol.x,)s
+22 r (No.x\(2000\),)s
+23 r (pp.xx{yy)s
+-5 r (.)s
+59 4974 p ([)s
+f5 SF
+(O@J8)s
+f12 SF
+(])s
+24 r (199n)s
+f5 SF
+15 r (G/)s
+f12 SF
+15 r (n)s
+f5 SF
+15 r (7n)s
+f12 SF
+15 r (n)s
+f5 SF
+15 r (F|<uIU)s
+f12 SF
+(.)s
+f6 SF
+1836 1419 p ($&)s
+1 r (;~)s
+1 r ($K)s
+1 r ($O)s
+f9 SF
+(,)s
+f6 SF
+26 r (Be)s
+1 r (?t)s
+1 r (E*)s
+1 r (@-)s
+1 r (<A)s
+1 r ($K)s
+1 r (4p)s
+1 r ($E)s
+1 r ($/JQ)s
+1 r (49)s
+1 r (A`)s
+1 r (:n)s
+1 r ($r)s
+1 r (9T)s
+1 r ($&)s
+1 r ($3)s
+1 r ($H)s
+1 r ($K)s
+1 r ($h)s
+1836 1546 p ($j)s
+f9 SF
+(,)s
+27 r (1,)s
+28 r (2)s
+f6 SF
+17 r ($J)s
+2 r ($I)s
+1 r ($N)s
+2 r (5-)s
+2 r (9f)s
+2 r ($N)s
+2 r (0U)s
+1 r (L#)s
+2 r ($r)s
+2 r (9M)s
+2 r ($\()s
+1 r ($k)s
+2 r ($3)s
+2 r ($H)s
+2 r ($J)s
+1 r ($/)s
+f9 SF
+(,)s
+f6 SF
+28 r (7k)s
+2 r (2L)s
+1 r ($r)s
+2 r (F@)s
+1836 1673 p ($k$3$H$,$G$-$k)s
+f9 SF
+(.)s
+f6 SF
+1904 1800 p (7W)s
+1 r (;;)s
+1 r (5!)s
+1 r (%W)s
+1 r (%m)s
+1 r (%0)s
+1 r (%i)s
+1 r (%`)s
+1 r ($K)s
+1 r ($O)s
+f9 SF
+(,)s
+f6 SF
+26 r (Ld)s
+1 r (Bj)s
+1 r ($r)s
+1 r (2r)s
+1 r ($/)s
+1 r (%W)s
+1 r (%m)s
+1 r (%;)s
+1 r (%9)s
+1 r ($,)s
+1 r (5-)s
+1 r (=R)s
+1 r ($5)s
+1836 1927 p ($l)s
+1 r ($F)s
+2 r ($$)s
+1 r ($k)s
+f9 SF
+(.)s
+f6 SF
+38 r ($7)s
+2 r ($+)s
+1 r ($7!$)s
+2 r (C1)s
+1 r ($K)s
+2 r ($=)s
+1 r ($l)s
+2 r ($@)s
+1 r ($1)s
+2 r ($G)s
+1 r ($O)s
+2 r ($J)s
+1 r ($/)s
+f9 SF
+(,)s
+f6 SF
+27 r (Be)s
+2 r (?t)s
+1 r (E*)s
+2 r (@-)s
+1 r (<A)s
+1836 2054 p ($bHw$\($F$$$k$N$G!$1?;;$K$h$k%W%m%0%i%`$NJQ490?$$$O)s
+1836 2181 p (A`:n$r$9$k$3$H$,2DG=$G$"$k!%)s
+1904 2308 p ($3)s
+4 r ($N)s
+4 r (%W)s
+3 r (%m)s
+4 r (%0)s
+4 r (%i)s
+4 r (%`)s
+4 r ($N)s
+4 r (1?)s
+3 r (;;)s
+4 r ($r)s
+4 r (;Y)s
+4 r (1g)s
+4 r ($9)s
+3 r ($k)s
+4 r ($b)s
+4 r ($N)s
+4 r ($H)s
+4 r ($7)s
+4 r ($F)s
+f9 SF
+(,)s
+29 r (Bird)s
+1836 2435 p (Meertens)s
+27 r (F)s
+-5 r (ormlism)s
+26 r (\(BMF)s
+f6 SF
+17 r ($H)s
+2 r (N,)s
+2 r (5-)s
+2 r ($9)s
+1 r ($k)s
+f9 SF
+(\))s
+f12 SF
+36 r ([1])s
+8 r ([2])s
+f6 SF
+27 r ($,)s
+2 r ($h)s
+2 r ($/)s
+1836 2562 p (CN)s
+1 r ($i)s
+1 r ($l)s
+2 r ($F)s
+1 r ($$)s
+1 r ($k)s
+f9 SF
+(.)s
+37 r (BMF)s
+f6 SF
+17 r ($G)s
+1 r ($O!$)s
+2 r (%W)s
+1 r (%m)s
+1 r (%0)s
+1 r (%i)s
+1 r (%`)s
+2 r ($r)s
+1 r (JQ)s
+1 r (49)s
+1 r ($9)s
+1 r ($k)s
+2 r ($?)s
+1 r ($a)s
+1836 2689 p ($N)s
+3 r (1?)s
+3 r (;;)s
+3 r (5,)s
+2 r (B')s
+f9 SF
+28 r (\(calculational)s
+28 r (rules\))s
+f6 SF
+17 r ($,)s
+3 r (AH)s
+3 r (?%)s
+3 r (E*)s
+3 r ($K)s
+3 r (9=)s
+3 r (C[)s
+3 r ($5)s
+2 r ($l)s
+1836 2816 p ($F$*$j!$J,$+$j$d$9$/=q$+$l$?%W%m%0%i%`$K$3$l$i$N1?)s
+1836 2943 p (;;)s
+1 r (5,)s
+1 r (B')s
+1 r ($r)s
+1 r (E,)s
+1 r (MQ$7)s
+1 r ($F)s
+1 r ($$)s
+1 r ($/)s
+1 r ($3)s
+1 r ($H)s
+1 r ($K)s
+1 r ($h)s
+1 r ($j)s
+f9 SF
+(,)s
+f6 SF
+26 r (8z)s
+1 r (N\()s
+1 r ($N)s
+1 r ($h)s
+1 r ($$)s
+1 r (%W)s
+1 r (%m)s
+1 r (%0)s
+1 r (%i)s
+1836 3070 p (%`$,)s
+1 r (9=@.)s
+1 r (E*)s
+1 r ($K9=)s
+1 r (C[$5)s
+1 r ($l$k)s
+f9 SF
+(.)s
+f6 SF
+35 r ($3)s
+1 r ($N)s
+1 r (1?;;)s
+1 r (5;K!)s
+1 r ($r%")s
+1 r (%k%4)s
+1 r (%j%:)s
+1 r (%`)s
+1836 3197 p ($NF3=P$d%3%s%Q%$%i$K$*$1$k%W%m%0%i%`$N:GE,2=$KE,MQ)s
+1836 3324 p ($9$k8&5f$O?tB?$/$J$5$l$F$*$j)s
+f9 SF
+(,)s
+f6 SF
+26 r ($h$$@.2L$,$G$F$$$k!%)s
+1904 3451 p ($7)s
+3 r ($+)s
+3 r ($7)s
+f9 SF
+(,)s
+f6 SF
+29 r (JB)s
+3 r (Ns)s
+3 r (%W)s
+3 r (%m)s
+4 r (%0)s
+3 r (%i)s
+3 r (%_)s
+3 r (%s)s
+3 r (%0)s
+3 r ($N)s
+3 r ($?)s
+3 r ($a)s
+4 r ($N)s
+3 r (1?)s
+3 r (;;)s
+3 r (5,)s
+3 r (B')s
+f12 SF
+8 r ([7])s
+9 r ([5])s
+1836 3578 p ([6])s
+f6 SF
+($O)s
+3 r ($^)s
+3 r ($@)s
+3 r (>/)s
+3 r ($J)s
+3 r ($$)s
+f9 SF
+(.)s
+f6 SF
+42 r (2f!9)s
+3 r ($,)s
+3 r (Ds)s
+3 r (0F)s
+3 r ($7)s
+3 r ($?)s
+3 r (5U)s
+3 r (M;)s
+3 r (9g)s
+3 r (1?)s
+3 r (;;)s
+3 r (Dj)s
+3 r (M})s
+f12 SF
+9 r ([6])s
+f6 SF
+($O)s
+1836 3705 p ($=$NCf$N$R$H$D$G$"$j!$<+A3$J:F5"E*Dj5A$+$iJBNs%Q%?)s
+1836 3832 p (%s$rMQ$$$?JBNs%W%m%0%i%`$KJQ49$9$k1?;;5,B'$G$"$k!%)s
+1836 3958 p ($3$N5UM;9g1?;;DjM}$GMQ$$$kJBNs%Q%?%s$O<!$N$h$&$J$b)s
+1836 4085 p ($N$G$"$k)s
+f9 SF
+(.)s
+f3 SF
+1904 4212 p (\017)s
+f9 SF
+51 r (map)s
+f6 SF
+26 r (A`:n)s
+f3 SF
+25 r (\003)s
+f9 SF
+(.)s
+f2 SF
+2058 4339 p (f)s
+f3 SF
+25 r (\003)s
+f9 SF
+17 r ([)s
+f2 SF
+(x)s
+f10 SF
+2241 4348 p (1)s
+f2 SF
+2275 4339 p (;)s
+13 r (x)s
+f10 SF
+2353 4348 p (2)s
+f2 SF
+2387 4339 p (;)s
+13 r (:)s
+13 r (:)s
+13 r (:)s
+13 r (;)s
+12 r (x)s
+f0 SF
+2602 4348 p (n)s
+f9 SF
+2644 4339 p (])s
+21 r (=)s
+22 r ([)s
+f2 SF
+(f)s
+21 r (x)s
+f10 SF
+2891 4348 p (1)s
+f2 SF
+2925 4339 p (;)s
+13 r (k)s
+15 r (x)s
+f10 SF
+3058 4348 p (2)s
+f2 SF
+3093 4339 p (;)s
+12 r (:)s
+13 r (:)s
+13 r (:)s
+13 r (;)s
+13 r (f)s
+21 r (x)s
+f0 SF
+3365 4348 p (n)s
+f9 SF
+3407 4339 p (])s
+f2 SF
+(:)s
+f3 SF
+1904 4466 p (\017)s
+f9 SF
+51 r (reduce)s
+f6 SF
+26 r (A`:n)s
+f2 SF
+25 r (=)s
+f9 SF
+(.)s
+f3 SF
+2079 4593 p (\010)s
+f2 SF
+(=)s
+f9 SF
+25 r ([)s
+f2 SF
+(x)s
+f10 SF
+2267 4602 p (1)s
+f2 SF
+2302 4593 p (;)s
+13 r (x)s
+f10 SF
+2379 4602 p (2)s
+f2 SF
+2414 4593 p (;)s
+13 r (:)s
+13 r (:)s
+12 r (:)s
+13 r (;)s
+13 r (x)s
+f0 SF
+2628 4602 p (n)s
+f9 SF
+2671 4593 p (])s
+21 r (=)s
+f2 SF
+21 r (x)s
+f10 SF
+2838 4602 p (1)s
+f3 SF
+2890 4593 p (\010)s
+f2 SF
+17 r (x)s
+f10 SF
+3010 4602 p (2)s
+f3 SF
+3062 4593 p (\010)s
+17 r (\001)s
+12 r (\001)s
+13 r (\001)s
+17 r (\010)s
+f2 SF
+17 r (x)s
+f0 SF
+3365 4602 p (n)s
+f2 SF
+3408 4593 p (:)s
+f3 SF
+1904 4720 p (\017)s
+f9 SF
+51 r (scan)s
+f6 SF
+26 r (A`:n)s
+f3 SF
+38 r (\000)s
+f2 SF
+-76 r (=)s
+-25 r (=)s
+f9 SF
+24 r (.)s
+f3 SF
+2013 4828 p (\010)s
+5 r (\000)s
+f2 SF
+-59 r (=)s
+-26 r (=)s
+f9 SF
+25 r ([)s
+f2 SF
+(x)s
+f10 SF
+2219 4836 p (1)s
+f2 SF
+2254 4828 p (;)s
+12 r (x)s
+f10 SF
+2331 4836 p (2)s
+f2 SF
+2366 4828 p (;)s
+13 r (:)s
+13 r (:)s
+12 r (:)s
+13 r (;)s
+13 r (x)s
+f0 SF
+2580 4836 p (n)s
+f9 SF
+2623 4828 p (])s
+2090 4955 p (=)s
+22 r ([)s
+f2 SF
+(\023)s
+f1 SF
+2220 4963 p (\010)s
+f2 SF
+2272 4955 p (;)s
+13 r (x)s
+f10 SF
+2350 4963 p (1)s
+f2 SF
+2384 4955 p (;)s
+13 r (x)s
+f10 SF
+2462 4963 p (1)s
+f3 SF
+2514 4955 p (\010)s
+f2 SF
+17 r (x)s
+f10 SF
+2634 4963 p (2)s
+f2 SF
+2668 4955 p (;)s
+13 r (:)s
+13 r (:)s
+13 r (:)s
+13 r (;)s
+12 r (x)s
+f10 SF
+2883 4963 p (1)s
+f3 SF
+2934 4955 p (\010)s
+f2 SF
+17 r (x)s
+f10 SF
+3055 4963 p (2)s
+f3 SF
+3106 4955 p (\010)s
+17 r (\001)s
+13 r (\001)s
+13 r (\001)s
+17 r (\010)s
+f2 SF
+17 r (x)s
+f0 SF
+3410 4963 p (n)s
+f9 SF
+3452 4955 p (])s
+f2 SF
+(:)s
+EP
+
+%%Page: 2 2
+BP
+f9 SF
+0 -132 p (2)s
+f6 SF
+1309 r (%3%s%T%e!<%?%=%U%H%&%'%")s
+f9 SF
+1198 r (\()s
+38 r (2)s
+38 r (\))s
+f3 SF
+68 23 p (\017)s
+f9 SF
+51 r (zip)s
+f6 SF
+26 r (A`:n)s
+f2 SF
+25 r (z)s
+3 r (ip)s
+f9 SF
+(.)s
+f2 SF
+413 126 p (z)s
+3 r (ip)s
+f9 SF
+25 r ([)s
+f2 SF
+(x)s
+f10 SF
+607 134 p (1)s
+f2 SF
+641 126 p (;)s
+13 r (x)s
+f10 SF
+719 134 p (2)s
+f2 SF
+754 126 p (;)s
+12 r (:)s
+13 r (:)s
+13 r (:)s
+13 r (;)s
+13 r (x)s
+f0 SF
+968 134 p (n)s
+f9 SF
+1010 126 p (])s
+26 r ([)s
+f2 SF
+(y)s
+f10 SF
+1116 134 p (1)s
+f2 SF
+1151 126 p (;)s
+13 r (:)s
+13 r (:)s
+12 r (:)s
+13 r (;)s
+13 r (y)s
+f0 SF
+1360 134 p (n)s
+f9 SF
+1402 126 p (])s
+489 253 p (=)s
+22 r ([\()s
+f2 SF
+(x)s
+f10 SF
+665 261 p (1)s
+f2 SF
+700 253 p (;)s
+13 r (y)s
+f10 SF
+772 261 p (1)s
+f9 SF
+806 253 p (\))s
+f2 SF
+(;)s
+13 r (:)s
+13 r (:)s
+13 r (:)s
+13 r (;)s
+f9 SF
+12 r (\()s
+f2 SF
+(x)s
+f0 SF
+1080 261 p (n)s
+f2 SF
+1123 253 p (;)s
+13 r (y)s
+f0 SF
+1195 261 p (n)s
+f9 SF
+1237 253 p (\)])s
+f2 SF
+(:)s
+f6 SF
+0 347 p ($?)s
+4 r ($@)s
+4 r ($7!$)s
+f3 SF
+17 r (\010)s
+f6 SF
+17 r ($O)s
+3 r (C1)s
+4 r (0L)s
+4 r (85)s
+f2 SF
+17 r (\023)s
+f1 SF
+701 355 p (\010)s
+f6 SF
+770 347 p ($r)s
+4 r ($b)s
+4 r ($D)s
+4 r (7k)s
+3 r (9g)s
+4 r (E*)s
+4 r ($J)s
+4 r (Fs)s
+4 r (9`)s
+4 r (1i)s
+3 r (;;)s
+4 r (;R)s
+4 r ($G)s
+0 474 p ($J)s
+6 r ($1)s
+6 r ($l)s
+5 r ($P)s
+6 r ($J)s
+6 r ($i)s
+6 r ($J)s
+6 r ($$!%)s
+6 r ($b)s
+5 r ($7)s
+f9 SF
+(,)s
+f2 SF
+32 r (k)s
+f6 SF
+33 r ($H)s
+f3 SF
+31 r (\010)s
+f6 SF
+30 r ($,)s
+6 r (C1)s
+6 r (0L)s
+6 r (;~)s
+5 r (4V)s
+6 r ($G)s
+6 r (7W)s
+6 r (;;)s
+0 601 p ($G)s
+4 r ($-)s
+5 r ($k)s
+4 r ($J)s
+5 r ($i!$)s
+f2 SF
+17 r (k)s
+f3 SF
+2 r (\003)s
+f9 SF
+(,)s
+f3 SF
+31 r (\010)s
+f2 SF
+(=)s
+f9 SF
+(,)s
+f3 SF
+59 r (\010)s
+7 r (\000)s
+f2 SF
+-56 r (=)s
+-25 r (=)s
+f6 SF
+16 r ($H)s
+f2 SF
+17 r (z)s
+3 r (ip)s
+f6 SF
+17 r ($,)s
+f9 SF
+(,)s
+f6 SF
+30 r ($=)s
+5 r ($l)s
+4 r ($>)s
+5 r ($l)s
+f2 SF
+17 r (O)s
+f9 SF
+2 r (\(1\),)s
+f2 SF
+0 728 p (O)s
+f9 SF
+2 r (\(log)s
+f2 SF
+14 r (n)s
+f9 SF
+(\),)s
+f2 SF
+30 r (O)s
+f9 SF
+2 r (\(log)s
+f2 SF
+14 r (n)s
+f9 SF
+(\),)s
+f2 SF
+29 r (O)s
+f9 SF
+2 r (\(1\))s
+f6 SF
+29 r ($N)s
+4 r (JB)s
+4 r (Ns)s
+3 r (;~)s
+4 r (4V)s
+4 r ($G)s
+4 r (7W)s
+3 r (;;)s
+4 r ($G)s
+4 r ($-)s
+4 r ($k!%)s
+0 855 p ($3$3$G!$)s
+f2 SF
+17 r (n)s
+f6 SF
+17 r ($OF~NO%j%9%H$ND9$5$rI=$9)s
+f9 SF
+(.)s
+f6 SF
+68 982 p (%j)s
+1 r (%9%H)s
+1 r (>e$N)s
+1 r (:F5")s
+1 r (E*4X)s
+1 r (?t)s
+f2 SF
+17 r (h)s
+f6 SF
+17 r ($O)s
+f9 SF
+(,)s
+f6 SF
+26 r (0l)s
+1 r (HLE*)s
+1 r ($K$O)s
+1 r (<!$N)s
+1 r ($h$&)s
+1 r ($KDj)s
+0 1109 p (5A$9$k$3$H$,$G$-$k!%)s
+f2 SF
+160 1210 p (h)s
+f9 SF
+25 r ([)s
+13 r (])s
+f2 SF
+26 r (c)s
+f9 SF
+235 r (=)s
+f2 SF
+83 r (g)s
+f10 SF
+759 1218 p (1)s
+f2 SF
+819 1210 p (c)s
+160 1337 p (h)s
+f9 SF
+25 r (\()s
+f2 SF
+(a)s
+f9 SF
+22 r (:)s
+f2 SF
+21 r (x)s
+f9 SF
+(\))s
+f2 SF
+25 r (c)s
+f9 SF
+84 r (=)s
+f2 SF
+83 r (k)s
+f9 SF
+2 r (\()s
+f2 SF
+(a;)s
+13 r (c)s
+f9 SF
+(\))s
+f3 SF
+42 r (\010)s
+f2 SF
+43 r (h)s
+25 r (x)s
+f9 SF
+26 r (\()s
+f2 SF
+(c)s
+f3 SF
+17 r (\012)s
+f2 SF
+17 r (g)s
+f10 SF
+1410 1345 p (2)s
+f2 SF
+1470 1337 p (a)s
+f9 SF
+(\))s
+f2 SF
+0 1431 p (h)s
+f6 SF
+17 r ($O)s
+f9 SF
+17 r (2)s
+f6 SF
+17 r (0z)s
+1 r (?t)s
+1 r (4X)s
+2 r (?t)s
+1 r ($G)s
+1 r ($")s
+1 r ($k!%)s
+2 r (Bh)s
+1 r (0l)s
+1 r (0z)s
+1 r (?t)s
+2 r ($O)s
+1 r (%j)s
+1 r (%9)s
+1 r (%H)s
+1 r ($G)s
+2 r ($")s
+1 r ($j)s
+f9 SF
+(,)s
+f6 SF
+27 r (Bh)s
+1 r (Fs)s
+0 1558 p (0z?t$O7W;;ESCf$N>pJs$rC_@Q$9$k$?$a$N$b$N$G$"$k!%F~)s
+0 1685 p (NO%j)s
+1 r (%9%H$,)s
+1 r (6u$N>l)s
+1 r (9g)s
+f9 SF
+(,)s
+f6 SF
+25 r (4X)s
+1 r (?t)s
+f2 SF
+17 r (g)s
+f10 SF
+852 1693 p (1)s
+f6 SF
+903 1685 p ($r)s
+f2 SF
+17 r (c)s
+f6 SF
+17 r ($K)s
+1 r (E,MQ$7)s
+f9 SF
+(,)s
+f6 SF
+26 r ($=$N)s
+1 r (7k2L$r)s
+0 1812 p (JV)s
+1 r ($9)s
+f9 SF
+(.)s
+f6 SF
+38 r (F~)s
+2 r (NO)s
+1 r (%j)s
+1 r (%9)s
+2 r (%H)s
+1 r ($,)s
+2 r (6u)s
+1 r ($G)s
+2 r ($J)s
+1 r ($$)s
+1 r (>l)s
+2 r (9g)s
+f9 SF
+(,)s
+f6 SF
+27 r ($=)s
+1 r ($N)s
+2 r (%j)s
+1 r (%9)s
+2 r (%H)s
+1 r ($N)s
+1 r (@h)s
+2 r (F,)s
+1 r (MW)s
+0 1939 p (AG)s
+1 r ($r)s
+f2 SF
+17 r (a)s
+f9 SF
+(,)s
+f6 SF
+26 r (;D)s
+1 r ($j)s
+1 r ($r)s
+f2 SF
+17 r (x)s
+f6 SF
+17 r ($H$9)s
+1 r ($k)s
+1 r ($H!$)s
+f2 SF
+17 r (h)s
+f9 SF
+26 r (\()s
+f2 SF
+(a)s
+f9 SF
+22 r (:)s
+f2 SF
+23 r (x)s
+f9 SF
+(\))s
+f2 SF
+26 r (c)s
+f6 SF
+17 r ($N)s
+1 r (7k2L)s
+1 r ($O)s
+f9 SF
+(,)s
+f6 SF
+27 r (Hs:F)s
+0 2066 p (5"It)s
+1 r (J,)s
+f2 SF
+17 r (k)s
+f9 SF
+2 r (\()s
+f2 SF
+(a;)s
+13 r (c)s
+f9 SF
+(\))s
+f6 SF
+17 r ($H:F)s
+1 r (5"It)s
+1 r (J,)s
+f2 SF
+17 r (h)s
+26 r (x)s
+f9 SF
+26 r (\()s
+f2 SF
+(c)s
+f3 SF
+17 r (\012)s
+f2 SF
+17 r (g)s
+f10 SF
+1142 2074 p (2)s
+f2 SF
+1202 2066 p (a)s
+f9 SF
+(\))s
+f6 SF
+17 r ($N)s
+1 r (CM$r)s
+1 r (MQ$$$F)s
+f3 SF
+0 2193 p (\010)s
+f6 SF
+17 r ($K)s
+3 r ($h$C)s
+3 r ($F)s
+3 r (7W)s
+3 r (;;)s
+3 r ($r)s
+3 r (9T)s
+3 r ($&!%)s
+3 r (C_)s
+3 r (@Q)s
+3 r (0z)s
+3 r (?t)s
+3 r ($O)s
+f3 SF
+28 r (\012)s
+f6 SF
+28 r ($H)s
+f2 SF
+17 r (g)s
+f10 SF
+1370 2201 p (2)s
+f6 SF
+1422 2193 p ($K)s
+3 r ($h$C)s
+3 r ($F)s
+0 2320 p (99?7$5$l$k!%)s
+68 2447 p (5U)s
+4 r (M;)s
+4 r (9g)s
+4 r (1?)s
+4 r (;;)s
+3 r (Dj)s
+4 r (M})s
+4 r ($H)s
+4 r ($O)s
+f9 SF
+(,)s
+f6 SF
+30 r (>e)s
+4 r ($K)s
+4 r (=R)s
+3 r ($Y)s
+4 r ($?)s
+f2 SF
+17 r (h)s
+f6 SF
+17 r ($N)s
+4 r (Dj)s
+4 r (5A)s
+4 r ($N)s
+4 r (Cf)s
+4 r ($N)s
+f3 SF
+17 r (\010)s
+f6 SF
+0 2573 p ($H)s
+f3 SF
+17 r (\012)s
+f6 SF
+17 r ($,)s
+3 r (C1)s
+2 r (0L)s
+3 r (85)s
+2 r ($r)s
+3 r ($b)s
+2 r ($D)s
+3 r (7k)s
+3 r (9g)s
+2 r (E*)s
+3 r (Fs)s
+2 r (9`)s
+3 r (1i)s
+3 r (;;)s
+2 r (;R)s
+3 r ($G)s
+2 r ($")s
+3 r ($k)s
+2 r ($H)s
+3 r ($-!$)s
+f2 SF
+17 r (h)s
+f6 SF
+0 2700 p ($r<!$N$h$&$KJQ49$9$k1?;;5,B'$G$"$k!%)s
+f2 SF
+55 2801 p (h)s
+25 r (x)s
+26 r (c)s
+f9 SF
+83 r (=)s
+f11 SF
+83 r (let)s
+f2 SF
+26 r (cs)s
+f1 SF
+647 2770 p (0)s
+f9 SF
+686 2801 p (+)s
+-20 r (+)s
+12 r ([)s
+f2 SF
+(c)s
+f1 SF
+852 2770 p (0)s
+f9 SF
+874 2801 p (])s
+22 r (=)s
+21 r (\()s
+f2 SF
+(c)s
+f3 SF
+(\012)s
+f9 SF
+(\))s
+f3 SF
+17 r (\003)s
+f9 SF
+17 r (\()s
+f3 SF
+(\012)s
+4 r (\000)s
+f2 SF
+-58 r (=)s
+-26 r (=)s
+f9 SF
+(\()s
+f2 SF
+(g)s
+f10 SF
+1435 2810 p (2)s
+f3 SF
+1486 2801 p (\003)s
+f2 SF
+17 r (x)s
+f9 SF
+(\)\))s
+f2 SF
+578 2928 p (acs)s
+f9 SF
+21 r (=)s
+f2 SF
+22 r (z)s
+3 r (ip)s
+25 r (x)s
+26 r (cs)s
+f1 SF
+1058 2897 p (0)s
+f11 SF
+453 3055 p (in)s
+f9 SF
+25 r (\()s
+f3 SF
+(\010)s
+f2 SF
+(=)s
+f9 SF
+13 r (\()s
+f2 SF
+(k)s
+f3 SF
+19 r (\003)s
+f2 SF
+18 r (acs)s
+f9 SF
+(\)\))s
+f3 SF
+17 r (\010)s
+f9 SF
+17 r (\()s
+f2 SF
+(g)s
+f10 SF
+1167 3064 p (1)s
+f2 SF
+1227 3055 p (c)s
+f1 SF
+1261 3023 p (0)s
+f9 SF
+1283 3055 p (\))s
+f6 SF
+68 3149 p ($3$NJQ497k2L$OFI$_$K$/$$$,!$$=$N0UL#$rM}2r$9$kI,)s
+0 3276 p (MW)s
+2 r ($O)s
+2 r ($J)s
+2 r ($/)s
+f9 SF
+(,)s
+f6 SF
+27 r (1?)s
+2 r (;;)s
+2 r ($r)s
+2 r ($9)s
+2 r ($k)s
+2 r (;~)s
+2 r ($K)s
+2 r ($O)s
+f9 SF
+(,)s
+f6 SF
+27 r ($3)s
+2 r ($N)s
+2 r (JQ)s
+2 r (49)s
+2 r ($,)s
+2 r (;})s
+2 r ($D)s
+2 r (@-)s
+2 r (<A)s
+1 r ($,)s
+2 r (J,)s
+0 3403 p ($+$C)s
+1 r ($F)s
+2 r ($$)s
+1 r ($l)s
+2 r ($P)s
+1 r ($h)s
+2 r ($$)s
+f9 SF
+(.)s
+f6 SF
+38 r (5U)s
+1 r (M;)s
+2 r (9g)s
+1 r (1?)s
+2 r (;;)s
+1 r (Dj)s
+2 r (M})s
+1 r ($K)s
+2 r ($h)s
+1 r ($k)s
+2 r (JQ)s
+1 r (49)s
+2 r ($O)s
+f9 SF
+(,)s
+f6 SF
+27 r (<!)s
+1 r ($N)s
+f9 SF
+0 3530 p (2)s
+f6 SF
+17 r ($D$N@-<A$r;}$D)s
+f9 SF
+(.)s
+f3 SF
+68 3657 p (\017)s
+f6 SF
+51 r (M-8z$JJBNs2=%W%m%;%9$G$"$k!%$D$^$j!$2>$K)s
+f9 SF
+(,)s
+f6 SF
+25 r ($b$H)s
+136 3784 p ($N%W%m%0)s
+-1 r (%i%`)s
+f2 SF
+16 r (h)s
+f6 SF
+17 r ($,)s
+f2 SF
+17 r (O)s
+f9 SF
+2 r (\()s
+f2 SF
+(n)s
+f9 SF
+(\))s
+f6 SF
+17 r ($NC`<!%")s
+-1 r (%k%4)s
+-1 r (%j%:%`)s
+-1 r ($@$H)s
+-1 r ($9)s
+136 3911 p ($k)s
+2 r ($H!$)s
+2 r (JQ)s
+1 r (49)s
+2 r ($5)s
+2 r ($l)s
+2 r ($?)s
+2 r (7k)s
+2 r (2L)s
+1 r ($O)s
+f2 SF
+17 r (O)s
+f9 SF
+3 r (\(log)s
+f2 SF
+13 r (n)s
+f9 SF
+(\))s
+f6 SF
+17 r (JB)s
+2 r (Ns)s
+2 r (%W)s
+2 r (%m)s
+2 r (%0)s
+2 r (%i)s
+1 r (%`)s
+136 4038 p ($K$J$k)s
+f9 SF
+(.)s
+f3 SF
+68 4165 p (\017)s
+f6 SF
+51 r (JQ)s
+3 r (49)s
+3 r ($5)s
+3 r ($l)s
+3 r ($?)s
+3 r (JB)s
+3 r (Ns)s
+3 r (%W)s
+4 r (%m)s
+3 r (%0)s
+3 r (%i)s
+3 r (%`)s
+3 r ($O)s
+f9 SF
+17 r (w)s
+-1 r (ork)s
+27 r (e\016cien)s
+-1 r (t)s
+f6 SF
+16 r ($N)s
+3 r (@-)s
+136 4292 p (<A)s
+2 r ($r)s
+1 r (;})s
+2 r ($D)s
+f9 SF
+(.)s
+f6 SF
+38 r ($D)s
+2 r ($^)s
+1 r ($j)s
+f9 SF
+(,)s
+f6 SF
+28 r (0l)s
+1 r (Bf)s
+2 r ($N)s
+2 r (%W)s
+1 r (%m)s
+2 r (%;%C)s
+2 r (%5)s
+1 r (>e)s
+2 r ($G)s
+1 r ($b)s
+2 r (C`)s
+2 r (<!)s
+1 r (%W)s
+136 4419 p (%m%0%i%`$HF1$8%*!<%@$G7W;;$,9T$o$l$k)s
+f9 SF
+(.)s
+f4 SF
+76 4649 p (3)s
+f7 SF
+68 r (5UM;9g1?;;DjM}$N3HD%)s
+f6 SF
+68 4800 p (>e$G=R$Y$?5UM;9g1?;;DjM}$NA`:nBP>]$H$J$k:F5"4X?t)s
+0 4927 p ($K$O!$C_@Q0z?t$O0l$D$7$+$J$$!%$^$?!$C_@Q0z?t$N99?7)s
+1836 23 p (It)s
+2 r (J,)s
+2 r ($r)s
+2 r (7k)s
+2 r (9g)s
+2 r (E*)s
+2 r ($J)s
+2 r (1i)s
+2 r (;;)s
+2 r (;R)s
+f3 SF
+17 r (\012)s
+f6 SF
+17 r ($r)s
+2 r (MQ)s
+2 r ($$)s
+2 r ($F)s
+2 r (5-)s
+2 r (=R)s
+2 r ($9)s
+2 r ($k)s
+2 r ($3)s
+2 r ($H)s
+2 r ($,)s
+2 r ($G)s
+2 r ($-)s
+1836 150 p ($J$1$l$P5UM;9g1?;;DjM}$rE,MQ$9$k$3$H$,$G$-$J$$!%0l)s
+1836 277 p (HL)s
+1 r (E*)s
+1 r ($K)s
+1 r ($O!$)s
+1 r (C_)s
+1 r (@Q)s
+1 r (0z)s
+1 r (?t)s
+1 r ($O)s
+1 r (J#)s
+1 r (;\($K)s
+1 r ($J)s
+1 r ($k)s
+1 r (>l)s
+1 r (9g)s
+1 r ($,)s
+1 r ($")s
+1 r ($k)s
+1 r ($N)s
+1 r ($G)s
+f9 SF
+(,)s
+f6 SF
+27 r ($$)s
+1 r ($/)s
+1836 404 p ($D$+)s
+1 r ($NC_)s
+1 r (@Q)s
+1 r (0z?t)s
+1 r ($rMQ)s
+1 r ($$$F)s
+1 r (4X?t)s
+1 r ($rDj)s
+1 r (5A$9)s
+1 r ($k$3)s
+1 r ($H$,)s
+1 r ($"$k)s
+f9 SF
+(.)s
+f6 SF
+36 r ($=)s
+1836 531 p ($N)s
+1 r ($?)s
+1 r ($a!$)s
+1 r (J#)s
+1 r (?t)s
+1 r ($N)s
+1 r (C_)s
+1 r (@Q)s
+1 r (0z)s
+1 r (?t)s
+1 r ($r;})s
+1 r ($D)s
+1 r (:F)s
+1 r (5")s
+1 r (E*)s
+1 r (4X)s
+1 r (?t)s
+1 r ($K)s
+1 r (BP)s
+1 r ($9)s
+1 r ($k)s
+f9 SF
+(,)s
+f6 SF
+27 r (5U)s
+1836 657 p (M;9g)s
+1 r (1?;;5,)s
+1 r (B'$r)s
+1 r (M?$\($k)s
+f9 SF
+(.)s
+f6 SF
+35 r (4J)s
+1 r (C1$N)s
+1 r ($?$a!$)s
+f9 SF
+17 r (2)s
+f6 SF
+17 r ($D$N)s
+1 r (C_@Q0z)s
+1 r (?t$r)s
+1836 784 p (;}$D:F5"Dj5A)s
+f2 SF
+2021 885 p (h)s
+f9 SF
+25 r ([)s
+13 r (])s
+f2 SF
+26 r (c)s
+f10 SF
+2205 894 p (1)s
+f2 SF
+2265 885 p (c)s
+f10 SF
+2298 894 p (2)s
+f9 SF
+2354 885 p (=)s
+f2 SF
+22 r (g)s
+f10 SF
+2472 894 p (1)s
+f9 SF
+2506 885 p (\()s
+f2 SF
+(c)s
+f10 SF
+2570 894 p (1)s
+f2 SF
+2604 885 p (;)s
+13 r (c)s
+f10 SF
+2672 894 p (2)s
+f9 SF
+2706 885 p (\))s
+f2 SF
+2021 1012 p (h)s
+f9 SF
+25 r (\()s
+f2 SF
+(a)s
+f9 SF
+22 r (:)s
+f2 SF
+21 r (x)s
+f9 SF
+(\))s
+f2 SF
+26 r (c)s
+f10 SF
+2357 1021 p (1)s
+f2 SF
+2417 1012 p (c)s
+f10 SF
+2451 1021 p (2)s
+f9 SF
+2507 1012 p (=)s
+f2 SF
+2222 1139 p (k)s
+f9 SF
+2 r (\()s
+f2 SF
+(a;)s
+f9 SF
+13 r (\()s
+f2 SF
+(c)s
+f10 SF
+2432 1148 p (1)s
+f2 SF
+2467 1139 p (;)s
+12 r (c)s
+f10 SF
+2534 1148 p (2)s
+f9 SF
+2569 1139 p (\)\))s
+f3 SF
+25 r (\010)s
+f2 SF
+2222 1266 p (h)s
+26 r (x)s
+f9 SF
+25 r (\()s
+f2 SF
+(c)s
+f10 SF
+2424 1274 p (1)s
+f3 SF
+2476 1266 p (\012)s
+f10 SF
+2535 1274 p (1)s
+f2 SF
+2587 1266 p (g)s
+f10 SF
+2624 1274 p (2)s
+f9 SF
+2658 1266 p (\()s
+f2 SF
+(a;)s
+13 r (c)s
+f10 SF
+2796 1274 p (2)s
+f9 SF
+2831 1266 p (\)\))s
+25 r (\()s
+f2 SF
+(c)s
+f10 SF
+2979 1274 p (2)s
+f3 SF
+3031 1266 p (\012)s
+f10 SF
+3091 1274 p (2)s
+f2 SF
+3142 1266 p (g)s
+f10 SF
+3179 1274 p (3)s
+f2 SF
+3239 1266 p (a)s
+f9 SF
+(\))s
+f6 SF
+1836 1360 p ($r)s
+3 r (9M)s
+2 r ($\()s
+3 r ($k)s
+f9 SF
+(.)s
+f6 SF
+41 r ($3)s
+2 r ($3)s
+3 r ($G)s
+2 r (Cm)s
+3 r (0U)s
+2 r ($7)s
+3 r ($?)s
+3 r ($$)s
+2 r ($N)s
+3 r ($O)s
+f9 SF
+(,)s
+f2 SF
+28 r (c)s
+f10 SF
+2964 1369 p (1)s
+f6 SF
+3016 1360 p ($N)s
+2 r (7W)s
+3 r (;;)s
+2 r ($,)s
+f2 SF
+17 r (c)s
+f10 SF
+3346 1369 p (2)s
+f6 SF
+3397 1360 p ($K)s
+3 r (0M)s
+1836 1487 p (B8$9$k$3$H$G$"$k!%)s
+1904 1614 p (5U)s
+4 r (M;)s
+3 r (9g)s
+4 r (1?)s
+4 r (;;)s
+3 r (Dj)s
+4 r (M})s
+3 r ($H)s
+4 r (F1)s
+4 r (MM!$)s
+3 r ($b)s
+4 r ($7)s
+f3 SF
+17 r (\010)s
+f6 SF
+17 r ($H)s
+f3 SF
+17 r (\012)s
+f0 SF
+3066 1623 p (i)s
+f6 SF
+3110 1614 p ($,)s
+3 r (C1)s
+4 r (0L)s
+4 r (85)s
+3 r ($r)s
+4 r ($b)s
+1836 1741 p ($D)s
+3 r (7k)s
+3 r (9g)s
+3 r (E*)s
+3 r (Fs)s
+2 r (9`)s
+3 r (1i)s
+3 r (;;)s
+3 r (;R)s
+3 r ($G)s
+3 r ($")s
+3 r ($l)s
+3 r ($P!$)s
+f2 SF
+17 r (h)s
+f6 SF
+17 r ($r)s
+2 r (<!)s
+3 r ($N)s
+3 r ($h)s
+3 r ($&)s
+3 r ($J)s
+3 r (JB)s
+3 r (Ns)s
+3 r (%Q)s
+1836 1868 p (%?%s$rMQ$$$?8zN\($N$h$$JBNs%W%m%0%i%`$KJQ49$9$k$3$H)s
+1836 1995 p ($,$G$-$k!%)s
+f2 SF
+1992 2096 p (h)s
+25 r (x)s
+26 r (c)s
+f10 SF
+2164 2104 p (1)s
+f2 SF
+2224 2096 p (c)s
+f10 SF
+2257 2104 p (2)s
+f9 SF
+2313 2096 p (=)s
+f11 SF
+2116 2223 p (let)s
+f2 SF
+26 r (cs)s
+f1 SF
+2310 2191 p (0)s
+f10 SF
+2310 2237 p (2)s
+f9 SF
+2362 2223 p (+)s
+-21 r (+)s
+12 r ([)s
+f2 SF
+(c)s
+f1 SF
+2527 2191 p (0)s
+f10 SF
+2527 2237 p (2)s
+f9 SF
+2562 2223 p (])s
+21 r (=)s
+2270 2350 p (\()s
+f2 SF
+(c)s
+f10 SF
+2333 2358 p (2)s
+f3 SF
+2367 2350 p (\012)s
+f10 SF
+2427 2358 p (2)s
+f9 SF
+2462 2350 p (\))s
+f3 SF
+17 r (\003)s
+f9 SF
+17 r (\()s
+f3 SF
+(\012)s
+f10 SF
+2654 2358 p (2)s
+f3 SF
+2692 2350 p (\000)s
+f2 SF
+-58 r (=)s
+-26 r (=)s
+f9 SF
+(\()s
+f2 SF
+(g)s
+f10 SF
+2810 2358 p (3)s
+f3 SF
+2862 2350 p (\003)s
+f2 SF
+17 r (x)s
+f9 SF
+(\)\))s
+f2 SF
+2241 2477 p (cs)s
+f1 SF
+2310 2445 p (0)s
+f10 SF
+2310 2490 p (1)s
+f9 SF
+2362 2477 p (+)s
+-21 r (+)s
+12 r ([)s
+f2 SF
+(c)s
+f1 SF
+2527 2445 p (0)s
+f10 SF
+2527 2490 p (1)s
+f9 SF
+2562 2477 p (])s
+21 r (=)s
+2270 2604 p (\()s
+f2 SF
+(c)s
+f10 SF
+2333 2612 p (1)s
+f3 SF
+2367 2604 p (\012)s
+f10 SF
+2427 2612 p (1)s
+f9 SF
+2462 2604 p (\))s
+f3 SF
+17 r (\003)s
+f9 SF
+17 r (\()s
+f3 SF
+(\012)s
+f10 SF
+2654 2612 p (1)s
+f3 SF
+2692 2604 p (\000)s
+f2 SF
+-58 r (=)s
+-26 r (=)s
+f9 SF
+(\()s
+f2 SF
+(g)s
+f10 SF
+2810 2612 p (2)s
+f3 SF
+2862 2604 p (\003)s
+f9 SF
+17 r (\()s
+f2 SF
+(z)s
+3 r (ip)s
+26 r (x)s
+25 r (cs)s
+f1 SF
+3215 2572 p (0)s
+f10 SF
+3215 2617 p (2)s
+f9 SF
+3249 2604 p (\)\)\))s
+f2 SF
+2241 2731 p (ccs)s
+f9 SF
+21 r (=)s
+f2 SF
+22 r (z)s
+3 r (ip)s
+26 r (cs)s
+f1 SF
+2644 2699 p (0)s
+f10 SF
+2644 2744 p (1)s
+f2 SF
+2704 2731 p (cs)s
+f1 SF
+2773 2699 p (0)s
+f10 SF
+2773 2744 p (2)s
+f2 SF
+2241 2858 p (accs)s
+f9 SF
+21 r (=)s
+f2 SF
+22 r (z)s
+3 r (ip)s
+26 r (x)s
+25 r (ccs)s
+f11 SF
+2116 2985 p (in)s
+f9 SF
+26 r (\()s
+f3 SF
+(\010)s
+f2 SF
+(=)s
+f9 SF
+12 r (\()s
+f2 SF
+(k)s
+f3 SF
+20 r (\003)s
+f2 SF
+17 r (accs)s
+f9 SF
+(\)\))s
+f3 SF
+17 r (\010)s
+f9 SF
+17 r (\()s
+f2 SF
+(g)s
+f10 SF
+2864 2993 p (1)s
+f9 SF
+2898 2985 p (\()s
+f2 SF
+(c)s
+f1 SF
+2961 2953 p (0)s
+f10 SF
+2961 2998 p (1)s
+f2 SF
+2996 2985 p (;)s
+13 r (c)s
+f1 SF
+3063 2953 p (0)s
+f10 SF
+3063 2998 p (2)s
+f9 SF
+3098 2985 p (\)\)\))s
+f4 SF
+1912 3190 p (4)s
+f7 SF
+68 r (JBNs%W%m%0%i%_%s%0)s
+f6 SF
+1904 3341 p ($3$3$G)s
+f9 SF
+(,)s
+f6 SF
+24 r (1~MQNc$H$7)s
+-1 r ($F)s
+f9 SF
+16 r (line-of-sigh)s
+-1 r (t)s
+f6 SF
+23 r ($H$$$&LdBj$r<h$j)s
+1836 3468 p (>e)s
+2 r ($2)s
+2 r ($k)s
+f9 SF
+(.)s
+f6 SF
+38 r ($3)s
+2 r ($N)s
+2 r (Ld)s
+2 r (Bj)s
+2 r ($r)s
+1 r (2r)s
+2 r ($/)s
+f9 SF
+17 r (scan)s
+f6 SF
+17 r ($r)s
+2 r (MQ)s
+2 r ($$)s
+2 r ($?)s
+1 r (8-)s
+2 r ($$)s
+2 r (JB)s
+2 r (Ns)s
+2 r (%")s
+1 r (%k)s
+2 r (%4)s
+1836 3595 p (%j%:)s
+1 r (%`$O)s
+f12 SF
+8 r ([3])s
+f6 SF
+($GM?)s
+1 r ($\($i$l)s
+1 r ($?$,)s
+f9 SF
+(,)s
+f6 SF
+26 r ($I$N$h)s
+1 r ($&$K$7)s
+1 r ($F$=$l)s
+1 r ($,F3$+)s
+1836 3722 p ($l$?$+$K$D$$$F$O@bL@$5$l$F$$$J$$)s
+f9 SF
+(.)s
+1904 3849 p (line-of-sigh)s
+-1 r (t)s
+f6 SF
+16 r ($H)s
+1 r ($O)s
+f9 SF
+(,)s
+f6 SF
+27 r (3J)s
+1 r (;R)s
+1 r (E@)s
+1 r ($K)s
+2 r ($*)s
+1 r ($1)s
+1 r ($k)s
+1 r (9b)s
+1 r (EY)s
+2 r ($,)s
+1 r ($")s
+1 r ($?)s
+1 r ($\()s
+1 r ($i)s
+2 r ($l)s
+1836 3976 p ($F)s
+3 r ($$)s
+2 r ($k)s
+3 r (CO)s
+3 r (7A)s
+2 r ($N)s
+3 r (CO)s
+3 r (?^)s
+2 r ($H)s
+f9 SF
+(,)s
+f6 SF
+29 r ($")s
+3 r ($k)s
+2 r (3J)s
+3 r (;R)s
+3 r (E@)s
+2 r (>e)s
+3 r ($N)s
+3 r (4Q)s
+2 r (;!)s
+3 r (>l)s
+3 r (=j)s
+f2 SF
+17 r (X)s
+f6 SF
+23 r ($,)s
+2 r (M?)s
+1836 4102 p ($\($i)s
+1 r ($l$?$H)s
+1 r ($-)s
+f9 SF
+(,)s
+f6 SF
+26 r (3F3J;R)s
+1 r (E@>e$N)s
+1 r (>l=j$,)s
+f9 SF
+(,)s
+f6 SF
+26 r (4Q)s
+1 r (;!>l=j)s
+f2 SF
+17 r (X)s
+f6 SF
+23 r ($+)s
+1 r ($i8+)s
+1836 4229 p ($\($k)s
+1 r ($+)s
+1 r ($I$&)s
+1 r ($+$r)s
+1 r (H=Dj)s
+1 r ($9$k)s
+1 r (LdBj)s
+1 r ($G$")s
+1 r ($k)s
+f9 SF
+(.)s
+f6 SF
+35 r (6q)s
+1 r (BNE*)s
+1 r ($K)s
+1 r (8@$&)s
+1 r ($H!$)s
+1836 4356 p (4Q;!>l)s
+1 r (=j)s
+f2 SF
+17 r (X)s
+f6 SF
+23 r ($H>l=j)s
+f2 SF
+17 r (Y)s
+f6 SF
+34 r ($rC<)s
+1 r (E@$H$9)s
+1 r ($k@~J,>e)s
+1 r ($N>l=j$N)s
+1 r (9bEY)s
+1836 4483 p ($N%j%9%H$r)s
+f2 SF
+17 r (as)s
+f6 SF
+17 r ($H$9$k$H!$5a$a$k$N$O)s
+f9 SF
+(,)s
+f2 SF
+25 r (as)s
+f6 SF
+17 r ($r0z?t$K$H$j)s
+f9 SF
+(,)s
+f6 SF
+1836 4610 p ($=$l$>$l$N>l=j$,4Q;!>l=j$+$i8+$\($k$+$I$&$+$rJV$94X)s
+1836 4737 p (?t)s
+f2 SF
+17 r (l)s
+1 r (os)s
+f6 SF
+17 r ($G$"$k!%Nc$\($P)s
+f9 SF
+(,)s
+f6 SF
+26 r (0z?t$H$7$F)s
+f9 SF
+2445 4864 p ([1)s
+f2 SF
+(;)s
+f9 SF
+13 r (5)s
+f2 SF
+(;)s
+f9 SF
+12 r (2)s
+f2 SF
+(;)s
+f9 SF
+13 r (7)s
+f2 SF
+(;)s
+f9 SF
+13 r (19)s
+f2 SF
+(;)s
+f9 SF
+13 r (2])s
+EP
+
+%%Page: 3 3
+BP
+f9 SF
+0 -132 p (\()s
+38 r (3)s
+38 r (\))s
+1211 r (V)s
+-5 r (ol.)s
+24 r (16)s
+68 r (No.)s
+26 r (0)s
+128 r (1999)s
+1347 r (3)s
+f6 SF
+0 23 p ($,M?$\($i$l$k$H)s
+f9 SF
+(,)s
+f2 SF
+26 r (l)s
+1 r (os)s
+f6 SF
+17 r ($rE,MQ$7$?7k2L$O)s
+f9 SF
+180 150 p ([)s
+f2 SF
+(T)s
+11 r (r)s
+2 r (ue;)s
+13 r (T)s
+11 r (r)s
+2 r (ue;)s
+13 r (F)s
+10 r (l)s
+2 r (ase;)s
+12 r (F)s
+11 r (l)s
+1 r (ase;)s
+13 r (T)s
+11 r (r)s
+2 r (ue;)s
+13 r (F)s
+10 r (al)s
+2 r (se)s
+f9 SF
+(])s
+f2 SF
+(:)s
+f6 SF
+0 277 p ($H$J$k)s
+f9 SF
+(.)s
+f6 SF
+68 404 p ($")s
+1 r ($k)s
+1 r (>l)s
+1 r (=j)s
+f2 SF
+17 r (Y)s
+f6 SF
+34 r ($O)s
+f9 SF
+(,)s
+f2 SF
+27 r (Y)s
+f6 SF
+34 r ($H)s
+1 r (4Q)s
+1 r (;!)s
+1 r (>l)s
+1 r (=j)s
+f2 SF
+17 r (X)s
+f6 SF
+22 r ($r)s
+1 r (C<)s
+1 r (E@)s
+1 r ($H)s
+1 r ($9)s
+1 r ($k)s
+1 r (@~)s
+1 r (J,)s
+1 r (>e)s
+0 531 p ($N)s
+2 r (G$)s
+3 r (0U)s
+2 r ($N)s
+3 r (>l)s
+2 r (=j)s
+f2 SF
+17 r (A)s
+f6 SF
+17 r ($K)s
+3 r ($D)s
+2 r ($$)s
+3 r ($F)s
+f9 SF
+(,)s
+f2 SF
+28 r (X)s
+f6 SF
+23 r ($+)s
+2 r ($i)s
+f2 SF
+17 r (Y)s
+f6 SF
+34 r ($r)s
+2 r (8+)s
+3 r ($k)s
+2 r (3Q)s
+3 r (EY)s
+2 r ($,)s
+f9 SF
+(,)s
+f2 SF
+28 r (X)s
+f6 SF
+0 657 p ($+)s
+3 r ($i)s
+f2 SF
+17 r (A)s
+f6 SF
+17 r ($r)s
+3 r (8+)s
+3 r ($k)s
+3 r (3Q)s
+3 r (EY)s
+3 r ($h)s
+3 r ($j)s
+3 r (Bg)s
+3 r ($-)s
+3 r ($$)s
+3 r ($H)s
+3 r ($-)s
+f9 SF
+(,)s
+f2 SF
+29 r (X)s
+f6 SF
+23 r ($+)s
+3 r ($i)s
+3 r (8+)s
+3 r ($\()s
+3 r ($k)s
+f9 SF
+(.)s
+f6 SF
+42 r ($=)s
+0 784 p ($N$?)s
+1 r ($a!$$"$k)s
+f2 SF
+17 r (Y)s
+f6 SF
+34 r ($,)s
+f2 SF
+17 r (X)s
+f6 SF
+23 r ($+$i)s
+1 r (8+$\($k$+)s
+1 r ($I$&$+)s
+1 r ($rH=Dj$9)s
+1 r ($k$K)s
+0 911 p ($O)s
+f9 SF
+(,)s
+f6 SF
+26 r ($=$N)s
+f2 SF
+17 r (Y)s
+f6 SF
+34 r ($N9bEY$N$[$+$K)s
+f9 SF
+(,)s
+f6 SF
+26 r ($=$N)s
+f2 SF
+17 r (Y)s
+f6 SF
+34 r ($H)s
+f2 SF
+17 r (X)s
+f6 SF
+23 r ($N4V$N>l=j)s
+f2 SF
+17 r (X)s
+f6 SF
+0 1038 p ($+)s
+1 r ($i)s
+2 r ($N)s
+1 r (4Q)s
+2 r (;!)s
+1 r (3Q)s
+2 r (EY)s
+1 r ($N)s
+2 r (:G)s
+1 r (Bg)s
+1 r (CM)s
+f9 SF
+(,)s
+f6 SF
+28 r ($*)s
+1 r ($h)s
+2 r ($S)s
+f2 SF
+17 r (X)s
+f6 SF
+22 r ($H)s
+2 r ($N)s
+f2 SF
+17 r (Y)s
+f6 SF
+34 r ($N)s
+1 r (4V)s
+2 r ($N)s
+1 r (5w)s
+2 r (N%)s
+0 1165 p ($N)s
+2 r (>p)s
+2 r (Js)s
+2 r ($,)s
+2 r (I,)s
+2 r (MW)s
+2 r ($G)s
+2 r ($")s
+2 r ($k)s
+f9 SF
+(.)s
+f6 SF
+40 r ($=)s
+2 r ($l)s
+2 r ($i)s
+2 r ($N)s
+2 r (>p)s
+2 r (Js)s
+2 r ($r)s
+f9 SF
+(,)s
+28 r (2)s
+f6 SF
+17 r ($D)s
+2 r ($N)s
+2 r (C_)s
+2 r (@Q)s
+2 r (0z)s
+2 r (?t)s
+0 1292 p ($rF3F~$7$FC_@Q$9$k)s
+f9 SF
+(.)s
+f2 SF
+524 1419 p (l)s
+2 r (os)s
+25 r (as)s
+f9 SF
+22 r (=)s
+f2 SF
+21 r (l)s
+1 r (os)s
+f1 SF
+923 1383 p (0)s
+f2 SF
+971 1419 p (as)s
+f9 SF
+26 r (0)s
+25 r (1)s
+f6 SF
+0 1546 p ($3)s
+2 r ($l)s
+2 r ($O)s
+f9 SF
+(,)s
+f6 SF
+27 r (4Q)s
+2 r (;!)s
+2 r (3Q)s
+2 r (EY)s
+2 r ($N)s
+2 r (:G)s
+2 r (Bg)s
+1 r (CM)s
+2 r ($N)s
+2 r (=i)s
+2 r (4|)s
+2 r (CM)s
+f9 SF
+17 r (0)s
+f6 SF
+17 r ($H)s
+f9 SF
+(,)s
+f6 SF
+28 r (4Q)s
+1 r (;!)s
+2 r (E@)s
+2 r ($+)s
+2 r ($i)s
+2 r ($N)s
+0 1673 p (5wN%$N=i4|CM)s
+f9 SF
+16 r (1)s
+f6 SF
+17 r ($,C_@Q0z?t$KM?$\()s
+-1 r ($i$l$F$$$k)s
+-1 r ($3$H$r0UL#)s
+0 1800 p ($7$F$$$k)s
+f9 SF
+(.)s
+f6 SF
+33 r (4X?t)s
+f2 SF
+17 r (l)s
+1 r (os)s
+f1 SF
+576 1768 p (0)s
+f6 SF
+616 1800 p ($N;EMM$O0J)s
+-1 r (2<$N$h$&)s
+-1 r ($K4J7i$K)s
+-1 r (=q$-I=)s
+0 1927 p ($9$3$H$,$G$-$k)s
+f9 SF
+(.)s
+f2 SF
+115 2028 p (l)s
+1 r (os)s
+f1 SF
+212 1996 p (0)s
+f9 SF
+260 2028 p ([)s
+13 r (])s
+f2 SF
+25 r (\022)s
+28 r (dist)s
+f9 SF
+21 r (=)s
+22 r ([)s
+13 r (])s
+f2 SF
+115 2155 p (l)s
+1 r (os)s
+f1 SF
+212 2123 p (0)s
+f9 SF
+260 2155 p (\()s
+f2 SF
+(a)s
+f9 SF
+21 r (:)s
+f2 SF
+22 r (as)s
+f9 SF
+(\))s
+f2 SF
+25 r (\022)s
+28 r (dist)s
+f9 SF
+21 r (=)s
+f11 SF
+192 2282 p (let)s
+f2 SF
+25 r (\022)s
+f1 SF
+355 2250 p (0)s
+f9 SF
+399 2282 p (=)s
+f2 SF
+21 r (ang)s
+3 r (l)s
+1 r (e)s
+25 r (a)s
+26 r (dist)s
+f11 SF
+26 r (in)s
+192 2409 p (if)s
+f2 SF
+25 r (\022)s
+f1 SF
+307 2377 p (0)s
+f2 SF
+351 2409 p (>)s
+21 r (\022)s
+f11 SF
+28 r (then)s
+f2 SF
+25 r (T)s
+11 r (r)s
+2 r (ue)s
+f9 SF
+21 r (:)s
+f2 SF
+22 r (l)s
+1 r (os)s
+f1 SF
+1027 2377 p (0)s
+f2 SF
+1075 2409 p (as)s
+26 r (\022)s
+f1 SF
+1216 2377 p (0)s
+f9 SF
+1263 2409 p (\()s
+f2 SF
+(dist)s
+f9 SF
+18 r (+)s
+17 r (1\))s
+f11 SF
+495 2536 p (else)s
+f2 SF
+26 r (F)s
+11 r (al)s
+1 r (se)s
+f9 SF
+21 r (:)s
+f2 SF
+22 r (l)s
+1 r (os)s
+f1 SF
+1019 2504 p (0)s
+f2 SF
+1067 2536 p (as)s
+25 r (\022)s
+f9 SF
+28 r (\()s
+f2 SF
+(dist)s
+f9 SF
+17 r (+)s
+17 r (1\))s
+f6 SF
+0 2630 p ($3$3)s
+1 r ($G!$)s
+f2 SF
+17 r (ang)s
+2 r (l)s
+1 r (e)s
+f6 SF
+17 r ($O)s
+1 r (9bEY$H)s
+1 r (5wN%$r0z)s
+1 r (?t$K$H$j)s
+f9 SF
+(,)s
+f6 SF
+26 r ($=)s
+1 r ($N3QEY$r)s
+0 2757 p (7W;;$9$k4X?t$G$"$k!%)s
+68 2884 p ($3$3$^$G$OJBNs$K4X$7$F$O2?)s
+-1 r ($b9MN8$;$:)s
+f9 SF
+16 r (line-of-sigh)s
+-1 r (t)s
+f6 SF
+0 3011 p (LdBj$r2r$/%W%m%0%i%`$r5-=R$7$?!%0J2<$G!$5UM;9g1?;;)s
+0 3138 p ($K)s
+2 r ($h$C)s
+1 r ($F)s
+f9 SF
+(,)s
+f2 SF
+28 r (l)s
+1 r (os)s
+f1 SF
+421 3106 p (0)s
+f6 SF
+460 3138 p ($N)s
+2 r (JB)s
+2 r (Ns)s
+1 r (%W)s
+2 r (%m)s
+1 r (%0)s
+2 r (%i)s
+2 r (%`)s
+1 r ($r)s
+2 r (F3)s
+1 r (=P)s
+2 r ($9)s
+2 r ($k)s
+f9 SF
+(.)s
+f6 SF
+38 r (5U)s
+1 r (M;)s
+2 r (9g)s
+2 r (1?)s
+0 3265 p (;;)s
+1 r (DjM})s
+1 r ($r)s
+1 r (E,)s
+1 r (MQ$9)s
+1 r ($k)s
+1 r ($?)s
+1 r ($a$K!$)s
+f2 SF
+17 r (l)s
+2 r (os)s
+f1 SF
+937 3233 p (0)s
+f6 SF
+986 3265 p ($H)s
+f2 SF
+26 r (h)s
+f6 SF
+27 r ($NBP)s
+1 r (1~)s
+1 r ($E)s
+1 r ($1$r)s
+1 r ($7)s
+1 r ($J)s
+0 3392 p ($1)s
+3 r ($l)s
+3 r ($P)s
+2 r ($J)s
+3 r ($i)s
+3 r ($J)s
+3 r ($$!%)s
+3 r ($=)s
+2 r ($N)s
+3 r ($?)s
+3 r ($a!$)s
+f2 SF
+17 r (l)s
+1 r (os)s
+f1 SF
+1026 3360 p (0)s
+f6 SF
+1066 3392 p ($N)s
+2 r (:F)s
+3 r (5")s
+3 r (E*)s
+3 r ($J)s
+3 r (It)s
+2 r (J,)s
+3 r ($r)s
+3 r (0l)s
+0 3519 p ($D)s
+1 r ($K)s
+1 r ($^$H)s
+1 r ($a!$)s
+1 r (:F)s
+1 r (5")s
+1 r (E*)s
+1 r (ItJ,)s
+1 r ($H)s
+1 r (Hs)s
+1 r (:F)s
+1 r (5")s
+1 r (ItJ,)s
+1 r ($K)s
+1 r (J,)s
+1 r (N%)s
+1 r ($9)s
+1 r ($k)s
+f9 SF
+(.)s
+36 r (if)s
+f6 SF
+17 r ($N)s
+0 3646 p (Be?tE*@-<A$rMQ$$$k$3$H$K$h$j!$<!$N$h$&$J7k2L$,F@$i)s
+0 3773 p ($l$k!%)s
+f2 SF
+116 3873 p (l)s
+1 r (os)s
+f1 SF
+213 3842 p (0)s
+f9 SF
+261 3873 p ([)s
+13 r (])s
+f2 SF
+25 r (\022)s
+28 r (dist)s
+f9 SF
+22 r (=)s
+f2 SF
+21 r (g)s
+f10 SF
+674 3882 p (1)s
+f9 SF
+709 3873 p (\()s
+f2 SF
+(\022)s
+2 r (;)s
+13 r (dist)s
+f9 SF
+(\))s
+f2 SF
+116 4000 p (l)s
+1 r (os)s
+f9 SF
+26 r (\()s
+f2 SF
+(a)s
+f9 SF
+21 r (:)s
+f2 SF
+21 r (as)s
+f9 SF
+(\))s
+f2 SF
+26 r (\022)s
+28 r (dist)s
+f9 SF
+21 r (=)s
+f2 SF
+317 4127 p (k)s
+f9 SF
+2 r (\()s
+f2 SF
+(a;)s
+f9 SF
+13 r (\()s
+f2 SF
+(\022)s
+2 r (;)s
+13 r (dist)s
+f9 SF
+(\)\))s
+17 r (+)s
+-20 r (+)s
+f2 SF
+317 4254 p (l)s
+2 r (os)s
+f1 SF
+414 4223 p (0)s
+f9 SF
+462 4254 p (\()s
+f2 SF
+(\022)s
+f3 SF
+20 r (\012)s
+f10 SF
+607 4263 p (1)s
+f2 SF
+659 4254 p (ang)s
+2 r (l)s
+2 r (e)s
+25 r (a)s
+26 r (dist)s
+f9 SF
+(\))s
+25 r (\()s
+f2 SF
+(dist)s
+f9 SF
+18 r (+)s
+f2 SF
+17 r (g)s
+f10 SF
+1412 4263 p (3)s
+f2 SF
+1472 4254 p (a)s
+f9 SF
+(\))s
+f6 SF
+1836 23 p ($?$@$7!$)s
+f2 SF
+2019 124 p (g)s
+f10 SF
+2056 132 p (1)s
+f9 SF
+2091 124 p (\()s
+f2 SF
+(\022)s
+2 r (;)s
+13 r (dist)s
+f9 SF
+(\))s
+21 r (=)s
+21 r ([)s
+13 r (])s
+f2 SF
+2019 250 p (\022)s
+f3 SF
+20 r (\012)s
+f10 SF
+2134 259 p (1)s
+f2 SF
+2186 250 p (\022)s
+f1 SF
+2224 219 p (0)s
+f9 SF
+2268 250 p (=)s
+f11 SF
+21 r (if)s
+f2 SF
+26 r (\022)s
+f1 SF
+2464 219 p (0)s
+f2 SF
+2508 250 p (>)s
+21 r (\022)s
+f11 SF
+28 r (then)s
+f2 SF
+25 r (\022)s
+f1 SF
+2889 219 p (0)s
+f11 SF
+2937 250 p (else)s
+f2 SF
+26 r (\022)s
+2019 377 p (k)s
+f9 SF
+3 r (\()s
+f2 SF
+(a;)s
+f9 SF
+12 r (\()s
+f2 SF
+(\022)s
+3 r (;)s
+12 r (dist)s
+f9 SF
+(\)\))s
+22 r (=)s
+f11 SF
+2221 504 p (if)s
+f2 SF
+25 r (ang)s
+3 r (l)s
+1 r (e)s
+26 r (a)s
+26 r (dist)s
+21 r (>)s
+21 r (\022)s
+f11 SF
+28 r (then)s
+f9 SF
+26 r ([)s
+f2 SF
+(T)s
+10 r (r)s
+2 r (ue)s
+f9 SF
+(])s
+f11 SF
+2872 631 p (else)s
+f9 SF
+25 r ([)s
+f2 SF
+(F)s
+11 r (al)s
+1 r (se)s
+f9 SF
+(])s
+f2 SF
+2019 758 p (g)s
+f10 SF
+2056 767 p (3)s
+f2 SF
+2116 758 p (a)s
+f9 SF
+22 r (=)s
+21 r (1)s
+f2 SF
+(:)s
+f6 SF
+1836 852 p ($3)s
+3 r ($l)s
+3 r ($K)s
+2 r (5U)s
+3 r (M;)s
+3 r (9g)s
+3 r (1?)s
+3 r (;;)s
+2 r (Dj)s
+3 r (M})s
+3 r ($r)s
+3 r (E,)s
+3 r (MQ)s
+2 r ($9)s
+3 r ($k)s
+3 r ($3)s
+3 r ($H)s
+3 r ($K)s
+2 r ($h$C)s
+3 r ($F!$)s
+f12 SF
+8 r ([3])s
+f6 SF
+($N)s
+1836 979 p (O@J8$G5-=R$5$l$?$b$N$HN`;w$N!$8zN\($N$h$$JBNs%"%k%4)s
+1836 1106 p (%j%:%`$,F@$i$l$k!%)s
+f4 SF
+1912 1337 p (5)s
+f7 SF
+68 r ($*)s
+15 r ($o)s
+15 r ($j)s
+16 r ($K)s
+f6 SF
+1904 1487 p (K\\O@J8$O!$5UM;9g1?;;DjM}$r3HD%$7!$$=$N1~MQNc$r@b)s
+1836 1614 p (L@$9$k$H$H$b$K!$1?;;$K$h$kJBNs%W%m%0%i%_%s%0$N%"%$)s
+1836 1741 p (%G)s
+2 r (%")s
+2 r ($r)s
+2 r (=R)s
+2 r ($Y)s
+2 r ($?!%)s
+2 r (>\\)s
+2 r (:Y)s
+2 r ($r)s
+2 r (CN)s
+2 r ($j)s
+2 r ($?)s
+2 r ($$)s
+2 r (FI)s
+2 r (<T)s
+2 r ($O)s
+f12 SF
+9 r ([5])s
+8 r ([6])s
+f6 SF
+($r)s
+2 r (;2)s
+2 r (>H)s
+2 r ($5)s
+2 r ($l)s
+1836 1868 p ($?$$!%)s
+f17 SF
+1904 2122 p (;2)s
+14 r (9M)s
+13 r (J8)s
+14 r (8%)s
+f12 SF
+1883 2249 p ([)s
+2 r (1)s
+1 r (])s
+59 r (Bird,)s
+23 r (R.:)s
+30 r (An)s
+22 r (In)s
+-1 r (tro)s
+1 r (duction)s
+22 r (to)s
+22 r (the)s
+23 r (Theory)s
+22 r (of)s
+22 r (Lists,)s
+f13 SF
+1954 2335 p (L)s
+-3 r (o)s
+-3 r (gic)s
+27 r (of)s
+27 r (Pr)s
+-2 r (o)s
+-4 r (gr)s
+-4 r (amming)s
+27 r (and)s
+28 r (Calculi)s
+28 r (of)s
+27 r (Discr)s
+-2 r (ete)s
+27 r (De-)s
+1954 2420 p (sign)s
+f12 SF
+(\(Bro)s
+-1 r (y)s
+-6 r (,)s
+27 r (M.\(ed.\)\),)s
+28 r (Springer-V)s
+-5 r (erlag,)s
+27 r (1987,)s
+28 r (pp.)s
+53 r (5{)s
+1954 2506 p (42.)s
+1883 2592 p ([)s
+2 r (2)s
+1 r (])s
+59 r (Bird,)s
+26 r (R.:)s
+34 r (Constructiv)s
+-1 r (e)s
+24 r (F)s
+-4 r (unctional)s
+24 r (Programming,)s
+f13 SF
+1954 2677 p (STOP)s
+38 r (Summer)s
+37 r (Scho)s
+-2 r (ol)s
+36 r (on)s
+38 r (Constructive)s
+37 r (Algorith-)s
+1954 2763 p (mics,)s
+26 r (A)s
+-1 r (b)s
+-4 r (eland)s
+f12 SF
+(,)s
+23 r (9)s
+23 r (1989.)s
+1883 2848 p ([)s
+2 r (3)s
+1 r (])s
+59 r (Blello)s
+2 r (c)s
+-1 r (h,)s
+33 r (G.)s
+31 r (E.:)s
+47 r (Scans)s
+31 r (as)s
+32 r (Primitiv)s
+-1 r (e)s
+30 r (Op)s
+2 r (erations,)s
+f13 SF
+1954 2934 p (IEEE)s
+29 r (T)s
+-4 r (r)s
+-4 r (ans.)s
+29 r (on)s
+29 r (Computers)s
+f12 SF
+(,)s
+29 r (V)s
+-5 r (ol.)s
+27 r (38,No.)s
+27 r (11\(1989\),)s
+1954 3020 p (pp.)s
+24 r (1526{1538.)s
+1883 3105 p ([)s
+2 r (4)s
+1 r (])s
+59 r (Cole,)s
+18 r (M.:)s
+f13 SF
+28 r (A)s
+-1 r (lgorithmic)s
+19 r (skeletons)s
+19 r (:)s
+29 r (a)s
+20 r (structur)s
+-3 r (e)s
+-4 r (d)s
+18 r (ap-)s
+1954 3191 p (pr)s
+-3 r (o)s
+-3 r (ach)s
+24 r (to)s
+26 r (the)s
+26 r (management)s
+25 r (of)s
+26 r (p)s
+-3 r (ar)s
+-3 r (al)s
+2 r (lel)s
+26 r (c)s
+-3 r (omputation)s
+f12 SF
+(,)s
+1954 3277 p (Researc)s
+-1 r (h)s
+33 r (Monographs)s
+34 r (in)s
+34 r (P)s
+-1 r (arallel)s
+33 r (and)s
+34 r (Distributed)s
+1954 3362 p (Computing,)s
+24 r (Pitman,)s
+23 r (London,)s
+24 r (1989.)s
+1883 3448 p ([)s
+2 r (5)s
+1 r (])s
+59 r (Hu,)s
+28 r (Z.,)s
+28 r (T)s
+-5 r (ak)s
+-2 r (eic)s
+-2 r (hi,)s
+28 r (M.,)s
+28 r (and)s
+27 r (Chin,)s
+28 r (W.:)s
+38 r (P)s
+-1 r (aralleliza-)s
+1954 3533 p (tion)s
+42 r (in)s
+42 r (Calculational)s
+42 r (F)s
+-5 r (orms,)s
+f13 SF
+46 r (25th)s
+42 r (ACM)s
+41 r (Symp)s
+-2 r (o-)s
+1954 3619 p (sium)s
+20 r (on)s
+21 r (Principles)s
+20 r (of)s
+20 r (Pr)s
+-3 r (o)s
+-3 r (gr)s
+-4 r (amming)s
+19 r (L)s
+-2 r (anguages)s
+f12 SF
+(,)s
+18 r (San)s
+1954 3705 p (Diego,)s
+19 r (California,)s
+18 r (USA,)s
+18 r (Jan)s
+-1 r (uary)s
+16 r (1998,)s
+19 r (pp.)s
+35 r (316{328.)s
+1883 3790 p ([)s
+2 r (6)s
+1 r (])s
+59 r (Hu,)s
+42 r (Z.,)s
+43 r (T)s
+-5 r (ak)s
+-2 r (eic)s
+-2 r (hi,)s
+41 r (M.,)s
+43 r (and)s
+38 r (Iw)s
+-1 r (asaki,)s
+42 r (H.:)s
+61 r (Di\013u-)s
+1954 3876 p (sion:)s
+36 r (Calculating)s
+25 r (E\016cien)s
+-1 r (t)s
+25 r (P)s
+-1 r (arallel)s
+25 r (Programs,)s
+f13 SF
+26 r (1999)s
+1954 3962 p (A)s
+-1 r (CM)s
+32 r (SIGPLAN)s
+32 r (Workshop)s
+32 r (on)s
+33 r (Partial)s
+32 r (Evaluation)s
+1954 4047 p (and)s
+34 r (Semantics-Base)s
+-2 r (d)s
+33 r (Pr)s
+-3 r (o)s
+-3 r (gr)s
+-4 r (am)s
+34 r (Manipulation)s
+f12 SF
+(,)s
+35 r (San)s
+1954 4133 p (An)s
+-1 r (tonio,)s
+24 r (T)s
+-4 r (exas,)s
+24 r (BRICS)s
+25 r (Notes)s
+25 r (Series)s
+25 r (NS-99-1,)s
+25 r (Jan-)s
+1954 4218 p (uary)s
+24 r (1999,)s
+23 r (pp.)s
+47 r (85{94.)s
+1883 4304 p ([)s
+2 r (7)s
+1 r (])s
+59 r (Skillicorn,)s
+37 r (D.)s
+35 r (B.:)s
+f13 SF
+53 r (F)s
+-4 r (oundations)s
+35 r (of)s
+35 r (Par)s
+-2 r (al)s
+2 r (lel)s
+36 r (Pr)s
+-3 r (o-)s
+1954 4390 p (gr)s
+-3 r (amming)s
+f12 SF
+(,)s
+23 r (Cam)s
+-1 r (bridge)s
+23 r (Univ)s
+-1 r (ersit)s
+-2 r (y)s
+22 r (Press,)s
+24 r (1994.)s
+EP
+%%Trailer
+%%Pages: 3
+END
+%%EOF
