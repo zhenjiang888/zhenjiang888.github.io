@@ -1,0 +1,70 @@
+「算法言語」テスト２の答案
+
+問題１（２０’）教科書の図6.2の言語において
+ 
+cmdexec (While e c) =
+    cmdexec (If e (Block [] [c, While e c], Skip))
+
+であることを証明せよ。
+
+証明：任意のr,sに対して、
+
+cmdexec (If e (Block [] [c, While e c], Skip)) r s
+= { def. of If-case in cmdexec }
+    | v = cmdexec (Block [] [c, While e c]) r s 
+    | otherwise = cmdexec Skip r s
+   where V_Bool v = expval e r s 
+= { def. of Skip-case and Block-case in cmdexec }
+    | v = cmdexec (While e c) r (cmdexec c r s) 
+    | otherwise = s
+   where V_Bool v = expval e r s 
+= { def. of While-case in cmdexec }
+cmdexec (While e c) r s
+
+から、
+
+cmdexec (While e c) =
+    cmdexec (If e (Block [] [c, While e c], Skip))
+
+が成立する。
+
+
+問題２（ボーナス１０’）初期環境をr0、初期状態をt0をとする。次のプログラムを 
+実行した後の状態を与えよ。（説明も含む）
+ 
+1   begin var i,s; 
+2         i:=10; s:=0; 
+3         while i>0 do 
+4            begin s:=s+i; i:=i-1 end; 
+5         result:=s 
+6   end
+
+初期環境 r0 = [("result",V_Loc 0)]  
+初期状態 t0 = (1,[])
+
+1行目のコードを実行後： 
+	r0 = [("result",V_Loc 0),
+	      ("i",V_Loc 1),
+	      ("s",V_Loc 2)] 
+	t0 = (1,[])
+
+2行目のコードを実行後： 
+	r0 = [("result",V_Loc 0),
+	      ("i",V_Loc 1),
+	      ("s",V_Loc 2)] 
+	t0 = (3,[(1,10),(2,0)])
+
+3,4行目のコードを実行後： 
+	r0 = [("result",V_Loc 0),
+	      ("i",V_Loc 1),
+	      ("s",V_Loc 2)] 
+	t0 = (3,[(1,0),(2,55)])
+
+5(6)行目のコードを実行後： 
+	r0 = [("result",V_Loc 0),
+	      ("i",V_Loc 1),
+	      ("s",V_Loc 2)] 
+	t0 = (3,[(1,0),(2,55),(0,55)])
+ 
+
+

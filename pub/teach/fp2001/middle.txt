@@ -1,0 +1,18 @@
+演習問題１
+　次のページ
+　　　http://www.ipl.t.u-tokyo.ac.jp/~hu/pub/teach/fp01/src/
+　から
+　　　　　　　　Calendar.hs 
+　を download する。その実行結果を確かめる。
+
+　　
+演習問題２
+　年と月が与えられるとその月のカレンダー関数を定義せよ。
+
+　ヒント
+　　cal-month :: Int -> Int -> String
+    cal-month mn yr = picture (?,?,?,?)
+       where …
+
+演習問題３
+　カレンダーの曜日が日曜日からではなくて月曜日から始まるような定義を与えよ。

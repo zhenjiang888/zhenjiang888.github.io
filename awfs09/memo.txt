@@ -1,0 +1,90 @@
+Dear PC members,
+
+We've just sent out notifications to the authors.  
+Thank you very much again for your cooperation.
+
+As AWFS is an *informal* workshop serving as a platform for Asian
+researchers to present their old or new work, we'd encourage you to
+attend the workshop and give a short presentation of your own work. 
+If you can give a talk at AWFS'09, please send us a title by 
+
+   February 20 (Fri)
+
+We are very happy that Prof. Sato, Prof. Ohori, and Prof. Yuasa
+are considering to give talks at AWFS'09.
+
+In addition, if you need supporting documents for your visa
+application, please feel free to contact Zhenjiang. 
+
+Best regards,
+
+Jian and Zhenjiang
+
+
+
+Here is a quick reply.
+
+As I clerly pointed out in my review (review 1), there is a serious presentation problem with the paper, and without clarification readers would feel difficult to understand what the problem is be solved.
+
+Also, I clearly pointed that the discussion on the top of page 4, directly led me to think of the Rely-Guarntee approach to ensure consistency, here I quote
+
+``If there are two communicating software components, A and B, B's interface to A
+is the weakest assumption about B that would allow you to prove the correctness of
+A. We need to check whether the assumptions of one component about the rest of
+the system have been met, whether the required resources are used correctly with
+respect to their data types and so on.''
+
+Therefore, a discussion about the difference between the problem and approach of the paper from that of Rely-Guarntee approach.
+
+The Rely-Guarantee approach is a method of proof. What we gave is a definition and a motivation 
+for that definition.  Discussions of Rely-Guarantee usually compare it to another method used
+in proof (Separation) not to definitions.  
+
+
+
+
+
+
+Yes, only after reading Dave's reply, I am clearer that the paper treat componenents like hardware unitis and overall consistency will be checked after they are wired together (by linking inputs and outputs). However, this does not mean that checking wether two componenents are consistent in a form of rely and guarentt approach is not applicable before the wiring is done.
+Most discussions of rely-guarantee approach use it in showing that certain invariants will be maintained. 
+We are doing nothing like that.  Essentially we are composing functions. 
+
+Regarding to the relation to Broy's work, the trace relations (functions) Definition~3 of the paper is clearly related to the semantic model of the stream calculus used by Broy's group, and many papers by Broy's group are about or use trace relations or functions, and it should be easier to find from the internet.
+This is really helpful as I thought the referee was referring to more recent work and  had reviewed
+the work talking about hierarchical approaches to component systems.  The work that the referee actually
+meant is fairly ancient and the group does not seem to be pursuing it.  The newest paper I know is 10 
+years old.  Broy's group, and far too many others, seem to have elaborated a basic approach that I 
+first heard from Tony Hoare in the late 70s.  He and I indpendently presented approaches with the same
+buzzword (traces) at a series of meetings of an ifip working group.   Each of us skipped one meeting - the
+one where the other presented his idea. Hoare's approach was based on a message passing model
+which has evolved into the stream model you see in the Munich work.  Mine used shared variables. 
+
+The relations that they use map input traces to output traces. I tried this in the 70s and used in as a 
+definition in a paper in the 80s but, while this approach theoretically correct (the
+reason that I used it as a definition) it does not lead to practical documents.  Iit implies the information
+a software developer wants to know but it does not state this information directly.  In our approach the 
+range is a single value (not a stream) and the domain is a history that includes both inputs and outputs. 
+The old work mentioned tried to use algebraic methods to state the properties of these relations.  
+We found that this leads to specifications that practitioners won't use and so do not use that approach.  
+
+There are many things that can be called "relational" (almost everything!) but the distinguishing
+feature is the range and domain of the relations.   The methods are so different that a single 
+sentence would explain it.   I think it a good idea to add that sentence.  However, these differences
+are not the point of THIS paper.  This paper mentions that method only in saying that it is the method used
+sources of information that we assume here.   
+
+The relation to rCOS is not so direct as it is about model driven design of oo software componenents, but this particular comment is just to suggest that the authors might like to discuss their work in a wider context as interfaces of component, their consistency/compatibility  and composition are studied in many frameworks including rCOS and Reo at CWI. For the problem of how interfaces, components and the problem of consistency/compatibility and compositions are addressed in rCOS, the authors are referred to the following papers
+
+Chen X., He J., Liu Z. and Zhan N.
+A model of component-based programming, in Farhad Arbab, Marjan Sirjani (Eds.): LNCS 4767, pp. 191-206, 2007.
+
+He J., Li X. and Liu Z.
+Component-Based Software Engineering.  LNCS 3722: 70-95, Springer 2005
+
+Thank you. I have been present at presentations of this work.  As I said, it is program based work, where ours
+is based on a classical mechanical/electrical engineering approach that I began to use in 1977 and
+have used in practical applications.  Again, the essential difference is in the range and domains
+of the relations used.    
+
+These are points that we could have easily made in the paper but they were so clear to us that 
+we did not think to do it.   This discussion will help us to improve the paper.  

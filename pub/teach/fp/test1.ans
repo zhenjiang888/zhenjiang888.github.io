@@ -1,0 +1,59 @@
+「算法言語」中間テスト１ 答案
+（平成12年11月13日）
+
+１．「10点」次のような型の関数の例をあげよ。
+(1) (Int -> Int) -> Int
+
+    f :: (int->Int)->Int	
+    f g = g 1
+
+(2) Int -> (Int -> Int)
+
+    f :: Int->(Int->Int)
+    f x = (x+)
+
+(3) (Int -> Int) -> (Int -> Int)
+
+    f :: (Int->Int)->(Int->Int)
+    f g x = g x
+
+2．「10点＋ボーナス10点」3章<Expr>の文の構文規則は次のような代数型で定義する。
+　　    data Expr = Num Int
+    　　          | PExpr Expr Expr
+        　　      | MExpr Expr Expr
+例えば、1+(3-2)は
+　　　　PExpr (Num 1) 
+        　　　(MExpr (Num 3) (Num 2))
+で表現される。
+(1) <Expr>の文に含まれる演算子＋と演算子ーの個数が等しいかどうかを
+　　判定する関数
+	samePM :: Expr -> Bool
+    を定義せよ。
+
+    samePM :: Expr -> Bool
+    samePM e = diffPM e == 0
+
+    diffPM :: Expr -> Int
+    diffPM (Num n) = 0
+    diffPM (PExpr e1 e2) = diffPM e1 + diffPM e2 + 1
+    diffPM (MExpr e1 e2) = diffPM e1 + diffPM e2 - 1 
+
+(2)「ボーナス問題」 <Expr>の文の構文木（教科書P55）の高さを求める関数
+	　　　　height :: Expr -> Int
+を定義せよ。　
+
+   height :: Expr -> Int
+   height (Num n) = 1
+   height (PExpr e1 e2) = 1 + max (height e1) (height e2)
+   height (MExpr e1 e2) = 1 + max (height e1) (height e2)
+
+
+　　　
+
+　　
+
+
+
+
+
+

@@ -1,0 +1,97 @@
+<TITLE>Exjobb</TITLE>                       
+
+<body bgcolor=white>
+<CENTER>
+<H1>Examensarbete in Polytypic programming</H1>
+
+<H2> Introduction </H2>
+</CENTER>
+
+Different programming paradigms offer different possibilities for
+reuse and abstraction. Object-oriented programming languages support
+inheritance, functional programming languages support higher-order
+functions and polymorphism, and ADA95 supports both. ADA95 shows that
+the evolution of programming languages is essentially about
+understanding various aspects of abstraction. This proposal is
+concerned with a new aspect of abstraction which we call polytypism.
+
+<P>
+
+At Chalmers we are currently working on extending functional
+programming languages with a construct that makes definitions of
+functions by induction to the structure of datatypes possible. Such
+functions are called polytypic functions.
+
+<P>
+
+An example of a polytypic function is a generalisation of function
+length. Function length determines the number of elements in a list,
+but it cannot determine the number of elements in a tree. Instead new
+(and very similar) functions must be written to count the nodes of
+each new datatype. Polytypism lets us write a general size function
+for a large class of datatypes (of which the length function on lists
+is an instance).  Other examples of polytypic functions are rewriting
+functions, which take a set of rewriting rules (values of a datatype
+that contains variables) and a term (a value of the datatype without
+variables), and rewrites the value to normal form using the rewriting
+rules, and Haskell's show function, which takes a value of any
+datatype, and returns a string representing the value. Polytypism
+appears in datatype independent applications such as term rewriting
+systems, program transformation systems, code generators, theorem
+provers, logical frameworks, program analysers, debuggers, etc.
+
+<CENTER>
+<H2> Possible examensarbete </H2>
+</CENTER>
+
+To test and assess our language extension we want to write a large
+number of polytypic programs, and implement them in our extended
+language. Since until recently it was very difficult or impossible to
+formulate polytypic solutions to programming problems, there do not
+exist many ready made polytypic programs. Therefore we have to develop
+polytypic solutions ourselves.
+
+<H3>               Project 1: Drawing trees tidily </H3>
+
+Sometimes it is desirable to show structured information in a
+structured way, for example in debuggers. There exist datatype
+specific algorithms for drawing trees tidily, and the project amounts
+to generalising this datatype specific algorithm to a polytypic
+algorithm.
+
+<H3>                  Project 2: Data compression </H3>
+
+Values of any datatype can be compressed using a generalised version
+of the Liv-Zempel data compression function. This project consists of
+implementing the polytypic data compression function, and applying the
+result to some programming languages. The resulting functions should
+both be very efficient, and give extremely good compression results. 
+
+<H3>      Project 3: Generating language-based environments </H3>
+
+A structure editor helps programmers with writing programs with
+correct syntax. A structure editor generator is a typical polytypic
+program: given a grammar of the language (a datatype), generate the
+corresponding structure editor.
+
+
+<CENTER>
+<H2> Practical Information </H2>
+</CENTER>
+
+Five months (20 po,AgO(Bg) should be enough to solve (substantial parts
+of) each of these projects. The projects require knowledge of
+functional programming and algorithms. Projects 1 and 3 should be
+solved with fudgets. For more information, please contact:
+
+<P>
+
+Johan Jeuring
+
+<P>
+<dl>
+<dt>room:  5416
+<dt>tel:   7721089
+<dt>email: johanj@cs.chalmers.se
+<dt>url:   <A HREF="/~johanj/"><I>http://www.cs.chalmers.se/~johanj</I></A>
+</dl>

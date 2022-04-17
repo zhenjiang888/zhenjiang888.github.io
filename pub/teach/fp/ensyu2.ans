@@ -1,0 +1,92 @@
+
+演習問題2の答案
+
+４ 次の命令を実行し、プログラムの構文木を求めよ。
+
+(1) parse "x:=1"
+Cmd_Assign (Expr_Var "x") (Expr_Num "1") 
+
+(2) parse "x:=x-1"
+Cmd_Assign (Expr_Var "x") 
+           (Expr_Bexpr BinOpr_Minus (Expr_Var "x") (Expr_Num "1"))  
+(3) parse "begin x:=1; y:=x end"
+Cmd_Block [] 
+ 　　[Cmd_Assign (Expr_Var "x") (Expr_Num "1"),
+　　　Cmd_Assign (Expr_Var "y") (Expr_Var "x")] 
+
+(4) parse "begin var x,y; x:=1; y:=x end"
+Cmd_Block [Decl_VarDecl "x",Decl_VarDecl "y"] 
+　　 [Cmd_Assign (Expr_Var "x") (Expr_Num "1"),
+　　　Cmd_Assign (Expr_Var "y") (Expr_Var "x")]    
+
+(5) parse "if x>y then z:=x else z:=y"
+Cmd_If (Expr_Rexpr RelOpr_Greater (Expr_Var "x") (Expr_Var "y"))
+       (Cmd_Assign (Expr_Var "z") (Expr_Var "x"),
+        Cmd_Assign (Expr_Var "z") (Expr_Var "y"))   
+
+(6) parse "while x==0 do x:=x-1"
+Cmd_While (Expr_Rexpr RelOpr_Equal (Expr_Var "x") (Expr_Num "0"))
+   (Cmd_Assign (Expr_Var "x") 
+               (Expr_Bexpr BinOpr_Minus (Expr_Var "x") (Expr_Num "1")))   
+
+(7) parse "begin var result; if result>100 then result:=1 else skip end"
+Cmd_Block [Decl_VarDecl "result"] 
+          [Cmd_If (Expr_Rexpr RelOpr_Greater (Expr_Var "result")
+(Expr_Num "100")) 
+                  (Cmd_Assign (Expr_Var "result") (Expr_Num "1"),
+                   Cmd_Skip)]  
+    
+(8) parse "begin var i,s; i:=100; s:=0; while i>=0 do begin s:=s+i; i:=i-1 end; result:=s end" 
+Cmd_Block [Decl_VarDecl "i",Decl_VarDecl "s"] 
+   [Cmd_Assign (Expr_Var "i") (Expr_Num "100"),
+    Cmd_Assign (Expr_Var "s") (Expr_Num "0"),
+    Cmd_While (Expr_Rexpr RelOpr_GreaterEq (Expr_Var "i") (Expr_Num "0")) 
+              (Cmd_Block [] 
+                 [Cmd_Assign (Expr_Var "s") (Expr_Bexpr BinOpr_Plus (Expr_Var "s") (Expr_Var "i")),
+                  Cmd_Assign (Expr_Var "i") (Expr_Bexpr BinOpr_Minus (Expr_Var "i") (Expr_Num "1"))]),
+                  Cmd_Assign (Expr_Var "result") (Expr_Var "s")]       
+(9) parse "a[i]:=i"
+Cmd_Assign (Expr_ArrElem "a" (Expr_Var "i")) (Expr_Var "i")    
+
+５ 次の命令を実行し、「プログラムの意味」を確認せよ。
+   （resultの特別な意味に注意する）
+
+(1) r0	初期環境
+[("result",Val_V_Loc 0)]  
+
+(2) s0        初期状態
+(1,[]) 
+
+(3) cmdexec (parse "result:=3*50") r0 s0
+(1,[(0,Val_V_Int 150)])  
+
+(4) exec "result:=3*50"
+Val_V_Int 150
+
+(5) exec "begin var x; x:=10; result:=x end"
+Val_V_Int 10 
+
+(6) exec "begin var i,s; i:=100; s:=0; while i>0 do begin s:=s+i;
+i:=i-1 end; result:=s end" 
+Val_V_Int 5050 
+
+(7) exec "begin var a[10]; a[1]:=2; a[2]:=a[1]*a[1]; result:=a[2] end"
+Val_V_Int 4 
+
+６ 1*1+2*2+...+100*100 の値を求め、resultに保存するプログラムを第６章
+で定義された命令型言語で書け。さらに、parseとexecでその構文木と計算の
+結果を確かめよ。  
+
+begin var i,s; 
+  i:=100; s:=0; 
+  while i>0 do 
+     begin s:=s+i*i;
+           i:=i-1 
+     end; 
+  result:=s 
+end
+
+exec "begin var i,s; i:=100; s:=0; while i>0 do begin s:=s+i*i; i:=i-1
+end; result:=s end"
+Val_V_Int 338350   
+

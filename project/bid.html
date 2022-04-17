@@ -1,0 +1,316 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+<HEAD>
+<TITLE>Project on Bidirectional Compputation</TITLE>
+<META http-equiv="Content-Type" content="text/html; charset=japanese-iso-8bit-unix">
+</HEAD>
+
+<BODY bgcolor="white" text="black" link="blue" vlink="red"
+      background="http://www.ipl.t.u-tokyo.ac.jp/~hu/pub/bk500.jpg">
+
+<TABLE border=0 cellspacing=20>
+<TR>
+<TH> <img width=100 src="psd.png"></TH>
+<TD> <h1>Bidirectional Computation</h1></TD>
+</TR>
+
+<TABLE>
+<a href="#papers">Selected Papers</a> |
+<a href="#software">Software</a>
+<HR>
+
+Inspired by
+the view updating techniques, program inversion and transformational
+programming, we are now working on development of a new general framework
+that can support  bidirectional computation (bidirectional
+transformation language, bidirectionalization transformation, and
+bidirectionality analysis), and focus on its application to 
+<a href="http://www.psdlab.org/e/index.html">dependable XML processing</a>
+and to <a href="http://www.ipl.t.u-tokyo.ac.jp/%7Exiong/modelSynchronization.html">bidirectional model transformation in software engineering</a>.<BR>
+<BR>
+The current subprojects are as follows.
+<ul>
+<li> <a href="http://research.nii.ac.jp/~hidaka/big/www/">The BiG Project</a></li>
+<li> <a href="http://code.google.com/p/synclib/"> The Beanbag Project</a></li>
+<li> <a href="http://www.ipl.t.u-tokyo.ac.jp/%7Ekztk/b18nf/"> Automatic Bidirectionalization</a></li>
+</ul>
+
+<HR>
+
+<a name="papers"/>
+<h2>Selected Papers</h2>
+
+<UL>
+
+<A name="POPL09"/>
+<li>
+<a href="http://www.ipl.t.u-tokyo.ac.jp/~fooofo"> 
+Akimasa Morihata</a>,
+<a href="http://www.ipl.t.u-tokyo.ac.jp/~kmatsu">
+Kiminori Matsuzaki</a>, 
+<a href="http://www.ipl.t.u-tokyo.ac.jp/~hu"> 
+Zhenjiang Hu</a>, 
+<a href="http://www.ipl.t.u-tokyo.ac.jp/~takeichi"> 
+Masato Takeichi</a>,
+<b>The Third Homomorphism Theorem on Trees: Downward & Upward
+        Lead to Divide-and-Conquer</b>,
+<em>
+The 36th Annual ACM SIGPLAN - SIGACT Symposium on
+Principles of Programming Languages 
+</em>
+(<a href="http://www.cs.ucsd.edu/popl/09/">POPL 2009</a>),  
+Savannah, Georgia, USA, January 21-23, 2009.
+<p> 
+
+<A name="WSE08"/>
+<li>
+<a href="http://millsmess.cs.uec.ac.jp/%7eksk/en/?FrontPage">
+Keisuke Nakano</a>, 
+<a href="http://www.ipl.t.u-tokyo.ac.jp/~hu">
+Zhenjiang Hu</a>, 
+<a href="http://www.ipl.t.u-tokyo.ac.jp/~takeichi">
+Masato Takeichi</a>,
+<b>
+Consistent Web Site Updating based on Bidirectional Transformation</b>,
+<em>10th IEEE International Symposium on Web Site Evolution 
+</em>
+(<a href="http://wse2008.fbk.eu/pages/index.htm">WSE 2008</a>), 
+Beijing, China, October 3-4, 2008. to appear.
+<p>
+
+<A name="HOSC07"/>
+<li>
+<a href="http://www.ipl.t.u-tokyo.ac.jp/~hu"> 
+Zhenjiang Hu</a>, 
+<a href="http://www.ipl.t.u-tokyo.ac.jp/~scm"> 
+Shin-Cheng Mu</a>, 
+<a href="http://www.ipl.t.u-tokyo.ac.jp/~takeichi"> 
+Masato Takeichi</a>,
+<a href="hosc07.pdf">
+<b>A Programmable Editor for Developing Structured Documents
+based on Bidirectional Transformations</b></a>,
+<em>Higher-Order and Symbolic Computation</em> 
+(<a href="http://www.springerlink.com/content/1573-0557/">HOSC</a>), 
+Vol. 21, No. 1-2, Springer, June 2008. pp.89-118. (An extended version of the paper presented at ACM PEPM'04.)
+<p>
+
+<li>
+<a href="http://xiong.yingfei.googlepages.com"> 
+Yingfei Xiong</a>, 
+<a href="http://www.ipl.t.u-tokyo.ac.jp/~liu/"> 
+Dongxi Liu</a>,  
+<a href="http://www.ipl.t.u-tokyo.ac.jp/~hu"> 
+Zhenjiang Hu</a>, 
+<a href="http://sei.pku.edu.cn/en/index.html">
+Haiyan Zhao</a>, 
+<a href="http://www.ipl.t.u-tokyo.ac.jp/~takeichi"> 
+Masato Takeichi</a>,
+<a href="http://sei.pku.edu.cn/meih/index_en.html">
+Hong Mei</a>, 
+<a href="../pub/ase07.pdf"><b>
+Towards Automatic Model Synchronization from Model Transformations,
+</b>
+</a>
+<em>22nd IEEE/ACM International Conference on Automated Software
+Engineering</em>
+(<a href="http://www.cse.msu.edu/ase2007/">ASE 2007</a>), 
+Atlanta, Georgia, November 5-9, 2007. 
+<p>
+
+<li>
+<a href="http://www.ipl.t.u-tokyo.ac.jp/~kztk"> 
+Kazutaka Matsuda</a>, 
+<a href="http://www.ipl.t.u-tokyo.ac.jp/~hu"> 
+Zhenjiang Hu</a>, 
+<a href="http://www.ipl.t.u-tokyo.ac.jp/~ksk">
+Keisuke Nakano</a>, 
+<a href="http://www.ipl.t.u-tokyo.ac.jp/~hamana">
+Makoto Hamana</a>, 
+<a href="http://www.ipl.t.u-tokyo.ac.jp/~takeichi"> 
+Masato Takeichi</a>,
+<a href="../pub/icfp07.pdf">
+<b>
+Bidirectionalization Transformation based on Automatic Derivation of View
+Complement Functions</b></a>,
+<em>12th ACM SIGPLAN International Conference on Functional Programming
+</em>
+(<a href="http://www.informatik.uni-bonn.de/~ralf/icfp07.html">ICFP 2007</a>), 
+Freiburg, Germany, October 1-3, 2007.
+<p>
+
+<li>
+<a href="http://www.ipl.t.u-tokyo.ac.jp/~hayashi/"> 
+Yasushi Hayashi</a>, 
+<a href="http://www.ipl.t.u-tokyo.ac.jp/~liu/"> 
+Dongxi Liu</a>, 
+<a href="http://www.ipl.t.u-tokyo.ac.jp/~emoto"> 
+Kento Emoto</a>, 
+Kazutaka Matsuda,
+<a href="http://www.ipl.t.u-tokyo.ac.jp/~hu"> 
+Zhenjiang Hu</a>, 
+<a href="http://www.ipl.t.u-tokyo.ac.jp/~takeichi"> 
+Masato Takeichi</a>,
+<a href="../pub/apweb07.pdf">
+<b>A Web Service Architecture for Bidirectional XML Updating</b></a>,
+<em>Joint conference of the 9th Asia-Pacific Web Conference and the 
+8th International Conference on Web-Age Information Management</em>
+(<a href="http://www.cse.unsw.edu.au/~apwebwaim07/">APWeb/WAIM 2007</a>),  
+Huangshan, China, June 16-18, 2007. pp.721-732.
+<p> 
+
+<li>
+<a href="http://www.ipl.t.u-tokyo.ac.jp/~liu/"> 
+Dongxi Liu</a>, 
+<a href="http://www.ipl.t.u-tokyo.ac.jp/~hu"> 
+Zhenjiang Hu</a>, 
+<a href="http://www.ipl.t.u-tokyo.ac.jp/~takeichi"> 
+Masato Takeichi</a>,
+Kazuhiko Kakehi, Hao Wang,
+<a href="jssst-cs06-liu.pdf">
+<b>A Java Library for Bidirectional XML Transformation</b></a>,
+<a href="http://www.jstage.jst.go.jp/browse/jssst"><em>JSSST Computer Software</em></a>, 24(2): 164-177, 2007.  
+<p>  
+
+<li>
+<a href="http://www.ipl.t.u-tokyo.ac.jp/~liu/"> 
+Dongxi Liu</a>, 
+<a href="http://www.ipl.t.u-tokyo.ac.jp/~hu"> 
+Zhenjiang Hu</a>, 
+<a href="http://www.ipl.t.u-tokyo.ac.jp/~takeichi"> 
+Masato Takeichi</a>,
+<a href="../pub/pepm07.pdf">
+<b>Bidirectional Interpretation of XQuery</b></a>,
+<em>ACM SIGPLAN 2007 Workshop on 
+Partial Evaluation and Program Manipulation</em>
+(<a href="http://www.program-transformation.org/PEPM07">PEPM 2007</a>),  
+Nice, France, January 15-16, 2007. pp.21-30.
+<p>  
+
+<!--
+<li>
+<a href="http://www.ipl.t.u-tokyo.ac.jp/~liu/"> 
+Dongxi Liu</a>, 
+<a href="http://www.ipl.t.u-tokyo.ac.jp/~hu"> 
+Zhenjiang Hu</a>, 
+<a href="http://www.ipl.t.u-tokyo.ac.jp/~takeichi"> 
+Masato Takeichi</a>,
+<a href="../pub/metr06-25.pdf">
+<b>Bidirectionalizing XQuery -- Updating XML through Materialized XQuery View
+</b></a>,
+<em>Technical Report METR 2006-05</em>, Department of Mathematical Informatics, 
+University of Tokyo, April 2006. 
+<p>  
+-->
+
+<li>
+<a href="http://www.ipl.t.u-tokyo.ac.jp/~scm"> 
+Shin-Cheng Mu</a>, 
+<a href="http://www.ipl.t.u-tokyo.ac.jp/~hu"> 
+Zhenjiang Hu</a>, 
+<a href="http://www.ipl.t.u-tokyo.ac.jp/~takeichi"> 
+Masato Takeichi</a>,
+<a href="../pub/jssst-cs06-mu.pdf">
+<b>Bidirectionalizing Tree Transformation Languages: A Case Study</b></a>,
+<a href="http://www.jstage.jst.go.jp/browse/jssst">JSSST Computer Software</a>, Vol.23, No.2, 2006. pp.129-141.
+<P>
+
+<!--
+<li>
+<a href="http://www.ipl.t.u-tokyo.ac.jp/~liu/"> 
+Dongxi Liu</a>, 
+<a href="http://www.ipl.t.u-tokyo.ac.jp/~hu"> 
+Zhenjiang Hu</a>, 
+<a href="http://www.ipl.t.u-tokyo.ac.jp/~takeichi"> 
+Masato Takeichi</a>,
+<a href="../pub/doceng05.pdf">
+<b>An Environment for Maintaining
+Computation Dependency in XML Documents</b></a>,
+<em>ACM Symposium on Document Engineering</em> (<a
+href="http://www.hpl.hp.com/conferences/DocEng2005/">DocEng 2005</a>), 
+Bristol, United Kingdom, 2-4 November 2005. pp.42-51.
+<p> 
+--> 
+
+<li>
+<a href="http://www.ipl.t.u-tokyo.ac.jp/~hu"> 
+Zhenjiang Hu</a>, 
+<a href="http://www.ipl.t.u-tokyo.ac.jp/~scm"> 
+Shin-Cheng Mu</a>, 
+<a href="http://www.ipl.t.u-tokyo.ac.jp/~takeichi"> 
+Masato Takeichi</a>,
+<a href="../pub/pepm04.pdf">
+<b>A Programmable Editor for Developing Structured Documents
+based on Bidirectional Transformations</b></a>, 
+<em>ACM SIGPLAN 2004 Symposium on Partial Evaluation and Program Manipulation
+</em> 
+(<a href="http://profs.sci.univr.it/~pepm04/">PEPM'04</a>), 
+Verona, Italy, August 24 - 25, 2004. ACM Press.
+pp.178-189. An <a href="hosc05.pdf">exended version</a> has been submitted for Journal publication. 
+<p>
+
+
+<li>
+<a href="http://www.ipl.t.u-tokyo.ac.jp/~scm"> 
+Shin-Cheng Mu</a>, 
+<a href="http://www.ipl.t.u-tokyo.ac.jp/~hu"> 
+Zhenjiang Hu</a>, 
+<a href="http://www.ipl.t.u-tokyo.ac.jp/~takeichi"> 
+Masato Takeichi</a>,
+<a href="../pub/aplas04-mu.pdf">
+<b>An Algebraic Approach to Bidirectional Updating</b></a>,
+<em>Second ASIAN Symposium on Programming Languages and Systems</em>
+(<a href="http://www.comp.nus.edu.sg/~aplas/">APLAS 2004</a>), 
+Taipei, Taiwan, November 4-6, 2004. LNCS 3302, Springer Verlag.
+pp.2-18.
+<p>
+
+
+<li>
+<a href="http://www.ipl.t.u-tokyo.ac.jp/~scm"> 
+Shin-Cheng Mu</a>, 
+<a href="http://www.ipl.t.u-tokyo.ac.jp/~hu"> 
+Zhenjiang Hu</a>, 
+<a href="http://www.ipl.t.u-tokyo.ac.jp/~takeichi"> 
+Masato Takeichi</a>,
+<a href="../pub/mpc04.pdf">
+<b>An Injective Language for Reversible Computation</b></a>, 
+<em>Seventh International Conference on
+ Mathematics of Program Construction</em>
+(<a href="http://www.cs.cornell.edu/Projects/MPC2004/">MPC 2004</a>), 
+Stirling, Scotland, UK, 12-14 July, 2004. LNCS 3125, Springer Verlag.
+pp. 289-313.
+<p>
+
+
+</UL
+
+<P>
+More papers are available <a href="../pub/tech.html">here</a>.
+<P>
+<HR>
+
+<a name="software"/>
+<h2>Software</h2>
+
+<UL>
+
+<LI><a href="http://www.ipl.t.u-tokyo.ac.jp/%7Exiong/modelSynchronization.html">A Model Synchronization Tool based on Bidirectional Transformation</a>
+<LI><a href="http://www.ipl.t.u-tokyo.ac.jp/~mihashi/ArchX">ArchX</a>: a bidirectional language for synchronizing XML documents with different formats.</LI>
+
+<LI><a href="http://www.ipl.t.u-tokyo.ac.jp/~liu/BiXQuery.html">BiXJ</a>: a bidirectional computation library for Java.</LI>
+
+<LI><a href="http://www.ipl.t.u-tokyo.ac.jp/~liu/BiXQuery.html">X2B</a>: a translator from XQuery core expression to BIXJ code.</LI>
+
+
+<LI> <a
+		href="http://www.ipl.t.u-tokyo.ac.jp/~hu/pub/sw/Inv.tar.gz">X/Inv/XEditor</a>:
+		two domain specific languages for specifying bidirectional transformations, and a
+		structured document editor based on Bidirectional
+		Transformations. </LI>
+
+</UL>
+
+<HR>
+Maintained by Zhenjiang Hu. Last modified on October, 2007.
+</BODY>
+</HTML>

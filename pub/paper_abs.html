@@ -1,0 +1,288 @@
+<html>
+<head>
+<title>Paper Abstracts of Zhenjiang Hu</title>
+</head>
+
+<BODY TEXT="#000000" BGCOLOR="#C0C0C0" LINK="#A10000" VLINK="#00008A"
+ALINK="#700000"
+BACKGROUND="http://www.ipl.t.u-tokyo.ac.jp/~hu/pub/bk500.jpg"> 
+
+
+<h1> Some Recent Papers by Zhenjiang Hu</h1>
+A paper list can be found 
+<a href="http://www.ipl.t.u-tokyo.ac.jp/~hu/pub/tech.html">here<a>.
+<hr>
+
+<!--<h2><IMG SRC="/icons/yellowball.gif" ALT=""><I><font size=+2>1998</font></I></h2>-->
+<ol>
+
+<li> 
+<a href="http://www.takeichi.t.u-tokyo.ac.jp/">M. Takeichi</a>,
+<a href="http://www.ipl.t.u-tokyo.ac.jp/~hu">Z. Hu</a>, 
+<a href="http://www.ipl.t.u-tokyo.ac.jp/~hu/pub/ispse00.ps.gz">
+<b>Calculation Carrying Programs: How to Code Program
+Transformations</b></a>
+(Invited Paper),
+<em>International Sumposium on Principles of Software Evolution</em>
+(<a href="http://www.jaist.ac.jp/ISPSE/">ISPSE 2000</a>),
+Kanazawa, Japan, 1-2 November 2000. IEEE Press.
+<p> 
+
+In this paper, we propose a new mechanism called 
+calculation carrying programs that can relax the tension between
+efficiency and clarity in programming. The idea
+is to accompany clear programs with some calculation specifying our
+intention of how to manipulate programs to be efficient. And this calculation
+specification can be executed automatically by our compiler to derive
+efficient programs. As a result, each calculation carrying program makes
+itself be  a complete document including a concise specification of
+given problem as well as an effective way to derive both 
+efficient and correct code.
+<p>
+<hr>
+
+<li> 
+<a href="http://www.ipl.t.u-tokyo.ac.jp/~sasano">I. Sasano</a>, 
+<a href="http://www.ipl.t.u-tokyo.ac.jp/~hu">Z. Hu</a>, 
+<a href="http://www.ipl.t.u-tokyo.ac.jp/~takeichi">M. Takeichi</a>, 
+<a href="http://www.brl.ntt.co.jp/people/mizuhito/index.html">M. Ogawa</a>, 
+<a href="http://www.ipl.t.u-tokyo.ac.jp/~hu/pub/icfp00.ps.gz">
+<b>Make it Practical: A Generic Linear Time Algorithm for Solving
+Maximum Weightsum Problems </b></a>,
+<em>The 2000 ACM SIGPLAN International Conference on Functional
+Programming</em>, 
+(<a href="http://diwww.epfl.ch/~odersky/icfp2000/">ICFP 2000</a>),
+Montreal, Canada, 18-20 September 2000. ACM Press. pp.137-149.
+<p>  
+
+In this paper we propose a new method for deriving a practical
+linear-time algorithm from the specification of a 
+maximum-weightsum problem: From the elements of a data structure $x$,
+find a subset which  
+satisfies a certain property $p$ and whose weightsum is maximum.
+
+Previously proposed methods for automatically generating 
+linear-time algorithms are theoretically appealing,
+but the algorithms generated are hardly useful in practice
+due to a huge constant factor for space and time.
+
+The key points of our approach are to express the property $p$ by a
+{\em recursive\/} boolean function over the structure $x$ rather than
+a usual logical predicate and to apply program transformation
+techniques to reduce the constant factor.   
+
+We present an {\em optimization theorem}, give a calculational
+strategy for applying the theorem, and demonstrate the
+effectiveness of our approach through several nontrivial examples
+which would be difficult to deal with when using the methods
+previously available.
+
+<p>
+<hr>
+
+<li> 
+<a href="http://www.ipl.t.u-tokyo.ac.jp/~adachi">S. Adachi</a>, 
+<a href="http://www.ipl.t.u-tokyo.ac.jp/~iwasaki">H. Iwasaki</a>, 
+<a href="http://www.ipl.t.u-tokyo.ac.jp/~hu">Z. Hu</a>, 
+<a href="http://www.ipl.t.u-tokyo.ac.jp/~hu/pub/pdpta00.pdf">
+<b>diff: A Powerful Parallel Skeleton</b></a>, 
+<em>The 2000 International Conference on Parallel and Distributed
+Processing Techniques and Applications</em>  
+(<a
+href="http://www.ashland.edu/~iajwa/Conferences/PDPTA2000/pdpta.html">PDPTA 
+2000</a>), Monte Carlo Resort, Las Vegas, June 26 - 29, 2000. CSREA Press. 
+pp.525--527.
+<p> 
+
+In this paper, we propose a new powerful parallel skeleton $\diff$
+derived from our diffusion theorem (PEPM'99), showing how it can be
+used to naturally code efficient solutions to problems, and how it can
+be efficiently implemented in parallel using MPI.
+<p>
+<hr>
+
+<li> 
+<a href="http://www.comp.nus.edu.sg/~chinwn/">W.N. Chin</a>,  
+S.C. Khoo,
+<a href="http://www.ipl.t.u-tokyo.ac.jp/~hu">Z. Hu</a>, 
+<a href="http://www.takeichi.t.u-tokyo.ac.jp/">M. Takeichi</a>,
+<a href="http://www.ipl.t.u-tokyo.ac.jp/~hu/pub/sas00.ps.gz">
+<b>Deriving Parallel Codes via Invariants</b></a>, 
+<em>International Static Analysis Symposium</em> 
+(<a href="http://www.cis.ksu.edu/santos/sas/call.html">SAS2000</a>),
+University of California, Santa Barbara, 29 June-1 July, 2000.
+LNCS 1824, Springer Verlag. pp.75--94.<p> 
+
+Systematic parallelization of sequential programs remains a major
+challenge in parallel computing. Traditional approaches using program
+schemes tend to be narrower in scope, as the properties which enable
+parallelism are difficult to capture via ad-hoc schemes. In
+\cite{Chin:ICCL98}, a systematic approach to parallelization
+based on the notion of preserving the context of recursive
+sub-terms has been proposed. This approach can be used to derive a
+class of divide-and-conquer algorithms. In this paper, we enhance the
+methodology by using invariants to guide the parallelization
+process. The enhancement enables the parallelization of a class of
+recursive functions with conditional and tupled constructs, which were
+not possible previously. We further show how such invariants can be
+discovered and verified systematically, and demonstrate the power of
+our methodlogy by deriving a parallel code for maximum segment
+product. To the best of our knowledge, this is the first systematic
+parallelization for the maximum segment product problem.
+<p>
+<hr>
+
+<li> 
+<a href="http://www.ipl.t.u-tokyo.ac.jp/~hu">Z. Hu</a>, 
+<a href="http://www.comp.nus.edu.sg/~chinwn/">W.N. Chin</a>,  
+<a href="http://www.takeichi.t.u-tokyo.ac.jp/">M. Takeichi</a>,
+<a href="http://www.ipl.t.u-tokyo.ac.jp/~hu/pub/padl00.ps.gz">
+<b>Calculating a New Data Mining Algorithm for Market Basket
+Analysis</b></a>, 
+<em>Second International Workshop on Practical Aspects of Declarative
+Languages</em> 
+(<a href="http://www.cs.nmsu.edu/~complog/conferences/padl00/">PADL'00</a>),
+Boston, Massachusetts, January 17-18, 2000. LNCS 1753, Springer
+Verlag. pp. 169-184.
+<p> 
+
+The general goal of data mining is to extract interesting correlated
+information from large collection of data. A key computationally-intensive
+subproblem of data mining involves finding frequent sets in order to
+help mine association rules for market basket analysis. Given a bag of
+sets and a probability, the frequent set problem is to determine which
+subsets occur in the bag with some minimum probability. This
+paper provides a convincing application of program calculation in the
+derivation of a completely new and fast algorithm for this practical
+problem.  Beginning with a simple but inefficient specification
+expressed in a functional language, the new algorithm is calculated in
+a systematic manner from the specification by applying a sequence of
+known calculation techniques.
+
+<p>
+<hr>
+
+<li> 
+<a href="http://www.ipl.t.u-tokyo.ac.jp/~hu">Z. Hu</a>, 
+<a href="http://www.takeichi.t.u-tokyo.ac.jp/">M. Takeichi</a>,
+H. Iwasaki, 
+<a href="http://www.ipl.t.u-tokyo.ac.jp/~hu/pub/pepm99.ps.gz">
+<b>Diffusion: Calculating Efficient Parallel Programs</b></a>,
+<em>1999 ACM SIGPLAN Workshop on Partial Evaluation and
+Semantics-Based Program Manipulation</em> 
+(<a href="http://www.brics.dk/~pepm99/">PEPM'99</a>).
+San Antonio, Texas, January 22-23, 1999, pp. 85-94. 
+<p> 
+
+Parallel primitives (skeletons) intend to encourage programmers
+to build a parallel program from ready-made
+components for which efficient implementations are known to
+exist, making the parallelization process
+easier. However, programmers often suffer from the difficulty to choose
+a combination of proper parallel primitives so as to
+construct efficient parallel programs. To overcome this difficulty,
+we shall propose a new transformation, called diffusion, which can
+efficiently decompose a recursive definition into several functions
+such that each function can be described by some parallel primitive.
+This allows programmers to describe algorithms in a more natural
+recursive form. We demonstrate our idea with several interesting
+examples. Our diffusion transformation should be significant not only in
+development of new parallel algorithms, but also in construction of
+parallelizing compilers.
+<p>
+<hr>
+
+<li> 
+<a href="http://www.ipl.t.u-tokyo.ac.jp/~hu">Z. Hu</a> , H. Iwasaki , 
+<a href="http://www.takeichi.t.u-tokyo.ac.jp/">M. Takeichi</a>,
+<a>Calculating Accumulations</b></a>, 
+<em>New Generation Computing</em>, Vol. 17, No. 2, 1999,
+pp. 153-173.<p>
+
+The accumulation strategy consists of generalizing a function
+over an algebraic data structure by inclusion of an extra parameter,
+an accumulating parameter, for reusing and propagating
+intermediate results. However, there remain two major difficulties in
+this  accumulation strategy.  One is to determine where and
+when to generalize the original function. The other,
+surprisingly not yet receiving its worthy consideration, 
+is how to manipulate accumulations.  To overcome these difficulties,
+we propose to formulate accumulations as higher order
+catamorphisms, and provide several general transformation rules for
+calculating accumulations (i.e., finding and manipulating
+accumulations) by calculation-based (rather than a
+search-based) program transformation methods. Some examples are given
+for illustration.  
+<p>
+<hr>
+
+<li> 
+<a href="http://www.ipl.t.u-tokyo.ac.jp/~hu">Z. Hu</a>, 
+<a href="http://www.takeichi.t.u-tokyo.ac.jp/">M. Takeichi</a>,
+<a href="http://www.ipl.t.u-tokyo.ac.jp/~hu/pub/ppl98.ps.gz">
+<b>Calculating an Optimal Homomorphic Algorithm
+for Bracket Matching</b></a>,
+<em>Parallel Processing Letters</em>. Vol. 9, No. 3, 1999. pp.335-345.
+<p>
+
+It is widely recognized that a key problem of parallel computation is
+in the development of both efficient and correct parallel
+software. Although many advanced language features and compilation
+techniques have been proposed to alleviate the complexity of parallel
+programming, much effort is still required to develop
+parallelism in a formal and systematic way.  
+
+In this paper, we intend to clarify this point by demonstrating a
+formal derivation of a correct but efficient homomorphic parallel
+algorithm for a simple language recognition problem known as bracket
+matching. 
+
+To the best of our knowledge, our formal derivation leads to
+ a novel divide-and-conquer parallel algorithm for bracket matching. 
+
+<p>
+<hr>
+
+<li> 
+<a href="http://www.ipl.t.u-tokyo.ac.jp/~hu">Z. Hu</a> , 
+<a href="http://www.takeichi.t.u-tokyo.ac.jp/">M. Takeichi</a>, 
+<a href="http://www.comp.nus.edu.sg/~chinwn/">W.N. Chin</a>,  
+<a href="http://www.ipl.t.u-tokyo.ac.jp/~hu/pub/popl98.ps.gz">
+<b>Parallelization in Calculational Forms</b>
+</a>,
+<em>25th ACM SIGPLAN-SIGACT Symposium on
+Principles of Programming Languages</em>
+(<a
+href="http://cm.bell-labs.com/cm/cs/who/dbm/POPL98/index.html">POPL'98</a>), 
+San Diego, California, USA, January 1998, pp. 316-328. ACM Press.<p> 
+
+The problems involved in developing efficient parallel programs
+have proved harder than those in developing efficient sequential ones,
+both for programmers and for compilers. Although program 
+calculation has been found to be a promising way to solve these
+problems in the sequential 
+world, we believe that it needs much more 
+effort to study its effective use in the parallel world. In 
+this paper, we propose a calculational framework for
+the derivation of efficient parallel programs with two main
+innovations: 
+(1) We propose a novel inductive synthesis lemma based on which an elementary
+  but powerful parallelization theorem is developed.
+(2) We make the first attempt to construct a calculational algorithm
+  for parallelization,   deriving associative operators from data type
+  definition and   making full use of existing fusion and tupling calculations.
+
+Being more constructive, our method is not only helpful in the design of
+efficient parallel programs in general but also promising in the
+construction of parallelizing compiler. Several interesting examples
+are used for illustration.  
+
+</ol>
+
+<hr>
+
+<a href="/~hu/">
+<img src="/icons/back.gif"></A>Back to Hu's Home Page<p>
+
+</BODY>
+</html>

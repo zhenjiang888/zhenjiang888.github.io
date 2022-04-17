@@ -1,0 +1,52 @@
+<head>
+<title>Technique reports of Z. Hu</title>
+</head>
+
+<body>
+<h1><a name="report">Technique Reports</a></h1>
+<hr>
+
+<ol>
+<li> Z. Hu and H. Iwasaki and M. Takeichi,
+	<a href="ftp://ftp.ipl.t.u-tokyo.ac.jp/Documents/english/jfp.dvi.Z">
+	"Deriving Efficient Functional Programs by
+Constructing Medio-types"</a>,
+	Proceedings of JSSST-FP '94, Kyoto, Japan, 
+	Modern Publisher,  November, 1994. <p>
+<li> Z. Hu and H. Iwasaki and M. Takeichi,
+	<a href="ftp://ftp.ipl.t.u-tokyo.ac.jp/Documents/english/jsc.dvi.Z">
+      "Promotion Strategies for Parallelizing Tree Algorithms"</a>,
+      Proceedings of JSSST '94, Osaka, Japan, November, 1994. <p>
+<li> Z. Hu and H. Iwasaki and M. Takeichi,
+	<a href="ftp://ftp.ipl.t.u-tokyo.ac.jp/Documents/english/tr1.dvi.Z">
+     "Catamorphism-Based Transformation of Functional
+		Programs"</a>,
+	Technique report METR 94-06,
+	Department of Mathematical Engineering and
+		Information Physics, University of Tokyo,
+	June,	1994.<p>
+<li> Z. Hu and Y. Sun,
+	"The Algebraic Approach for the Synthesis of Systolic
+Array",
+	Proceedings of German-Chinese Electrocity Week '91, 
+	VDE Verlag Dusseldorf, Germany, 1991. <p>
+<li> Z. Hu and Y. Sun,
+	Functional Approach to the Synthesis of Systolic
+Array,
+	Proceedings of 2nd Int'l Conf. for Young Computer Scientists,
+	Beijing, China, July, 1991. <p>
+<li> Z. Hu and Y. Sun,
+	"Functional Approach for the Synthesis of Logic",
+	Proceedings  of 4th Int'l Symp. on IC Design, Implementation and
+Application, Singapore, 1991. <p>
+ 
+</ol>
+
+<hr>
+<a href="/students.html">
+<img src="/icons/back.gif"></A>Back to IPL Students' Page<p>
+
+<address>
+Z. Hu(hu@ipl.t.u-tokyo.ac.jp)
+</address>
+</body>

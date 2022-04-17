@@ -1,0 +1,12 @@
+Introduction to GRACE Center
+Shinichi Honiden (National Institute of Informatics)
+
+Abstract:
+
+GRACE Center is a world-leading software research center in National
+Institute of Informatics engaged in research, education and practical
+work in alliances with research organizations in Japan and overseas
+and as part of industry-academia collaboration. GRACE Center seeks to
+put in place the foundations of 21st century software, while
+developing world-class researchers and engineers who will go on to
+play central roles in the next generation.

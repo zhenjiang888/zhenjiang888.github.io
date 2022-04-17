@@ -1,0 +1,42 @@
+Dear PC members,
+
+Thank you again for agreeing to serve in the Program Committee of
+AWFS'09. Below are updated information about the workshop.
+
+(1) **Important**: Due to several requests, we change the workshop
+period to April 6-8, 2009. If there is any problem with this change,
+please let us know as soon as possible.
+
+(2) We will have invited talks by four distinguished researchers:
+- Shinichi Honiden (National Institute of Informatics, Japan)
+- Yike Guo (Imperial College)
+- David Parnas (University of Limerick)
+- Chaochen Zhou (Chinese Academy of Sciences, China)
+
+(3) ENTCS (Electronic Notes in Theoretical Computer Science) has
+agreed to publish a special issue including selected papers from the
+workshop.
+
+(4) The submission will be done with easychair.
+
+(5) **Important**: AWFS, different from the formal APLAS and other
+conferences in Asian, is an *informal* workshop for promoting research
+communication among researchers in Asia. 
+
+Please consider participation in the workshop and encourage your
+colleagues or students to attend the workshop by presenting either 
+ (a) published results (which was not presented in Asia), or
+ (b) new research results/ongoing work
+
+The deadline for paper (abstract) submission: 
+
+(6) The workshop page: http://research.nii.ac.jp/~hu/awfs09/
+
+If you have any suggestion or advice, please let us know.
+
+Thank you and best regards,
+
+Zhenjiang Hu 
+Jian Zhang
+
+

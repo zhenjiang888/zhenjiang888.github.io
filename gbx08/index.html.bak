@@ -1,0 +1,220 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  
+  <link href="grace.css" rel="stylesheet" type="text/css">
+  <title>GRACE-BX 2008</title>
+</head>
+
+<body>
+<div class="headline" style="text-align:center">
+  <a href="http://grace-center.jp/en/index.html"><img src="images/grace_ban2.jpg" width="640" height="68" alt="GRACE-BX 2008"></a>
+</div>
+
+<div class="block">
+
+<h1 class="title">GRACE International Meeting on Bidirectional Transformations</h1>
+<h2 class="title">(GRACE-BX 2008)</h2>
+<h2 class="title"><a href="http://www.shonan-village.co.jp/english_index.html">
+Shonan Village Center</a>, Japan, December 15&ndash;18, 2008</h2>
+</div>
+
+<div class="block">
+  <h2 class="header">News</h2>
+  <ul>
+	<li>July 21: This page is opened.</li>
+  </ul>
+</div>
+
+<div class="block">
+  <h2 class="header">OBJECTIVE</h2>
+<p>
+Bidirectional transformations are a novel mechanism for synchronizing
+and maintaining the consistency of information between input and
+output. Recently, researchers from many different areas of computing
+including programming languages, software engineering, databases,
+document engineering, etc. have proposed bidirectional transformations
+as solutions to a diverse set of problems.  The purpose of this GRACE
+international meeting is to build on this growing interest in
+bidirectional transformations, and bring together the international
+elites, promising young researchers, and leading practitioners to
+share problems and solutions, and to open a dialogue towards
+understanding the common underpinnings of bidirectional
+  transformations.
+</p>
+
+<p>
+  Particular topics of interest include:
+</p>
+<ul id="topics_of_interest">
+  <li>Programming Languages:
+	<ul>
+	  <li> Foundations of Bidirectional Computation</li>
+	  <li> Bidirectional Programming Languages</li>
+	  <li> Automatic Bidirectionalization</li>
+	  <li> Inverse Computation</li>
+	  <li> Invertible Programming</li>
+	</ul>
+  </li>
+  <li>Software Engineering:
+	<ul>
+	  <li>Bidirectional Model Transformation</li>
+	  <li>Software Artifact Synchronization</li>
+	  <li>Software Maintenance and Evolution</li>
+	  <li>Consistency management</li>
+	  <li>Reverse Engineering</li>
+	</ul>
+  </li>
+  <li>Database:
+	<ul>
+	  <li>Semantics of View Update</li>
+	  <li>View Update Checking</li>
+	  <li>Schema Mappings</li>
+	  <li>Data Integration and Exchange</li>
+	  <li>Data Synchronization</li>
+	</ul>
+  </li>
+  <li>Others:
+	<ul>
+	  <li>Synchronization among intelligent agents</li>
+	  <li>System Configuration Management</li>
+	  <li>Graphical User Interface</li>
+	  <li>Presentation-oriented Document Construction</li>
+	</ul>
+  </li>
+</ul>
+
+</div>
+
+<div class="block">
+<h2 class="header">ABOUT THE GRACE INTERNATIONAL MEETINGS</h2>
+<p>
+The GRACE International Meetings in Japan follow the style of the
+successful <a href="http://www.dagstuhl.de/en/program/dagstuhl-seminars/">Dagstuhl Seminars</a>.
+</p>
+
+<p>
+There is no set program followed at the meeting. The pace and the
+procedure followed are determined by the short presentations offered
+during the meeting and the discussion results.
+</p>
+
+<p>
+The meeting is sponsored by the <a href="http://grace-center.jp/en/index.html">
+GRACE International Center on Advanced
+Software Science and Engineering</a> of <a href="http://www.nii.ac.jp/index.shtml.en">
+National Institute of Informatics</a>
+(NII) in Japan.
+</p>
+</div>
+
+<div class="block">
+  <h2 class="header">ORGANIZERS</h2>
+
+<p>
+<a href="http://www.swen.uwaterloo.ca/~kczarnec/">Krzysztof Czarnecki</a> <BR>
+University of Waterloo, Canada<BR>
+kczarnec@swen.uwaterloo.ca
+</p>
+
+<p>
+<a href="http://www.cis.upenn.edu/~jnfoster/">Nate Foster</a> <BR>
+University of Pennsylvania, USA<BR>
+jnfoster@cis.upenn.edu
+</p>
+
+<p>
+<a href="http://research.nii.ac.jp/~hu/">Zhenjiang Hu</a> <BR>
+National Institute of Informatics, Japan<BR>
+hu@nii.ac.jp
+</p>
+</div>
+
+
+<div class="block">
+  <h2 class="header">DATE &amp; PLACE</h2>
+<p>
+The GRACE International Meeting will take place at 
+<a href="http://www.shonan-village.co.jp/english_index.html">Shanon Village
+Center</a>, December 15-18, 2008. Built on a hill commanding a view of
+Mt. Fuji and overlooking Sagami Bay, Shonan Village Center offers a
+combination of facilities for conferences, training, and lodging in a
+resort-like setting.</p>
+
+</div>
+
+<div class="block">
+  <h2 class="header">ABOUT PARTICIPATION</h2>
+<p>	
+Participants who are invited by one of the organizers and are willing
+to attend the meeting are request to fill in the following form and
+return it to the organizers.</p>
+<div class="contents">
+<pre>
+  Name:
+  Email:
+  Affiliation:
+  Research Area:
+  Comments:
+    Please explain what you want to talk and/or what the problems 
+    you want to discuss at the meeting. 
+</pre>
+</div>
+<p>
+If you want to be invited, please contact one of the organizers. 
+your request may be declined, due to the limitation of the number of participants or 
+the gap between your research and the topics of the meeting.
+</p>
+</div>
+
+<div class="block">
+  <div class="header">ABOUT EXPENSES</div>
+<p>
+The meeting fee will be approximately 68,000 Yen, which includes:</p>
+<ul>
+	<li> a single room for 4 nights (December 14&ndash;17)</li>
+	<li> reception in the evening of December 14</li>
+	<li> all meals from December 15 to the noon of December 18</li>
+	<li> drinks and light refreshments during all coffee breaks.</li>
+</ul>
+</div>
+
+<div class="block">
+	<h2 class="header">People who are considering possible participation &hellip; </h2>
+<p>
+This list will be kept updating &hellip;
+</p>
+
+<ul>
+  <li>Jean Bezivin (Univeristy of Nantes)</li>
+  <li>Krzysztof Czarnecki (University of Waterloo)</li>
+  <li>Zinovy Diskin (University of Toronto) </li>
+  <li>Kathleen Fisher (AT&T)</li>
+  <li>Nate Foster (University of Pennsylvania)</li>
+  <li>Robert Gl&uuml;ck (Copenhagen University)</li>
+  <li>Soichiro Hidaka (National Institute of Informatics of Japan) </li>
+  <li>Zhenjiang Hu (National Institute of Informatics of Japan)</li>
+  <li>Hiroyuki Kato (National Institute of Informatics of Japan)</li>
+  <li>Ralf L&auml;mmel (University of Koblenz-Landau) </li>
+  <li>Kazutaka Matsuda (University of Tokyo) </li>
+  <li>Anders M&oslash;ller (University of Aarhus)</li>
+  <li>Shin-Cheng Mu (Academia Sinica of Taiwan)</li>
+  <li>Keisuke Nakano (University of Electro-Communications of Japan) </li>
+  <li>Rich Paige (University of York) </li>
+  <li>Benjamin Pierce (University of Pennsylvania)</li>
+  <li>Lucian Popa (IBM)</li>
+  <li>Jo&atilde;o Saraiva (Minho University)</li>
+  <li>Hui Song (Peking University)</li>
+  <li>James Terwilliger (Microsoft Research) </li>
+  <li>Axel Uhl (SAP) </li>
+  <li>Janis Voigtl&auml;nder (Technische Universitaet Dresden)</li>
+  <li>Meng Wang (Oxford University) </li>
+  <li>Yingfei Xiong (University of Tokyo)</li>
+  <li>Tetsuo Yokoyama (Nagoya University)</li>
+</ul>
+</div>
+
+</body>
+</html>
